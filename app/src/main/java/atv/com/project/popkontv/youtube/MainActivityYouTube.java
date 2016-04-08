@@ -1,9 +1,5 @@
 package atv.com.project.popkontv.youtube;
 
-/**
- * Created by Administrator on 4/7/2016.
- */
-
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +10,9 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 
 import atv.com.project.popkontv.R;
 
-
+/**
+ * Created by Administrator on 4/8/2016.
+ */
 public class MainActivityYouTube extends AppCompatActivity {
 
     @Override

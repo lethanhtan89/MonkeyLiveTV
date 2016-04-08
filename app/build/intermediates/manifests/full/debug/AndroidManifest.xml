@@ -40,7 +40,6 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.Translucent" />
         <activity android:name="youtube.CustomYouTubeControlsActivity" />
-        <activity android:name="atv.com.project.popkontv.youtube.MainActivityYouTube" />
 
         <meta-data
             android:name="io.fabric.ApiKey"

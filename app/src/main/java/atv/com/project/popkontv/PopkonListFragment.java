@@ -42,7 +42,7 @@ public class PopkonListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         RecyclerView rv = (RecyclerView) inflater.inflate(
-                R.layout.fragment_cheese_list, container, false);
+                R.layout.fragment_popkon_list, container, false);
         setupRecyclerView(rv);
         return rv;
     }

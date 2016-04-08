@@ -95,10 +95,6 @@ activity#youtube.CustomYouTubeControlsActivity
 ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:36:9-83
 	android:name
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:36:19-71
-activity#atv.com.project.popkontv.youtube.MainActivityYouTube
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:37:9-65
-	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:37:19-62
 meta-data#io.fabric.ApiKey
 ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:38:9-40:71
 	android:value

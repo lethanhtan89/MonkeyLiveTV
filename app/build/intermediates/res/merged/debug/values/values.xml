@@ -281,6 +281,7 @@
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="font_tab">14dp</dimen>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
