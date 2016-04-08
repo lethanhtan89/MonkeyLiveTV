@@ -15,6 +15,7 @@
 -->
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true" android:drawable="@drawable/abc_btn_checkbox_checked_mtrl" />
-    <item android:drawable="@drawable/abc_btn_checkbox_unchecked_mtrl" />
-</selector><!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0-alpha1/res/drawable/abc_btn_check_material.xml -->
+    <item android:state_checked="true" android:drawable="@drawable/abc_btn_check_to_on_mtrl_015" />
+    <item android:drawable="@drawable/abc_btn_check_to_on_mtrl_000" />
+</selector>
+<!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable/abc_btn_check_material.xml -->
