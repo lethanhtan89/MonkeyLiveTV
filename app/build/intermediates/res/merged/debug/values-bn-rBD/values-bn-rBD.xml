@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0-alpha1/res/values-bn-rBD/values-bn-rBD.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-bn-rBD/values-bn-rBD.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"হোম এ নেভিগেট করুন"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
@@ -18,8 +18,8 @@
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"অনুসন্ধান করুন"</string>
     <string msgid="8928215447528550784" name="abc_searchview_description_submit">"ক্যোয়ারী জমা দিন"</string>
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"ভয়েস অনুসন্ধান"</string>
-    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"এর সাথে শেয়ার করুন"</string>
-    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s এর সাথে শেয়ার করুন"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"এর সাথে ভাগ করুন"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s এর সাথে ভাগ করুন"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"সঙ্কুচিত করুন"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"৯৯৯+"</string>
 </resources>

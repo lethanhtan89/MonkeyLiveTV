@@ -2,46 +2,60 @@
 <items version="2" >
 
     <item
-        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0-alpha1\jars\classes.jar"
+        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="9684c95278dc45a142d7de3db9e7e39aa520e1e0">
-        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\classes-c4a8dfd8fa78de4ee7effa9262910d83c097ef82.jar" />
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\classes-6b6f97b05febdb44a5772d66cef6689d82dfd8f3.jar" />
     </item>
     <item
-        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha1\jars\classes.jar"
+        jar="D:\ANDROID\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="9aaaea3a89040f8176f810c85e288fc74d5d1f12">
-        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\classes-8c6bc910d3894ab3ec29ccb9ac4f6ca0ff9880fc.jar" />
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.1-55d2b2631e93e2b90051df565ce8281bd248f037.jar" />
     </item>
     <item
-        jar="D:\ANDROID\extras\android\m2repository\com\android\support\support-annotations\24.0.0-alpha1\support-annotations-24.0.0-alpha1.jar"
+        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="b8062546971a3d196343232a19a3c0016272ba47">
-        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0-alpha1-b32eabe1286ee7c149289bfb7274c48f85ae0907.jar" />
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\classes-e4e9ce7c0a9d5b81209a66b7549ce7f70c41a9d2.jar" />
     </item>
     <item
-        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha1\jars\libs\internal_impl-24.0.0-alpha1.jar"
+        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="e57fba0a2d57d3501d8f4ff44c23092978804845">
-        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0-alpha1-bfe3a362e4f88d91c31c148eb35e79683e6d2eb7.jar" />
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\classes-7f6304d51da7c83c82dc137f848ad93f5790d584.jar" />
     </item>
     <item
-        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0-alpha1\jars\classes.jar"
+        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="ed88e1f0c8fbf66e1da918545f0a6790f893bceb">
-        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\classes-1f8b055534da0ef6828ad85518fa7aa79daaf4e4.jar" />
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\classes-66ec1e28e70a2ed9df8bc4fbcb916f8a7aceb624.jar" />
     </item>
     <item
-        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0-alpha1\jars\classes.jar"
+        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="a6af5beedc2e8c946abc3771525e2fed77439309">
-        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\classes-351d87406095a9f1948a1930439d14bb5c5ab31f.jar" />
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\classes-385e14fbfc2f5effca8ac4834bbb116d77d82bbb.jar" />
+    </item>
+    <item
+        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\classes-5f35090708f04a808347000eeeeb548274ecef53.jar" />
+    </item>
+    <item
+        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.1-ebbf882505a0ad6d083d6201bb33147829fa41a0.jar" />
     </item>
 
 </items>

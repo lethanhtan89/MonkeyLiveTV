@@ -8,7 +8,7 @@
         <item name="colorPrimaryDark">@color/app_primary_dark</item>
         <item name="colorAccent">@color/app_primary_accent</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0-alpha1/res/values-v11/values-v11.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-v11/values-v11.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat.Inverse">
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
@@ -48,18 +48,12 @@
     </style>
     <style name="Base.Theme.AppCompat.Dialog" parent="Base.V11.Theme.AppCompat.Dialog"/>
     <style name="Base.Theme.AppCompat.Light.Dialog" parent="Base.V11.Theme.AppCompat.Light.Dialog"/>
-    <style name="Base.ThemeOverlay.AppCompat.Dialog" parent="Base.V11.ThemeOverlay.AppCompat.Dialog"/>
     <style name="Base.V11.Theme.AppCompat.Dialog" parent="Base.V7.Theme.AppCompat.Dialog">
         <item name="android:buttonBarStyle">@style/Widget.AppCompat.ButtonBar.AlertDialog</item>
         <item name="android:borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
         <item name="android:windowCloseOnTouchOutside">@bool/abc_config_closeDialogWhenTouchOutside</item>
     </style>
     <style name="Base.V11.Theme.AppCompat.Light.Dialog" parent="Base.V7.Theme.AppCompat.Light.Dialog">
-        <item name="android:buttonBarStyle">@style/Widget.AppCompat.ButtonBar.AlertDialog</item>
-        <item name="android:borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
-        <item name="android:windowCloseOnTouchOutside">@bool/abc_config_closeDialogWhenTouchOutside</item>
-    </style>
-    <style name="Base.V11.ThemeOverlay.AppCompat.Dialog" parent="Base.V7.ThemeOverlay.AppCompat.Dialog">
         <item name="android:buttonBarStyle">@style/Widget.AppCompat.ButtonBar.AlertDialog</item>
         <item name="android:borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
         <item name="android:windowCloseOnTouchOutside">@bool/abc_config_closeDialogWhenTouchOutside</item>

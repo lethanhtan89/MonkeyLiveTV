@@ -28,6 +28,7 @@
     android:paddingTop="4dp"
     android:paddingBottom="4dp"
     android:gravity="bottom"
+    app:allowStacking="@bool/abc_allow_stacked_button_bar"
     style="?attr/buttonBarStyle">
 
     <Button
@@ -56,4 +57,4 @@
         android:layout_height="wrap_content" />
 
 </android.support.v7.widget.ButtonBarLayout>
-<!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0-alpha1/res/layout/abc_alert_dialog_button_bar_material.xml -->
+<!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_alert_dialog_button_bar_material.xml -->
