@@ -50,7 +50,7 @@ public class PopkonListFragment extends Fragment {
     private void setupRecyclerView(RecyclerView recyclerView) {
         recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext()));
         recyclerView.setAdapter(new SimpleStringRecyclerViewAdapter(getActivity(),
-                getRandomSublist(Cheeses.sCheeseStrings, 30)));
+                getRandomSublist(Popkon.popkonStrings, 30)));
     }
 
     private List<String> getRandomSublist(String[] array, int amount) {
@@ -124,7 +124,7 @@ public class PopkonListFragment extends Fragment {
             });
 
             Glide.with(holder.mImageView.getContext())
-                    .load(Cheeses.getRandomCheeseDrawable())
+                    .load(Popkon.getRandomCheeseDrawable())
                     .fitCenter()
                     .into(holder.mImageView);
         }
