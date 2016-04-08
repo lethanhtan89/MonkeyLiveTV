@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/img_splash"
-            android:src="@drawable/splash_image"
+            android:src="@drawable/awata"
             android:layout_gravity="center_vertical" />
     </LinearLayout>
 </RelativeLayout>

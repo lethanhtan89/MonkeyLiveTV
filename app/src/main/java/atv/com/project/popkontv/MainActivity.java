@@ -16,6 +16,7 @@
 
 package atv.com.project.popkontv;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -33,9 +34,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import atv.com.project.popkontv.fragment.VideoListFragment;
+import atv.com.project.popkontv.youtube.MainActivityYouTube;
 
 /**
  * TODO
@@ -83,24 +88,37 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.sample_actions, menu);
+       // menu.clear();
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
+        int id = item.getItemId();
+        switch (id) {
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
+            case R.id.action_search:
+                Intent intent = new Intent(getApplicationContext(), MainActivityYouTube.class);
+                startActivity(intent);
+                finish();
+                //Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.action_share:
+                Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_LONG).show();
+
         }
         return super.onOptionsItemSelected(item);
     }
     // Set up ViewPager
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
-        adapter.addFragment(new PopkonListFragment(), "HOME");
-        adapter.addFragment(new PopkonListFragment(), "VIDEO");
+        adapter.addFragment(new VideoListFragment(), "HOME");
+        //adapter.addFragment(new PopkonListFragment(), "VIDEO");
+        adapter.addFragment(new VideoListFragment(), "VIDEO");
         adapter.addFragment(new PopkonListFragment(), "FAVORITE");
         adapter.addFragment(new PopkonListFragment(), "CUSTOM");
         viewPager.setAdapter(adapter);

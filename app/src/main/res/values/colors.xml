@@ -6,4 +6,7 @@
   <color name="app_primary_accent">#F9B0B4</color>
   <color name="transparent_black">#E6000000</color>
   <color name="black">#000000</color>
+
+  <color name="ColorPrimary">#FF5722</color>
+  <color name="ColorPrimaryDark">#E64A19</color>
 </resources>
