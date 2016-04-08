@@ -10,6 +10,7 @@ import android.widget.ListView;
 import com.google.android.youtube.player.YouTubeIntents;
 import com.google.android.youtube.player.YouTubeStandalonePlayer;
 
+import atv.com.project.popkontv.R;
 import atv.com.project.popkontv.content.YouTubeContent;
 import atv.com.project.popkontv.youtube.CustomLightboxActivity;
 import atv.com.project.popkontv.youtube.CustomYouTubeControlsActivity;
@@ -41,7 +42,7 @@ public class VideoListFragment extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
         final Context context = getActivity();
-        final String DEVELOPER_KEY = "AIzaSyA34h-7yPCNSBkBdJ9cAhLHozGn4JwHtWs";
+        final String DEVELOPER_KEY = "" + R.string.DEVELOPER_KEY;
         final YouTubeContent.YouTubeVideo video = YouTubeContent.ITEMS.get(position);
 
         switch (position) {

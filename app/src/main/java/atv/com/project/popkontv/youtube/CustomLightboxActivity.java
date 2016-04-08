@@ -42,7 +42,7 @@ public class CustomLightboxActivity extends YouTubeBaseActivity implements YouTu
         });
 
         final YouTubePlayerView playerView = (YouTubePlayerView) findViewById(R.id.youTubePlayerView);
-        playerView.initialize("AIzaSyA34h-7yPCNSBkBdJ9cAhLHozGn4JwHtWs", this);
+        playerView.initialize("" + R.string.DEVELOPER_KEY, this);
 
         if (bundle != null) {
             millis = bundle.getInt(KEY_VIDEO_TIME);

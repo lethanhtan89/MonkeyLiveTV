@@ -29,7 +29,7 @@ public class YouTubeActivity extends YouTubeBaseActivity implements YouTubePlaye
             videoId = arguments.getString(KEY_VIDEO_ID);
         }
         final YouTubePlayerView playerView = (YouTubePlayerView) findViewById(R.id.youTubePlayerView);
-        playerView.initialize("AIzaSyA34h-7yPCNSBkBdJ9cAhLHozGn4JwHtWs",this);
+        playerView.initialize("" + R.string.DEVELOPER_KEY,this);
     }
 
     @Override

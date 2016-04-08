@@ -41,7 +41,7 @@ public class CustomYouTubeControlsActivity extends YouTubeBaseActivity implement
         }
 
         final YouTubePlayerView playerView = (YouTubePlayerView) findViewById(R.id.youTubePlayerView);
-        playerView.initialize("AIzaSyA34h-7yPCNSBkBdJ9cAhLHozGn4JwHtWs", this);
+        playerView.initialize("" + R.string.DEVELOPER_KEY, this);
 
         playButton = (Button) findViewById(R.id.play_button);
         playButton.setOnClickListener(this);
