@@ -7,6 +7,8 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerSupportFragment;
 
+import atv.com.project.popkontv.R;
+
 /**
  * Created by Administrator on 4/7/2016.
  */
@@ -48,13 +50,13 @@ public class YouTubeFragment extends YouTubePlayerSupportFragment implements You
                 videoId = arguments.getString(KEY_VIDEO_ID);
             }
         }
-        initialize("AIzaSyA34h-7yPCNSBkBdJ9cAhLHozGn4JwHtWs", this);
+        initialize("" + R.string.DEVELOPER_KEY, this);
     }
 
     // set videoId
     public void setVideoId(final String videoId){
         this.videoId = videoId;
-        initialize("AIzaSyA34h-7yPCNSBkBdJ9cAhLHozGn4JwHtWs",this);
+        initialize("" + R.string.DEVELOPER_KEY,this);
     }
 
     @Override

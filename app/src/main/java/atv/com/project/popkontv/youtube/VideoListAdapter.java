@@ -93,7 +93,7 @@ public class VideoListAdapter extends BaseAdapter implements YouTubeThumbnailVie
                     catch (IllegalStateException e){
                         //If the Loader has been released then remove it from the map and re-init
                         loaderMap.remove(holder.thumb);
-                        holder.thumb.initialize("AIzaSyA34h-7yPCNSBkBdJ9cAhLHozGn4JwHtWs", (YouTubeThumbnailView.OnInitializedListener) this);
+                        holder.thumb.initialize("" + R.string.DEVELOPER_KEY, (YouTubeThumbnailView.OnInitializedListener) this);
                     }
                 }
             }
