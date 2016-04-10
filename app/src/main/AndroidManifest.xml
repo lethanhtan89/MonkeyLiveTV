@@ -34,7 +34,7 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.Translucent"></activity>
         <activity android:name="youtube.CustomYouTubeControlsActivity"></activity>
-        <activity android:name=".youtube.MainActivityYouTube" />
+
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="AIzaSyA34h-7yPCNSBkBdJ9cAhLHozGn4JwHtWs" />

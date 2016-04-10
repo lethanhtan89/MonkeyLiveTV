@@ -33,9 +33,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import atv.com.project.popkontv.fragment.VideoListFragment;
 
 /**
  * TODO
@@ -83,26 +86,40 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.sample_actions, menu);
+       // menu.clear();
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
+        int id = item.getItemId();
+        switch (id) {
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
+            case R.id.action_search:
+                Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.action_share:
+                Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_LONG).show();
+
         }
         return super.onOptionsItemSelected(item);
     }
+    private void shareInfo(){
+
+    }
+
     // Set up ViewPager
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
-        adapter.addFragment(new PopkonListFragment(), "HOME");
-        adapter.addFragment(new PopkonListFragment(), "VIDEO");
-        adapter.addFragment(new PopkonListFragment(), "FAVORITE");
-        adapter.addFragment(new PopkonListFragment(), "CUSTOM");
+        adapter.addFragment(new VideoListFragment(), "LIVE");
+        adapter.addFragment(new VideoListFragment(), "VIDEO");
+        adapter.addFragment(new VideoListFragment(), "FAVORITE");
+        adapter.addFragment(new PopkonListFragment(), "BROADCAST");
+        adapter.addFragment(new PopkonListFragment(), "SETTING");
         viewPager.setAdapter(adapter);
     }
     // Set up DrawerContent
@@ -111,8 +128,18 @@ public class MainActivity extends AppCompatActivity {
                 new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
-                menuItem.setChecked(true);
+                int id = menuItem.getItemId();
+                if(menuItem.isChecked()){
+                    menuItem.setChecked(false);
+                }
+                else {
+                    menuItem.setChecked(true);
+                }
                 mDrawerLayout.closeDrawers();
+                switch (id){
+                    case R.id.nav_home:
+                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_LONG).show();
+                }
                 return true;
             }
         });
