@@ -63,7 +63,7 @@ public class VideoListAdapter extends BaseAdapter implements YouTubeThumbnailVie
             //Initialize the thumbnail
             holder.thumb = (YouTubeThumbnailView) convertView.findViewById(R.id.imageView_thumbnail);
             holder.thumb.setTag(item.id);
-            holder.thumb.initialize("AIzaSyA34h-7yPCNSBkBdJ9cAhLHozGn4JwHtWs", this);
+            holder.thumb.initialize("" + R.string.DEVELOPER_KEY, this);
             convertView.setTag(holder);
         }
         else{

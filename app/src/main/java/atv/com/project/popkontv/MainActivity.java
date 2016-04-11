@@ -24,6 +24,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -33,9 +34,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import atv.com.project.popkontv.fragment.PopkonListFragment;
+import atv.com.project.popkontv.fragment.VideoListFragment;
 
 /**
  * TODO
@@ -43,6 +48,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
+    private FragmentTransaction ft;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,40 +89,95 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.sample_actions, menu);
+       // menu.clear();
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
+        int id = item.getItemId();
+        if(item.getItemId() == R.id.nav_home){
+            int numFrag = getSupportFragmentManager().getBackStackEntryCount();
+            Fragment fragment = getSupportFragmentManager().getFragments().get(numFrag - 1);
+            if(fragment instanceof VideoListFragment){
+                showNavigation();
+            }
+            else {
+                onBackPressed();
+            }
+        }
+        switch (id) {
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
+            case R.id.action_search:
+                Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.action_share:
+                Toast.makeText(getApplicationContext(), "Share", Toast.LENGTH_LONG).show();
+
         }
         return super.onOptionsItemSelected(item);
     }
+    private void shareInfo(){
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
     // Set up ViewPager
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
-        adapter.addFragment(new PopkonListFragment(), "HOME");
-        adapter.addFragment(new PopkonListFragment(), "VIDEO");
-        adapter.addFragment(new PopkonListFragment(), "FAVORITE");
-        adapter.addFragment(new PopkonListFragment(), "CUSTOM");
+        adapter.addFragment(new VideoListFragment(), "LIVE");
+        adapter.addFragment(new VideoListFragment(), "VIDEO");
+        adapter.addFragment(new VideoListFragment(), "FAVORITE");
+        adapter.addFragment(new PopkonListFragment(), "BROADCAST");
+        //adapter.addFragment(new PopkonListFragment(), "SETTING");
+        //adapter.addFragment(new UserSettingsFragment(),"SETTINGS");
+
         viewPager.setAdapter(adapter);
     }
+
+    private void showNavigation(){
+        mDrawerLayout.openDrawer(GravityCompat.START);
+    }
+
     // Set up DrawerContent
     private void setupDrawerContent(NavigationView navigationView) {
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
-                menuItem.setChecked(true);
+                int id = menuItem.getItemId();
+                Fragment fg = null;
+                if(menuItem.isChecked()){
+                    menuItem.setChecked(false);
+                }
+                else {
+                    menuItem.setChecked(true);
+                }
                 mDrawerLayout.closeDrawers();
+                switch (id){
+                    case R.id.nav_home:
+                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_LONG).show();
+                        fg = new VideoListFragment();
+                        break;
+                    case R.id.nav_video:
+
+                        Toast.makeText(getApplicationContext(), "Video", Toast.LENGTH_LONG).show();
+                        fg = new PopkonListFragment();
+                        break;
+                }
                 return true;
             }
         });
     }
+
     // Save on Adapter
     static class Adapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragments = new ArrayList<>();

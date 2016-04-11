@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:4:5-67
 	android:name
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:5:5-41:19
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:5:5-42:19
 MERGED from [com.android.support:design:23.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
@@ -95,16 +95,16 @@ activity#youtube.CustomYouTubeControlsActivity
 ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:36:9-83
 	android:name
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:36:19-71
-activity#atv.com.project.popkontv.youtube.MainActivityYouTube
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:37:9-65
+activity#atv.com.project.popkontv.fragment.UserSettingsFragment
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:37:9-76
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:37:19-62
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:37:19-64
 meta-data#io.fabric.ApiKey
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:38:9-40:71
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:39:9-41:71
 	android:value
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:40:13-68
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:41:13-68
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:39:13-44
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:40:13-44
 uses-sdk
 INJECTED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:23.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:20:5-43

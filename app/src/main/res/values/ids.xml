@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="user_settings" type="id"></item>
+    <item name="pop_root" type="id"></item>
+
+</resources>

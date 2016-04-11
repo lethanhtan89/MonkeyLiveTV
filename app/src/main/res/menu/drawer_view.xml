@@ -35,9 +35,11 @@
             android:title="Discussion" />
     </group>
 
-    <item android:title="Settings">
+    <item
+        android:id="@+id/nav_settings" android:title="Account">
         <menu>
             <item
+                android:id="@+id/nav_video"
                 android:icon="@drawable/ic_dashboard"
                 android:title="Video" />
             <item
