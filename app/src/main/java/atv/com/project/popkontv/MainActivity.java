@@ -24,6 +24,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -38,6 +39,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import atv.com.project.popkontv.fragment.PopkonListFragment;
 import atv.com.project.popkontv.fragment.VideoListFragment;
 
 /**
@@ -46,6 +48,7 @@ import atv.com.project.popkontv.fragment.VideoListFragment;
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
+    private FragmentTransaction ft;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,6 +98,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
+        if(item.getItemId() == R.id.nav_home){
+            int numFrag = getSupportFragmentManager().getBackStackEntryCount();
+            Fragment fragment = getSupportFragmentManager().getFragments().get(numFrag - 1);
+            if(fragment instanceof VideoListFragment){
+                showNavigation();
+            }
+            else {
+                onBackPressed();
+            }
+        }
         switch (id) {
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
@@ -103,13 +116,18 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_LONG).show();
                 break;
             case R.id.action_share:
-                Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Share", Toast.LENGTH_LONG).show();
 
         }
         return super.onOptionsItemSelected(item);
     }
     private void shareInfo(){
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 
     // Set up ViewPager
@@ -119,9 +137,16 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new VideoListFragment(), "VIDEO");
         adapter.addFragment(new VideoListFragment(), "FAVORITE");
         adapter.addFragment(new PopkonListFragment(), "BROADCAST");
-        adapter.addFragment(new PopkonListFragment(), "SETTING");
+        //adapter.addFragment(new PopkonListFragment(), "SETTING");
+        //adapter.addFragment(new UserSettingsFragment(),"SETTINGS");
+
         viewPager.setAdapter(adapter);
     }
+
+    private void showNavigation(){
+        mDrawerLayout.openDrawer(GravityCompat.START);
+    }
+
     // Set up DrawerContent
     private void setupDrawerContent(NavigationView navigationView) {
         navigationView.setNavigationItemSelectedListener(
@@ -129,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 int id = menuItem.getItemId();
+                Fragment fg = null;
                 if(menuItem.isChecked()){
                     menuItem.setChecked(false);
                 }
@@ -139,11 +165,19 @@ public class MainActivity extends AppCompatActivity {
                 switch (id){
                     case R.id.nav_home:
                         Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_LONG).show();
+                        fg = new VideoListFragment();
+                        break;
+                    case R.id.nav_video:
+
+                        Toast.makeText(getApplicationContext(), "Video", Toast.LENGTH_LONG).show();
+                        fg = new PopkonListFragment();
+                        break;
                 }
                 return true;
             }
         });
     }
+
     // Save on Adapter
     static class Adapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragments = new ArrayList<>();

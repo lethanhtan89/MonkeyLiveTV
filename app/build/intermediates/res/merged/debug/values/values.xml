@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="country">Country</string-array>
+    <string-array name="countryValues">CountryValues</string-array>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
@@ -309,12 +313,18 @@
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="pop_root" type="id"/>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="user_settings" type="id"/>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="view_offset_helper" type="id"/>

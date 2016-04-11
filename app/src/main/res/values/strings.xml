@@ -24,4 +24,6 @@
   <string name="play">PLAY</string>
   <string name="pause">PAUSE</string>
 
+  <string-array name="country">Country</string-array>
+  <string-array name="countryValues">CountryValues</string-array>
 </resources>
