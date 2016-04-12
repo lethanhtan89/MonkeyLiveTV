@@ -9,6 +9,22 @@
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
 
     <application
         android:allowBackup="true"
@@ -31,16 +47,16 @@
         </activity>
         <activity android:name="atv.com.project.popkontv.fragment.YouTubeFragmentActivity" />
         <activity
-            android:name="youtube.YouTubeActivity"
+            android:name="atv.com.project.popkontv.youtube.YouTubeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="youtube.CustomLightboxActivity"
+            android:name="atv.com.project.popkontv.youtube.CustomLightboxActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.Translucent" />
-        <activity android:name="youtube.CustomYouTubeControlsActivity" />
-        <activity android:name="atv.com.project.popkontv.fragment.UserSettingsFragment" />
+        <activity android:name="atv.com.project.popkontv.youtube.CustomYouTubeControlsActivity" />
+        <activity android:name="atv.com.project.popkontv.videostream.MainActivityVideoStream" />
 
         <meta-data
             android:name="io.fabric.ApiKey"
