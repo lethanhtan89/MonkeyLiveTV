@@ -2,6 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="atv.com.project.popkontv" >
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,16 +41,16 @@
 
         <activity android:name=".fragment.YouTubeFragmentActivity"></activity>
         <activity
-            android:name="youtube.YouTubeActivity"
+            android:name=".youtube.YouTubeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="youtube.CustomLightboxActivity"
+            android:name=".youtube.CustomLightboxActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.Translucent"></activity>
-        <activity android:name="youtube.CustomYouTubeControlsActivity"></activity>
-        <activity android:name=".fragment.UserSettingsFragment"></activity>
+        <activity android:name=".youtube.CustomYouTubeControlsActivity"></activity>
+        <activity android:name=".videostream.MainActivityVideoStream" />
 
         <meta-data
             android:name="io.fabric.ApiKey"
