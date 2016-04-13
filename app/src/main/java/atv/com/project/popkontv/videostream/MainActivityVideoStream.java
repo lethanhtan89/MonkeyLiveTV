@@ -40,7 +40,7 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
                 // getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
                 requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-                setContentView(R.layout.activity_main_videostream);
+                setContentView(R.layout.fragment_videostream);
 
                 mSurfaceView = (SurfaceView) findViewById(R.id.surface);
 
