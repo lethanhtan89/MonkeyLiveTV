@@ -83,7 +83,7 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
                 String ip, port, path;
 
                 // We parse the URI written in the Editext
-                Pattern uri = Pattern.compile("rtsp://(.+):(\\d+)/(.+)");
+                Pattern uri = Pattern.compile("rtmp://(.+):(\\d+)/(.+)");
                 Matcher m = uri.matcher(AppConfig.STREAM_URL);
                 m.find();
                 ip = m.group(1);
@@ -123,7 +123,7 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
 
         @Override
         public boolean onCreateOptionsMenu(Menu menu) {
-                getMenuInflater().inflate(R.menu.main_menu,menu);
+                getMenuInflater().inflate(R.menu.main_menu, menu);
                 return true;
         }
 
@@ -204,6 +204,10 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
 
         @Override
         public void surfaceDestroyed(SurfaceHolder holder) {
+        }
+
+        @Override
+        public void onBitrareUpdate(long bitrate) {
         }
 
 }
