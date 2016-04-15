@@ -47,6 +47,7 @@ public class VideoStreamFragment extends Fragment implements RtspClient.Callback
         super.onCreate(savedInstanceState);
 
         //mSurfaceView = (SurfaceView) View.inflate(R.id.surface, view);
+        mSurfaceView = (SurfaceView) getView().findViewById(R.id.surface);
         mSurfaceView.getHolder().addCallback(this);
         // Initialize RTSP client
         initRtspClient();
@@ -178,6 +179,11 @@ public class VideoStreamFragment extends Fragment implements RtspClient.Callback
                 exception.printStackTrace();
                 break;
         }
+    }
+
+    @Override
+    public void onBitrareUpdate(long bitrate) {
+
     }
 
     @Override

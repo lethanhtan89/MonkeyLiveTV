@@ -129,6 +129,8 @@ public class RtspClient {
 	 */
 	public interface Callback {
 		public void onRtspUpdate(int message, Exception exception);
+
+		void onBitrareUpdate(long bitrate);
 	}
 
 	public RtspClient() {

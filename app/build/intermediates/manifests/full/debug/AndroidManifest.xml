@@ -56,7 +56,15 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.Translucent" />
         <activity android:name="atv.com.project.popkontv.youtube.CustomYouTubeControlsActivity" />
-        <activity android:name="atv.com.project.popkontv.videostream.MainActivityVideoStream" />
+        <activity
+            android:name="atv.com.project.popkontv.videostream.MainActivityVideoStream"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="io.fabric.ApiKey"
