@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@id/user_settings"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:background="@android:color/white">
+    tools:context="atv.com.project.popkontv.fragment.UserSettingsFragment">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@id/appbar"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_scrollFlags="scroll|enterAlways|snap">
+        android:text="Settings"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:id="@+id/textView" />
 
-        <include layout="@layout/toolbar"></include>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/btconnect"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
-    </android.support.design.widget.AppBarLayout>
-    <include layout="@layout/include_content_user_setting" />
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

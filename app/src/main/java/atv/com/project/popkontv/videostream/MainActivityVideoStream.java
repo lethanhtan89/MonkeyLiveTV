@@ -2,12 +2,18 @@ package atv.com.project.popkontv.videostream;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.hardware.Camera;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.SurfaceHolder;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import net.majorkernelpanic.streaming.Session;
 import net.majorkernelpanic.streaming.SessionBuilder;
@@ -28,10 +34,14 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
 
         // surfaceview
         private static SurfaceView mSurfaceView;
+        private ProgressDialog progressDialog;
+
+        private Camera mCamera;
 
         // Rtsp session
         private Session mSession;
         private static RtspClient mClient;
+        private ImageView camera_led, camera_type, camera_settings, camera_option;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -40,16 +50,91 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
                 // getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
                 requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-                setContentView(R.layout.fragment_videostream);
+                setContentView(R.layout.activity_videostream);
+
+                camera_led = (ImageView) findViewById(R.id.pop_camera_led);
+                camera_type = (ImageView) findViewById(R.id.pop_camera_type);
+                camera_settings = (ImageView) findViewById(R.id.pop_camera_settings);
+                camera_option = (ImageView) findViewById(R.id.pop_camera_option);
 
                 mSurfaceView = (SurfaceView) findViewById(R.id.surface);
 
                 mSurfaceView.getHolder().addCallback(this);
 
+                camera_led.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                                Toast.makeText(getApplicationContext(), "Finishing", Toast.LENGTH_LONG).show();
+                        }
+                });
+
+                camera_type.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                                openFrontFacingCamera().startPreview();
+                                Toast.makeText(getApplicationContext(), "Finishing", Toast.LENGTH_LONG).show();
+                        }
+                });
+
+                camera_settings.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                                Toast.makeText(getApplicationContext(), "Finishing", Toast.LENGTH_LONG).show();
+                        }
+                });
+
+                camera_option.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                                progressDialog = ProgressDialog.show(MainActivityVideoStream.this, "Please wait ...", "Task in progress ...", true);
+                                progressDialog.setCancelable(true);
+                                new Thread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                                //initRtspClient();
+                                                try {
+                                                        //Do some stuff that take some time...
+                                                       /* Intent intent = new Intent(getApplicationContext(), MainActivityVideoStreamConnected.class);
+                                                        startActivity(intent);
+                                                        finish();*/
+                                                        Toast.makeText(getApplicationContext(),"Finishing",Toast.LENGTH_LONG).show();
+                                                        Thread.sleep(1000); // Let's wait for some time
+                                                } catch (Exception e) {
+
+                                                }
+                                                progressDialog.dismiss();
+                                        }
+                                }).start();
+                        }
+
+                  });
+
                 // Initialize RTSP client
                 initRtspClient();
 
         }
+
+        private Camera openFrontFacingCamera()
+        {
+                int cameraCount = 0;
+                Camera cam = null;
+                Camera.CameraInfo cameraInfo = new Camera.CameraInfo();
+                cameraCount = Camera.getNumberOfCameras();
+                for ( int camIdx = 0; camIdx < cameraCount; camIdx++ ) {
+                        Camera.getCameraInfo( camIdx, cameraInfo );
+                        if ( cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_FRONT  ) {
+                                try {
+                                        cam = Camera.open( camIdx );
+                                } catch (RuntimeException e) {
+                                        Log.e(TAG, "Camera failed to open: " + e.getLocalizedMessage());
+                                }
+                        }
+                }
+
+                return cam;
+        }
+
+        
 
         @Override
         protected void onResume() {
@@ -150,7 +235,7 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
                 }
 
                 if (e != null) {
-                        alertError(e.getMessage());
+                        //alertError(e.getMessage());
                         e.printStackTrace();
                 }
         }
@@ -164,7 +249,7 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
                                 }
                         });
                 AlertDialog dialog = builder.create();
-                dialog.show();
+                //dialog.show();
         }
 
         @Override
@@ -209,5 +294,6 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
         @Override
         public void onBitrareUpdate(long bitrate) {
         }
+
 
 }
