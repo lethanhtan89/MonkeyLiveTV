@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <item name="pop_user_root" type="id"></item>
     <item name="user_settings" type="id"></item>
-    <item name="pop_root" type="id"></item>
-
+    <item name="pop_camera_root" type="id"></item>
+    <item name="pop_camera_settings" type="id"></item>
+    <item name="pop_camera_option" type="id"></item>
+    <item name="pop_camera_led" type="id"/>
+    <item name="pop_camera_type" type="id"/>
+    <item name="pop_camera_chat" type="id"/>
 </resources>

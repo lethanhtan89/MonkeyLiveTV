@@ -299,6 +299,7 @@
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="list_item_avatar_size">40dp</dimen>
+    <dimen name="margin10">10dp</dimen>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
@@ -315,7 +316,13 @@
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/ids.xml -->
     <eat-comment/>
-    <item name="pop_root" type="id"/>
+    <item name="pop_camera_chat" type="id"/>
+    <item name="pop_camera_led" type="id"/>
+    <item name="pop_camera_option" type="id"/>
+    <item name="pop_camera_root" type="id"/>
+    <item name="pop_camera_settings" type="id"/>
+    <item name="pop_camera_type" type="id"/>
+    <item name="pop_user_root" type="id"/>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="progress_circular" type="id"/>
@@ -1891,5 +1898,15 @@
         <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
         <item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>
         <item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow</item>
+    </style>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="player_control">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin10</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:clickable">true</item>
     </style>
 </resources>

@@ -21,4 +21,5 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="font_tab">14dp</dimen>
     <dimen name="list_item_avatar_size">40dp</dimen>
+    <dimen name="margin10">10dp</dimen>
 </resources>

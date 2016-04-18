@@ -5,11 +5,15 @@
     android:layout_height="match_parent"
     android:layout_alignParentLeft="true"
     android:layout_alignParentTop="true"
+    android:focusable="true"
+    android:keepScreenOn="true"
     android:background="@android:color/black" >
 
+    <include layout="@layout/include_control_media"/>
     <net.majorkernelpanic.streaming.gl.SurfaceView
         android:id="@+id/surface"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
+
 </FrameLayout>

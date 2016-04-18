@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:2:1-66:12
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:2:1-68:12
 	package
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml
@@ -30,29 +30,35 @@ ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:7:5-65
 	android:name
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:7:22-62
 uses-feature#android.hardware.camera
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:9:5-11:35
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:9:5-11:36
 	android:required
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:11:9-32
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:11:9-33
 	android:name
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:10:9-47
-uses-feature#android.hardware.camera.autofocus
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:12:5-14:36
+uses-feature#android.hardware.camera.front
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:12:5-91
 	android:required
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:14:9-33
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:12:64-88
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:13:9-57
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:12:19-63
+uses-feature#android.hardware.camera.autofocus
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:13:5-15:36
+	android:required
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:15:9-33
+	android:name
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:14:9-57
 supports-screens
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:16:5-20:40
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:17:5-21:40
 	android:largeScreens
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:17:9-36
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:18:9-36
 	android:smallScreens
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:19:9-36
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:20:9-36
 	android:normalScreens
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:18:9-37
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:19:9-37
 	android:xlargeScreens
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:20:9-37
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:21:9-37
 application
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:21:5-64:19
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:22:5-66:19
 MERGED from [com.android.support:design:23.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
@@ -74,73 +80,79 @@ MERGED from [com.android.support:support-vector-drawable:23.2.1] D:\PROJECT\ANDR
 MERGED from [com.android.support:support-v4:23.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:24:9-41
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:25:9-41
 	android:allowBackup
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:22:9-35
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:23:9-35
 	android:icon
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:23:9-43
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:24:9-43
 	android:largeHeap
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:25:9-33
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:26:9-33
 	android:theme
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:26:9-40
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:27:9-40
 activity#atv.com.project.popkontv.SplashActivity
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:28:9-36:20
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:29:9-37:20
 	android:label
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:30:13-45
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:31:13-45
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:29:13-43
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:30:13-43
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:35:27-74
 activity#atv.com.project.popkontv.MainActivity
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:37:9-40:20
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:38:9-41:20
 	android:label
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:39:13-45
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:40:13-45
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:38:13-41
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:39:13-41
 activity#atv.com.project.popkontv.fragment.YouTubeFragmentActivity
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:42:9-79
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:43:9-79
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:42:19-67
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:43:19-67
 activity#atv.com.project.popkontv.youtube.YouTubeActivity
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:43:9-47:20
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:44:9-48:20
 	android:screenOrientation
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:46:13-49
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:47:13-49
 	android:configChanges
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:45:13-74
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:46:13-74
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:44:13-52
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:45:13-52
 activity#atv.com.project.popkontv.youtube.CustomLightboxActivity
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:48:9-51:68
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:49:9-52:68
 	android:configChanges
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:50:13-74
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:51:13-74
 	android:theme
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:51:13-56
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:52:13-56
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:49:13-59
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:50:13-59
 activity#atv.com.project.popkontv.youtube.CustomYouTubeControlsActivity
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:52:9-84
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:53:9-84
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:52:19-72
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:53:19-72
 activity#atv.com.project.popkontv.videostream.MainActivityVideoStream
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:53:9-59:20
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:54:9-60:20
 	android:screenOrientation
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:53:71-108
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:54:71-108
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:53:19-70
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:54:19-70
+activity#atv.com.project.popkontv.videostream.MainActivityVideoStreamConnected
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:61:9-62:20
+	android:screenOrientation
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:61:80-117
+	android:name
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:61:19-79
 meta-data#io.fabric.ApiKey
-ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:61:9-63:71
+ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:63:9-65:71
 	android:value
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:63:13-68
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:65:13-68
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:62:13-44
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:64:13-44
 uses-sdk
 INJECTED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:23.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\AndroidManifest.xml:20:5-43

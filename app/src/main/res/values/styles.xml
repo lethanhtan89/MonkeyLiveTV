@@ -27,5 +27,13 @@
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
+    <style name="player_control">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin10</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:clickable">true</item>
+    </style>
 
 </resources>

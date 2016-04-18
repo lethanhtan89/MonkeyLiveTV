@@ -15,7 +15,10 @@
 
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="true" />
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
     <uses-feature
         android:name="android.hardware.camera.autofocus"
         android:required="false" />
@@ -64,6 +67,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="atv.com.project.popkontv.videostream.MainActivityVideoStreamConnected"
+            android:screenOrientation="landscape" >
         </activity>
 
         <meta-data

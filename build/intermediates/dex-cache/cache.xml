@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\PopkonTV\libstreaming\unspecified\jars\classes.jar"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\cz.msebera.android\httpclient\4.4.1.1\c8d96f6fd2bcc179c312da33ee670a71188cc60d\httpclient-4.4.1.1.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="d5b4241b1a8bdeb2e70fa0c22cbb8bb2748d765c">
-        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\classes-182aab5467a103395d095bf972297a0e9c6223c3.jar" />
+        sha1="c8d96f6fd2bcc179c312da33ee670a71188cc60d">
+        <dex dex="D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\pre-dexed\debug\httpclient-4.4.1.1-a6f2ab23418a6c1b82fc519e9922b8de80aec7dd.jar" />
     </item>
 
 </items>

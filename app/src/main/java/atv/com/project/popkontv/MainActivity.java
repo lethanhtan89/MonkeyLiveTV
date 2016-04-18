@@ -40,6 +40,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import atv.com.project.popkontv.fragment.PopkonListFragment;
+import atv.com.project.popkontv.fragment.UserSettingsFragment;
 import atv.com.project.popkontv.fragment.VideoListFragment;
 
 /**
@@ -136,10 +137,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new VideoListFragment(), "LIVE");
         adapter.addFragment(new VideoListFragment(), "VIDEO");
         adapter.addFragment(new VideoListFragment(), "FAVORITE");
-        //adapter.addFragment(new VideoStreamFragment(), "BROADCAST");
-        adapter.addFragment(new PopkonListFragment(), "SETTING");
-        //adapter.addFragment(new (), "A");
-        //adapter.addFragment(new UserSettingsFragment(),"SETTINGS");
+        adapter.addFragment(new UserSettingsFragment(), "BROADCAST");
 
         viewPager.setAdapter(adapter);
     }
