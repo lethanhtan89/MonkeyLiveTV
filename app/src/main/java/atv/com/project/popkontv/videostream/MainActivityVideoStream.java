@@ -6,7 +6,6 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.hardware.Camera;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.SurfaceHolder;
 import android.view.View;
@@ -21,6 +20,8 @@ import net.majorkernelpanic.streaming.audio.AudioQuality;
 import net.majorkernelpanic.streaming.gl.SurfaceView;
 import net.majorkernelpanic.streaming.rtsp.RtspClient;
 
+import java.io.IOException;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -37,7 +38,14 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
         private ProgressDialog progressDialog;
 
         private Camera mCamera;
+        private int cameraType;
+        private int mCameraId = 0;
+        int camId = Camera.CameraInfo.CAMERA_FACING_BACK;
+        int numberOfCamera;
 
+        SurfaceView surfaceView;
+        SurfaceHolder surfaceHolder;
+        boolean previewing = false;
         // Rtsp session
         private Session mSession;
         private static RtspClient mClient;
@@ -64,15 +72,15 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
                 camera_led.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                                Toast.makeText(getApplicationContext(), "Finishing", Toast.LENGTH_LONG).show();
+                                turnOnFlash();
                         }
                 });
+
 
                 camera_type.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                                openFrontFacingCamera().startPreview();
-                                Toast.makeText(getApplicationContext(), "Finishing", Toast.LENGTH_LONG).show();
+                                openFrontFacingCamera();
                         }
                 });
 
@@ -113,28 +121,6 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
                 initRtspClient();
 
         }
-
-        private Camera openFrontFacingCamera()
-        {
-                int cameraCount = 0;
-                Camera cam = null;
-                Camera.CameraInfo cameraInfo = new Camera.CameraInfo();
-                cameraCount = Camera.getNumberOfCameras();
-                for ( int camIdx = 0; camIdx < cameraCount; camIdx++ ) {
-                        Camera.getCameraInfo( camIdx, cameraInfo );
-                        if ( cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_FRONT  ) {
-                                try {
-                                        cam = Camera.open( camIdx );
-                                } catch (RuntimeException e) {
-                                        Log.e(TAG, "Camera failed to open: " + e.getLocalizedMessage());
-                                }
-                        }
-                }
-
-                return cam;
-        }
-
-        
 
         @Override
         protected void onResume() {
@@ -263,6 +249,52 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
                 }
         }
 
+        private void turnOnFlash(){
+                //Open Camera
+                mCamera = Camera.open();
+                //Get Camera
+                Camera.Parameters parameters = mCamera.getParameters();
+                //Check devices support AutoFlash
+                List<String> strings = parameters.getSupportedFlashModes();
+                if(strings.contains(Camera.Parameters.FLASH_MODE_AUTO)){
+                        parameters.setFlashMode(Camera.Parameters.FLASH_MODE_AUTO);
+                }
+                mCamera.setParameters(parameters);
+                mCamera.stopPreview();
+        }
+
+        private void turnOnFrontCamera(){
+
+        }
+
+        private void openFrontFacingCamera() {
+                numberOfCamera = Camera.getNumberOfCameras();
+                if(camId == Camera.CameraInfo.CAMERA_FACING_BACK){
+                        camId = Camera.CameraInfo.CAMERA_FACING_FRONT;
+                        Toast.makeText(getApplicationContext(), "BACK TO FRONT" , Toast.LENGTH_LONG).show();
+                        try {
+                                mCamera.release();
+                                mCamera = Camera.open(camId);
+                                mCamera.setPreviewDisplay(surfaceHolder);
+                                mCamera.startPreview();
+                                previewing = true;
+                        } catch (RuntimeException e) {
+
+                        } catch (Exception e) {}
+                }else if(camId == Camera.CameraInfo.CAMERA_FACING_FRONT){
+                        camId = Camera.CameraInfo.CAMERA_FACING_BACK;
+                        Toast.makeText(getApplicationContext(), "FRONT TO BACK" , Toast.LENGTH_LONG).show();
+                        try {
+                                mCamera.release();
+                                mCamera = Camera.open(camId);
+                                mCamera.setPreviewDisplay(surfaceHolder);
+                                mCamera.startPreview();
+                        } catch (RuntimeException e) {
+
+                        } catch (IOException e) {}
+                }
+        }
+
         @Override
         public void onPreviewStarted() {
         }
@@ -294,6 +326,4 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
         @Override
         public void onBitrareUpdate(long bitrate) {
         }
-
-
 }
