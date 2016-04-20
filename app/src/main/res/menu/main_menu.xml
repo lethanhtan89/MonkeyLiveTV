@@ -20,7 +20,8 @@
         android:orderInCategory="300"
         android:title="Share"
         android:icon="@drawable/ic_share"
-        app:showAsAction="ifRoom"></item>
+        app:showAsAction="ifRoom"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"></item>
 
 </menu>
 

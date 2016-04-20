@@ -94,25 +94,7 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
                 camera_option.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                                progressDialog = ProgressDialog.show(MainActivityVideoStream.this, "Please wait ...", "Task in progress ...", true);
-                                progressDialog.setCancelable(true);
-                                new Thread(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                                //initRtspClient();
-                                                try {
-                                                        //Do some stuff that take some time...
-                                                       /* Intent intent = new Intent(getApplicationContext(), MainActivityVideoStreamConnected.class);
-                                                        startActivity(intent);
-                                                        finish();*/
-                                                        Toast.makeText(getApplicationContext(),"Finishing",Toast.LENGTH_LONG).show();
-                                                        Thread.sleep(1000); // Let's wait for some time
-                                                } catch (Exception e) {
 
-                                                }
-                                                progressDialog.dismiss();
-                                        }
-                                }).start();
                         }
 
                   });
@@ -248,7 +230,7 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
                                 break;
                 }
         }
-
+        // On Flash Camera
         private void turnOnFlash(){
                 //Open Camera
                 mCamera = Camera.open();
@@ -263,10 +245,7 @@ public class MainActivityVideoStream extends Activity implements RtspClient.Call
                 mCamera.stopPreview();
         }
 
-        private void turnOnFrontCamera(){
-
-        }
-
+        // On Front Facing Camera.
         private void openFrontFacingCamera() {
                 numberOfCamera = Camera.getNumberOfCameras();
                 if(camId == Camera.CameraInfo.CAMERA_FACING_BACK){

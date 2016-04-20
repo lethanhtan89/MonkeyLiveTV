@@ -30,5 +30,4 @@ dependencies {
     compile 'com.android.support:support-v4:23.2.1'
     compile project(':libstreaming')
     compile "cz.msebera.android:httpclient:4.4.1.1"
-
 }
