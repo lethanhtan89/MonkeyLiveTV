@@ -16,6 +16,7 @@
 
 package atv.com.project.popkontv;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -26,10 +27,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ShareActionProvider;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private FragmentTransaction ft;
+    private ShareActionProvider shareActionProvider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +96,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
        // menu.clear();
         getMenuInflater().inflate(R.menu.main_menu, menu);
-
+        MenuItem menuItem = menu.findItem(R.id.action_share);
+        shareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
+        setShareIntent(createShareIntent());
         return true;
     }
 
@@ -114,16 +120,25 @@ public class MainActivity extends AppCompatActivity {
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
             case R.id.action_search:
+
                 Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_LONG).show();
                 break;
-            case R.id.action_share:
-                Toast.makeText(getApplicationContext(), "Share", Toast.LENGTH_LONG).show();
-
         }
         return super.onOptionsItemSelected(item);
     }
-    private void shareInfo(){
+    //Share
+    private void setShareIntent(Intent shareIntent){
+        if(shareActionProvider != null) {
+            shareActionProvider.setShareIntent(shareIntent);
+        }
+    }
 
+    private Intent createShareIntent() {
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_TEXT,
+                "http://stackandroid.com");
+        return shareIntent;
     }
 
     @Override
@@ -206,4 +221,6 @@ public class MainActivity extends AppCompatActivity {
             return mFragmentTitles.get(position);
         }
     }
+
+
 }
