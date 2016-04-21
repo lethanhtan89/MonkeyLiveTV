@@ -1,2 +1,1 @@
-include ':app', 'libstreaming-master'
-include ':libstreaming'
+include ':app'
