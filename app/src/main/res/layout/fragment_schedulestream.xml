@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Pick the time:"
+            android:padding="10.0dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/timePicker"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Select"
+            android:gravity="end"
+            android:padding="10.0dp"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/scheduleStream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SCHEDULE"
+            android:gravity="center"
+            android:padding="15.0dp"
+            android:background="@drawable/primaryround"
+            android:textColor="#fff"/>
+        <ProgressBar
+            android:id="@+id/scheduleProgress"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

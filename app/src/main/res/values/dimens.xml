@@ -22,4 +22,7 @@
     <dimen name="font_tab">14dp</dimen>
     <dimen name="list_item_avatar_size">40dp</dimen>
     <dimen name="margin10">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
 </resources>

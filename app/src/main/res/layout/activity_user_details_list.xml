@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="atv.com.project.popkontv.Activity.UserDetailsListActivity">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout
+        android:id="@+id/userDetailsListsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

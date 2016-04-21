@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.1.0/res/values-v21/values-v21.xml -->
+    <eat-comment/>
+    <string name="card_font_fontFamily_header">sans-serif-condensed</string>
+    <string name="card_font_fontFamily_main_content">sans-serif</string>
+    <string name="card_native_font_fontFamily_header">sans-serif-medium</string>
+    <string name="card_native_font_fontFamily_main_content">sans-serif</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values-v21/fonts.xml -->
     <eat-comment/>
     <string name="font_fontFamily_medium">sans-serif-medium</string>
@@ -213,6 +219,13 @@
     <style name="Base.Widget.AppCompat.TextView.SpinnerItem" parent="android:Widget.Material.TextView.SpinnerItem"/>
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget.Material.Toolbar.Button.Navigation">
     </style>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values-v21/values.xml -->
+    <eat-comment/>
+    <style name="Digits_default" parent="@android:style/Theme.Material.Light">
+        <item name="dgts__accentColor">?android:attr/colorAccent</item>
+    </style>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-v21/values-v21.xml -->
+    <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme.Material">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -245,4 +258,45 @@
     </style>
     <style name="Platform.ThemeOverlay.AppCompat.Dark"/>
     <style name="Platform.ThemeOverlay.AppCompat.Light"/>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.1.0/res/values-v21/values-v21.xml -->
+    <eat-comment/>
+    <style name="card.header_button_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingLeft">@dimen/card_header_button_padding_left</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/card_header_button_margin_right</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+    <style name="card.header_button_base.expand">
+        <item name="android:src">@drawable/ic_menu_expand_card_dark_normal</item>
+    </style>
+    <style name="card.header_button_base.overflow">
+        <item name="android:src">@drawable/ic_menu_overflow_card_rounded_dark_normal</item>
+    </style>
+    <style name="card.native.header_button_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_marginLeft">@dimen/card_header_native_button_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/card_header_native_button_margin_right</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+    <style name="card.native.header_button_base.expand">
+        <item name="android:src">@drawable/card_menu_button_expand_material_animator</item>
+    </style>
+    <style name="card.native.header_button_base.overflow">
+        <item name="android:src">@drawable/card_menu_button_overflow_material</item>
+    </style>
 </resources>

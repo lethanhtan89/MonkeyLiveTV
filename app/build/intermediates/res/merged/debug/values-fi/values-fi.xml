@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-fi/values.xml -->
+    <eat-comment/>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-fi/values-fi.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Siirry etusivulle"</string>
@@ -21,5 +35,115 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Jakaminen:"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Jakaminen: %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Kutista"</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-fi/common_strings.xml -->
+    <eat-comment/>
+    <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> edellyttää Android Wear -sovelluksen päivittämistä."</string>
+    <string msgid="2453027084525739603" name="common_android_wear_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> ei toimi, ellet päivitä Android Wear -sovellusta."</string>
+    <string msgid="1366439133145190222" name="common_android_wear_update_title">"Päivitä Android Wear"</string>
+    <string msgid="6534628256897874213" name="common_google_play_services_api_unavailable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> tarvitsee yhtä tai useampaa Google Play Palvelua, jotka eivät ole saatavilla tällä hetkellä. Voit pyytää lisätietoja kehittäjältä."</string>
+    <string msgid="4181637455539816337" name="common_google_play_services_enable_button">"Ota Google Play -palv. käyttöön"</string>
+    <string msgid="4896236883690196080" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> ei toimi, ellet ota Google Play Palveluita käyttöön."</string>
+    <string msgid="529078775174559253" name="common_google_play_services_enable_title">"Ota Google Play Palvelut käyttöön"</string>
+    <string msgid="2443362625939284971" name="common_google_play_services_error_notification_requested_by_msg">"Pyynnön teki <ns1:g id="APP_NAME">%1$s</ns1:g>"</string>
+    <string msgid="8515591849428043265" name="common_google_play_services_install_button">"Asenna Google Play Palvelut"</string>
+    <string msgid="8836325110837822534" name="common_google_play_services_install_text_phone">"<ns1:g id="APP_NAME">%1$s</ns1:g> ei toimi ilman Google Play Palveluita, jotka puuttuvat puhelimestasi."</string>
+    <string msgid="542176290824754127" name="common_google_play_services_install_text_tablet">"<ns1:g id="APP_NAME">%1$s</ns1:g> ei toimi ilman Google Play Palveluita, jotka puuttuvat tabletistasi."</string>
+    <string msgid="26645092511305524" name="common_google_play_services_install_title">"Asenna Google Play Palvelut"</string>
+    <string msgid="4983316348021735578" name="common_google_play_services_invalid_account_text">"Kyseistä tiliä ei ole tällä laitteella. Valitse toinen tili."</string>
+    <string msgid="1066672360770936753" name="common_google_play_services_invalid_account_title">"Tili ei kelpaa"</string>
+    <string msgid="2583358409598976717" name="common_google_play_services_needs_enabling_title">"Ota käyttöön Google Play Palvelut, jotta sovellus toimii."</string>
+    <string msgid="9038847255613537209" name="common_google_play_services_network_error_text">"Google Play -palveluiden käyttöön tarvitaan tietoliikenneyhteys."</string>
+    <string msgid="3827284619958211114" name="common_google_play_services_network_error_title">"Verkkovirhe"</string>
+    <string msgid="1388129345631079938" name="common_google_play_services_notification_needs_update_title">"Päivitä Google Play Palvelut, jotta sovellus toimii."</string>
+    <string msgid="1852570676146674985" name="common_google_play_services_notification_ticker">"Virhe Google Play -palveluissa"</string>
+    <string msgid="5194079840165204725" name="common_google_play_services_sign_in_failed_text">"Määritettyyn tiliin kirjauduttaessa tapahtui virhe. Valitse toinen tili."</string>
+    <string msgid="8164948898147532159" name="common_google_play_services_sign_in_failed_title">"Kirjautuminen epäonnistui."</string>
+    <string msgid="4762332809710093730" name="common_google_play_services_unknown_issue">"Tuntematon ongelma käytettäessä Google Play -palveluita."</string>
+    <string msgid="7682982632307307938" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> käyttää Google Play Palveluita, joita laitteesi ei tue. Pyydä ohjeita laitteen valmistajalta."</string>
+    <string msgid="6334768798839376943" name="common_google_play_services_unsupported_title">"Google Play Palvelut"</string>
+    <string msgid="8932944190611227642" name="common_google_play_services_update_button">"Päivitä"</string>
+    <string msgid="5709479369299147668" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> ei toimi, ellet päivitä Google Play Palveluita."</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">"Päivitä Google Play Palvelut"</string>
+    <string msgid="2201289642219771610" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> ei toimi ilman Google Play Palveluita, joita päivitetään tällä hetkellä."</string>
+    <string msgid="815008177440683245" name="common_google_play_services_updating_title">"Google Play Palveluita päivitetään"</string>
+    <string msgid="411506735369601515" name="common_open_on_phone">"Avaa puhelimessa"</string>
+    <string msgid="9071884888741449141" name="common_signin_button_text">"Kirjaudu"</string>
+    <string msgid="2429381841831957106" name="common_signin_button_text_long">"Kirjaudu Google-tiliin"</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values-fi/values.xml -->
+    <eat-comment/>
+    <string name="dgts__cancel">Peruuta</string>
+    <string name="dgts__communication_error">Viestintävirhe</string>
+    <string name="dgts__confirmation_code">Vahvistuskoodi</string>
+    <string name="dgts__confirmation_edit_hint">Syötä vahvistuskoodi</string>
+    <string name="dgts__confirmation_error">Puhelinnumeroasi ei pystytty vahvistamaan</string>
+    <string name="dgts__confirmation_error_alternative">Vahvistuskoodin lähettämisessä on nyt ongelmia.</string>
+    <string name="dgts__confirmation_expired">Tämä koodi on vanhentunut. Lähetä vahvistuskoodi uudelleen.</string>
+    <string name="dgts__confirmation_send_text">Lähetä vahvistuskoodi</string>
+    <string name="dgts__confirmation_sending_text">Lähetetään vahvistuskoodia</string>
+    <string name="dgts__confirmation_sent_text">Vahvistuskoodi lähetetty</string>
+    <string name="dgts__confirmation_sms">Vahvistuskoodi: %1$s. Syötä tämä koodi kohteeseen %2$s</string>
+    <string name="dgts__create_account_text">Luo tili</string>
+    <string name="dgts__creating_account_text">Luodaan tiliä</string>
+    <string name="dgts__digits_logo_desc">digits-logon kuvake</string>
+    <string name="dgts__digits_logo_name_desc">digits-logon nimi</string>
+    <string name="dgts__dismiss">Hylkää</string>
+    <string name="dgts__find_your_friends">Löydä ystäväsi</string>
+    <string name="dgts__image_header_description">Kirjautumisen kuvaotsake</string>
+    <string name="dgts__login_digits_text">Käytä puhelinnumeroani</string>
+    <string name="dgts__network_error">Tarkista verkkoyhteys ja yritä uudelleen</string>
+    <string name="dgts__not_now">Ei nyt</string>
+    <string name="dgts__okay">OK</string>
+    <string name="dgts__phone_number_edit_hint">Numerosi</string>
+    <string name="dgts__phone_number_text">Anna puhelinnumerosi</string>
+    <string name="dgts__pin_code_verification_title">Syötä kaksivaiheinen varmennuskoodi</string>
+    <string name="dgts__resend">Lähetä uudelleen</string>
+    <string name="dgts__resend_confirmation_text">Lähetä vahvistuskoodi</string>
+    <string name="dgts__sign_in">Kirjaudu sisään</string>
+    <string name="dgts__sign_in_error">Kirjautuminen Twitteriin ei juuri nyt onnistu. Yritä myöhemmin uudelleen.</string>
+    <string name="dgts__sign_in_twitter">Kirjaudu Twitter-tunnuksellasi</string>
+    <string name="dgts__signing_in">Kirjaudutaan sisään</string>
+    <string name="dgts__success_desc">Onnistumiskuvake</string>
+    <string name="dgts__terms_text">Kun napautat yltä %1$sLähetä vahvistuskoodi%1$s, Digits by Twitter -palvelu lähettää sinulle tekstiviestin puhelinnumerosi vahvistamista varten.</string>
+    <string name="dgts__terms_text_create">Napauttamalla yltä %1$sLuo tili%1$s hyväksyt Digits by Twitter -palvelun käyttöehdot, yksityisyyskäytännön ja evästekäytännön sekä sen, että muut tämän sovelluksen käyttäjät voivat löytää sinut puhelinnumeron ja/tai sähköpostiosoitteen perusteella.</string>
+    <string name="dgts__terms_text_sign_in">Napauttamalla yltä %1$sLuo tili%1$s hyväksyt Digits by Twitter -palvelun\
+ käyttöehdot, yksityisyyskäytännön ja evästekäytännön sekä sen, että \
+muut sovelluksen %1$s käyttäjät voivat löytää sinut puhelinnumeron \
+ja/tai sähköpostiosoitteen perusteella.</string>
+    <string name="dgts__try_again">Yritä uudelleen</string>
+    <string name="dgts__try_again_confirmation">Tarkista koodi ja yritä uudelleen.</string>
+    <string name="dgts__try_again_phone_number">Tarkista numero ja yritä uudelleen.</string>
+    <string name="dgts__try_another_phone">Kokeile toista puhelinnumeroa</string>
+    <string name="dgts__upload_contacts">Digits by Twitter -palvelu auttaa löytämään muita tätä sovellusta käyttäviä ystäviäsi. Kun napautat OK, lähetämme osoitekirjasi Digits by Twitterille, jotta voimme auttaa sinua löytämään tuntemiasi sovelluksen %1$s käyttäjiä tai auttaa muita sovelluksen %1$s käyttäjiä löytämään sinut.</string>
+    <string name="dgts__verification_code">Varmennuskoodi</string>
+    <string name="dgts_pin_code_terms">Olet aiemmin asettanut kaksivaiheisen varmennuskoodin osoitteessa digits.com</string>
+    <string name="dgts_verify">Varmenna</string>
+    <string name="dgts_verifying">Varmennetaan</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-fi/values-fi.xml -->
+    <eat-comment/>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-fi/values.xml -->
+    <eat-comment/>
+    <string name="tw__allow_btn_txt">Salli</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-fi/values.xml -->
+    <eat-comment/>
+    <string name="tw__loading_tweet">Ladataan twiittiä</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-fi/values.xml -->
+    <eat-comment/>
+    <string name="tw__login_btn_txt">Kirjaudu Twitter-tunnuksellasi</string>
+    <string name="tw__not_now_btn_txt">Ei nyt</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-fi/values.xml -->
+    <eat-comment/>
+    <string name="tw__relative_date_format_long">d.M.y</string>
+    <string name="tw__relative_date_format_short">d. MMM</string>
+    <string name="tw__retweeted_by_format">Uudelleentwiitannut %1$s</string>
+    <string name="tw__share_content_format">Katso käyttäjän \@%1$s twiitti: https://twitter.com/%1$s/status/%2$s</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-fi/values.xml -->
+    <eat-comment/>
+    <string name="tw__share_email_desc">Saa päivityksiä ja muuta tietoa kohteelta %1$s antamalla pääsy Twitter-tilisi \@%2$s sähköpostiosoitteeseen</string>
+    <string name="tw__share_email_title">Jaa sähköpostiosoitteesi</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-fi/values.xml -->
+    <eat-comment/>
+    <string name="tw__share_subject_format">Twiitti käyttäjältä %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Jaa twiitti</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
 </resources>

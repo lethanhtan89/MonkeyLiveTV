@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <it.gmariotti.cardslib.library.view.CardViewNative
+        android:id="@+id/stream_feed_card_view"
+        xmlns:card="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        card:card_layout_resourceID="@layout/featuredstream_item"
+        card:cardElevation="3.0dp"
+        card:cardCornerRadius="10.0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

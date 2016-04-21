@@ -42,9 +42,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import atv.com.project.popkontv.fragment.PopkonListFragment;
-import atv.com.project.popkontv.fragment.UserSettingsFragment;
-import atv.com.project.popkontv.fragment.VideoListFragment;
+import atv.com.project.popkontv.Fragments.PopkonListFragment;
+import atv.com.project.popkontv.Fragments.VideoListFragment;
 
 /**
  * TODO
@@ -152,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new VideoListFragment(), "LIVE");
         adapter.addFragment(new VideoListFragment(), "VIDEO");
         adapter.addFragment(new VideoListFragment(), "FAVORITE");
-        adapter.addFragment(new UserSettingsFragment(), "BROADCAST");
+        //adapter.addFragment(new UserSettingsFragment(), "BROADCAST");
 
         viewPager.setAdapter(adapter);
     }

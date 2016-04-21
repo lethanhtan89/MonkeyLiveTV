@@ -36,4 +36,26 @@
         <item name="android:clickable">true</item>
     </style>
 
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="ghostStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@null</item>
+        <item name="android:width">0dp</item>
+        <item name="android:height">0dp</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="custom_actionbar_theme" parent="Widget.AppCompat.Toolbar">
+        <item name="colorControlNormal">#FFF</item>
+    </style>
+
 </resources>

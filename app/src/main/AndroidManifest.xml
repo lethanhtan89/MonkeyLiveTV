@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="atv.com.project.popkontv" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
-    <uses-feature
-        android:name="android.hardware.camera.flash"
-        android:required="false" />
+    <permission
+        android:name="atv.com.project.popkontv.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
 
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
+    <uses-permission android:name="atv.com.project.popkontv.permission.C2D_MESSAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <uses-feature android:name="android.hardware.camera.front" android:required="false" />
     <uses-feature
         android:name="android.hardware.camera.autofocus"
@@ -29,7 +36,40 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:theme="@style/PopkonTV" >
+        android:theme="@style/PopkonTV"
+        android:windowSoftInputMode="adjustResize">
+
+        <activity
+            android:name=".Activity.StreamingActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="sdk.activity.BroadcastActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"/>
+
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <activity
+            android:name=".Activity.SettingsActivity"
+            android:label="Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LauncherActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".SplashActivity"
@@ -51,7 +91,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".fragment.YouTubeFragmentActivity"></activity>
+        <activity android:name=".Fragments.YouTubeFragmentActivity"></activity>
         <activity
             android:name=".youtube.YouTubeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -62,18 +102,56 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.Translucent"></activity>
         <activity android:name=".youtube.CustomYouTubeControlsActivity"></activity>
-        <activity android:name=".videostream.MainActivityVideoStream" android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".videostream.MainActivityVideoStreamConnected" android:screenOrientation="landscape">
         </activity>
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="AIzaSyA34h-7yPCNSBkBdJ9cAhLHozGn4JwHtWs" />
+            android:value="0c70227844740c5692cb7a88cc9f605817afc417" />
+
+        <activity
+            android:name=".Activity.TweetActivity"
+            android:label="@string/title_activity_tweet"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name=".Services.FileUploadService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".Gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.castasy.viewora" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".Gcm.GcmIntentService" />
+
+        <activity
+            android:name=".Activity.GcmActivity"
+            android:label="@string/title_activity_gcm" >
+        </activity>
+        <activity
+            android:name=".Activity.UserProfileActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_user_profile" />
+        <activity
+            android:name=".Activity.UserDetailsListActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_user_details_list" >
+        </activity>
+        <activity android:name="sdk.activity.MediaPlayerActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="live" android:path="/" android:scheme="viewora"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

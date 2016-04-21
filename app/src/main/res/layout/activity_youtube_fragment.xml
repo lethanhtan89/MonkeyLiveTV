@@ -7,7 +7,7 @@
     <!-- YouTube Fragment -->
     <fragment
         android:id="@+id/fragment_youtube"
-        android:name="atv.com.project.popkontv.fragment.YouTubeFragment"
+        android:name="atv.com.project.popkontv.Fragments.YouTubeFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true" />

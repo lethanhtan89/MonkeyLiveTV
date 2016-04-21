@@ -9,4 +9,12 @@
         <item name="android:fontFamily">@string/typeface_museo_sans</item>
     </style>
 
+    <style name="RanchoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">Rancho-Regular</item>
+    </style>
+
+    <style name="RanchoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">Rancho-Regular</item>
+    </style>
+
 </resources>

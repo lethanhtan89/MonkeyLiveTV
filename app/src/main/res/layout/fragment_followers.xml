@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/followerListContents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/new_primary_color"-->
+            <!--android:orientation="horizontal">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/actionBarBackButton"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:src="@drawable/backwhitecaret"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/followersCount"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Followers"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="20sp"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="10dp"/>-->
+        <!--</LinearLayout>-->
+        <ListView
+            android:visibility="visible"
+            android:layout_margin="3dp"
+            android:divider="@null"
+            android:dividerHeight="15.0dp"
+            android:scrollbars="none"
+            android:background="@drawable/whiteround"
+            android:id="@+id/followersList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/dataEmptyMessage"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:text="@string/noresults"
+            android:layout_margin="5dp"
+            android:background="@drawable/whiteround"
+            android:textColor="@color/primary_color"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/followerProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
