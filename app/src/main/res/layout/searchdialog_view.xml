@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/infobutton"
+        android:textSize="16.0sp"
+        android:text="Search Users"/>
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/infobutton"
+            android:textSize="16.0sp"
+            android:text="Enter name of user to follow"/>
+        <EditText
+            android:id="@+id/userSearchText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16.0sp"
+            android:background="@drawable/roundborderinfo"/>
+        </LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/searchProgress"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/followFromSearch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="FOLLOW"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/inforound"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/cancelSearch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:padding="8dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/primaryround"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

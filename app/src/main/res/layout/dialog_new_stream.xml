@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/streamsPhTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_stream_dialog_heading"
+        android:gravity="center"
+        android:background="@color/new_primary_color"
+        android:textColor="@color/white"
+        android:textSize="24.0sp"
+        android:padding="15.0dp"/>
+    <EditText
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginRight="5.0dp"
+        android:id="@+id/tweetMessage"
+        android:hint="Name your stream"
+        android:textColorHint="@color/new_primary_color"
+        android:background="@drawable/bottomborder"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="20.0sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content" />
+    <com.castasy.viewora.lib.InstantAutoComplete
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginRight="5.0dp"
+        android:id="@+id/stream_category"
+        android:background="@drawable/bottomborder"
+        android:layout_width="match_parent"
+        android:hint="Choose a Category"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="20.0sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/scheduleBtn"
+            android:text="SCHEDULE"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5.0dp"
+            android:background="@drawable/schedule_button"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/streamBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_marginRight="5.0dp"
+            android:background="@drawable/stream_button"
+            android:layout_height="wrap_content"
+            android:text="STREAM"/>
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_height="wrap_content">-->
+        <CheckBox
+            android:id="@+id/recordStreamCb"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40.0dp"
+            android:checked="true"
+            android:text="Record this stream"
+            android:layout_height="wrap_content" />
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="18sp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="Record this stream"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>

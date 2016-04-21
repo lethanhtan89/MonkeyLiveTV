@@ -62,6 +62,13 @@
     </style>
     <style name="Base.Widget.AppCompat.ProgressBar.Horizontal" parent="android:Widget.Holo.ProgressBar.Horizontal">
     </style>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values-v11/values.xml -->
+    <eat-comment/>
+    <style name="Digits_default" parent="@android:style/Theme.Holo.Light">
+        <item name="dgts__accentColor">@color/dgts__default_accent</item>
+    </style>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-v11/values-v11.xml -->
+    <eat-comment/>
     <style name="Platform.AppCompat" parent="Platform.V11.AppCompat"/>
     <style name="Platform.AppCompat.Light" parent="Platform.V11.AppCompat.Light"/>
     <style name="Platform.V11.AppCompat" parent="android:Theme.Holo">

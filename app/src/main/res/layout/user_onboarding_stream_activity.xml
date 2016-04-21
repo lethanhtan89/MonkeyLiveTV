@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/onboard_post_comment"
+            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/onboardcomment"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/onboard_switch_camera"
+            android:layout_margin="5dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_toLeftOf="@+id/onboard_toggle_Flash"
+            android:src="@drawable/onboardcamera"/>
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/onboard_toggle_Flash"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_toLeftOf="@+id/onboard_stop"
+            android:src="@drawable/onboardflash"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:id="@+id/onboard_stop"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/onboardstop"/>
+</RelativeLayout>

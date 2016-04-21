@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:text="Resolution"/>
+            <Spinner
+                android:id="@+id/resolution"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:entries="@array/resolutions"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:text="BitRate"/>
+            <Spinner
+                android:id="@+id/bitRate"
+                android:layout_height="wrap_content"
+                android:entries="@array/bitRates"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:text="Frame Rate"/>
+            <Spinner
+                android:id="@+id/frameRate"
+                android:layout_height="wrap_content"
+                android:entries="@array/frameRate"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:text="Video Codec"/>-->
+            <!--<EditText-->
+                <!--android:id="@+id/videoCodec"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:text="28"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Bitrate in kbps"/>-->
+        <!--</LinearLayout>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:text="RTMP Server"/>
+        <EditText
+            android:id="@+id/rtmpUrl"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:text="rtmp://192.168.1.20/mytv/stream"
+            android:layout_height="wrap_content"
+            android:hint="RTMP url"/>
+        <Button
+            android:id="@+id/btDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:orientation="vertical" android:layout_width="match_parent"-->
+<!--android:gravity="center"-->
+<!--android:layout_height="match_parent">-->
+<!--<ProgressBar-->
+<!--android:visibility="gone"-->
+<!--android:id="@+id/userProfilePb"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent" />-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userProfileLayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/userProfileIv"
+        android:layout_width="100dp"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginTop="20.0dp"
+        android:layout_height="100dp"/>
+    <TextView
+        android:id="@+id/userNameTv"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/userHandleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_margin="3.0dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/userScoreTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text=""
+        android:textSize="16sp"/>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/user_profile_dialog_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_marginTop="10.0dp"
+        android:layout_marginBottom="10.0dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="5.0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/followersCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2C3E50"
+                android:text=""
+                android:layout_margin="3.0dp"
+                android:textSize="18.0sp"/>
+            <TextView
+                android:id="@+id/followersPhtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2C3E50"
+                android:text="@string/followers_text"
+                android:textSize="14.0sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/followingCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#2C3E50"
+                android:layout_margin="3.0dp"
+                android:textSize="18.0sp"/>
+            <TextView
+                android:id="@+id/followingPhtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2C3E50"
+                android:text="@string/following_text"
+                android:textSize="14.0sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/followUserButtonTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent_primary_border"
+        android:paddingRight="50.0dp"
+        android:paddingLeft="50.0dp"
+        android:paddingBottom="8.0dp"
+        android:paddingTop="8.0dp"
+        android:layout_marginTop="20.0dp"
+        android:layout_marginBottom="30.0dp"
+        android:textColor="#2C3E50"
+        android:text="@string/follow_text"/>
+</LinearLayout>
+    <!--</LinearLayout>-->

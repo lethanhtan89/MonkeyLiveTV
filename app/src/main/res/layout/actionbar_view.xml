@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/actionbarBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/backwhitecaret"/>
+    <TextView
+        android:id="@+id/appNameAb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:text="@string/app_name"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/profileLayout"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:src="@drawable/userprofilewhite"
+        android:layout_height="match_parent"/>
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/search"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_gravity="center"/>-->
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:src="@drawable/scoreboard"-->
+        <!--android:layout_gravity="center"/>-->
+</LinearLayout>

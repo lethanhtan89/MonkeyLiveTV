@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-zh-rCN/values.xml -->
+    <eat-comment/>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1时</item>
+        <item quantity="other">%d时</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1分</item>
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1秒</item>
+        <item quantity="other">%d秒</item>
+    </plurals>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-zh-rCN/values-zh-rCN.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"转到主屏幕"</string>
@@ -21,5 +35,112 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享方式"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"通过%s分享"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收起"</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-zh-rCN/common_strings.xml -->
+    <eat-comment/>
+    <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>需要更新 Android Wear 应用才能正常运行。"</string>
+    <string msgid="2453027084525739603" name="common_android_wear_update_text">"只有更新 Android Wear 应用后，<ns1:g id="APP_NAME">%1$s</ns1:g>才能正常运行。"</string>
+    <string msgid="1366439133145190222" name="common_android_wear_update_title">"更新Android Wear"</string>
+    <string msgid="6534628256897874213" name="common_google_play_services_api_unavailable_text">"运行<ns1:g id="APP_NAME">%1$s</ns1:g>所需的一项或多项 Google Play 服务目前无法使用。请与开发者联系以寻求帮助。"</string>
+    <string msgid="4181637455539816337" name="common_google_play_services_enable_button">"启用Google Play服务"</string>
+    <string msgid="4896236883690196080" name="common_google_play_services_enable_text">"您必须先启用 Google Play 服务，然后才能运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
+    <string msgid="529078775174559253" name="common_google_play_services_enable_title">"启用Google Play服务"</string>
+    <string msgid="2443362625939284971" name="common_google_play_services_error_notification_requested_by_msg">"<ns1:g id="APP_NAME">%1$s</ns1:g>发出的请求"</string>
+    <string msgid="8515591849428043265" name="common_google_play_services_install_button">"获取Google Play服务"</string>
+    <string msgid="8836325110837822534" name="common_google_play_services_install_text_phone">"您的手机没有安装 Google Play 服务，因此无法运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
+    <string msgid="542176290824754127" name="common_google_play_services_install_text_tablet">"您的平板电脑没有安装 Google Play 服务，因此无法运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
+    <string msgid="26645092511305524" name="common_google_play_services_install_title">"获取Google Play服务"</string>
+    <string msgid="4983316348021735578" name="common_google_play_services_invalid_account_text">"此设备上不存在指定的帐户，请选择其他帐户。"</string>
+    <string msgid="1066672360770936753" name="common_google_play_services_invalid_account_title">"无效帐户"</string>
+    <string msgid="2583358409598976717" name="common_google_play_services_needs_enabling_title">"启用Google Play服务后才能运行应用。"</string>
+    <string msgid="9038847255613537209" name="common_google_play_services_network_error_text">"您必须有数据网络连接才能接入Google Play服务。"</string>
+    <string msgid="3827284619958211114" name="common_google_play_services_network_error_title">"网络错误"</string>
+    <string msgid="1388129345631079938" name="common_google_play_services_notification_needs_update_title">"更新Google Play服务后才能运行应用。"</string>
+    <string msgid="1852570676146674985" name="common_google_play_services_notification_ticker">"Google Play服务出错"</string>
+    <string msgid="5194079840165204725" name="common_google_play_services_sign_in_failed_text">"登录该帐户时出错。请选择其他帐户。"</string>
+    <string msgid="8164948898147532159" name="common_google_play_services_sign_in_failed_title">"登录失败"</string>
+    <string msgid="4762332809710093730" name="common_google_play_services_unknown_issue">"Google Play服务出现未知问题。"</string>
+    <string msgid="7682982632307307938" name="common_google_play_services_unsupported_text">"要运行<ns1:g id="APP_NAME">%1$s</ns1:g>，必须先启用 Google Play 服务，但您的设备目前不支持该服务。请与制造商联系以寻求帮助。"</string>
+    <string msgid="6334768798839376943" name="common_google_play_services_unsupported_title">"Google Play服务"</string>
+    <string msgid="8932944190611227642" name="common_google_play_services_update_button">"更新"</string>
+    <string msgid="5709479369299147668" name="common_google_play_services_update_text">"您必须先更新 Google Play 服务，然后才能运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">"更新Google Play服务"</string>
+    <string msgid="2201289642219771610" name="common_google_play_services_updating_text">"Google Play 服务当前正在更新，因此您无法运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
+    <string msgid="815008177440683245" name="common_google_play_services_updating_title">"Google Play 服务正在更新"</string>
+    <string msgid="411506735369601515" name="common_open_on_phone">"在手机上打开"</string>
+    <string msgid="9071884888741449141" name="common_signin_button_text">"登录"</string>
+    <string msgid="2429381841831957106" name="common_signin_button_text_long">"使用Google帐户登录"</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values-zh-rCN/values.xml -->
+    <eat-comment/>
+    <string name="dgts__cancel">取消</string>
+    <string name="dgts__communication_error">通讯出错</string>
+    <string name="dgts__confirmation_code">确认码</string>
+    <string name="dgts__confirmation_edit_hint">输入确认码</string>
+    <string name="dgts__confirmation_error">无法确认你的手机号码</string>
+    <string name="dgts__confirmation_error_alternative">很抱歉，我们无法向你发送验证码。</string>
+    <string name="dgts__confirmation_expired">此确认码已过期,请重新发送确认码。</string>
+    <string name="dgts__confirmation_send_text">发送确认码</string>
+    <string name="dgts__confirmation_sending_text">正在发送确认码</string>
+    <string name="dgts__confirmation_sent_text">发送确认码</string>
+    <string name="dgts__confirmation_sms">确认码: %1$s。在%2$s中输入确认码</string>
+    <string name="dgts__create_account_text">创建账号</string>
+    <string name="dgts__creating_account_text">创建账号</string>
+    <string name="dgts__digits_logo_desc">digits logo 图标</string>
+    <string name="dgts__digits_logo_name_desc">digits logo 名字</string>
+    <string name="dgts__dismiss">忽略</string>
+    <string name="dgts__find_your_friends">查找你的好友</string>
+    <string name="dgts__image_header_description">登录图片标题</string>
+    <string name="dgts__login_digits_text">使用我的手机号码</string>
+    <string name="dgts__network_error">请检查你的网络并重试。</string>
+    <string name="dgts__not_now">暂时不用</string>
+    <string name="dgts__okay">好的</string>
+    <string name="dgts__phone_number_edit_hint">你的手机号码</string>
+    <string name="dgts__phone_number_text">输入你的手机号码</string>
+    <string name="dgts__pin_code_verification_title">输入两步验证码</string>
+    <string name="dgts__resend">重新发送</string>
+    <string name="dgts__resend_confirmation_text">重新发送确认码</string>
+    <string name="dgts__sign_in">登录</string>
+    <string name="dgts__sign_in_error">我们无法在这个时候让你登录Twitter。请稍后再试。</string>
+    <string name="dgts__sign_in_twitter">以Twitter登录</string>
+    <string name="dgts__signing_in">正在登录</string>
+    <string name="dgts__success_desc">成功图标</string>
+    <string name="dgts__terms_text">点击上面的%1$s发送确认码%1$s按钮，Twitter Digits 便会向你的手机号码发送验证短信。</string>
+    <string name="dgts__terms_text_create">点击上面的%1$s创建账号%1$s按钮即表示你同意Twitter Digits的服务条款、隐私政策和Cookies 政策，而且该应用程序的其他用户可以通过手机号码和/或电子邮件找到你。</string>
+    <string name="dgts__terms_text_sign_in">点击上面的%1$s登入%1$s按钮即表示你同意Twitter Digits的服务条款、隐私政策和Cookies政策，而且%1$s的其他用户可以通过手机号码和/或邮件地址找到你。</string>
+    <string name="dgts__try_again">重试</string>
+    <string name="dgts__try_again_confirmation">请检查你的确认码并重试。</string>
+    <string name="dgts__try_again_phone_number">请检查你的手机号码并重试。</string>
+    <string name="dgts__try_another_phone">请尝试其他手机号码</string>
+    <string name="dgts__upload_contacts">我们使用Twitter Digits来查找你身边使用这个应用程序的朋友。当你点击“确认”时，我们将上传你的通讯录至Twitter Digits，帮你找到你认识的%1$s用户，同时帮其他%1$s用户找到你。</string>
+    <string name="dgts__verification_code">验证码</string>
+    <string name="dgts_pin_code_terms">你之前已在 digits.com 设置了两步验证</string>
+    <string name="dgts_verify">验证</string>
+    <string name="dgts_verifying">正在验证</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-zh-rCN/values-zh-rCN.xml -->
+    <eat-comment/>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-zh-rCN/values.xml -->
+    <eat-comment/>
+    <string name="tw__allow_btn_txt">允许</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-zh-rCN/values.xml -->
+    <eat-comment/>
+    <string name="tw__loading_tweet">加载推文</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-zh-rCN/values.xml -->
+    <eat-comment/>
+    <string name="tw__login_btn_txt">登录 Twitter</string>
+    <string name="tw__not_now_btn_txt">以后再说</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-zh-rCN/values.xml -->
+    <eat-comment/>
+    <string name="tw__relative_date_format_long">y/M/d</string>
+    <string name="tw__relative_date_format_short">M月d日</string>
+    <string name="tw__retweeted_by_format">由 %1$s 转推</string>
+    <string name="tw__share_content_format">看看 \@%1$s 的推文：https://twitter.com/%1$s/status/%2$s</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-zh-rCN/values.xml -->
+    <eat-comment/>
+    <string name="tw__share_email_desc">允许%1$s获取你的Twitter 账号\@%2$s电子邮件地址以随时接收更新及其它讯息</string>
+    <string name="tw__share_email_title">分享你的电子邮件地址</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-zh-rCN/values.xml -->
+    <eat-comment/>
+    <string name="tw__share_subject_format">来自 %1$s 的推文 (\@%2$s)</string>
+    <string name="tw__share_tweet">分享推文</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
 </resources>
