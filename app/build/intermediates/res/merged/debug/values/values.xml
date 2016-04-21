@@ -843,9 +843,6 @@
     cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
     the big cheese.</string>
     <string name="chromeless">Chromeless</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml -->
-    <eat-comment/>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">8915b3da-54af-499f-9ba9-1d312ce43a88</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
