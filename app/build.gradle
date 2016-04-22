@@ -17,7 +17,8 @@ repositories {
 apply plugin: 'io.fabric'
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    buildToolsVersion "23.0.2"
+
     defaultConfig {
         applicationId "atv.com.project.popkontv"
         minSdkVersion 18
@@ -66,5 +67,8 @@ dependencies {
     compile 'com.google.guava:guava:18.0'
     compile 'com.amazonaws:aws-android-sdk-core:2.2.1'
     compile 'com.amazonaws:aws-android-sdk-s3:2.2.1'
-
+    compile files('libs/http-core-4.1.jar')
+    compile files('libs/apache-httpcomponents-httpclient.jar')
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+    compile files('libs/android-3.1.jar')
 }
