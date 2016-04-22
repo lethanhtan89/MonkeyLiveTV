@@ -20,6 +20,8 @@
         android:layout_height="?attr/listPreferredItemHeightSmall"
         android:paddingLeft="?attr/listPreferredItemPaddingLeft"
         android:paddingRight="?attr/listPreferredItemPaddingRight"
-        android:foreground="?attr/selectableItemBackground"
-        android:focusable="true"/>
-<!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout/design_navigation_item.xml -->
+        android:drawablePadding="@dimen/navigation_icon_padding"
+        android:gravity="center_vertical|start"
+        android:maxLines="1"
+        android:textAppearance="?attr/textAppearanceListItem"/>
+<!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/lmp-mr1-supportlib-release/frameworks/support/design/res/layout/design_navigation_item.xml --><!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/layout/design_navigation_item.xml -->

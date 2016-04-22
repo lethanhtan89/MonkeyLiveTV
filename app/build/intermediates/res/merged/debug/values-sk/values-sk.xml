@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-sk/values-sk.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-sk/values-sk.xml -->
+    <eat-comment/>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1h</item>
+        <item quantity="other">%dh</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1m</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1s</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-sk/values-sk.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Prejsť na plochu"</string>
-    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
-    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Prejsť hore"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Ďalšie možnosti"</string>
     <string msgid="4076576682505996667" name="abc_action_mode_done">"Hotovo"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Zobraziť všetko"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Zvoľte aplikáciu"</string>
-    <string msgid="121134116657445385" name="abc_capital_off">"VYP."</string>
-    <string msgid="3405795526292276155" name="abc_capital_on">"ZAP."</string>
-    <string msgid="7723749260725869598" name="abc_search_hint">"Vyhľadať…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Vymazať dopyt"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Vyhľadávací dopyt"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"Hľadať"</string>
@@ -20,7 +29,6 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Hlasové vyhľadávanie"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Zdieľať pomocou"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Zdieľať pomocou %s"</string>
-    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Zbaliť"</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-sk/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"Aplikácia <ns1:g id="APP_NAME">%1$s</ns1:g> vyžaduje aktualizáciu aplikácie Android Wear."</string>
@@ -55,7 +63,66 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"Otvoriť na telefóne"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"Prihlásiť sa"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"Prihlásiť sa do účtu Google"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-sk/values-sk.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-sk/values-sk.xml -->
     <eat-comment/>
-    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="dgts__call_me">Zavolajte mi</string>
+    <string name="dgts__calling">Vytáčam…</string>
+    <string name="dgts__confirmation_code">Potvrdzujúci kód</string>
+    <string name="dgts__confirmation_edit_hint">Zadajte 6-miestny kód, ktorý sme vám poslali</string>
+    <string name="dgts__confirmation_error">Nemožno potvrdiť vaše telefónne číslo</string>
+    <string name="dgts__confirmation_error_alternative">Prepáčte, pri odosielaní potvrdzujúceho kódu sa vyskytli problémy.</string>
+    <string name="dgts__confirmation_expired">Platnosť tohto kódu vypršala. Prepošlite si potvrdzujúci kód.</string>
+    <string name="dgts__continue">Pokračovať</string>
+    <string name="dgts__digits_logo_desc">ikona loga digits</string>
+    <string name="dgts__digits_logo_name_desc">názov loga digits</string>
+    <string name="dgts__dismiss">Zamietnuť</string>
+    <string name="dgts__done">Hotovo</string>
+    <string name="dgts__email_request_edit_hint">E-mailová adresa</string>
+    <string name="dgts__email_request_title">Zadajte e-mailovú adresu</string>
+    <string name="dgts__find_your_friends">Nájdite si svojich priateľov</string>
+    <string name="dgts__image_header_description">Ttulná fotka pre prihlásenie</string>
+    <string name="dgts__invalid_email">Neplatný E-mail. Skúste to znovu</string>
+    <string name="dgts__login_digits_text">Použiť moje telefónne číslo</string>
+    <string name="dgts__network_error">Skontrolujte vaše internetové pripojenie a skúste to znovu.</string>
+    <string name="dgts__not_now">Teraz nie</string>
+    <string name="dgts__okay">OK</string>
+    <string name="dgts__phone_number_edit_hint">Vaše telefónne číslo</string>
+    <string name="dgts__phone_number_text">Zadajte vaše telefónne číslo</string>
+    <string name="dgts__pin_code_verification_title">Zadajte 2-stupňový overovací kód</string>
+    <string name="dgts__resend_confirmation_button_code">Preposlať kód</string>
+    <string name="dgts__resend_confirmation_text">Preposlať potvrdzujúci kód</string>
+    <string name="dgts__sending">Odosiela sa…</string>
+    <string name="dgts__try_again">Skúsiť znovu</string>
+    <string name="dgts__try_again_confirmation">Skontrolujte váš kód a skúste to znovu.</string>
+    <string name="dgts__try_again_email">Skontrolujte si váš e-mail a skúste to znovu</string>
+    <string name="dgts__try_again_phone_number">Skontrolujte vaše telefónne číslo a skúste to znovu.</string>
+    <string name="dgts__try_another_phone">Skúste iné telefónne číslo</string>
+    <string name="dgts__unsupported_operator_error">Tomuto číslu je nemožné odoslať SMS správu.</string>
+    <string name="dgts__verification_code">Overovací kód</string>
+    <string name="dgts_pin_code_terms">Už ste predtým nastavili 2-stupňový overovací kód na digits.com</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-sk/values-sk.xml -->
+    <eat-comment/>
+    <string name="tw__allow_btn_txt">Povoliť</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-sk/values-sk.xml -->
+    <eat-comment/>
+    <string name="tw__like_tweet">Obľúbiť Tweet</string>
+    <string name="tw__loading_tweet">Tweet sa načítava</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-sk/values-sk.xml -->
+    <eat-comment/>
+    <string name="tw__login_btn_txt">Prihlásiť sa na Twitter</string>
+    <string name="tw__not_now_btn_txt">Teraz nie</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-sk/values-sk.xml -->
+    <eat-comment/>
+    <string name="tw__pause">pozastaviť</string>
+    <string name="tw__play">prehrať</string>
+    <string name="tw__replay">prehrať znova</string>
+    <string name="tw__retweeted_by_format">Retweetnuté používateľom %1$s</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-sk/values-sk.xml -->
+    <eat-comment/>
+    <string name="tw__share_email_desc">Udeľte %1$s prístup k e-mailovej adrese priradenej k vášmu Twitter účtom \@%2$s, aby ju %1$s mohol použiť v súlade so svojimi zásadami ochrany súkromia. %1$s vám na túto adresu bude môcť posielať napríklad aktualizácie či iné informácie.</string>
+    <string name="tw__share_email_title">Zdieľajte vašu e-mailovú adresu</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-sk/values-sk.xml -->
+    <eat-comment/>
+    <string name="tw__share_tweet">Zdieľať Tweet</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
 </resources>

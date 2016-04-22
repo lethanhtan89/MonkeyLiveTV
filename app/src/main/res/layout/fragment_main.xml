@@ -33,22 +33,6 @@
                 android:layout_height="wrap_content"/>
 
     </android.support.v4.widget.SwipeRefreshLayout>
-        <!--<View-->
-            <!--android:layout_width="55dp"-->
-            <!--android:layout_height="55dp"-->
-            <!--android:layout_alignRight="@+id/newStream"-->
-            <!--android:layout_alignTop="@+id/newStream"-->
-            <!--android:layout_marginTop="5.0dp"-->
-            <!--android:background="@drawable/dropshadow_round"/>-->
-        <!--<ImageButton-->
-            <!--android:id="@+id/newStream"-->
-            <!--android:layout_width="55dp"-->
-            <!--android:layout_height="55dp"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:src="@drawable/new_stream_image"-->
-            <!--android:layout_alignBottom="@+id/streamFeedSwipe"-->
-            <!--android:background="@drawable/action_icon_background_primary"-->
-            <!--android:layout_margin="20.0dp"/>-->
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/newStream"
         android:layout_width="wrap_content"
@@ -59,8 +43,8 @@
         app:fabSize="normal"
         app:borderWidth="0.0dp"
         app:elevation="5.0dp"
-        android:layout_margin="20.0dp"
-        />
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="20dp" />
     </RelativeLayout>
     <ProgressBar
         android:visibility="gone"

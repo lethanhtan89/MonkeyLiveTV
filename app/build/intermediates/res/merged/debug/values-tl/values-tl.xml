@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-tl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-tl/values-tl.xml -->
     <eat-comment/>
     <plurals name="tw__time_hours">
         <item quantity="one">1h</item>
@@ -14,19 +14,14 @@
         <item quantity="one">1s</item>
         <item quantity="other">%ds</item>
     </plurals>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-tl/values-tl.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-tl/values-tl.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Mag-navigate patungo sa home"</string>
-    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
-    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Mag-navigate pataas"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Higit pang mga opsyon"</string>
     <string msgid="4076576682505996667" name="abc_action_mode_done">"Tapos na"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Tingnan lahat"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Pumili ng isang app"</string>
-    <string msgid="121134116657445385" name="abc_capital_off">"I-OFF"</string>
-    <string msgid="3405795526292276155" name="abc_capital_on">"I-ON"</string>
-    <string msgid="7723749260725869598" name="abc_search_hint">"Maghanap…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"I-clear ang query"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Query sa paghahanap"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"Maghanap"</string>
@@ -34,7 +29,6 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Paghahanap gamit ang boses"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Ibahagi sa/kay"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Ibahagi sa/kay %s"</string>
-    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"I-collapse"</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-tl/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"Ang <ns1:g id="APP_NAME">%1$s</ns1:g> ay nangangailangan ng update sa Android Wear app."</string>
@@ -69,26 +63,25 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"Buksan sa telepono"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"Sign in"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"Mag-sign in sa Google"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values-tl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-tl/values-tl.xml -->
     <eat-comment/>
-    <string name="dgts__cancel">Kanselahin</string>
-    <string name="dgts__communication_error">Error sa Komunikasyon</string>
+    <string name="dgts__call_me">Tawagan ako</string>
+    <string name="dgts__calling">Tumatawag…</string>
     <string name="dgts__confirmation_code">Code sa Pagkumpirma</string>
-    <string name="dgts__confirmation_edit_hint">Ipasok code ng kumpirmasyon</string>
+    <string name="dgts__confirmation_edit_hint">Ilagay ang 6-digit code na ipinadala namin sa iyo</string>
     <string name="dgts__confirmation_error">Hindi makumpirma ang numero ng iyong telepono. </string>
     <string name="dgts__confirmation_error_alternative">Paumanhin, nagkakaproblema kaming ipadala sa iyo ang code ng kumpirmasyon.</string>
-    <string name="dgts__confirmation_expired">Paso na ang code na ito. Pakipadala ulit ang code sa kumpirmasyon.</string>
-    <string name="dgts__confirmation_send_text">Ipadala code ng kompirmasyon</string>
-    <string name="dgts__confirmation_sending_text">Pinapadala code ng kumpirmasyon</string>
-    <string name="dgts__confirmation_sent_text">Pinadala code ng kumpirmasyon</string>
-    <string name="dgts__confirmation_sms">Code sa pagkumpirma: %1$s. Ipasok itong code sa %2$s</string>
-    <string name="dgts__create_account_text">Lumikha ng account</string>
-    <string name="dgts__creating_account_text">Lumilikha ng account</string>
+    <string name="dgts__confirmation_expired">Paso na ang code na ito. Pakipadala ulit ang code ng kumpirmasyon.</string>
+    <string name="dgts__continue">Magpatuloy</string>
     <string name="dgts__digits_logo_desc">icon ng digits logo</string>
     <string name="dgts__digits_logo_name_desc">pangalan ng digits logo</string>
     <string name="dgts__dismiss">I-dismiss</string>
+    <string name="dgts__done">Tapos na</string>
+    <string name="dgts__email_request_edit_hint">Email address</string>
+    <string name="dgts__email_request_title">Ilagay ang email address</string>
     <string name="dgts__find_your_friends">Hanapin ang mga kaibigan mo</string>
     <string name="dgts__image_header_description">Image header para sa login</string>
+    <string name="dgts__invalid_email">Maling Email. Subukan Ulit</string>
     <string name="dgts__login_digits_text">Gamitin ang numero ng telepono.</string>
     <string name="dgts__network_error">Pakitingnan ang inyong network at subukan ulit.</string>
     <string name="dgts__not_now">Hindi ngayon</string>
@@ -96,49 +89,45 @@
     <string name="dgts__phone_number_edit_hint">Ang Numero Mo</string>
     <string name="dgts__phone_number_text">Ipasok ang numero ng telepono mo.</string>
     <string name="dgts__pin_code_verification_title">Ipasok ang 2-step verification code</string>
-    <string name="dgts__resend">Ipadala ulit</string>
+    <string name="dgts__resend_confirmation_button_code">Ipadala muli ang code</string>
     <string name="dgts__resend_confirmation_text">Ipadala ulit code ng kumpirmasyon</string>
-    <string name="dgts__sign_in">Mag-sign in</string>
-    <string name="dgts__sign_in_error">Hindi namin ma-sign in kayo sa Twitter sa ngayon. Pakisubukan sa ibang pagkakataon.</string>
-    <string name="dgts__sign_in_twitter">Mag-sign sa Twitter</string>
-    <string name="dgts__signing_in">Nagsa-sign in</string>
+    <string name="dgts__sending">Pinapadala…</string>
     <string name="dgts__success_desc">Success Icon</string>
-    <string name="dgts__terms_text">Sa pag-tap sa %1$sIpadala ang code ng kumpirmasyon%1$s sa itaas, papadalhan ka ng Digits by Twitter ng mensaheng SMS para kumpirmahin ang numero ng telepono mo.</string>
-    <string name="dgts__terms_text_create">Sa pag-tap sa %1$sGumawa ng account%1$s sa itaas, sumasang-ayon ka sa Mga Tuntunin ng Serbisyo, Patakaran sa Pagkapribado, at Patakaran sa Mga Cookie ng Digits by Twitter, at sumasang-ayon ka rin na maaari kang matuklasan ng iba pang mga user ng app na ito gamit ang numero ng telepono at/o email.</string>
-    <string name="dgts__terms_text_sign_in">Sa pag-tap sa %1$sMag-sign in%1$s sa itaas, sumasang-ayon ka sa Mga Tuntunin ng Serbisyo, Patakaran sa Pagkapribado, at Patakaran sa Mga Cookie ng Digits by Twitter, at sumasang-ayon ka rin na maaari kang matuklasan ng iba pang mga user ng %1$s gamit ang numero ng telepono at/o email.</string>
     <string name="dgts__try_again">Subukan ulit</string>
     <string name="dgts__try_again_confirmation">Pakitingan ulit ang inyong code a subukan ulit.</string>
+    <string name="dgts__try_again_email">Pakitingnan ang email mo at subukan ulit</string>
     <string name="dgts__try_again_phone_number">Pakitingnan ang numero ninyo at subukan ulit.</string>
     <string name="dgts__try_another_phone">Subukan ang ibang numero ng telepono</string>
+    <string name="dgts__unsupported_operator_error">Hindi mapadalhan ang numerong ito ng mensaheng SMS.</string>
     <string name="dgts__upload_contacts">Ginagamit namin ang Digits by Twitter para mahanap ang iba mo pang mga kaibigan na gumagamit ng app na ito. Kapag tinap mo ang Okay, i-a-upload namin ang iyong address book sa Digits by Twitter para matulungan ka naming mahanap ang mga user ng %1$s na kilala mo o matulungan ang ibang mga user ng %1$s na matuklasan ka.</string>
     <string name="dgts__verification_code">Code ng beripikasyon</string>
     <string name="dgts_pin_code_terms">Nakapagtakda ka na ng 2-step verification code sa digits.com</string>
-    <string name="dgts_verify">Beripikahin</string>
-    <string name="dgts_verifying">Bineberipika</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-tl/values-tl.xml -->
-    <eat-comment/>
-    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-tl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-tl/values-tl.xml -->
     <eat-comment/>
     <string name="tw__allow_btn_txt">Payagan</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-tl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-tl/values-tl.xml -->
     <eat-comment/>
+    <string name="tw__like_tweet">Gustuhin ang Tweet</string>
+    <string name="tw__liked_tweet">I-undo ang Nagustuhan</string>
     <string name="tw__loading_tweet">Naglo-load ng Tweet</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-tl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-tl/values-tl.xml -->
     <eat-comment/>
     <string name="tw__login_btn_txt">Mag-log in gamit ang Twitter</string>
     <string name="tw__not_now_btn_txt">Hindi ngayon</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-tl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-tl/values-tl.xml -->
     <eat-comment/>
+    <string name="tw__pause">i-pause</string>
+    <string name="tw__play">i-play</string>
     <string name="tw__relative_date_format_long">d/M/y</string>
     <string name="tw__relative_date_format_short">d MMM</string>
+    <string name="tw__replay">i-play muli</string>
     <string name="tw__retweeted_by_format">Ni-retweet ni %1$s</string>
     <string name="tw__share_content_format">Tingnan \@%1$s\'s Tweet: https://twitter.com/%1$s/status/%2$s</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-tl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-tl/values-tl.xml -->
     <eat-comment/>
-    <string name="tw__share_email_desc">Makakuha ng mga update at iba pang impormasyon mula kay %1$s kapag binigyan mo siya ng access sa email mo sa iyong Twitter account na \@%2$s</string>
+    <string name="tw__share_email_desc">Payagan si %1$s na mag-access ng email address na nakaugnay sa Twitter account mong \@%2$s nang magamit ito ni %1$s ayon sa patakaran sa pagkapribado. Halimbawa, maaaring magpadala sa iyo si %1$s ng mga update at iba pang impormasyon sa address na iyan.</string>
     <string name="tw__share_email_title">Ibahagi ang email address mo</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-tl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-tl/values-tl.xml -->
     <eat-comment/>
     <string name="tw__share_subject_format">Tweet mula kay %1$s (\@%2$s)</string>
     <string name="tw__share_tweet">Ibahagi ang Tweet</string>

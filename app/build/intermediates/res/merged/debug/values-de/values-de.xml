@@ -10,7 +10,7 @@
         <item quantity="one">1 Karte entfernt</item>
         <item quantity="other">%d Karten entfernt</item>
     </plurals>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-de/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-de/values-de.xml -->
     <eat-comment/>
     <plurals name="tw__time_hours">
         <item quantity="one">1 Std.</item>
@@ -24,19 +24,14 @@
         <item quantity="one">1 Sek.</item>
         <item quantity="other">%d Sek.</item>
     </plurals>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-de/values-de.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-de/values-de.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Zur Startseite"</string>
-    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s: %2$s"</string>
-    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s: %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Nach oben"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Weitere Optionen"</string>
     <string msgid="4076576682505996667" name="abc_action_mode_done">"Fertig"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Alle ansehen"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"App auswählen"</string>
-    <string msgid="121134116657445385" name="abc_capital_off">"Aus"</string>
-    <string msgid="3405795526292276155" name="abc_capital_on">"An"</string>
-    <string msgid="7723749260725869598" name="abc_search_hint">"Suchen…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Suchanfrage löschen"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Suchanfrage"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"Suchen"</string>
@@ -44,7 +39,6 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Sprachsuche"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Freigeben für"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Freigeben für %s"</string>
-    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Minimieren"</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-de/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"Für <ns1:g id="APP_NAME">%1$s</ns1:g> ist eine Aktualisierung der Android Wear App erforderlich."</string>
@@ -79,26 +73,25 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"Auf Telefon öffnen"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"Anmelden"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"Über Google anmelden"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values-de/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-de/values-de.xml -->
     <eat-comment/>
-    <string name="dgts__cancel">Abbrechen</string>
-    <string name="dgts__communication_error">Kommunikationsfehler</string>
+    <string name="dgts__call_me">Ruf mich an</string>
+    <string name="dgts__calling">Anruf…</string>
     <string name="dgts__confirmation_code">Bestätigungscode</string>
-    <string name="dgts__confirmation_edit_hint">Bestätigungscode eingeben</string>
+    <string name="dgts__confirmation_edit_hint">Gib den 6-stelligen Code ein, den wir Dir gesendet haben</string>
     <string name="dgts__confirmation_error">Deine Telefonnummer konnte nicht bestätigt werden</string>
     <string name="dgts__confirmation_error_alternative">Leider haben wir Schwierigkeiten, Dir einen Bestätigungscode zu senden.</string>
     <string name="dgts__confirmation_expired">Dieser Code ist abgelaufen. Lass Dir einen neuen Bestätigungscode senden.</string>
-    <string name="dgts__confirmation_send_text">Bestätigungscode senden</string>
-    <string name="dgts__confirmation_sending_text">Bestätigungscode wird gesendet</string>
-    <string name="dgts__confirmation_sent_text">Bestätigungscode gesendet</string>
-    <string name="dgts__confirmation_sms">Bestätigungscode: %1$s. Diesen Code in %2$s eingeben</string>
-    <string name="dgts__create_account_text">Account erstellen</string>
-    <string name="dgts__creating_account_text">Account wird erstellt</string>
+    <string name="dgts__continue">Weiter</string>
     <string name="dgts__digits_logo_desc">Digits Logo-Symbol</string>
     <string name="dgts__digits_logo_name_desc">Digits Logo-Name</string>
     <string name="dgts__dismiss">Verwerfen</string>
+    <string name="dgts__done">Fertig</string>
+    <string name="dgts__email_request_edit_hint">E-Mail Adresse</string>
+    <string name="dgts__email_request_title">E-Mail Adresse eingeben</string>
     <string name="dgts__find_your_friends">Freunde suchen</string>
     <string name="dgts__image_header_description">Image-Header für Anmeldung</string>
+    <string name="dgts__invalid_email">Ungültige E-Mail Adresse. Erneut versuchen</string>
     <string name="dgts__login_digits_text">Meine Telefonnummer verwenden</string>
     <string name="dgts__network_error">Prüfe bitte Dein Netzwerk und versuche es erneut.</string>
     <string name="dgts__not_now">Nicht jetzt</string>
@@ -106,52 +99,49 @@
     <string name="dgts__phone_number_edit_hint">Deine Nummer</string>
     <string name="dgts__phone_number_text">Deine Telefonnummer eingeben</string>
     <string name="dgts__pin_code_verification_title">2-Schritt-Bestätigungscode eingeben</string>
-    <string name="dgts__resend">Erneut senden</string>
+    <string name="dgts__resend_confirmation_button_code">Code erneut senden</string>
     <string name="dgts__resend_confirmation_text">Bestätigungscode erneut senden</string>
-    <string name="dgts__sign_in">Anmelden</string>
-    <string name="dgts__sign_in_error">Derzeit konntest Du nicht mit Twitter angemeldet werden. Versuche es später erneut.</string>
-    <string name="dgts__sign_in_twitter">Mit Twitter anmelden</string>
-    <string name="dgts__signing_in">Anmeldung läuft</string>
+    <string name="dgts__sending">Sendet…</string>
     <string name="dgts__success_desc">Erfolgssymbol</string>
-    <string name="dgts__terms_text">Wenn Du oben %1$sBestätigungscode senden%1$s antippst, sendet Digits by Twitter Dir eine SMS zu, um Deine Telefonnummer zu bestätigen.</string>
-    <string name="dgts__terms_text_create">Wenn Du oben %1$sAccount erstellen%1$s antippst, stimmst Du den Allgemeinen Geschäftsbedingungen, den Datenschutzbestimmungen und den Cookie-Richtlinien von Digits by Twitter zu und erklärst Dich damit einverstanden, dass andere Nutzer dieser App Dich anhand Deiner Telefonnummer und/oder E-Mail finden können.</string>
-    <string name="dgts__terms_text_sign_in">Indem Du oben %1$sAnmelden%1$s antippst, stimmst Du den Allgemeinen Geschäftsbedingungen, den Datenschutzbestimmungen und den Cookie-Richtlinien von Digits by Twitter zu und erklärst Dich damit einverstanden, dass andere Nutzer von %1$s Dich anhand Deiner Telefonnummer und/oder E-Mail finden können.</string>
     <string name="dgts__try_again">Erneut versuchen</string>
     <string name="dgts__try_again_confirmation">Prüfe bitte Deinen Code und versuche es erneut.</string>
+    <string name="dgts__try_again_email">Prüfe bitte Deine E-Mail Adresse und versuche es erneut</string>
     <string name="dgts__try_again_phone_number">Prüfe bitte Deine Nummer und versuche es erneut.</string>
     <string name="dgts__try_another_phone">Probiere eine andere Telefonnummer</string>
+    <string name="dgts__unsupported_operator_error">Es konnte keine SMS Nachricht an diese Nummer gesendet werden.</string>
     <string name="dgts__upload_contacts">Mit Digits by Twitter können wir mehrere Deiner Freunde finden, die diese App verwenden. Wenn Du auf \"OK\" tippst, laden wir Dein Adressuch in Digits by Twitter hoch und helfen dabei, Dir bekannte Nutzer von %1$s zu finden sowie anderen Nutzern von %1$s, Dich zu finden.</string>
     <string name="dgts__verification_code">Verifizierungscode</string>
     <string name="dgts_pin_code_terms">Du hast zuvor einen 2-Schritte-Verifizierungscode auf digits.com eingestellt</string>
-    <string name="dgts_verify">Verifizieren</string>
-    <string name="dgts_verifying">Wird verifiziert</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.1.0/res/values-de/values-de.xml -->
     <eat-comment/>
     <string name="list_card_undo_title">Rückgängig</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-de/values-de.xml -->
-    <eat-comment/>
-    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-de/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-de/values-de.xml -->
     <eat-comment/>
     <string name="tw__allow_btn_txt">Erlauben</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-de/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-de/values-de.xml -->
     <eat-comment/>
+    <string name="tw__like_tweet">Tweet gefällt mir</string>
+    <string name="tw__liked_tweet">Gefällt mir nicht mehr</string>
     <string name="tw__loading_tweet">Tweet wird geladen</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-de/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-de/values-de.xml -->
     <eat-comment/>
     <string name="tw__login_btn_txt">Mit Twitter anmelden</string>
     <string name="tw__not_now_btn_txt">Nicht jetzt</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-de/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-de/values-de.xml -->
     <eat-comment/>
+    <string name="tw__pause">Pause</string>
+    <string name="tw__play">Abspielen</string>
     <string name="tw__relative_date_format_long">d.M.y</string>
     <string name="tw__relative_date_format_short">d. MMM</string>
+    <string name="tw__replay">Erneut abspielen</string>
     <string name="tw__retweeted_by_format">Retweetet von %1$s</string>
     <string name="tw__share_content_format">Sieh Dir den Tweet von \@%1$s an: https://twitter.com/%1$s/status/%2$s</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-de/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-de/values-de.xml -->
     <eat-comment/>
-    <string name="tw__share_email_desc">Erhalte Updates und andere Informationen von %1$s, indem Du diesem Nutzer Zugriff auf die E-Mail Deines Twitter Accounts gewährst \@%2$s</string>
+    <string name="tw__share_email_desc">Erlaube %1$s  Zugriff auf die mit Deinem Twitter Account verknüpfte E-Mail Adresse \@%2$s, damit %1$s sie den Datenschutzrichtlinien entsprechend nutzen kann. Zum \
+Beispiel könnte %1$s Dir Updates und andere Informationen an diese Adresse senden.</string>
     <string name="tw__share_email_title">Teile Deine E-Mail Adresse</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-de/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-de/values-de.xml -->
     <eat-comment/>
     <string name="tw__share_subject_format">Tweet von %1$s (\@%2$s)</string>
     <string name="tw__share_tweet">Tweet teilen</string>

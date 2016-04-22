@@ -40,6 +40,18 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
+
 import atv.com.project.popkontv.Adapters.CommentsAdapter;
 import atv.com.project.popkontv.Application.EndPoints;
 import atv.com.project.popkontv.Application.Viewora;
@@ -63,18 +75,6 @@ import atv.com.project.popkontv.R;
 import atv.com.project.popkontv.lib.Faye;
 import atv.com.project.popkontv.lib.OnSwipeTouchListener;
 import atv.com.project.popkontv.lib.StreamDrawable;
-import com.twitter.sdk.android.Twitter;
-import com.twitter.sdk.android.core.TwitterAuthConfig;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import io.fabric.sdk.android.Fabric;
 import sdk.Kickflip;
 import sdk.activity.ImmersiveActivity;
@@ -122,8 +122,8 @@ public class StreamingActivity extends ImmersiveActivity{
     private SurfaceHolder holder;
     private Camera camera;
 
-    private static final String TWITTER_KEY = "" + R.string.TWITTER_KEY;
-    private static final String TWITTER_SECRET = "" + R.string.TWITTER_SECRET;
+    private static final String TWITTER_KEY = "OQczffwVTLCJIsuTZ4U7rXcJP";
+    private static final String TWITTER_SECRET = "GnwwAFn6tIEjmhQnhmEiksEdaIPcY1Zy38B021FAAiEgzvTAPC";
     private long timeStamp = -1;
     private String userTweetMessage;
     private ImageButton toggleFlash;

@@ -53,10 +53,11 @@
         <item>720 x 480</item>
         <item>1280 x 720</item>
     </string-array>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference|color" name="dgts__accentColor"/>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <attr format="reference" name="dgts__logoDrawable"/>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -64,18 +65,20 @@
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/attrs.xml -->
     <eat-comment/>
     <attr format="reference|color" name="status_bar_overlay"/>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values/values.xml -->
+    <eat-comment/>
+    <attr format="reference" name="tw__twitter_logo"/>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/attrs.xml -->
     <eat-comment/>
     <attr format="reference|color" name="video_player_overlay"/>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
     <bool name="abc_action_bar_expanded_action_views_exclusive">true</bool>
-    <bool name="abc_allow_stacked_button_bar">true</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
@@ -84,7 +87,7 @@
     <eat-comment/>
     <color name="ColorPrimary">#FF5722</color>
     <color name="ColorPrimaryDark">#E64A19</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -99,12 +102,12 @@
     <color name="app_primary_accent">#F9B0B4</color>
     <color name="app_primary_dark">#872328</color>
     <color name="background_common">#f2f1f0</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
-    <color name="background_floating_material_dark">@color/material_grey_800</color>
-    <color name="background_floating_material_light">@android:color/white</color>
-    <color name="background_material_dark">@color/material_grey_850</color>
-    <color name="background_material_light">@color/material_grey_50</color>
+    <color name="background_floating_material_dark">#ff424242</color>
+    <color name="background_floating_material_light">#ffeeeeee</color>
+    <color name="background_material_dark">#ff303030</color>
+    <color name="background_material_light">#ffeeeeee</color>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="background_menu">#e0e0e0</color>
@@ -116,7 +119,7 @@
     <color name="black1">#0f0f0f</color>
     <color name="black2">#222222</color>
     <color name="black3">#181818</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -148,7 +151,7 @@
     <color name="card_text_color_header">#000</color>
     <color name="card_undobar_material_background_color">#323232</color>
     <color name="card_undobar_material_text_color">#4CAF50</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="cardview_dark_background">#FF202020</color>
     <color name="cardview_light_background">#FFFAFAFA</color>
@@ -171,19 +174,7 @@
     <color name="darkerorange">#ff7200</color>
     <color name="darkgrey">#ffa0a0a0</color>
     <color name="darkorange">#ff8800</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <color name="design_fab_shadow_end_color">@android:color/transparent</color>
-    <color name="design_fab_shadow_mid_color">#14000000</color>
-    <color name="design_fab_shadow_start_color">#44000000</color>
-    <color name="design_fab_stroke_end_inner_color">#0A000000</color>
-    <color name="design_fab_stroke_end_outer_color">#0F000000</color>
-    <color name="design_fab_stroke_top_inner_color">#1AFFFFFF</color>
-    <color name="design_fab_stroke_top_outer_color">#2EFFFFFF</color>
-    <color name="design_snackbar_background_color">#323232</color>
-    <color name="design_textinput_error_color_dark">#FFFF6E6E</color>
-    <color name="design_textinput_error_color_light">#FFD50000</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values/values.xml -->
     <eat-comment/>
     <color name="dgts__default_accent">#5baaf4</color>
     <color name="dgts__default_logo_name">#56626d</color>
@@ -191,26 +182,27 @@
     <color name="dgts__purple_pressed">#553788</color>
     <color name="dgts__text_dark">#ff030303</color>
     <color name="dgts__text_light">#ffffff</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="error_color">#FFDD2C00</color>
+    <color name="fab_stroke_end_inner_color">#0A000000</color>
+    <color name="fab_stroke_end_outer_color">#0F000000</color>
+    <color name="fab_stroke_top_inner_color">#1AFFFFFF</color>
+    <color name="fab_stroke_top_outer_color">#2EFFFFFF</color>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="font_default">#222222</color>
     <color name="font_light">#777777</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <color name="foreground_material_dark">@android:color/white</color>
-    <color name="foreground_material_light">@android:color/black</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/colors.xml -->
-    <eat-comment/>
     <color name="grey1">#393939</color>
     <color name="grey2">#d0d0d0</color>
     <color name="grey3">#5e5e5e</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -223,20 +215,15 @@
     <color name="item_common_pressed">#e0e0e0</color>
     <color name="item_common_selected">#5e5e5e</color>
     <color name="item_footer">#e0e0e0</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
+    <color name="link_text_material_dark">@color/material_deep_teal_200</color>
+    <color name="link_text_material_light">@color/material_deep_teal_500</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
-    <color name="material_grey_100">#fff5f5f5</color>
-    <color name="material_grey_300">#ffe0e0e0</color>
-    <color name="material_grey_50">#fffafafa</color>
-    <color name="material_grey_600">#ff757575</color>
-    <color name="material_grey_800">#ff424242</color>
-    <color name="material_grey_850">#ff303030</color>
-    <color name="material_grey_900">#ff212121</color>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="new_primary_color">#2C3E50</color>
@@ -245,12 +232,12 @@
     <color name="orange">#ffbb33</color>
     <color name="primary_color">#FF496E</color>
     <color name="primary_color_pressed">#FF95404E</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
-    <color name="primary_dark_material_dark">@android:color/black</color>
-    <color name="primary_dark_material_light">@color/material_grey_600</color>
-    <color name="primary_material_dark">@color/material_grey_900</color>
-    <color name="primary_material_light">@color/material_grey_100</color>
+    <color name="primary_dark_material_dark">#ff000000</color>
+    <color name="primary_dark_material_light">#ff757575</color>
+    <color name="primary_material_dark">#ff212121</color>
+    <color name="primary_material_light">#ffefefef</color>
     <color name="primary_text_default_material_dark">#ffffffff</color>
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
@@ -259,14 +246,22 @@
     <eat-comment/>
     <color name="primarybutton">#2196f3</color>
     <color name="primarypressed">#0c7cd5</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
-    <color name="ripple_material_dark">#33ffffff</color>
+    <color name="ripple_material_dark">#4dffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="shadow_end_color">@android:color/transparent</color>
+    <color name="shadow_mid_color">#14000000</color>
+    <color name="shadow_start_color">#44000000</color>
+    <color name="snackbar_background_color">#323232</color>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
@@ -276,19 +271,37 @@
     <color name="transparent_black">#E6000000</color>
     <color name="transparent_gray">#8000</color>
     <color name="transparent_white">#dcfafafa</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
     <eat-comment/>
     <color name="tw__blue_default">#FF5BAAF4</color>
     <color name="tw__blue_pressed">#FF4186C8</color>
     <color name="tw__blue_pressed_light">#ffe1e8ed</color>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values/values.xml -->
+    <eat-comment/>
+    <color name="tw__composer_black">#ff292f33</color>
+    <color name="tw__composer_blue">#ff1da1f2</color>
+    <color name="tw__composer_blue_text">#ff1b95e0</color>
+    <color name="tw__composer_deep_gray">#ff8899A6</color>
+    <color name="tw__composer_light_gray">#ffccd6dd</color>
+    <color name="tw__composer_red">#ffe81c4f</color>
+    <color name="tw__composer_white">#ffffffff</color>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
+    <eat-comment/>
     <color name="tw__light_gray">#ccd6dd</color>
     <color name="tw__medium_gray">#8899a6</color>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="tw__seekbar_thumb_inner_color">#ffffffff</color>
+    <color name="tw__seekbar_thumb_outer_color">#4dffffff</color>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
+    <eat-comment/>
     <color name="tw__solid_white">#FFFFFFFF</color>
     <color name="tw__transparent">#00000000</color>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
     <eat-comment/>
     <color name="tw__tweet_action_color">#55acee</color>
-    <color name="tw__tweet_container_border">#1a000000</color>
+    <color name="tw__tweet_action_dark_highlight_color">#667580</color>
+    <color name="tw__tweet_action_light_highlight_color">#ebeef0</color>
     <color name="tw__tweet_dark_container_bg_color">#d9000000</color>
     <color name="tw__tweet_dark_primary_text_color">#e1ffffff</color>
     <color name="tw__tweet_light_container_bg_color">#ffffff</color>
@@ -305,24 +318,18 @@
     <declare-styleable name="ActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/><attr format="reference" name="closeItemLayout"/></declare-styleable>
     <declare-styleable name="ActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/></declare-styleable>
     <declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/></declare-styleable>
-    <declare-styleable name="AppBarLayout"><attr name="elevation"/><attr name="android:background"/><attr format="boolean" name="expanded"/></declare-styleable>
-    <declare-styleable name="AppBarLayout_LayoutParams"><attr name="layout_scrollFlags"><flag name="scroll" value="0x1"/><flag name="exitUntilCollapsed" value="0x2"/><flag name="enterAlways" value="0x4"/><flag name="enterAlwaysCollapsed" value="0x8"/><flag name="snap" value="0x10"/></attr><attr format="reference" name="layout_scrollInterpolator"/></declare-styleable>
-    <declare-styleable name="AppCompatImageView"><attr name="android:src"/><attr format="reference" name="srcCompat"/></declare-styleable>
+    <declare-styleable name="AppBarLayout"><attr name="elevation"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="AppBarLayout_LayoutParams"><attr name="layout_scrollFlags"><flag name="scroll" value="0x1"/><flag name="exitUntilCollapsed" value="0x2"/><flag name="enterAlways" value="0x4"/><flag name="enterAlwaysCollapsed" value="0x8"/></attr><attr format="reference" name="layout_scrollInterpolator"/></declare-styleable>
     <declare-styleable name="AppCompatTextView"><attr format="reference|boolean" name="textAllCaps"/><attr name="android:textAppearance"/></declare-styleable>
-    <declare-styleable name="AppCompatTheme"><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowNoTitle"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowActionModeOverlay"/><attr format="dimension|fraction" name="windowFixedWidthMajor"/><attr format="dimension|fraction" name="windowFixedHeightMinor"/><attr format="dimension|fraction" name="windowFixedWidthMinor"/><attr format="dimension|fraction" name="windowFixedHeightMajor"/><attr format="dimension|fraction" name="windowMinWidthMajor"/><attr format="dimension|fraction" name="windowMinWidthMinor"/><attr name="android:windowIsFloating"/><attr name="android:windowAnimationStyle"/><attr format="reference" name="actionBarTabStyle"/><attr format="reference" name="actionBarTabBarStyle"/><attr format="reference" name="actionBarTabTextStyle"/><attr format="reference" name="actionOverflowButtonStyle"/><attr format="reference" name="actionOverflowMenuStyle"/><attr format="reference" name="actionBarPopupTheme"/><attr format="reference" name="actionBarStyle"/><attr format="reference" name="actionBarSplitStyle"/><attr format="reference" name="actionBarTheme"/><attr format="reference" name="actionBarWidgetTheme"/><attr format="dimension" name="actionBarSize"><enum name="wrap_content" value="0"/></attr><attr format="reference" name="actionBarDivider"/><attr format="reference" name="actionBarItemBackground"/><attr format="reference" name="actionMenuTextAppearance"/><attr format="color|reference" name="actionMenuTextColor"/><attr format="reference" name="actionModeStyle"/><attr format="reference" name="actionModeCloseButtonStyle"/><attr format="reference" name="actionModeBackground"/><attr format="reference" name="actionModeSplitBackground"/><attr format="reference" name="actionModeCloseDrawable"/><attr format="reference" name="actionModeCutDrawable"/><attr format="reference" name="actionModeCopyDrawable"/><attr format="reference" name="actionModePasteDrawable"/><attr format="reference" name="actionModeSelectAllDrawable"/><attr format="reference" name="actionModeShareDrawable"/><attr format="reference" name="actionModeFindDrawable"/><attr format="reference" name="actionModeWebSearchDrawable"/><attr format="reference" name="actionModePopupWindowStyle"/><attr format="reference" name="textAppearanceLargePopupMenu"/><attr format="reference" name="textAppearanceSmallPopupMenu"/><attr format="reference" name="dialogTheme"/><attr format="dimension" name="dialogPreferredPadding"/><attr format="reference" name="listDividerAlertDialog"/><attr format="reference" name="actionDropDownStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="spinnerDropDownItemStyle"/><attr format="reference" name="homeAsUpIndicator"/><attr format="reference" name="actionButtonStyle"/><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/><attr format="reference" name="selectableItemBackground"/><attr format="reference" name="selectableItemBackgroundBorderless"/><attr format="reference" name="borderlessButtonStyle"/><attr format="reference" name="dividerVertical"/><attr format="reference" name="dividerHorizontal"/><attr format="reference" name="activityChooserViewStyle"/><attr format="reference" name="toolbarStyle"/><attr format="reference" name="toolbarNavigationButtonStyle"/><attr format="reference" name="popupMenuStyle"/><attr format="reference" name="popupWindowStyle"/><attr format="reference|color" name="editTextColor"/><attr format="reference" name="editTextBackground"/><attr format="reference" name="imageButtonStyle"/><attr format="reference" name="textAppearanceSearchResultTitle"/><attr format="reference" name="textAppearanceSearchResultSubtitle"/><attr format="reference|color" name="textColorSearchUrl"/><attr format="reference" name="searchViewStyle"/><attr format="dimension" name="listPreferredItemHeight"/><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="dimension" name="listPreferredItemHeightLarge"/><attr format="dimension" name="listPreferredItemPaddingLeft"/><attr format="dimension" name="listPreferredItemPaddingRight"/><attr format="reference" name="dropDownListViewStyle"/><attr format="reference" name="listPopupWindowStyle"/><attr format="reference" name="textAppearanceListItem"/><attr format="reference" name="textAppearanceListItemSmall"/><attr format="reference" name="panelBackground"/><attr format="dimension" name="panelMenuListWidth"/><attr format="reference" name="panelMenuListTheme"/><attr format="reference" name="listChoiceBackgroundIndicator"/><attr format="color" name="colorPrimary"/><attr format="color" name="colorPrimaryDark"/><attr format="color" name="colorAccent"/><attr format="color" name="colorControlNormal"/><attr format="color" name="colorControlActivated"/><attr format="color" name="colorControlHighlight"/><attr format="color" name="colorButtonNormal"/><attr format="color" name="colorSwitchThumbNormal"/><attr format="reference" name="controlBackground"/><attr format="reference" name="alertDialogStyle"/><attr format="reference" name="alertDialogButtonGroupStyle"/><attr format="boolean" name="alertDialogCenterButtons"/><attr format="reference" name="alertDialogTheme"/><attr format="reference|color" name="textColorAlertDialogListItem"/><attr format="reference" name="buttonBarPositiveButtonStyle"/><attr format="reference" name="buttonBarNegativeButtonStyle"/><attr format="reference" name="buttonBarNeutralButtonStyle"/><attr format="reference" name="autoCompleteTextViewStyle"/><attr format="reference" name="buttonStyle"/><attr format="reference" name="buttonStyleSmall"/><attr format="reference" name="checkboxStyle"/><attr format="reference" name="checkedTextViewStyle"/><attr format="reference" name="editTextStyle"/><attr format="reference" name="radioButtonStyle"/><attr format="reference" name="ratingBarStyle"/><attr format="reference" name="ratingBarStyleIndicator"/><attr format="reference" name="ratingBarStyleSmall"/><attr format="reference" name="seekBarStyle"/><attr format="reference" name="spinnerStyle"/><attr format="reference" name="switchStyle"/></declare-styleable>
-    <declare-styleable name="BottomSheetBehavior_Params"><attr format="dimension" name="behavior_peekHeight"/><attr format="boolean" name="behavior_hideable"/></declare-styleable>
-    <declare-styleable name="ButtonBarLayout"><attr format="boolean" name="allowStacking"/></declare-styleable>
     <declare-styleable name="CardView"><attr format="color" name="cardBackgroundColor"/><attr format="dimension" name="cardCornerRadius"/><attr format="dimension" name="cardElevation"/><attr format="dimension" name="cardMaxElevation"/><attr format="boolean" name="cardUseCompatPadding"/><attr format="boolean" name="cardPreventCornerOverlap"/><attr format="dimension" name="contentPadding"/><attr format="dimension" name="contentPaddingLeft"/><attr format="dimension" name="contentPaddingRight"/><attr format="dimension" name="contentPaddingTop"/><attr format="dimension" name="contentPaddingBottom"/></declare-styleable>
     <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/><attr format="boolean" name="border_overlay"/></declare-styleable>
     <declare-styleable name="CollapsingAppBarLayout_LayoutParams"><attr name="layout_collapseMode"><enum name="none" value="0"/><enum name="pin" value="1"/><enum name="parallax" value="2"/></attr><attr format="float" name="layout_collapseParallaxMultiplier"/></declare-styleable>
-    <declare-styleable name="CollapsingToolbarLayout"><attr format="dimension" name="expandedTitleMargin"/><attr format="dimension" name="expandedTitleMarginStart"/><attr format="dimension" name="expandedTitleMarginTop"/><attr format="dimension" name="expandedTitleMarginEnd"/><attr format="dimension" name="expandedTitleMarginBottom"/><attr format="reference" name="expandedTitleTextAppearance"/><attr format="reference" name="collapsedTitleTextAppearance"/><attr format="color" name="contentScrim"/><attr format="color" name="statusBarScrim"/><attr format="reference" name="toolbarId"/><attr name="collapsedTitleGravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="center" value="0x11"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr><attr name="expandedTitleGravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="center" value="0x11"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr><attr format="boolean" name="titleEnabled"/><attr name="title"/></declare-styleable>
-    <declare-styleable name="CompoundButton"><attr name="android:button"/><attr format="color" name="buttonTint"/><attr name="buttonTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
+    <declare-styleable name="CollapsingToolbarLayout"><attr format="dimension" name="expandedTitleMargin"/><attr format="dimension" name="expandedTitleMarginStart"/><attr format="dimension" name="expandedTitleMarginTop"/><attr format="dimension" name="expandedTitleMarginEnd"/><attr format="dimension" name="expandedTitleMarginBottom"/><attr format="reference" name="expandedTitleTextAppearance"/><attr format="reference" name="collapsedTitleTextAppearance"/><attr format="color" name="contentScrim"/><attr format="color" name="statusBarScrim"/><attr format="reference" name="toolbarId"/></declare-styleable>
     <declare-styleable name="CoordinatorLayout"><attr format="reference" name="keylines"/><attr format="reference" name="statusBarBackground"/></declare-styleable>
     <declare-styleable name="CoordinatorLayout_LayoutParams"><attr name="android:layout_gravity"/><attr format="string" name="layout_behavior"/><attr format="reference" name="layout_anchor"/><attr format="integer" name="layout_keyline"/><attr name="layout_anchorGravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
-    <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="color" name="textColorError"/></declare-styleable>
-    <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
-    <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/><attr format="boolean" name="useCompatPadding"/></declare-styleable>
-    <declare-styleable name="ForegroundLinearLayout"><attr name="android:foreground"/><attr name="android:foregroundInsidePadding"/><attr name="android:foregroundGravity"/><attr format="boolean" name="foregroundInsidePadding"/></declare-styleable>
+    <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="topBottomBarArrowSize"/><attr format="dimension" name="middleBarArrowSize"/><attr format="dimension" name="barSize"/><attr format="dimension" name="thickness"/></declare-styleable>
+    <declare-styleable name="FloatingActionButton"><attr name="android:background"/><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/></declare-styleable>
+    <declare-styleable name="ForegroundLinearLayout"><attr name="android:foreground"/><attr name="android:foregroundInsidePadding"/><attr name="android:foregroundGravity"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
@@ -330,36 +337,35 @@
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="showAsAction"><flag name="never" value="0"/><flag name="ifRoom" value="1"/><flag name="always" value="2"/><flag name="withText" value="4"/><flag name="collapseActionView" value="8"/></attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/></declare-styleable>
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
-    <declare-styleable name="NavigationView"><attr name="android:background"/><attr name="android:fitsSystemWindows"/><attr name="android:maxWidth"/><attr name="elevation"/><attr format="reference" name="menu"/><attr format="color" name="itemIconTint"/><attr format="color" name="itemTextColor"/><attr format="reference" name="itemBackground"/><attr format="reference" name="itemTextAppearance"/><attr format="reference" name="headerLayout"/></declare-styleable>
+    <declare-styleable name="NavigationView"><attr name="android:background"/><attr name="android:fitsSystemWindows"/><attr name="android:maxWidth"/><attr name="elevation"/><attr format="reference" name="menu"/><attr format="color" name="itemIconTint"/><attr format="color" name="itemTextColor"/><attr format="reference" name="itemBackground"/><attr format="reference" name="headerLayout"/></declare-styleable>
     <declare-styleable name="PopupWindow"><attr format="boolean" name="overlapAnchor"/><attr name="android:popupBackground"/></declare-styleable>
     <declare-styleable name="PopupWindowBackgroundState"><attr format="boolean" name="state_above_anchor"/></declare-styleable>
-    <declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/></declare-styleable>
     <declare-styleable name="ScrimInsetsFrameLayout"><attr format="color|reference" name="insetForeground"/></declare-styleable>
     <declare-styleable name="ScrollingViewBehavior_Params"><attr format="dimension" name="behavior_overlapTop"/></declare-styleable>
     <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr format="string" name="defaultQueryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="SnackbarLayout"><attr name="android:maxWidth"/><attr name="elevation"/><attr format="dimension" name="maxActionInlineWidth"/></declare-styleable>
-    <declare-styleable name="Spinner"><attr name="android:prompt"/><attr name="popupTheme"/><attr name="android:popupBackground"/><attr name="android:dropDownWidth"/><attr name="android:entries"/></declare-styleable>
+    <declare-styleable name="Spinner"><attr format="reference" name="prompt"/><attr format="enum" name="spinnerMode"><enum name="dialog" value="0"/><enum name="dropdown" value="1"/></attr><attr name="android:dropDownSelector"/><attr name="android:popupBackground"/><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/><attr name="android:dropDownWidth"/><attr format="reference" name="popupPromptView"/><attr name="android:gravity"/><attr format="boolean" name="disableChildrenWhenDisabled"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="StateButton"><attr format="string" name="finishStateText"/><attr format="string" name="progressStateText"/><attr format="string" name="startStateText"/><attr format="reference" name="dgts__StateButtonStyle"/></declare-styleable>
     <declare-styleable name="SwitchCompat"><attr name="android:thumb"/><attr format="reference" name="track"/><attr name="android:textOn"/><attr name="android:textOff"/><attr format="dimension" name="thumbTextPadding"/><attr format="reference" name="switchTextAppearance"/><attr format="dimension" name="switchMinWidth"/><attr format="dimension" name="switchPadding"/><attr format="boolean" name="splitTrack"/><attr format="boolean" name="showText"/></declare-styleable>
-    <declare-styleable name="TabItem"><attr name="android:text"/><attr name="android:icon"/><attr name="android:layout"/></declare-styleable>
     <declare-styleable name="TabLayout"><attr format="color" name="tabIndicatorColor"/><attr format="dimension" name="tabIndicatorHeight"/><attr format="dimension" name="tabContentStart"/><attr format="reference" name="tabBackground"/><attr name="tabMode"><enum name="scrollable" value="0"/><enum name="fixed" value="1"/></attr><attr name="tabGravity"><enum name="fill" value="0"/><enum name="center" value="1"/></attr><attr format="dimension" name="tabMinWidth"/><attr format="dimension" name="tabMaxWidth"/><attr format="reference" name="tabTextAppearance"/><attr format="color" name="tabTextColor"/><attr format="color" name="tabSelectedTextColor"/><attr format="dimension" name="tabPaddingStart"/><attr format="dimension" name="tabPaddingTop"/><attr format="dimension" name="tabPaddingEnd"/><attr format="dimension" name="tabPaddingBottom"/><attr format="dimension" name="tabPadding"/></declare-styleable>
-    <declare-styleable name="TextAppearance"><attr name="android:textSize"/><attr name="android:textColor"/><attr name="android:textStyle"/><attr name="android:typeface"/><attr name="textAllCaps"/><attr name="android:shadowColor"/><attr name="android:shadowDy"/><attr name="android:shadowDx"/><attr name="android:shadowRadius"/></declare-styleable>
-    <declare-styleable name="TextInputLayout"><attr format="reference" name="hintTextAppearance"/><attr name="android:hint"/><attr format="boolean" name="hintEnabled"/><attr format="boolean" name="errorEnabled"/><attr format="reference" name="errorTextAppearance"/><attr format="boolean" name="counterEnabled"/><attr format="integer" name="counterMaxLength"/><attr format="reference" name="counterTextAppearance"/><attr format="reference" name="counterOverflowTextAppearance"/><attr name="android:textColorHint"/><attr format="boolean" name="hintAnimationEnabled"/></declare-styleable>
-    <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/><attr name="logo"/><attr format="string" name="logoDescription"/><attr format="color" name="titleTextColor"/><attr format="color" name="subtitleTextColor"/></declare-styleable>
-    <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/></declare-styleable>
-    <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
+    <declare-styleable name="TextAppearance"><attr name="android:textSize"/><attr name="android:textColor"/><attr name="android:textStyle"/><attr name="android:typeface"/><attr name="textAllCaps"/></declare-styleable>
+    <declare-styleable name="TextInputLayout"><attr format="reference" name="hintTextAppearance"/><attr name="android:hint"/><attr format="boolean" name="errorEnabled"/><attr format="reference" name="errorTextAppearance"/></declare-styleable>
+    <declare-styleable name="Theme"><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowNoTitle"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowActionModeOverlay"/><attr format="dimension|fraction" name="windowFixedWidthMajor"/><attr format="dimension|fraction" name="windowFixedHeightMinor"/><attr format="dimension|fraction" name="windowFixedWidthMinor"/><attr format="dimension|fraction" name="windowFixedHeightMajor"/><attr format="dimension|fraction" name="windowMinWidthMajor"/><attr format="dimension|fraction" name="windowMinWidthMinor"/><attr name="android:windowIsFloating"/><attr name="android:windowAnimationStyle"/><attr format="reference" name="actionBarTabStyle"/><attr format="reference" name="actionBarTabBarStyle"/><attr format="reference" name="actionBarTabTextStyle"/><attr format="reference" name="actionOverflowButtonStyle"/><attr format="reference" name="actionOverflowMenuStyle"/><attr format="reference" name="actionBarPopupTheme"/><attr format="reference" name="actionBarStyle"/><attr format="reference" name="actionBarSplitStyle"/><attr format="reference" name="actionBarTheme"/><attr format="reference" name="actionBarWidgetTheme"/><attr format="dimension" name="actionBarSize"><enum name="wrap_content" value="0"/></attr><attr format="reference" name="actionBarDivider"/><attr format="reference" name="actionBarItemBackground"/><attr format="reference" name="actionMenuTextAppearance"/><attr format="color|reference" name="actionMenuTextColor"/><attr format="reference" name="actionModeStyle"/><attr format="reference" name="actionModeCloseButtonStyle"/><attr format="reference" name="actionModeBackground"/><attr format="reference" name="actionModeSplitBackground"/><attr format="reference" name="actionModeCloseDrawable"/><attr format="reference" name="actionModeCutDrawable"/><attr format="reference" name="actionModeCopyDrawable"/><attr format="reference" name="actionModePasteDrawable"/><attr format="reference" name="actionModeSelectAllDrawable"/><attr format="reference" name="actionModeShareDrawable"/><attr format="reference" name="actionModeFindDrawable"/><attr format="reference" name="actionModeWebSearchDrawable"/><attr format="reference" name="actionModePopupWindowStyle"/><attr format="reference" name="textAppearanceLargePopupMenu"/><attr format="reference" name="textAppearanceSmallPopupMenu"/><attr format="reference" name="dialogTheme"/><attr format="dimension" name="dialogPreferredPadding"/><attr format="reference" name="listDividerAlertDialog"/><attr format="reference" name="actionDropDownStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="spinnerDropDownItemStyle"/><attr format="reference" name="homeAsUpIndicator"/><attr format="reference" name="actionButtonStyle"/><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/><attr format="reference" name="selectableItemBackground"/><attr format="reference" name="selectableItemBackgroundBorderless"/><attr format="reference" name="borderlessButtonStyle"/><attr format="reference" name="dividerVertical"/><attr format="reference" name="dividerHorizontal"/><attr format="reference" name="activityChooserViewStyle"/><attr format="reference" name="toolbarStyle"/><attr format="reference" name="toolbarNavigationButtonStyle"/><attr format="reference" name="popupMenuStyle"/><attr format="reference" name="popupWindowStyle"/><attr format="reference|color" name="editTextColor"/><attr format="reference" name="editTextBackground"/><attr format="reference" name="textAppearanceSearchResultTitle"/><attr format="reference" name="textAppearanceSearchResultSubtitle"/><attr format="reference|color" name="textColorSearchUrl"/><attr format="reference" name="searchViewStyle"/><attr format="dimension" name="listPreferredItemHeight"/><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="dimension" name="listPreferredItemHeightLarge"/><attr format="dimension" name="listPreferredItemPaddingLeft"/><attr format="dimension" name="listPreferredItemPaddingRight"/><attr format="reference" name="dropDownListViewStyle"/><attr format="reference" name="listPopupWindowStyle"/><attr format="reference" name="textAppearanceListItem"/><attr format="reference" name="textAppearanceListItemSmall"/><attr format="reference" name="panelBackground"/><attr format="dimension" name="panelMenuListWidth"/><attr format="reference" name="panelMenuListTheme"/><attr format="reference" name="listChoiceBackgroundIndicator"/><attr format="color" name="colorPrimary"/><attr format="color" name="colorPrimaryDark"/><attr format="color" name="colorAccent"/><attr format="color" name="colorControlNormal"/><attr format="color" name="colorControlActivated"/><attr format="color" name="colorControlHighlight"/><attr format="color" name="colorButtonNormal"/><attr format="color" name="colorSwitchThumbNormal"/><attr format="reference" name="alertDialogStyle"/><attr format="reference" name="alertDialogButtonGroupStyle"/><attr format="boolean" name="alertDialogCenterButtons"/><attr format="reference" name="alertDialogTheme"/><attr format="reference|color" name="textColorAlertDialogListItem"/><attr format="reference" name="buttonBarPositiveButtonStyle"/><attr format="reference" name="buttonBarNegativeButtonStyle"/><attr format="reference" name="buttonBarNeutralButtonStyle"/><attr format="reference" name="autoCompleteTextViewStyle"/><attr format="reference" name="buttonStyle"/><attr format="reference" name="buttonStyleSmall"/><attr format="reference" name="checkboxStyle"/><attr format="reference" name="checkedTextViewStyle"/><attr format="reference" name="editTextStyle"/><attr format="reference" name="radioButtonStyle"/><attr format="reference" name="ratingBarStyle"/><attr format="reference" name="spinnerStyle"/><attr format="reference" name="switchStyle"/></declare-styleable>
+    <declare-styleable name="ToggleImageButton"><attr format="boolean" name="state_toggled_on"/><attr format="string" name="contentDescriptionOn"/><attr format="string" name="contentDescriptionOff"/><attr format="boolean" name="toggleOnClick"/></declare-styleable>
+    <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
+    <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
     <declare-styleable name="card_listItem"><attr format="dimension" name="card_list_item_dividerHeight"/></declare-styleable>
     <declare-styleable name="card_options"><attr format="reference" name="card_layout_resourceID"/><attr format="reference" name="card_shadow_layout_resourceID"/><attr format="reference" name="card_header_layout_resourceID"/><attr format="reference" name="card_thumbnail_layout_resourceID"/><attr format="reference" name="list_card_layout_resourceID"/><attr format="reference" name="list_card_layout_resourceIDs"/></declare-styleable>
     <declare-styleable name="tw__AspectRatioImageView"><attr format="float" name="tw__image_aspect_ratio"/><attr format="enum" name="tw__image_dimension_to_adjust"><enum name="height" value="0"/><enum name="width" value="1"/></attr></declare-styleable>
-    <declare-styleable name="tw__TweetView"><attr format="string" name="tw__tweet_id"/><attr format="color" name="tw__container_bg_color"/><attr format="color" name="tw__primary_text_color"/><attr format="color" name="tw__action_color"/></declare-styleable>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <declare-styleable name="tw__TweetView"><attr format="string" name="tw__tweet_id"/><attr format="color" name="tw__container_bg_color"/><attr format="color" name="tw__primary_text_color"/><attr format="color" name="tw__action_color"/><attr format="color" name="tw__action_highlight_color"/><attr format="boolean" name="tw__tweet_actions_enabled"/></declare-styleable>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
-    <dimen name="abc_action_bar_default_padding_end_material">0dp</dimen>
-    <dimen name="abc_action_bar_default_padding_start_material">0dp</dimen>
+    <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
     <dimen name="abc_action_bar_icon_vertical_padding_material">16dp</dimen>
+    <dimen name="abc_action_bar_navigation_padding_start_material">0dp</dimen>
     <dimen name="abc_action_bar_overflow_padding_end_material">10dp</dimen>
     <dimen name="abc_action_bar_overflow_padding_start_material">6dp</dimen>
     <dimen name="abc_action_bar_progress_bar_size">40dp</dimen>
@@ -379,10 +385,6 @@
     <dimen name="abc_control_corner_material">2dp</dimen>
     <dimen name="abc_control_inset_material">4dp</dimen>
     <dimen name="abc_control_padding_material">4dp</dimen>
-    <item name="abc_dialog_fixed_height_major" type="dimen">80%</item>
-    <item name="abc_dialog_fixed_height_minor" type="dimen">100%</item>
-    <item name="abc_dialog_fixed_width_major" type="dimen">320dp</item>
-    <item name="abc_dialog_fixed_width_minor" type="dimen">320dp</item>
     <dimen name="abc_dialog_list_padding_vertical_material">8dp</dimen>
     <item name="abc_dialog_min_width_major" type="dimen">65%</item>
     <item name="abc_dialog_min_width_minor" type="dimen">95%</item>
@@ -401,9 +403,6 @@
     <dimen name="abc_panel_menu_list_width">296dp</dimen>
     <dimen name="abc_search_view_preferred_width">320dip</dimen>
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
-    <dimen name="abc_seekbar_track_background_height_material">2dp</dimen>
-    <dimen name="abc_seekbar_track_progress_height_material">2dp</dimen>
-    <dimen name="abc_select_dialog_padding_start_material">20dp</dimen>
     <dimen name="abc_switch_padding">3dp</dimen>
     <dimen name="abc_text_size_body_1_material">14sp</dimen>
     <dimen name="abc_text_size_body_2_material">14sp</dimen>
@@ -426,6 +425,9 @@
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="appbar_elevation">4dp</dimen>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.1.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="card_background_default_radius">2dp</dimen>
@@ -528,62 +530,50 @@
     <dimen name="card_shadow_view_margin_top">0dp</dimen>
     <dimen name="card_thumbnail_height">72dp</dimen>
     <dimen name="card_thumbnail_width">72dp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <dimen name="design_appbar_elevation">4dp</dimen>
-    <dimen name="design_bottom_sheet_modal_elevation">16dp</dimen>
-    <dimen name="design_bottom_sheet_modal_peek_height">256dp</dimen>
-    <dimen name="design_fab_border_width">0.5dp</dimen>
-    <dimen name="design_fab_elevation">6dp</dimen>
-    <dimen name="design_fab_image_size">24dp</dimen>
-    <dimen name="design_fab_size_mini">40dp</dimen>
-    <dimen name="design_fab_size_normal">56dp</dimen>
-    <dimen name="design_fab_translation_z_pressed">6dp</dimen>
-    <dimen name="design_navigation_elevation">16dp</dimen>
-    <dimen name="design_navigation_icon_padding">32dp</dimen>
-    <dimen name="design_navigation_icon_size">24dp</dimen>
-    <dimen name="design_navigation_max_width">280dp</dimen>
-    <dimen name="design_navigation_padding_bottom">8dp</dimen>
-    <dimen name="design_navigation_separator_vertical_padding">8dp</dimen>
-    <dimen name="design_snackbar_action_inline_max_width">128dp</dimen>
-    <dimen name="design_snackbar_background_corner_radius">0dp</dimen>
-    <dimen name="design_snackbar_elevation">6dp</dimen>
-    <dimen name="design_snackbar_extra_spacing_horizontal">0dp</dimen>
-    <dimen name="design_snackbar_max_width">-1px</dimen>
-    <dimen name="design_snackbar_min_width">-1px</dimen>
-    <dimen name="design_snackbar_padding_horizontal">12dp</dimen>
-    <dimen name="design_snackbar_padding_vertical">14dp</dimen>
-    <dimen name="design_snackbar_padding_vertical_2lines">24dp</dimen>
-    <dimen name="design_snackbar_text_size">14sp</dimen>
-    <dimen name="design_tab_max_width">264dp</dimen>
-    <dimen name="design_tab_scrollable_min_width">72dp</dimen>
-    <dimen name="design_tab_text_size">14sp</dimen>
-    <dimen name="design_tab_text_size_2line">12sp</dimen>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="detail_backdrop_height">256dp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values/values.xml -->
     <eat-comment/>
+    <dimen name="dgts__countdown_margin">8dp</dimen>
     <dimen name="dgts__country_code_margin_bottom">1dp</dimen>
     <dimen name="dgts__margin_bottom">16dp</dimen>
+    <dimen name="dgts__margin_left">14dp</dimen>
+    <dimen name="dgts__margin_right">14dp</dimen>
     <dimen name="dgts__padding_container">14dp</dimen>
     <dimen name="dgts__padding_title">10dp</dimen>
     <dimen name="dgts__permissions_margin_bottom">18dp</dimen>
     <dimen name="dgts__progress_bar_side_length">28dp</dimen>
     <dimen name="dgts__terms_text_size">12sp</dimen>
     <dimen name="dgts__title_text_size">22sp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
+    <item name="dialog_fixed_height_major" type="dimen">80%</item>
+    <item name="dialog_fixed_height_minor" type="dimen">100%</item>
+    <item name="dialog_fixed_width_major" type="dimen">320dp</item>
+    <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="fab_border_width">0.5dp</dimen>
+    <dimen name="fab_content_size">24dp</dimen>
+    <dimen name="fab_elevation">8dp</dimen>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="fab_margin">16dp</dimen>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_translation_z_pressed">6dp</dimen>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
     <dimen name="font_tab">14dp</dimen>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.1.0/res/values/values.xml -->
     <eat-comment/>
@@ -591,18 +581,6 @@
     <dimen name="grid_card_padding_left">2dp</dimen>
     <dimen name="grid_card_padding_right">2dp</dimen>
     <dimen name="grid_card_padding_top">2dp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
-    <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
-    <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
-    <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
-    <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.1.0/res/values/values.xml -->
-    <eat-comment/>
     <dimen name="list_card_padding_bottom">6dp</dimen>
     <dimen name="list_card_padding_left">8dp</dimen>
     <dimen name="list_card_padding_right">8dp</dimen>
@@ -621,27 +599,60 @@
     <dimen name="native_recyclerview_card_margin_left">0dp</dimen>
     <dimen name="native_recyclerview_card_margin_right">0dp</dimen>
     <dimen name="native_recyclerview_card_margin_top">6dp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="navigation_elevation">12dp</dimen>
+    <dimen name="navigation_icon_padding">32dp</dimen>
+    <dimen name="navigation_icon_size">24dp</dimen>
+    <dimen name="navigation_max_width">320dp</dimen>
+    <dimen name="navigation_padding_bottom">8dp</dimen>
+    <dimen name="navigation_padding_top_default">0dp</dimen>
+    <dimen name="navigation_separator_vertical_padding">8dp</dimen>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="snackbar_action_inline_max_width">128dp</dimen>
+    <dimen name="snackbar_background_corner_radius">0dp</dimen>
+    <dimen name="snackbar_elevation">2dp</dimen>
+    <dimen name="snackbar_extra_spacing_horizontal">0dp</dimen>
+    <dimen name="snackbar_max_width">-1px</dimen>
+    <dimen name="snackbar_min_width">-1px</dimen>
+    <dimen name="snackbar_padding_horizontal">12dp</dimen>
+    <dimen name="snackbar_padding_vertical">14dp</dimen>
+    <dimen name="snackbar_padding_vertical_2lines">24dp</dimen>
+    <dimen name="snackbar_text_size">14sp</dimen>
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_min_width">72dp</dimen>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
     <eat-comment/>
     <dimen name="tw__btn_bar_margin_left">8dp</dimen>
     <dimen name="tw__btn_bar_margin_right">8dp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values/values.xml -->
     <eat-comment/>
+    <dimen name="tw__card_font_size_medium">18sp</dimen>
+    <dimen name="tw__card_font_size_small">14sp</dimen>
+    <dimen name="tw__card_maximum_width">400dp</dimen>
+    <dimen name="tw__card_radius_medium">6dp</dimen>
+    <dimen name="tw__card_radius_small">4dp</dimen>
+    <dimen name="tw__card_spacing_large">16dp</dimen>
+    <dimen name="tw__card_spacing_medium">8dp</dimen>
+    <dimen name="tw__card_spacing_small">4dp</dimen>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="tw__compact_tweet_action_bar_offset_left">-12dp</dimen>
     <dimen name="tw__compact_tweet_attribution_line_margin_right">36dp</dimen>
     <dimen name="tw__compact_tweet_avatar_margin_left">12dp</dimen>
     <dimen name="tw__compact_tweet_avatar_margin_right">8dp</dimen>
     <dimen name="tw__compact_tweet_avatar_margin_top">5.5dp</dimen>
-    <dimen name="tw__compact_tweet_container_padding_bottom">13dp</dimen>
+    <dimen name="tw__compact_tweet_container_bottom_separator">13dp</dimen>
     <dimen name="tw__compact_tweet_container_padding_top">10.5dp</dimen>
     <dimen name="tw__compact_tweet_full_name_margin_top">0dp</dimen>
     <dimen name="tw__compact_tweet_logo_margin_right">12dp</dimen>
     <dimen name="tw__compact_tweet_logo_margin_top">5dp</dimen>
-    <item format="float" name="tw__compact_tweet_media_aspect_ratio" type="dimen">1.777777</item>
     <dimen name="tw__compact_tweet_media_margin_bottom">3dp</dimen>
     <dimen name="tw__compact_tweet_media_margin_right">12dp</dimen>
     <dimen name="tw__compact_tweet_media_margin_top">7dp</dimen>
@@ -657,45 +668,66 @@
     <dimen name="tw__compact_tweet_text_margin_right">12dp</dimen>
     <dimen name="tw__compact_tweet_text_margin_top">1dp</dimen>
     <dimen name="tw__compact_tweet_timestamp_margin_top">0dp</dimen>
-    <dimen name="tw__font_size_large">16sp</dimen>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="tw__composer_avatar_size">32dp</dimen>
+    <dimen name="tw__composer_char_count_height">36dp</dimen>
+    <dimen name="tw__composer_close_size">48dp</dimen>
+    <dimen name="tw__composer_divider_height">1dp</dimen>
+    <dimen name="tw__composer_font_size_small">14sp</dimen>
+    <dimen name="tw__composer_logo_height">20dp</dimen>
+    <dimen name="tw__composer_logo_width">24dp</dimen>
+    <dimen name="tw__composer_spacing_large">16dp</dimen>
+    <dimen name="tw__composer_spacing_medium">8dp</dimen>
+    <dimen name="tw__composer_spacing_small">4dp</dimen>
+    <dimen name="tw__composer_tweet_btn_height">36dp</dimen>
+    <dimen name="tw__composer_tweet_btn_radius">4dp</dimen>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="tw__gif_badge_padding">4dp</dimen>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
+    <eat-comment/>
     <dimen name="tw__login_btn_drawable_padding">4dp</dimen>
     <dimen name="tw__login_btn_height">32dp</dimen>
     <dimen name="tw__login_btn_left_padding">8dp</dimen>
     <dimen name="tw__login_btn_radius">5dp</dimen>
     <dimen name="tw__login_btn_right_padding">12dp</dimen>
     <dimen name="tw__login_btn_text_size">14sp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values/values.xml -->
-    <eat-comment/>
     <dimen name="tw__padding_permission_horizontal_container">24dp</dimen>
     <dimen name="tw__padding_permission_vertical_container">24dp</dimen>
     <dimen name="tw__permission_description_text_size">16sp</dimen>
     <dimen name="tw__permission_title_text_size">24sp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
     <eat-comment/>
-    <dimen name="tw__text_size_large">16dp</dimen>
-    <dimen name="tw__text_size_medium">14dp</dimen>
-    <dimen name="tw__tweet_action_layout_margin_top">0dp</dimen>
+    <dimen name="tw__seekbar_thumb_inner_padding">13dp</dimen>
+    <dimen name="tw__seekbar_thumb_outer_padding">7dp</dimen>
+    <dimen name="tw__seekbar_thumb_size">32dp</dimen>
+    <dimen name="tw__text_size_large">16sp</dimen>
+    <dimen name="tw__text_size_medium">14sp</dimen>
+    <dimen name="tw__text_size_small">12sp</dimen>
+    <dimen name="tw__tweet_action_bar_offset_bottom">-2dp</dimen>
+    <dimen name="tw__tweet_action_bar_offset_left">8dp</dimen>
+    <dimen name="tw__tweet_action_button_margin_top">-4dp</dimen>
+    <dimen name="tw__tweet_action_button_spacing">40dp</dimen>
+    <dimen name="tw__tweet_action_heart_size">43dp</dimen>
+    <dimen name="tw__tweet_action_share_padding">14dp</dimen>
     <dimen name="tw__tweet_avatar_margin_left">20dp</dimen>
     <dimen name="tw__tweet_avatar_margin_right">8dp</dimen>
     <dimen name="tw__tweet_avatar_margin_top">18dp</dimen>
     <dimen name="tw__tweet_avatar_size">36dp</dimen>
-    <dimen name="tw__tweet_container_padding_bottom">18dp</dimen>
+    <dimen name="tw__tweet_container_bottom_separator">18dp</dimen>
     <dimen name="tw__tweet_container_padding_top">0dp</dimen>
-    <dimen name="tw__tweet_container_width">1dp</dimen>
     <dimen name="tw__tweet_full_name_margin_top">15dp</dimen>
     <dimen name="tw__tweet_logo_margin_right">20dp</dimen>
     <dimen name="tw__tweet_logo_margin_top">18dp</dimen>
+    <item format="float" name="tw__tweet_media_aspect_ratio" type="dimen">1.777777</item>
+    <dimen name="tw__tweet_media_badge_margin">4dp</dimen>
     <dimen name="tw__tweet_retweeted_by_drawable_padding">3dp</dimen>
     <dimen name="tw__tweet_retweeted_by_margin_bottom">-10dp</dimen>
     <dimen name="tw__tweet_retweeted_by_margin_left">20dp</dimen>
     <dimen name="tw__tweet_retweeted_by_margin_top">10dp</dimen>
     <dimen name="tw__tweet_screen_name_margin_bottom">1dp</dimen>
     <dimen name="tw__tweet_screen_name_margin_top">-4dp</dimen>
-    <dimen name="tw__tweet_share_extra_bottom_margin">2dp</dimen>
-    <dimen name="tw__tweet_share_extra_top_margin">11dp</dimen>
-    <dimen name="tw__tweet_share_layout_height">36dp</dimen>
-    <dimen name="tw__tweet_share_margin_left">20dp</dimen>
-    <dimen name="tw__tweet_share_padding_bottom">12dp</dimen>
     <dimen name="tw__tweet_text_margin_left">20dp</dimen>
     <dimen name="tw__tweet_text_margin_right">20dp</dimen>
     <dimen name="tw__tweet_text_margin_top">12dp</dimen>
@@ -703,7 +735,9 @@
     <dimen name="tw__tweet_timestamp_padding_left">4dp</dimen>
     <dimen name="tw__tweet_verified_check_padding_left">3dp</dimen>
     <dimen name="tw__tweet_verified_margin_bottom">3dp</dimen>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <dimen name="tw__video_control_height">32dp</dimen>
+    <dimen name="tw__video_control_text_size">13sp</dimen>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
@@ -711,9 +745,6 @@
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
     <item name="home" type="id"/>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <item name="item_touch_helper_previous_elevation" type="id"/>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="pop_camera_chat" type="id"/>
@@ -723,7 +754,7 @@
     <item name="pop_camera_settings" type="id"/>
     <item name="pop_camera_type" type="id"/>
     <item name="pop_user_root" type="id"/>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
@@ -732,23 +763,15 @@
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="user_settings" type="id"/>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <item name="view_offset_helper" type="id"/>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <integer name="bottom_sheet_slide_duration">150</integer>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <integer name="cancel_button_image_alpha">127</integer>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <integer name="design_snackbar_text_max_lines">2</integer>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/version.xml -->
     <eat-comment/>
     <integer name="google_play_services_version">7571000</integer>
@@ -756,7 +779,10 @@
     <eat-comment/>
     <integer name="list_card_swipe_distance_divisor">2</integer>
     <integer name="list_card_undobar_hide_delay">5000</integer>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <eat-comment/>
+    <integer name="snackbar_text_max_lines">2</integer>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.1.0/res/values/values.xml -->
@@ -769,7 +795,7 @@
         <item quantity="one">1 card removed</item>
         <item quantity="other">%d cards removed</item>
     </plurals>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
     <eat-comment/>
     <plurals name="tw__time_hours">
         <item quantity="one">1h</item>
@@ -786,9 +812,9 @@
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/apikeys.xml -->
     <eat-comment/>
     <string name="DEVELOPER_KEY">AIzaSyA34h-7yPCNSBkBdJ9cAhLHozGn4JwHtWs</string>
-    <string name="TWITTER_KEY">iEDyhmzEIKxTZrEaBoCeI3VpX</string>
-    <string name="TWITTER_SECRET">VegxqR6S0ApKeRbOQyeV5toAQNkIrwCBdWbyQuDxo79MXdi05e</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <string name="TWITTER_KEY">OQczffwVTLCJIsuTZ4U7rXcJP</string>
+    <string name="TWITTER_SECRET">GnwwAFn6tIEjmhQnhmEiksEdaIPcY1Zy38B021FAAiEgzvTAPC</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -798,8 +824,6 @@
     <string name="abc_action_mode_done">Done</string>
     <string name="abc_activity_chooser_view_see_all">See all</string>
     <string name="abc_activitychooserview_choose_application">Choose an app</string>
-    <string name="abc_capital_off">OFF</string>
-    <string name="abc_capital_on">ON</string>
     <string name="abc_search_hint">Search…</string>
     <string name="abc_searchview_description_clear">Clear query</string>
     <string name="abc_searchview_description_query">Search query</string>
@@ -813,16 +837,13 @@
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">PopkonTV</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/auth_strings.xml -->
     <eat-comment/>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="brightness">Brightness</string>
@@ -831,9 +852,6 @@
     <eat-comment/>
     <string name="card_empty_cardwithlist_text">No data....</string>
     <string name="card_progressbar_cardwithlist_text">Loading data...</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="checkin">Checkin</string>
@@ -880,28 +898,31 @@
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="def">Default</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values/values.xml -->
     <eat-comment/>
-    <string name="dgts__cancel">Cancel</string>
-    <string name="dgts__communication_error">Communication Error</string>
+    <string name="dgts__call_me">Call me</string>
+    <string name="dgts__calling">Calling…</string>
     <string name="dgts__confirmation_code">Confirmation code</string>
-    <string name="dgts__confirmation_edit_hint">Enter confirmation code</string>
+    <string name="dgts__confirmation_edit_hint">Enter the 6-digit code we sent you</string>
     <string name="dgts__confirmation_error">Unable to confirm your phone number</string>
     <string name="dgts__confirmation_error_alternative">Sorry, we are having trouble sending you a confirmation code.</string>
-    <string name="dgts__confirmation_expired">This code has expired. Please resend
-        confirmation code.</string>
-    <string name="dgts__confirmation_send_text">Send confirmation code</string>
-    <string name="dgts__confirmation_sending_text">Sending confirmation code</string>
-    <string name="dgts__confirmation_sent_text">Sent confirmation code</string>
-    <string name="dgts__confirmation_sms">Confirmation code: %1$s. Enter this code in %2$s</string>
+    <string name="dgts__confirmation_expired">This code has expired. Please resend confirmation code.</string>
+    <string name="dgts__continue">Continue</string>
     <string name="dgts__country_spinner_format" translatable="false">%1$s +%2$d</string>
-    <string name="dgts__create_account_text">Create account</string>
-    <string name="dgts__creating_account_text">Creating account</string>
+    <string name="dgts__create_account">Create account</string>
+    <string name="dgts__digits_com_settings_url" translatable="false">
+    https://www.digits.com/settings
+  </string>
+    <string name="dgts__digits_com_url" translatable="false">https://www.digits.com</string>
     <string name="dgts__digits_logo_desc">digits logo icon</string>
     <string name="dgts__digits_logo_name_desc">digits logo name</string>
     <string name="dgts__dismiss">Dismiss</string>
+    <string name="dgts__done">Done</string>
+    <string name="dgts__email_request_edit_hint">Email address</string>
+    <string name="dgts__email_request_title">Enter email address</string>
     <string name="dgts__find_your_friends">Find your friends</string>
     <string name="dgts__image_header_description">Image header for login</string>
+    <string name="dgts__invalid_email">Invalid Email. Try Again</string>
     <string name="dgts__login_digits_text">Use my phone number</string>
     <string name="dgts__network_error">Please check your network and try again.</string>
     <string name="dgts__not_now">Not now</string>
@@ -909,26 +930,31 @@
     <string name="dgts__phone_number_edit_hint">Your Number</string>
     <string name="dgts__phone_number_text">Enter your phone number</string>
     <string name="dgts__pin_code_verification_title">Enter 2-step verification code</string>
-    <string name="dgts__resend">Resend</string>
+    <string name="dgts__resend_confirmation_button_code">Resend code</string>
     <string name="dgts__resend_confirmation_text">Resend confirmation code</string>
-    <string name="dgts__sign_in">Sign in</string>
-    <string name="dgts__sign_in_error">We could not sign you in with Twitter at this time.
-        Please try again later.</string>
-    <string name="dgts__sign_in_twitter">Sign in with Twitter</string>
-    <string name="dgts__signing_in">Signing in</string>
+    <string name="dgts__send_confirmation_code">Send confirmation code</string>
+    <string name="dgts__sending">Sending…</string>
     <string name="dgts__success_desc">Success Icon</string>
-    <string name="dgts__terms_text">By tapping %1$sSend confirmation code%1$s above, <u>Digits by Twitter</u>, will send you a SMS message to confirm your phone number.</string>
-    <string name="dgts__terms_text_create">By tapping %1$sCreate account%1$s above, you agree to the <u>Terms of Service</u>, <u>Privacy Policy</u>, and <u>Cookies Policy</u> of Digits by Twitter, and that other users of this app can discover you by phone number and/or email.</string>
-    <string name="dgts__terms_text_sign_in">By tapping %1$sSign in%1$s above, you agree to the updated <u>Terms of Service</u>, <u>Privacy Policy</u>, and <u>Cookies Policy</u> of Digits by Twitter, and that other users of %1$s can discover you by phone number and/or email.</string>
+    <string name="dgts__terms_email_request">By tapping %1$sContinue%1$s above, you are adding this email to your Digits account. You agree that this app and %7$sall apps listed in your Digits account%5$s can access this email address and their users can discover you by email.</string>
+    <string name="dgts__terms_text">By tapping %1$sSend confirmation code%1$s above, %6$sDigits by Twitter%5$s will send you an SMS to confirm your phone number. On the next screen, you can choose “Resend code” to receive a new SMS or “Call me” to initiate a phone call to confirm your phone number. Message, call &amp; data rates may apply.</string>
+    <string name="dgts__terms_text_call_me">By tapping %1$sCall me%1$s above, %6$sDigits by Twitter%5$s will send you a voice call to confirm your phone number. Call &amp; data rates may apply.</string>
+    <string name="dgts__terms_text_create">By tapping %1$sCreate account%1$s above, you agree to the %8$sTerms of Service%5$s, %9$sPrivacy Policy%5$s, and %10$sCookies Use%5$s of %6$sDigits by Twitter%5$s, to share your phone number with %4$s, and that other users of %4$s can discover you by phone number.</string>
+    <string name="dgts__terms_text_sign_in">By tapping %1$sContinue%1$s above, your %7$sDigits phone number and/or email address%5$s will be shared with %4$s and other users of %4$s can discover you by phone number and/or email.</string>
+    <string name="dgts__terms_text_updated">By tapping %1$sContinue%1$s above, you agree to the %8$sTerms of Service%5$s, %9$sPrivacy Policy%5$s, and %10$sCookies Use%5$s of %6$sDigits by Twitter%5$s, to share your %7$sDigits phone number and/or email address%5$s with %4$s, and other users of %4$s can discover you by phone number and/or email.</string>
     <string name="dgts__try_again">Try Again</string>
     <string name="dgts__try_again_confirmation">Please check your code and try again.</string>
+    <string name="dgts__try_again_email">Please check your email and try again</string>
     <string name="dgts__try_again_phone_number">Please check your number and try again.</string>
     <string name="dgts__try_another_phone">Try a different phone number</string>
+    <string name="dgts__twitter_cookies_policy_url" translatable="false">
+    https://support.twitter.com/articles/20170514
+  </string>
+    <string name="dgts__twitter_privacy_url" translatable="false">https://twitter.com/privacy</string>
+    <string name="dgts__twitter_tos_url" translatable="false">https://twitter.com/tos</string>
+    <string name="dgts__unsupported_operator_error">Unable to send this number an SMS message.</string>
     <string name="dgts__upload_contacts">We use Digits by Twitter to find more of your friends who use this app. When you tap Okay, we\'ll upload your address book to Digits by Twitter so that we can help you find users of %1$s that you know or help other users of %1$s find you.</string>
     <string name="dgts__verification_code">Verification code</string>
     <string name="dgts_pin_code_terms">You have previously set a 2-step verification code on digits.com</string>
-    <string name="dgts_verify">Verify</string>
-    <string name="dgts_verifying">Verifying</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="error_init_failure">Initialization failure: Unable to play video</string>
@@ -945,7 +971,7 @@
     <string name="hardware_acceleration_error_message">Hardware acceleration cannot be done</string>
     <string name="hardware_acceleration_error_title">Hardware Acceleration Error</string>
     <string name="invalid_location">Invalid Location</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
     <eat-comment/>
     <string name="kit_name">Twitter</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.1.0/res/values/values.xml -->
@@ -967,7 +993,7 @@
     <string name="profile">viewprofile</string>
     <string name="sound_off">Sound Off</string>
     <string name="sound_on">Sound On</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/strings.xml -->
@@ -983,28 +1009,47 @@
     <string name="title_activity_user_profile">UserProfileActivity</string>
     <string name="track_audio">Audio Track</string>
     <string name="track_text">Track</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
     <eat-comment/>
     <string name="tw__allow_btn_txt">Allow</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values/values.xml -->
     <eat-comment/>
+    <string name="tw__composer_hint">What\'s Happening?</string>
+    <string name="tw__install">Install</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="tw__like_tweet">Like Tweet</string>
+    <string name="tw__liked_tweet">Undo Like</string>
     <string name="tw__loading_tweet">Loading Tweet</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
     <eat-comment/>
     <string name="tw__login_btn_txt">Log in with Twitter</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values/values.xml -->
+    <eat-comment/>
+    <string name="tw__max_tweet_chars">140</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
+    <eat-comment/>
     <string name="tw__not_now_btn_txt">Not now</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="tw__pause">pause</string>
+    <string name="tw__play">play</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values/values.xml -->
+    <eat-comment/>
+    <string name="tw__play_store">Google Play</string>
+    <string name="tw__post_tweet">Tweet</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
     <eat-comment/>
     <string name="tw__relative_date_format_long">MM/dd/yy</string>
     <string name="tw__relative_date_format_short">MMM dd</string>
+    <string name="tw__replay">replay</string>
     <string name="tw__retweeted_by_format">Retweeted by %1$s</string>
     <string name="tw__share_content_format">Check out @%1$s\'s Tweet: https://twitter.com/%1$s/status/%2$s</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
     <eat-comment/>
-    <string name="tw__share_email_desc">Get updates and other information from %1$s when you allow
-        them access to your email on your Twitter account \@%2$s</string>
+    <string name="tw__share_email_desc">Allow %1$s to access the email address associated with your Twitter account \@%2$s so that %1$s can use it according to its privacy policy. For example, %1$s could send you updates and other information at that address.</string>
     <string name="tw__share_email_title">Share your email address</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
     <eat-comment/>
     <string name="tw__share_subject_format">Tweet from %1$s (@%2$s)</string>
     <string name="tw__share_tweet">Share Tweet</string>
@@ -1022,18 +1067,12 @@
     The benefit of using a Fragment is that your hosting Activity can be of any type.</string>
     <string name="youtube_activity_placeholder">If you don\'t want to use a Fragment,
         you can simply add a YouTubePlayerView to your layout file and handle it the same way.</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <style name="Animation.Design.BottomSheetDialog" parent="Animation.AppCompat.Dialog">
-        <item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>
-        <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
-    </style>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme.Translucent" parent="AppTheme.Base">
@@ -1044,7 +1083,7 @@
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1170,7 +1209,7 @@
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Subhead.Inverse">
-        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
         <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Title">
@@ -1181,31 +1220,28 @@
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
         <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="TextAppearance.AppCompat.Button">
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="android:TextAppearance.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textColor">?attr/actionMenuTextColor</item>
-        <item name="textAllCaps">@bool/abc_config_actionMenuItemAllCaps</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="TextAppearance.AppCompat.Subhead">
         <item name="android:textSize">@dimen/abc_text_size_subtitle_material_toolbar</item>
-        <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="TextAppearance.AppCompat.Subhead.Inverse">
         <item name="android:textSize">@dimen/abc_text_size_subtitle_material_toolbar</item>
-        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title" parent="TextAppearance.AppCompat.Title">
         <item name="android:textSize">@dimen/abc_text_size_title_material_toolbar</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="TextAppearance.AppCompat.Title.Inverse">
         <item name="android:textSize">@dimen/abc_text_size_title_material_toolbar</item>
-        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
-    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title"/>
-    <style name="Base.TextAppearance.AppCompat.Widget.Button" parent="TextAppearance.AppCompat.Button"/>
-    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="TextAppearance.AppCompat.Button">
-        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">@dimen/abc_text_size_subtitle_material_toolbar</item>
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/abc_text_size_title_material_toolbar</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.DropDownItem" parent="android:TextAppearance.Small">
         <item name="android:textColor">?android:attr/textColorPrimaryDisableOnly</item>
@@ -1236,10 +1272,10 @@
         <item name="windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Dialog.FixedSize">
-        <item name="windowFixedWidthMajor">@dimen/abc_dialog_fixed_width_major</item>
-        <item name="windowFixedWidthMinor">@dimen/abc_dialog_fixed_width_minor</item>
-        <item name="windowFixedHeightMajor">@dimen/abc_dialog_fixed_height_major</item>
-        <item name="windowFixedHeightMinor">@dimen/abc_dialog_fixed_height_minor</item>
+        <item name="windowFixedWidthMajor">@dimen/dialog_fixed_width_major</item>
+        <item name="windowFixedWidthMinor">@dimen/dialog_fixed_width_minor</item>
+        <item name="windowFixedHeightMajor">@dimen/dialog_fixed_height_major</item>
+        <item name="windowFixedHeightMinor">@dimen/dialog_fixed_height_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Dialog.MinWidth">
         <item name="windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
@@ -1265,10 +1301,10 @@
         <item name="windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Light.Dialog.FixedSize">
-        <item name="windowFixedWidthMajor">@dimen/abc_dialog_fixed_width_major</item>
-        <item name="windowFixedWidthMinor">@dimen/abc_dialog_fixed_width_minor</item>
-        <item name="windowFixedHeightMajor">@dimen/abc_dialog_fixed_height_major</item>
-        <item name="windowFixedHeightMinor">@dimen/abc_dialog_fixed_height_minor</item>
+        <item name="windowFixedWidthMajor">@dimen/dialog_fixed_width_major</item>
+        <item name="windowFixedWidthMinor">@dimen/dialog_fixed_width_minor</item>
+        <item name="windowFixedHeightMajor">@dimen/dialog_fixed_height_major</item>
+        <item name="windowFixedHeightMinor">@dimen/dialog_fixed_height_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Light.Dialog.MinWidth">
         <item name="windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
@@ -1283,17 +1319,17 @@
         <item name="colorAccent">#FF4081</item>
         <item name="android:windowBackground">@color/window_background</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
-    <style name="Base.ThemeOverlay.AppCompat" parent="Platform.ThemeOverlay.AppCompat"/>
+    <style name="Base.ThemeOverlay.AppCompat" parent=""/>
     <style name="Base.ThemeOverlay.AppCompat.ActionBar">
         <item name="colorControlNormal">?android:attr/textColorPrimary</item>
         <item name="searchViewStyle">@style/Widget.AppCompat.SearchView.ActionBar</item>
     </style>
-    <style name="Base.ThemeOverlay.AppCompat.Dark" parent="Platform.ThemeOverlay.AppCompat.Dark">
+    <style name="Base.ThemeOverlay.AppCompat.Dark">
         <item name="android:windowBackground">@color/background_material_dark</item>
-        <item name="android:colorForeground">@color/foreground_material_dark</item>
-        <item name="android:colorForegroundInverse">@color/foreground_material_light</item>
+        <item name="android:colorForeground">@color/bright_foreground_material_dark</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_material_light</item>
         <item name="android:colorBackground">@color/background_material_dark</item>
         <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_dark</item>
 
@@ -1307,6 +1343,7 @@
         <item name="android:textColorHint">@color/hint_foreground_material_dark</item>
         <item name="android:textColorHintInverse">@color/hint_foreground_material_light</item>
         <item name="android:textColorHighlight">@color/highlighted_text_material_dark</item>
+        <item name="android:textColorLink">@color/link_text_material_dark</item>
 
         <item name="colorControlNormal">?android:attr/textColorSecondary</item>
         <item name="colorControlHighlight">@color/ripple_material_dark</item>
@@ -1322,8 +1359,8 @@
     </style>
     <style name="Base.ThemeOverlay.AppCompat.Light" parent="Platform.ThemeOverlay.AppCompat.Light">
         <item name="android:windowBackground">@color/background_material_light</item>
-        <item name="android:colorForeground">@color/foreground_material_light</item>
-        <item name="android:colorForegroundInverse">@color/foreground_material_dark</item>
+        <item name="android:colorForeground">@color/bright_foreground_material_light</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_material_dark</item>
         <item name="android:colorBackground">@color/background_material_light</item>
         <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_light</item>
 
@@ -1338,6 +1375,7 @@
         <item name="android:textColorHint">@color/hint_foreground_material_light</item>
         <item name="android:textColorHintInverse">@color/hint_foreground_material_dark</item>
         <item name="android:textColorHighlight">@color/highlighted_text_material_light</item>
+        <item name="android:textColorLink">@color/link_text_material_light</item>
 
         <item name="colorControlNormal">?android:attr/textColorSecondary</item>
         <item name="colorControlHighlight">@color/ripple_material_light</item>
@@ -1348,11 +1386,8 @@
         <item name="isLightTheme">true</item>
     </style>
     <style name="Base.V7.Theme.AppCompat" parent="Platform.AppCompat">
-        <item name="windowNoTitle">false</item>
         <item name="windowActionBar">true</item>
         <item name="windowActionBarOverlay">false</item>
-        <item name="windowActionModeOverlay">false</item>
-        <item name="actionBarPopupTheme">@null</item>
 
         <!-- Used by MediaRouter -->
         <item name="isLightTheme">false</item>
@@ -1428,7 +1463,7 @@
         <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Large</item>
         <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Small</item>
         <item name="listPopupWindowStyle">@style/Widget.AppCompat.ListPopupWindow</item>
-        <item name="dropDownListViewStyle">?android:attr/dropDownListViewStyle</item>
+        <item name="dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
 
         <!-- SearchView attributes -->
         <item name="searchViewStyle">@style/Widget.AppCompat.SearchView</item>
@@ -1459,7 +1494,6 @@
         <item name="colorControlHighlight">@color/ripple_material_dark</item>
         <item name="colorButtonNormal">@color/button_material_dark</item>
         <item name="colorSwitchThumbNormal">@color/switch_thumb_material_dark</item>
-        <item name="controlBackground">?attr/selectableItemBackgroundBorderless</item>
 
         <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>
 
@@ -1468,16 +1502,11 @@
         <item name="switchStyle">@style/Widget.AppCompat.CompoundButton.Switch</item>
 
         <item name="ratingBarStyle">@style/Widget.AppCompat.RatingBar</item>
-        <item name="ratingBarStyleIndicator">@style/Widget.AppCompat.RatingBar.Indicator</item>
-        <item name="ratingBarStyleSmall">@style/Widget.AppCompat.RatingBar.Small</item>
-        <item name="seekBarStyle">@style/Widget.AppCompat.SeekBar</item>
 
         <!-- Button styles -->
         <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
         <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
-        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button</item>
-
-        <item name="imageButtonStyle">@style/Widget.AppCompat.ImageButton</item>
+        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Button</item>
 
         <item name="buttonBarStyle">@style/Widget.AppCompat.ButtonBar</item>
         <item name="buttonBarButtonStyle">@style/Widget.AppCompat.Button.ButtonBar.AlertDialog</item>
@@ -1525,11 +1554,8 @@
         <item name="android:listDivider">@null</item>
     </style>
     <style name="Base.V7.Theme.AppCompat.Light" parent="Platform.AppCompat.Light">
-        <item name="windowNoTitle">false</item>
         <item name="windowActionBar">true</item>
         <item name="windowActionBarOverlay">false</item>
-        <item name="windowActionModeOverlay">false</item>
-        <item name="actionBarPopupTheme">@null</item>
 
         <!-- Used by MediaRouter -->
         <item name="isLightTheme">true</item>
@@ -1605,7 +1631,7 @@
         <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large</item>
         <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small</item>
         <item name="listPopupWindowStyle">@style/Widget.AppCompat.ListPopupWindow</item>
-        <item name="dropDownListViewStyle">?android:attr/dropDownListViewStyle</item>
+        <item name="dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
 
         <!-- SearchView attributes -->
         <item name="searchViewStyle">@style/Widget.AppCompat.Light.SearchView</item>
@@ -1636,7 +1662,6 @@
         <item name="colorControlHighlight">@color/ripple_material_light</item>
         <item name="colorButtonNormal">@color/button_material_light</item>
         <item name="colorSwitchThumbNormal">@color/switch_thumb_material_light</item>
-        <item name="controlBackground">?attr/selectableItemBackgroundBorderless</item>
 
         <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>
 
@@ -1645,16 +1670,11 @@
         <item name="switchStyle">@style/Widget.AppCompat.CompoundButton.Switch</item>
 
         <item name="ratingBarStyle">@style/Widget.AppCompat.RatingBar</item>
-        <item name="ratingBarStyleIndicator">@style/Widget.AppCompat.RatingBar.Indicator</item>
-        <item name="ratingBarStyleSmall">@style/Widget.AppCompat.RatingBar.Small</item>
-        <item name="seekBarStyle">@style/Widget.AppCompat.SeekBar</item>
 
         <!-- Button styles -->
         <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
         <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
-        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button</item>
-
-        <item name="imageButtonStyle">@style/Widget.AppCompat.ImageButton</item>
+        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Button</item>
 
         <item name="buttonBarStyle">@style/Widget.AppCompat.ButtonBar</item>
         <item name="buttonBarButtonStyle">@style/Widget.AppCompat.Button.ButtonBar.AlertDialog</item>
@@ -1763,8 +1783,10 @@
         <item name="android:layout_weight">1</item>
         <item name="android:minWidth">80dip</item>
     </style>
-    <style name="Base.Widget.AppCompat.ActionButton" parent="RtlUnderlay.Widget.AppCompat.ActionButton">
+    <style name="Base.Widget.AppCompat.ActionButton" parent="">
         <item name="android:background">?attr/actionBarItemBackground</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
         <item name="android:minWidth">@dimen/abc_action_button_min_width_material</item>
         <item name="android:minHeight">@dimen/abc_action_button_min_height_material</item>
         <item name="android:scaleType">center</item>
@@ -1773,9 +1795,10 @@
         <item name="textAllCaps">@bool/abc_config_actionMenuItemAllCaps</item>
     </style>
     <style name="Base.Widget.AppCompat.ActionButton.CloseMode">
-        <item name="android:background">?attr/controlBackground</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:minWidth">56dp</item>
     </style>
-    <style name="Base.Widget.AppCompat.ActionButton.Overflow" parent="RtlUnderlay.Widget.AppCompat.ActionButton.Overflow">
+    <style name="Base.Widget.AppCompat.ActionButton.Overflow">
         <item name="android:src">@drawable/abc_ic_menu_moreoverflow_mtrl_alpha</item>
         <item name="android:background">?attr/actionBarItemBackground</item>
         <item name="android:contentDescription">@string/abc_action_menu_overflow_description</item>
@@ -1818,10 +1841,6 @@
         <item name="android:maxLines">2</item>
         <item name="android:minHeight">@dimen/abc_alert_dialog_button_bar_height</item>
     </style>
-    <style name="Base.Widget.AppCompat.Button.Colored">
-        <item name="android:background">@drawable/abc_btn_colored_material</item>
-        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.Button.Inverse</item>
-    </style>
     <style name="Base.Widget.AppCompat.Button.Small">
         <item name="android:minHeight">48dip</item>
         <item name="android:minWidth">48dip</item>
@@ -1829,36 +1848,36 @@
     <style name="Base.Widget.AppCompat.ButtonBar" parent="android:Widget">
         <item name="android:background">@null</item>
     </style>
-    <style name="Base.Widget.AppCompat.ButtonBar.AlertDialog"/>
+    <style name="Base.Widget.AppCompat.ButtonBar.AlertDialog">
+        <item name="android:background">@null</item>
+    </style>
     <style name="Base.Widget.AppCompat.CompoundButton.CheckBox" parent="android:Widget.CompoundButton.CheckBox">
         <item name="android:button">?android:attr/listChoiceIndicatorMultiple</item>
-        <item name="android:background">?attr/controlBackground</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
     </style>
     <style name="Base.Widget.AppCompat.CompoundButton.RadioButton" parent="android:Widget.CompoundButton.RadioButton">
         <item name="android:button">?android:attr/listChoiceIndicatorSingle</item>
-        <item name="android:background">?attr/controlBackground</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
     </style>
     <style name="Base.Widget.AppCompat.CompoundButton.Switch" parent="android:Widget.CompoundButton">
         <item name="track">@drawable/abc_switch_track_mtrl_alpha</item>
         <item name="android:thumb">@drawable/abc_switch_thumb_material</item>
         <item name="switchTextAppearance">@style/TextAppearance.AppCompat.Widget.Switch</item>
-        <item name="android:background">?attr/controlBackground</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
         <item name="showText">false</item>
         <item name="switchPadding">@dimen/abc_switch_padding</item>
-        <item name="android:textOn">@string/abc_capital_on</item>
-        <item name="android:textOff">@string/abc_capital_off</item>
     </style>
     <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle.Common">
-        <item name="barLength">18dp</item>
+        <item name="barSize">18dp</item>
         <item name="gapBetweenBars">3dp</item>
         <item name="drawableSize">24dp</item>
     </style>
     <style name="Base.Widget.AppCompat.DrawerArrowToggle.Common" parent="">
         <item name="color">?android:attr/textColorSecondary</item>
+        <item name="middleBarArrowSize">16dp</item>
         <item name="spinBars">true</item>
         <item name="thickness">2dp</item>
-        <item name="arrowShaftLength">16dp</item>
-        <item name="arrowHeadLength">8dp</item>
+        <item name="topBottomBarArrowSize">11.31dp</item>
     </style>
     <style name="Base.Widget.AppCompat.DropDownItem.Spinner" parent="">
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.DropDownItem</item>
@@ -1867,9 +1886,6 @@
         <item name="android:gravity">center_vertical</item>
     </style>
     <style name="Base.Widget.AppCompat.EditText" parent="Base.V7.Widget.AppCompat.EditText"/>
-    <style name="Base.Widget.AppCompat.ImageButton" parent="android:Widget.ImageButton">
-        <item name="android:background">@drawable/abc_btn_default_mtrl_shape</item>
-    </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
         <item name="actionButtonStyle">@style/Widget.AppCompat.Light.ActionButton</item>
         <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.Light.ActionButton.Overflow</item>
@@ -1932,22 +1948,6 @@
         <item name="android:progressDrawable">@drawable/abc_ratingbar_full_material</item>
         <item name="android:indeterminateDrawable">@drawable/abc_ratingbar_full_material</item>
     </style>
-    <style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="android:Widget.RatingBar">
-        <item name="android:progressDrawable">@drawable/abc_ratingbar_indicator_material</item>
-        <item name="android:indeterminateDrawable">@drawable/abc_ratingbar_indicator_material</item>
-        <item name="android:minHeight">36dp</item>
-        <item name="android:maxHeight">36dp</item>
-        <item name="android:isIndicator">true</item>
-        <item name="android:thumb">@null</item>
-    </style>
-    <style name="Base.Widget.AppCompat.RatingBar.Small" parent="android:Widget.RatingBar">
-        <item name="android:progressDrawable">@drawable/abc_ratingbar_small_material</item>
-        <item name="android:indeterminateDrawable">@drawable/abc_ratingbar_small_material</item>
-        <item name="android:minHeight">16dp</item>
-        <item name="android:maxHeight">16dp</item>
-        <item name="android:isIndicator">true</item>
-        <item name="android:thumb">@null</item>
-    </style>
     <style name="Base.Widget.AppCompat.SearchView" parent="android:Widget">
         <item name="layout">@layout/abc_search_view</item>
         <item name="queryBackground">@drawable/abc_textfield_search_material</item>
@@ -1966,25 +1966,25 @@
         <item name="searchHintIcon">@null</item>
         <item name="defaultQueryHint">@string/abc_search_hint</item>
     </style>
-    <style name="Base.Widget.AppCompat.SeekBar" parent="android:Widget">
-        <item name="android:indeterminateOnly">false</item>
-        <item name="android:progressDrawable">@drawable/abc_seekbar_track_material</item>
-        <item name="android:indeterminateDrawable">@drawable/abc_seekbar_track_material</item>
-        <item name="android:thumb">@drawable/abc_seekbar_thumb_material</item>
-        <item name="android:focusable">true</item>
-        <item name="android:paddingLeft">16dip</item>
-        <item name="android:paddingRight">16dip</item>
-    </style>
-    <style name="Base.Widget.AppCompat.Spinner" parent="Platform.Widget.AppCompat.Spinner">
+    <style name="Base.Widget.AppCompat.Spinner" parent="android:Widget.Spinner">
         <item name="android:background">@drawable/abc_spinner_mtrl_am_alpha</item>
-        <item name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item>
         <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
         <item name="android:dropDownVerticalOffset">0dip</item>
-        <item name="android:dropDownHorizontalOffset">0dip</item>
-        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Spinner.DropDown.ActionBar" parent="android:Widget">
+        <item name="spinnerMode">dropdown</item>
+
         <item name="android:clickable">true</item>
-        <item name="android:gravity">left|start|center_vertical</item>
+        <item name="android:background">@drawable/abc_spinner_mtrl_am_alpha</item>
+        <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
+        <item name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
         <item name="overlapAnchor">true</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="popupPromptView">@layout/abc_simple_dropdown_hint</item>
+        <item name="android:gravity">left|start|center_vertical</item>
+        <item name="disableChildrenWhenDisabled">true</item>
     </style>
     <style name="Base.Widget.AppCompat.Spinner.Underlined">
         <item name="android:background">@drawable/abc_spinner_textfield_background_material</item>
@@ -1999,22 +1999,20 @@
         <item name="subtitleTextAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle</item>
         <item name="android:minHeight">?attr/actionBarSize</item>
         <item name="titleMargins">4dp</item>
-        <item name="maxButtonHeight">@dimen/abc_action_bar_default_height_material</item>
+        <item name="maxButtonHeight">56dp</item>
         <item name="collapseIcon">?attr/homeAsUpIndicator</item>
         <item name="collapseContentDescription">@string/abc_toolbar_collapse_description</item>
         <item name="contentInsetStart">16dp</item>
-        <item name="android:paddingLeft">@dimen/abc_action_bar_default_padding_start_material</item>
-        <item name="android:paddingRight">@dimen/abc_action_bar_default_padding_end_material</item>
     </style>
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget">
-        <item name="android:background">?attr/controlBackground</item>
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
-        <item name="tabMaxWidth">@dimen/design_tab_max_width</item>
+        <item name="tabMaxWidth">@dimen/tab_max_width</item>
         <item name="tabIndicatorColor">?attr/colorAccent</item>
         <item name="tabIndicatorHeight">2dp</item>
         <item name="tabPaddingStart">12dp</item>
@@ -2023,7 +2021,7 @@
         <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
         <item name="tabSelectedTextColor">?android:textColorPrimary</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="CardView">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
@@ -2039,13 +2037,27 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values/values.xml -->
+    <eat-comment/>
+    <style name="ComposerDark" parent="@android:style/Theme">
+        <item name="android:textColor">@color/tw__composer_white</item>
+        <item name="android:textColorSecondary">@color/tw__composer_deep_gray</item>
+        <item name="android:textColorHint">@color/tw__composer_light_gray</item>
+        <item name="tw__twitter_logo">@drawable/tw__composer_logo_white</item>
+    </style>
+    <style name="ComposerLight" parent="@android:style/Theme.Light">
+        <item name="android:textColor">@color/tw__composer_black</item>
+        <item name="android:textColorSecondary">@color/tw__composer_deep_gray</item>
+        <item name="android:textColorHint">@color/tw__composer_light_gray</item>
+        <item name="tw__twitter_logo">@drawable/tw__composer_logo_blue</item>
+    </style>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="DialogAnimation">
         <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
         <item name="android:windowExitAnimation">@anim/slide_out_down</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Digits_default" parent="@android:style/Theme.Light">
         <item name="dgts__accentColor">@color/dgts__default_accent</item>
@@ -2059,14 +2071,19 @@
     <style name="FullScreenTheme" parent="AppTheme">
         <item name="android:windowFullscreen">true</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="MediaTheme" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 
         <!-- Window colors -->
-        <item name="android:colorForeground">@color/foreground_material_dark</item>
-        <item name="android:colorForegroundInverse">@color/foreground_material_light</item>
+        <item name="android:colorForeground">@color/bright_foreground_material_dark</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_material_light</item>
         <item name="android:colorBackground">@color/background_material_dark</item>
         <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_dark</item>
         <item name="android:disabledAlpha">@dimen/abc_disabled_alpha_material_dark</item>
@@ -2084,7 +2101,7 @@
         <item name="android:textColorHint">@color/hint_foreground_material_dark</item>
         <item name="android:textColorHintInverse">@color/hint_foreground_material_light</item>
         <item name="android:textColorHighlight">@color/highlighted_text_material_dark</item>
-        <item name="android:textColorLink">?attr/colorAccent</item>
+        <item name="android:textColorLink">@color/link_text_material_dark</item>
 
         <!-- Text styles -->
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
@@ -2103,8 +2120,8 @@
         <item name="android:windowNoTitle">true</item>
 
         <!-- Window colors -->
-        <item name="android:colorForeground">@color/foreground_material_light</item>
-        <item name="android:colorForegroundInverse">@color/foreground_material_dark</item>
+        <item name="android:colorForeground">@color/bright_foreground_material_light</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_material_dark</item>
         <item name="android:colorBackground">@color/background_material_light</item>
         <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_light</item>
         <item name="android:disabledAlpha">@dimen/abc_disabled_alpha_material_light</item>
@@ -2123,7 +2140,7 @@
         <item name="android:textColorHint">@color/hint_foreground_material_light</item>
         <item name="android:textColorHintInverse">@color/hint_foreground_material_dark</item>
         <item name="android:textColorHighlight">@color/highlighted_text_material_light</item>
-        <item name="android:textColorLink">?attr/colorAccent</item>
+        <item name="android:textColorLink">@color/link_text_material_light</item>
 
         <!-- Text styles -->
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
@@ -2138,8 +2155,7 @@
         <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
-    <style name="Platform.ThemeOverlay.AppCompat" parent=""/>
-    <style name="Platform.ThemeOverlay.AppCompat.Dark">
+    <style name="Platform.ThemeOverlay.AppCompat.Dark" parent="">
         <!-- Action Bar styles -->
         <item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
@@ -2149,7 +2165,7 @@
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
-    <style name="Platform.ThemeOverlay.AppCompat.Light">
+    <style name="Platform.ThemeOverlay.AppCompat.Light" parent="">
         <item name="actionBarItemBackground">@drawable/abc_item_background_holo_light</item>
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
@@ -2158,18 +2174,21 @@
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.Light.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
-    <style name="Platform.Widget.AppCompat.Spinner" parent="android:Widget.Spinner"/>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="PopkonTV" parent="Base.Theme.DesignDemo">
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
     </style>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="android:Widget">
         <item name="android:layout_gravity">center_vertical|left</item>
         <item name="android:paddingRight">8dp</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.ActionButton.Overflow" parent="Base.Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
+        <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
     </style>
     <style name="RtlOverlay.Widget.AppCompat.DialogTitle.Icon" parent="android:Widget">
         <item name="android:layout_marginRight">8dp</item>
@@ -2203,13 +2222,8 @@
     <style name="RtlOverlay.Widget.AppCompat.SearchView.MagIcon" parent="android:Widget">
         <item name="android:layout_marginLeft">@dimen/abc_dropdownitem_text_padding_left</item>
     </style>
-    <style name="RtlUnderlay.Widget.AppCompat.ActionButton" parent="android:Widget">
-        <item name="android:paddingLeft">12dp</item>
-        <item name="android:paddingRight">12dp</item>
-    </style>
-    <style name="RtlUnderlay.Widget.AppCompat.ActionButton.Overflow" parent="Base.Widget.AppCompat.ActionButton">
-        <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
-        <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
+    <style name="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:paddingLeft">@dimen/abc_action_bar_navigation_padding_start_material</item>
     </style>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
@@ -2245,10 +2259,12 @@
     <style name="TextAppearance.AppCompat.Title.Inverse" parent="Base.TextAppearance.AppCompat.Title.Inverse"/>
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu">
     </style>
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+    </style>
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse">
     </style>
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+    </style>
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
     </style>
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle">
@@ -2257,8 +2273,6 @@
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Title" parent="Base.TextAppearance.AppCompat.Widget.ActionMode.Title">
     </style>
     <style name="TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse" parent="TextAppearance.AppCompat.Widget.ActionMode.Title"/>
-    <style name="TextAppearance.AppCompat.Widget.Button" parent="Base.TextAppearance.AppCompat.Widget.Button"/>
-    <style name="TextAppearance.AppCompat.Widget.Button.Inverse" parent="Base.TextAppearance.AppCompat.Widget.Button.Inverse"/>
     <style name="TextAppearance.AppCompat.Widget.DropDownItem" parent="Base.TextAppearance.AppCompat.Widget.DropDownItem">
     </style>
     <style name="TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large">
@@ -2267,31 +2281,27 @@
     </style>
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="Base.TextAppearance.AppCompat.Widget.Switch"/>
     <style name="TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
-    <style name="TextAppearance.Design.CollapsingToolbar.Expanded" parent="TextAppearance.AppCompat.Display1">
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
-    </style>
-    <style name="TextAppearance.Design.Counter" parent="TextAppearance.AppCompat.Caption"/>
-    <style name="TextAppearance.Design.Counter.Overflow" parent="TextAppearance.AppCompat.Caption">
-        <item name="android:textColor">?attr/textColorError</item>
-    </style>
     <style name="TextAppearance.Design.Error" parent="TextAppearance.AppCompat.Caption">
-        <item name="android:textColor">?attr/textColorError</item>
+        <item name="android:textColor">@color/error_color</item>
     </style>
     <style name="TextAppearance.Design.Hint" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textColor">?attr/colorControlActivated</item>
     </style>
+    <style name="TextAppearance.Design.Snackbar.Action" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">?colorAccent</item>
+    </style>
     <style name="TextAppearance.Design.Snackbar.Message" parent="android:TextAppearance">
-        <item name="android:textSize">@dimen/design_snackbar_text_size</item>
+        <item name="android:textSize">@dimen/snackbar_text_size</item>
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
     <style name="TextAppearance.Design.Tab" parent="TextAppearance.AppCompat.Button">
-        <item name="android:textSize">@dimen/design_tab_text_size</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">?android:textColorSecondary</item>
         <item name="textAllCaps">true</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.StatusBar.EventContent" parent=""/>
     <style name="TextAppearance.StatusBar.EventContent.Info" parent=""/>
@@ -2306,13 +2316,6 @@
     </style>
     <style name="Theme.AppCompat" parent="Base.Theme.AppCompat"/>
     <style name="Theme.AppCompat.CompactMenu" parent="Base.Theme.AppCompat.CompactMenu"/>
-    <style name="Theme.AppCompat.DayNight" parent="Theme.AppCompat.Light"/>
-    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="Theme.AppCompat.Light.DarkActionBar"/>
-    <style name="Theme.AppCompat.DayNight.Dialog" parent="Theme.AppCompat.Light.Dialog"/>
-    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert"/>
-    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="Theme.AppCompat.Light.Dialog.MinWidth"/>
-    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="Theme.AppCompat.Light.DialogWhenLarge"/>
-    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
     <style name="Theme.AppCompat.Dialog" parent="Base.Theme.AppCompat.Dialog"/>
     <style name="Theme.AppCompat.Dialog.Alert" parent="Base.Theme.AppCompat.Dialog.Alert"/>
     <style name="Theme.AppCompat.Dialog.MinWidth" parent="Base.Theme.AppCompat.Dialog.MinWidth"/>
@@ -2333,34 +2336,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
-    <eat-comment/>
-    <style name="Theme.Design" parent="Theme.AppCompat">
-        <item name="textColorError">@color/design_textinput_error_color_dark</item>
-    </style>
-    <style name="Theme.Design.BottomSheetDialog" parent="Theme.AppCompat.Dialog">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
-        <item name="bottomSheetStyle">@style/Widget.Design.BottomSheet.Modal</item>
-    </style>
-    <style name="Theme.Design.Light" parent="Theme.AppCompat.Light">
-        <item name="textColorError">@color/design_textinput_error_color_light</item>
-    </style>
-    <style name="Theme.Design.Light.BottomSheetDialog" parent="Theme.AppCompat.Light.Dialog">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
-        <item name="bottomSheetStyle">@style/Widget.Design.BottomSheet.Modal</item>
-    </style>
-    <style name="Theme.Design.Light.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-    <style name="Theme.Design.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values/values.xml -->
-    <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
@@ -2378,7 +2353,7 @@
     </style>
     <style name="Widget.AppCompat.ActionButton" parent="Base.Widget.AppCompat.ActionButton"/>
     <style name="Widget.AppCompat.ActionButton.CloseMode" parent="Base.Widget.AppCompat.ActionButton.CloseMode"/>
-    <style name="Widget.AppCompat.ActionButton.Overflow" parent="Base.Widget.AppCompat.ActionButton.Overflow"/>
+    <style name="Widget.AppCompat.ActionButton.Overflow" parent="RtlOverlay.Widget.AppCompat.ActionButton.Overflow"/>
     <style name="Widget.AppCompat.ActionMode" parent="Base.Widget.AppCompat.ActionMode">
     </style>
     <style name="Widget.AppCompat.ActivityChooserView" parent="Base.Widget.AppCompat.ActivityChooserView">
@@ -2389,7 +2364,6 @@
     <style name="Widget.AppCompat.Button.Borderless" parent="Base.Widget.AppCompat.Button.Borderless"/>
     <style name="Widget.AppCompat.Button.Borderless.Colored" parent="Base.Widget.AppCompat.Button.Borderless.Colored"/>
     <style name="Widget.AppCompat.Button.ButtonBar.AlertDialog" parent="Base.Widget.AppCompat.Button.ButtonBar.AlertDialog"/>
-    <style name="Widget.AppCompat.Button.Colored" parent="Base.Widget.AppCompat.Button.Colored"/>
     <style name="Widget.AppCompat.Button.Small" parent="Base.Widget.AppCompat.Button.Small"/>
     <style name="Widget.AppCompat.ButtonBar" parent="Base.Widget.AppCompat.ButtonBar"/>
     <style name="Widget.AppCompat.ButtonBar.AlertDialog" parent="Base.Widget.AppCompat.ButtonBar.AlertDialog"/>
@@ -2400,8 +2374,8 @@
         <item name="color">?attr/colorControlNormal</item>
     </style>
     <style name="Widget.AppCompat.DropDownItem.Spinner" parent="RtlOverlay.Widget.AppCompat.Search.DropDown.Text"/>
-    <style name="Widget.AppCompat.EditText" parent="Base.Widget.AppCompat.EditText"/>
-    <style name="Widget.AppCompat.ImageButton" parent="Base.Widget.AppCompat.ImageButton"/>
+    <style name="Widget.AppCompat.EditText" parent="Base.Widget.AppCompat.EditText">
+    </style>
     <style name="Widget.AppCompat.Light.ActionBar" parent="Base.Widget.AppCompat.Light.ActionBar">
     </style>
     <style name="Widget.AppCompat.Light.ActionBar.Solid" parent="Base.Widget.AppCompat.Light.ActionBar.Solid">
@@ -2449,18 +2423,15 @@
     <style name="Widget.AppCompat.ProgressBar.Horizontal" parent="Base.Widget.AppCompat.ProgressBar.Horizontal">
     </style>
     <style name="Widget.AppCompat.RatingBar" parent="Base.Widget.AppCompat.RatingBar"/>
-    <style name="Widget.AppCompat.RatingBar.Indicator" parent="Base.Widget.AppCompat.RatingBar.Indicator"/>
-    <style name="Widget.AppCompat.RatingBar.Small" parent="Base.Widget.AppCompat.RatingBar.Small"/>
     <style name="Widget.AppCompat.SearchView" parent="Base.Widget.AppCompat.SearchView"/>
     <style name="Widget.AppCompat.SearchView.ActionBar" parent="Base.Widget.AppCompat.SearchView.ActionBar"/>
-    <style name="Widget.AppCompat.SeekBar" parent="Base.Widget.AppCompat.SeekBar"/>
     <style name="Widget.AppCompat.Spinner" parent="Base.Widget.AppCompat.Spinner"/>
     <style name="Widget.AppCompat.Spinner.DropDown"/>
-    <style name="Widget.AppCompat.Spinner.DropDown.ActionBar"/>
+    <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="Base.Widget.AppCompat.Spinner.DropDown.ActionBar"/>
     <style name="Widget.AppCompat.Spinner.Underlined" parent="Base.Widget.AppCompat.Spinner.Underlined"/>
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
-    <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
+    <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation"/>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="Widget.CardContent" parent="android:Widget">
@@ -2470,52 +2441,49 @@
         <item name="android:paddingBottom">24dp</item>
         <item name="android:orientation">vertical</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.Design.AppBarLayout" parent="android:Widget">
-        <item name="elevation">@dimen/design_appbar_elevation</item>
+        <item name="elevation">@dimen/appbar_elevation</item>
         <item name="android:background">?attr/colorPrimary</item>
     </style>
-    <style name="Widget.Design.BottomSheet.Modal" parent="android:Widget">
-        <item name="android:background">?android:attr/colorBackground</item>
-        <item name="android:elevation">@dimen/design_bottom_sheet_modal_elevation</item>
-        <item name="behavior_peekHeight">@dimen/design_bottom_sheet_modal_peek_height</item>
-        <item name="behavior_hideable">true</item>
-    </style>
     <style name="Widget.Design.CollapsingToolbar" parent="android:Widget">
-        <item name="expandedTitleMargin">32dp</item>
+        <item name="expandedTitleMargin">16dp</item>
+        <item name="expandedTitleMarginBottom">20dp</item>
+        <item name="expandedTitleTextAppearance">@style/TextAppearance.AppCompat.Headline</item>
+        <item name="collapsedTitleTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
         <item name="statusBarScrim">?attr/colorPrimaryDark</item>
     </style>
     <style name="Widget.Design.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">?attr/colorPrimaryDark</item>
     </style>
     <style name="Widget.Design.FloatingActionButton" parent="android:Widget">
-        <item name="android:background">@drawable/design_fab_background</item>
+        <item name="android:background">@drawable/fab_background</item>
         <item name="backgroundTint">?attr/colorAccent</item>
         <item name="fabSize">normal</item>
-        <item name="elevation">@dimen/design_fab_elevation</item>
-        <item name="pressedTranslationZ">@dimen/design_fab_translation_z_pressed</item>
+        <item name="elevation">@dimen/fab_elevation</item>
+        <item name="pressedTranslationZ">@dimen/fab_translation_z_pressed</item>
         <item name="rippleColor">?attr/colorControlHighlight</item>
-        <item name="borderWidth">@dimen/design_fab_border_width</item>
+        <item name="borderWidth">@dimen/fab_border_width</item>
     </style>
     <style name="Widget.Design.NavigationView" parent="">
-        <item name="elevation">@dimen/design_navigation_elevation</item>
+        <item name="elevation">@dimen/navigation_elevation</item>
         <item name="android:background">?android:attr/windowBackground</item>
         <item name="android:fitsSystemWindows">true</item>
-        <item name="android:maxWidth">@dimen/design_navigation_max_width</item>
+        <item name="android:maxWidth">@dimen/navigation_max_width</item>
     </style>
     <style name="Widget.Design.ScrimInsetsFrameLayout" parent="">
         <item name="insetForeground">#4000</item>
     </style>
     <style name="Widget.Design.Snackbar" parent="android:Widget">
         <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
-        <item name="android:minWidth">@dimen/design_snackbar_min_width</item>
-        <item name="android:maxWidth">@dimen/design_snackbar_max_width</item>
-        <item name="android:background">@drawable/design_snackbar_background</item>
-        <item name="android:paddingLeft">@dimen/design_snackbar_padding_horizontal</item>
-        <item name="android:paddingRight">@dimen/design_snackbar_padding_horizontal</item>
-        <item name="elevation">@dimen/design_snackbar_elevation</item>
-        <item name="maxActionInlineWidth">@dimen/design_snackbar_action_inline_max_width</item>
+        <item name="android:minWidth">@dimen/snackbar_min_width</item>
+        <item name="android:maxWidth">@dimen/snackbar_max_width</item>
+        <item name="android:background">@drawable/snackbar_background</item>
+        <item name="android:paddingLeft">@dimen/snackbar_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/snackbar_padding_horizontal</item>
+        <item name="elevation">@dimen/snackbar_elevation</item>
+        <item name="maxActionInlineWidth">@dimen/snackbar_action_inline_max_width</item>
     </style>
     <style name="Widget.Design.TabLayout" parent="Base.Widget.Design.TabLayout">
         <item name="tabGravity">fill</item>
@@ -2524,8 +2492,6 @@
     <style name="Widget.Design.TextInputLayout" parent="android:Widget">
         <item name="hintTextAppearance">@style/TextAppearance.Design.Hint</item>
         <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
-        <item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>
-        <item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow</item>
     </style>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.1.0/res/values/values.xml -->
     <eat-comment/>
@@ -2809,7 +2775,7 @@
     <style name="custom_actionbar_theme" parent="Widget.AppCompat.Toolbar">
         <item name="colorControlNormal">#FFF</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values/values.xml -->
     <eat-comment/>
     <style name="dgts__ButtonText">
         <item name="android:textAppearance">?android:attr/textAppearanceButton</item>
@@ -2821,14 +2787,27 @@
         <item name="android:paddingTop">30dp</item>
         <item name="android:paddingBottom">30dp</item>
     </style>
+    <style name="dgts__CountDownTimer">
+        <item name="android:layout_marginRight">@dimen/dgts__countdown_margin</item>
+        <item name="android:layout_marginLeft">@dimen/dgts__countdown_margin</item>
+        <item name="android:layout_marginBottom">@dimen/dgts__countdown_margin</item>
+        <item name="android:layout_marginTop">@dimen/dgts__countdown_margin</item>
+        <item name="android:textSize">@dimen/dgts__terms_text_size</item>
+    </style>
+    <style name="dgts__EnterConfirmationCodeTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">@dimen/dgts__title_text_size</item>
+    </style>
+    <style name="dgts__HeaderMargin">
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
     <style name="dgts__Terms">
         <item name="android:textColor">?android:attr/textColorSecondary</item>
         <item name="android:textSize">@dimen/dgts__terms_text_size</item>
     </style>
-    <style name="dgts__Title">
+    <style name="dgts__Title" parent="dgts__HeaderMargin">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="android:textSize">@dimen/dgts__title_text_size</item>
-        <item name="android:layout_marginBottom">24dp</item>
     </style>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/src/main/res/values/styles.xml -->
     <eat-comment/>
@@ -3031,7 +3010,7 @@
         <item name="android:scaleType">center</item>
         <item name="android:clickable">true</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
     <eat-comment/>
     <style name="tw__AttributionText" ns1:ignore="NewApi">
         <item name="android:layout_width">wrap_content</item>
@@ -3040,7 +3019,24 @@
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:singleLine">true</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values/values.xml -->
+    <style name="tw__Badge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="tw__Badge.Gif">
+        <item name="android:src">@drawable/tw__gif_badge</item>
+    </style>
+    <style name="tw__Badge.VideoDuration">
+        <item name="android:background">@drawable/tw__bg_media_badge</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/tw__text_size_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
     <eat-comment/>
     <style name="tw__Button">
         <item name="android:background">@drawable/tw__login_btn</item>
@@ -3060,7 +3056,39 @@
         <item name="android:paddingRight">0dp</item>
         <item name="android:paddingBottom">0dp</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values/values.xml -->
+    <eat-comment/>
+    <style name="tw__CardAppInfoLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/tw__app_info_layout_border</item>
+        <item name="android:padding">@dimen/tw__card_spacing_medium</item>
+    </style>
+    <style name="tw__CardAppName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/tw__card_font_size_medium</item>
+        <item name="android:textColor">?android:attr/textColor</item>
+        <item name="android:layout_marginBottom">@dimen/tw__card_spacing_small</item>
+    </style>
+    <style name="tw__CardAppStoreName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:text">@string/tw__play_store</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">@dimen/tw__card_font_size_small</item>
+    </style>
+    <style name="tw__CardInstallButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/tw__install</item>
+        <item name="android:textSize">@dimen/tw__card_font_size_small</item>
+        <item name="android:background">@drawable/tw__install_button_border</item>
+    </style>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
     <eat-comment/>
     <style name="tw__CompactAttributionLine" ns1:ignore="NewApi">
         <item name="android:layout_width">wrap_content</item>
@@ -3069,11 +3097,83 @@
         <item name="android:importantForAccessibility">noHideDescendants</item>
     </style>
     <style name="tw__CompactTweetContainer" parent="tw__TweetFillWidth">
-        <item name="android:background">@drawable/tw__bg_tweet_compact</item>
         <item name="android:paddingTop">@dimen/tw__compact_tweet_container_padding_top</item>
-        <item name="android:paddingBottom">@dimen/tw__compact_tweet_container_padding_bottom</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/values/values.xml -->
+    <eat-comment/>
+    <style name="tw__ComposerAvatar">
+        <item name="android:layout_width">@dimen/tw__composer_avatar_size</item>
+        <item name="android:layout_height">@dimen/tw__composer_avatar_size</item>
+        <item name="android:layout_marginRight">@dimen/tw__composer_spacing_large</item>
+        <item name="android:layout_marginTop">@dimen/tw__composer_spacing_large</item>
+        <item name="android:layout_marginBottom">@dimen/tw__composer_spacing_large</item>
+        <item name="android:background">@color/tw__composer_light_gray</item>
+    </style>
+    <style name="tw__ComposerCharCount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/tw__composer_char_count_height</item>
+        <item name="android:layout_marginRight">@dimen/tw__composer_spacing_large</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/tw__composer_deep_gray</item>
+        <item name="android:text">@string/tw__max_tweet_chars</item>
+        <item name="android:textSize">@dimen/tw__composer_font_size_small</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="tw__ComposerCharCountOverflow" parent="tw__ComposerCharCount">
+        <item name="android:textColor">@color/tw__composer_red</item>
+    </style>
+    <style name="tw__ComposerClose">
+        <item name="android:layout_width">@dimen/tw__composer_close_size</item>
+        <item name="android:layout_height">@dimen/tw__composer_close_size</item>
+        <item name="android:padding">@dimen/tw__composer_spacing_large</item>
+        <item name="android:src">@drawable/tw__composer_close</item>
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="tw__ComposerDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tw__composer_divider_height</item>
+        <item name="android:background">@color/tw__composer_light_gray</item>
+    </style>
+    <style name="tw__ComposerToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/tw__composer_spacing_medium</item>
+        <item name="android:paddingBottom">@dimen/tw__composer_spacing_medium</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="tw__ComposerTweetButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/tw__composer_tweet_btn_height</item>
+        <item name="android:layout_marginRight">@dimen/tw__composer_spacing_large</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/tw__composer_white</item>
+        <item name="android:background">@drawable/tw__btn_composer_tweet</item>
+        <item name="android:text">@string/tw__post_tweet</item>
+        <item name="android:textSize">@dimen/tw__composer_font_size_small</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="tw__EditTweet">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/tw__composer_spacing_small</item>
+        <item name="android:layout_marginBottom">@dimen/tw__composer_spacing_small</item>
+        <item name="android:paddingLeft">@dimen/tw__composer_spacing_large</item>
+        <item name="android:paddingRight">@dimen/tw__composer_spacing_large</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">top|left</item>
+        <item name="android:textColor">?android:attr/textColor</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:hint">@string/tw__composer_hint</item>
+        <item name="android:textColorHint">?android:attr/textColorHint</item>
+        <item name="android:imeOptions">actionSend</item>
+        <item name="android:imeActionLabel">@string/tw__post_tweet</item>
+    </style>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
     <eat-comment/>
     <style name="tw__Permission_Container">
         <item name="android:paddingLeft">@dimen/tw__padding_permission_horizontal_container</item>
@@ -3091,13 +3191,28 @@
         <item name="android:layout_marginBottom">5dp</item>
         <item name="android:layout_marginTop">30dp</item>
     </style>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values/values.xml -->
     <eat-comment/>
-    <style name="tw__TweetAction" ns1:ignore="NewApi">
+    <style name="tw__TweetActionButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/tw__tweet_action_layout_margin_top</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_marginTop">@dimen/tw__tweet_action_button_margin_top</item>
+    </style>
+    <style name="tw__TweetActionButton.Heart">
+        <item name="android:layout_width">@dimen/tw__tweet_action_heart_size</item>
+        <item name="android:layout_height">@dimen/tw__tweet_action_heart_size</item>
+    </style>
+    <style name="tw__TweetActionButton.Share">
+        <item name="android:background">@null</item>
+        <item name="android:padding">@dimen/tw__tweet_action_share_padding</item>
+    </style>
+    <style name="tw__TweetActionButtonBar">
+        <item name="android:layout_marginLeft">@dimen/tw__tweet_action_bar_offset_left</item>
+        <item name="android:layout_marginBottom">@dimen/tw__tweet_action_bar_offset_bottom</item>
+    </style>
+    <style name="tw__TweetActionButtonBar.Compact">
+        <item name="android:layout_marginLeft">@dimen/tw__compact_tweet_action_bar_offset_left</item>
+        <item name="android:layout_marginBottom">@dimen/tw__tweet_action_bar_offset_bottom</item>
     </style>
     <style name="tw__TweetAvatar">
         <item name="android:layout_width">@dimen/tw__tweet_avatar_size</item>
@@ -3115,53 +3230,69 @@
         <item name="android:layout_marginRight">@dimen/tw__compact_tweet_avatar_margin_right</item>
         <item name="android:focusable">false</item>
     </style>
+    <style name="tw__TweetBadge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/tw__tweet_media_badge_margin</item>
+        <item name="android:layout_marginBottom">@dimen/tw__tweet_media_badge_margin</item>
+        <item name="android:layout_gravity">bottom|left</item>
+    </style>
     <style name="tw__TweetContainer" parent="tw__TweetFillWidth">
-        <item name="android:background">@drawable/tw__bg_tweet</item>
         <item name="android:paddingTop">@dimen/tw__tweet_container_padding_top</item>
-        <item name="android:paddingBottom">@dimen/tw__tweet_container_padding_bottom</item>
     </style>
     <style name="tw__TweetDarkStyle">
         <item name="tw__container_bg_color">@color/tw__tweet_dark_container_bg_color</item>
         <item name="tw__primary_text_color">@color/tw__tweet_dark_primary_text_color</item>
         <item name="tw__action_color">@color/tw__tweet_action_color</item>
+        <item name="tw__action_highlight_color">@color/tw__tweet_action_dark_highlight_color</item>
+    </style>
+    <style name="tw__TweetDarkWithActionsStyle" parent="tw__TweetDarkStyle">
+        <item name="tw__tweet_actions_enabled">true</item>
     </style>
     <style name="tw__TweetFillWidth">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-    <style name="tw__TweetFullName" ns1:ignore="NewApi" parent="tw__AttributionText">
-        <item name="android:layout_marginTop">@dimen/tw__tweet_full_name_margin_top</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
+    <style name="tw__TweetFullName" parent="tw__TweetFullNameBase">
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">@dimen/tw__text_size_large</item>
-        <item name="android:textColor">@color/tw__tweet_light_primary_text_color</item>
-        <item name="android:focusable">false</item>
-        <item name="android:importantForAccessibility">no</item>
     </style>
     <style name="tw__TweetFullName.Compact">
         <item name="android:layout_marginTop">@dimen/tw__compact_tweet_full_name_margin_top</item>
-        <item name="android:textSize">@dimen/tw__text_size_large</item>
         <item name="android:ellipsize">none</item>
+    </style>
+    <style name="tw__TweetFullNameBase" parent="tw__AttributionText">
+        <item name="android:layout_marginTop">@dimen/tw__tweet_full_name_margin_top</item>
+        <item name="android:textSize">@dimen/tw__text_size_large</item>
+        <item name="android:textColor">@color/tw__tweet_light_primary_text_color</item>
+        <item name="android:focusable">false</item>
     </style>
     <style name="tw__TweetLightStyle">
         <item name="tw__container_bg_color">@color/tw__tweet_light_container_bg_color</item>
         <item name="tw__primary_text_color">@color/tw__tweet_light_primary_text_color</item>
         <item name="tw__action_color">@color/tw__tweet_action_color</item>
+        <item name="tw__action_highlight_color">@color/tw__tweet_action_light_highlight_color</item>
+    </style>
+    <style name="tw__TweetLightWithActionsStyle" parent="tw__TweetLightStyle">
+        <item name="tw__tweet_actions_enabled">true</item>
     </style>
     <style name="tw__TweetMedia">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:visibility">gone</item>
         <item name="android:focusable">false</item>
+        <item name="tw__image_aspect_ratio">@dimen/tw__tweet_media_aspect_ratio</item>
+        <item name="tw__image_dimension_to_adjust">height</item>
     </style>
-    <style name="tw__TweetMedia.Compact">
+    <style name="tw__TweetMediaContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="tw__TweetMediaContainer.Compact">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/tw__compact_tweet_media_margin_top</item>
         <item name="android:layout_marginBottom">@dimen/tw__compact_tweet_media_margin_bottom</item>
         <item name="android:layout_marginRight">@dimen/tw__compact_tweet_media_margin_right</item>
-        <item name="tw__image_aspect_ratio">@dimen/tw__compact_tweet_media_aspect_ratio</item>
-        <item name="tw__image_dimension_to_adjust">height</item>
     </style>
     <style name="tw__TweetRetweetedBy" ns1:ignore="NewApi">
         <item name="android:layout_width">wrap_content</item>
@@ -3201,17 +3332,6 @@
         <item name="android:textSize">@dimen/tw__text_size_medium</item>
         <item name="android:ellipsize">end</item>
     </style>
-    <style name="tw__TweetShare" ns1:ignore="NewApi">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@dimen/tw__tweet_share_layout_height</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:layout_marginLeft">@dimen/tw__tweet_share_margin_left</item>
-        <item name="android:textSize">@dimen/tw__text_size_large</item>
-        <item name="android:textColor">@color/tw__tweet_action_color</item>
-        <item name="android:paddingBottom">@dimen/tw__tweet_share_padding_bottom</item>
-        <item name="android:textAllCaps">false</item>
-    </style>
     <style name="tw__TweetText" ns1:ignore="NewApi">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -3219,7 +3339,7 @@
         <item name="android:layout_marginLeft">@dimen/tw__tweet_text_margin_left</item>
         <item name="android:layout_marginRight">@dimen/tw__tweet_text_margin_right</item>
         <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:textSize">@dimen/tw__font_size_large</item>
+        <item name="android:textSize">@dimen/tw__text_size_large</item>
         <item name="android:lineSpacingExtra">2dp</item>
         <item name="android:textColor">@color/tw__tweet_light_primary_text_color</item>
         <item name="android:textColorLink">@color/tw__tweet_action_color</item>
@@ -3231,7 +3351,7 @@
         <item name="android:layout_marginLeft">@dimen/tw__compact_tweet_text_margin_left</item>
         <item name="android:layout_marginRight">@dimen/tw__compact_tweet_text_margin_right</item>
         <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:textSize">@dimen/tw__font_size_large</item>
+        <item name="android:textSize">@dimen/tw__text_size_large</item>
     </style>
     <style name="tw__TweetTimestamp" ns1:ignore="NewApi" parent="tw__AttributionText">
         <item name="android:layout_marginTop">@dimen/tw__tweet_timestamp_margin_top</item>

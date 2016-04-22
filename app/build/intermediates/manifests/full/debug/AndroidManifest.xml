@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="18"
-        android:targetSdkVersion="23" />
+        android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -42,6 +42,7 @@
         android:xlargeScreens="true" />
 
     <application
+        android:name="atv.com.project.popkontv.Application.Viewora"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -79,15 +80,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="atv.com.project.popkontv.SplashActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name="atv.com.project.popkontv.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
@@ -98,21 +90,6 @@
                 <data android:mimeType="text/plain" />
                 <data android:mimeType="image/*" />
             </intent-filter>
-        </activity>
-        <activity android:name="atv.com.project.popkontv.Fragments.YouTubeFragmentActivity" />
-        <activity
-            android:name="atv.com.project.popkontv.youtube.YouTubeActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="atv.com.project.popkontv.youtube.CustomLightboxActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/AppTheme.Translucent" />
-        <activity android:name="atv.com.project.popkontv.youtube.CustomYouTubeControlsActivity" />
-        <activity
-            android:name="atv.com.project.popkontv.videostream.MainActivityVideoStreamConnected"
-            android:screenOrientation="landscape" >
         </activity>
 
         <meta-data
@@ -170,6 +147,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+
+        <service
+            android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
             android:name="com.twitter.sdk.android.core.identity.OAuthActivity"
             android:configChanges="orientation|screenSize"
             android:excludeFromRecents="true"
@@ -182,85 +169,88 @@
             android:icon="@drawable/tw__transparent"
             android:label="@string/kit_name" />
         <activity
+            android:name="com.twitter.sdk.android.tweetui.PlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MediaTheme" />
+        <activity
+            android:name="com.twitter.sdk.android.tweetui.GalleryActivity"
+            android:theme="@style/MediaTheme" />
+        <activity
             android:name="com.digits.sdk.android.PhoneNumberActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false"
             android:taskAffinity="com.digits.sdk.android"
             android:windowSoftInputMode="stateVisible" />
         <activity
             android:name="com.digits.sdk.android.ConfirmationCodeActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false"
             android:taskAffinity="com.digits.sdk.android"
             android:windowSoftInputMode="stateVisible" />
         <activity
             android:name="com.digits.sdk.android.LoginCodeActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false"
-            android:launchMode="singleTop"
             android:taskAffinity="com.digits.sdk.android"
             android:windowSoftInputMode="stateVisible" />
         <activity
             android:name="com.digits.sdk.android.PinCodeActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false"
-            android:launchMode="singleTop"
             android:taskAffinity="com.digits.sdk.android"
             android:windowSoftInputMode="stateVisible" />
         <activity
             android:name="com.digits.sdk.android.FailureActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false"
             android:taskAffinity="com.digits.sdk.android" />
         <activity
             android:name="com.digits.sdk.android.ContactsActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false" />
+        <activity
+            android:name="com.digits.sdk.android.EmailRequestActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:taskAffinity="com.digits.sdk.android"
+            android:windowSoftInputMode="stateVisible" />
         <activity
             android:name="com.digits.sdk.android.PhoneNumberActionBarActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false"
             android:taskAffinity="com.digits.sdk.android"
             android:windowSoftInputMode="stateVisible" />
         <activity
             android:name="com.digits.sdk.android.ConfirmationCodeActionBarActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false"
             android:taskAffinity="com.digits.sdk.android"
             android:windowSoftInputMode="stateVisible" />
         <activity
             android:name="com.digits.sdk.android.LoginCodeActionBarActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false"
-            android:launchMode="singleTop"
             android:taskAffinity="com.digits.sdk.android"
             android:windowSoftInputMode="stateVisible" />
         <activity
             android:name="com.digits.sdk.android.FailureActionBarActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false"
             android:taskAffinity="com.digits.sdk.android" />
         <activity
             android:name="com.digits.sdk.android.ContactsActionBarActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false" />
         <activity
             android:name="com.digits.sdk.android.PinCodeActionBarActivity"
             android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
             android:exported="false"
-            android:launchMode="singleTop"
+            android:taskAffinity="com.digits.sdk.android"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.digits.sdk.android.EmailRequestActionBarActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
             android:taskAffinity="com.digits.sdk.android"
             android:windowSoftInputMode="stateVisible" />
 
@@ -268,6 +258,10 @@
             android:name="com.digits.sdk.android.ContactsUploadService"
             android:enabled="true"
             android:exported="false" />
+
+        <activity
+            android:name="android.support.v7.widget.TestActivity"
+            android:label="RecyclerViewTestActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"
