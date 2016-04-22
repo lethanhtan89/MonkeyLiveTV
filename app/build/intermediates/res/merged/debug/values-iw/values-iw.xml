@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-iw/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-iw/values-iw.xml -->
     <eat-comment/>
     <plurals name="tw__time_hours">
         <item quantity="one">שעה אחת</item>
@@ -14,19 +14,14 @@
         <item quantity="one">שנייה אחת</item>
         <item quantity="other">%d שניות</item>
     </plurals>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-iw/values-iw.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-iw/values-iw.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"נווט לדף הבית"</string>
-    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"‏%1$s‏, %2$s"</string>
-    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"‏%1$s‏, %2$s‏, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"נווט למעלה"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"עוד אפשרויות"</string>
     <string msgid="4076576682505996667" name="abc_action_mode_done">"בוצע"</string>
-    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"ראה הכל"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"ראה הכול"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"בחר אפליקציה"</string>
-    <string msgid="121134116657445385" name="abc_capital_off">"כבוי"</string>
-    <string msgid="3405795526292276155" name="abc_capital_on">"פועל"</string>
-    <string msgid="7723749260725869598" name="abc_search_hint">"חפש…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"מחק שאילתה"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"שאילתת חיפוש"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"חפש"</string>
@@ -34,7 +29,6 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"חיפוש קולי"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"שתף עם"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"‏שתף עם %s"</string>
-    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"כווץ"</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-iw/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"‏<ns1:g id="APP_NAME">%1$s</ns1:g> דורש עדכון לאפליקציה Android Wear."</string>
@@ -69,26 +63,25 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"פתח בטלפון"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"היכנס"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"‏היכנס באמצעות Google"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values-iw/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-iw/values-iw.xml -->
     <eat-comment/>
-    <string name="dgts__cancel">ביטול</string>
-    <string name="dgts__communication_error">שגיאת תקשורת</string>
+    <string name="dgts__call_me">התקשרו אליי</string>
+    <string name="dgts__calling">מתקשר…</string>
     <string name="dgts__confirmation_code">קוד אישור</string>
-    <string name="dgts__confirmation_edit_hint">הזן קוד אישור</string>
+    <string name="dgts__confirmation_edit_hint">הכנס את הקוד בן 6 הספרות ששלחנו לך</string>
     <string name="dgts__confirmation_error">לא ניתן לאשר את מספר הטלפון שלך</string>
     <string name="dgts__confirmation_error_alternative">מצטערים, נתקלנו בבעיה בשליחת קוד האישור.</string>
-    <string name="dgts__confirmation_expired">תוקף הקוד פג. שלח מחדש קוד אישור.</string>
-    <string name="dgts__confirmation_send_text">שלח קוד אישור</string>
-    <string name="dgts__confirmation_sending_text">שולח קוד אישור</string>
-    <string name="dgts__confirmation_sent_text">קוד אישור נשלח</string>
-    <string name="dgts__confirmation_sms">קוד אישור: %1$s. הזן קוד זה ב%2$s</string>
-    <string name="dgts__create_account_text">צור חשבון</string>
-    <string name="dgts__creating_account_text">יצירת חשבון</string>
+    <string name="dgts__confirmation_expired">פג תוקפו של הקוד. בצע שליחה מחדש של קוד אישור.</string>
+    <string name="dgts__continue">המשך</string>
     <string name="dgts__digits_logo_desc">הסמל של Digits</string>
     <string name="dgts__digits_logo_name_desc">שם הסמל של Digits</string>
     <string name="dgts__dismiss">התעלם</string>
+    <string name="dgts__done">סיום</string>
+    <string name="dgts__email_request_edit_hint">כתובת דואר אלקטרוני</string>
+    <string name="dgts__email_request_title">הזן כתובת דואר אלקטרוני</string>
     <string name="dgts__find_your_friends">חפש את החברים שלך</string>
     <string name="dgts__image_header_description">כותרת תמונה לדף כניסה</string>
+    <string name="dgts__invalid_email">כתובת דואר אלקטרוני לא חוקית. נסה שוב.</string>
     <string name="dgts__login_digits_text">השתמש במספר הטלפון שלי</string>
     <string name="dgts__network_error">בדוק את הרשת שלך ונסה שוב.</string>
     <string name="dgts__not_now">לא עכשיו</string>
@@ -96,40 +89,47 @@
     <string name="dgts__phone_number_edit_hint">המספר שלך</string>
     <string name="dgts__phone_number_text">הזן את מספר הטלפון שלך</string>
     <string name="dgts__pin_code_verification_title">הזן קוד אימות בשני שלבים</string>
-    <string name="dgts__resend">שלח מחדש</string>
+    <string name="dgts__resend_confirmation_button_code">שליחת קוד מחדש</string>
     <string name="dgts__resend_confirmation_text">שלח מחדש קוד אישור</string>
-    <string name="dgts__sign_in">כניסה</string>
-    <string name="dgts__sign_in_error">לא הצלחנו להכניס אותך לטוויטר בשלב זה. נסה שוב מאוחר יותר.</string>
-    <string name="dgts__sign_in_twitter">היכנס לטוויטר</string>
-    <string name="dgts__signing_in">נכנס</string>
+    <string name="dgts__sending">שולח…</string>
     <string name="dgts__success_desc">סמל הצלחה</string>
-    <string name="dgts__terms_text">לאחר ההקשה על %1$sשלח קוד אישור%1$s לעיל, Digits by Twitter שולח לך הודעת SMS כדי לאשר את מספר הטלפון שלך.</string>
-    <string name="dgts__terms_text_create">בהקשה על %1$sצור חשבון%1$s לעיל, אתה מסכים לתנאי השירות, למדיניות הפרטיות ולמדיניות קובצי ה-Cookie של Digits by Twitter, ולכך שמשתמשים אחרים של יישום זה יוכלו לגלות אותך באמצעות מספר טלפון ו/או דואר אלקטרוני.</string>
-    <string name="dgts__terms_text_sign_in">בהקשה על %1$sכניסה%1$s לעיל, אתה מסכים לתנאי השירות, למדיניות הפרטיות ולמדיניות קובצי ה-Cookie של Digits by Twitter, ולכך שמשתמשים אחרים של %1$s יוכלו לאתר אותך לפי מספר טלפון ו/או דואר אלקטרוני.</string>
     <string name="dgts__try_again">נסה שוב</string>
     <string name="dgts__try_again_confirmation">בדוק את הקוד שלך ונסה שוב.</string>
+    <string name="dgts__try_again_email">בדוק את כתובת הדואר האלקטרוני ונסה שוב.</string>
     <string name="dgts__try_again_phone_number">בדוק את המספר שלך ונסה שוב.</string>
     <string name="dgts__try_another_phone">נסה מספר טלפון אחר</string>
+    <string name="dgts__unsupported_operator_error">לא ניתן לשלוח הודעת SMS למספר זה.</string>
     <string name="dgts__upload_contacts">אנחנו משתמשים ב-Digits by Twitter לאיתור עוד חברים שלך המשתמשים ביישום זה. בעת ההקשה על \'אישור\', אנחנו מעלים את פנקס הכתובות שלך ל-Digits by Twitter כדי שנוכל לעזור לך לאתר משתמשים של %1$s שאתה מכיר, או לעזור למשתמשים אחרים של %1$s למצוא אותך.</string>
     <string name="dgts__verification_code">קוד אימות</string>
     <string name="dgts_pin_code_terms">הגדרת בעבר קוד אימות בשני שלבים באתר digits.com</string>
-    <string name="dgts_verify">אמת</string>
-    <string name="dgts_verifying">אימות</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-iw/values-iw.xml -->
-    <eat-comment/>
-    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"‎999+‎"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-iw/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-iw/values-iw.xml -->
     <eat-comment/>
     <string name="tw__allow_btn_txt">אשר</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-iw/values-iw.xml -->
+    <eat-comment/>
+    <string name="tw__like_tweet">סמן ציוץ כאהוב</string>
+    <string name="tw__liked_tweet">בטל סימון כאהוב</string>
+    <string name="tw__loading_tweet">טוען ציוץ</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-iw/values-iw.xml -->
+    <eat-comment/>
     <string name="tw__login_btn_txt">כניסה באמצעות טוויטר</string>
     <string name="tw__not_now_btn_txt">לא עכשיו</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-iw/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-iw/values-iw.xml -->
     <eat-comment/>
+    <string name="tw__pause">לעצור</string>
+    <string name="tw__play">לנגן</string>
     <string name="tw__relative_date_format_long">d.M.y</string>
     <string name="tw__relative_date_format_short">d. MMM</string>
+    <string name="tw__replay">לנגן מחדש</string>
     <string name="tw__retweeted_by_format">צויץ מחדש על-ידי %1$s</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-iw/values.xml -->
+    <string name="tw__share_content_format">בוא לראות את הציוץ של ‎\@%1$s‏: https://twitter.com/%1$s/status/%2$s</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-iw/values-iw.xml -->
     <eat-comment/>
-    <string name="tw__share_email_desc">קבל עדכונים ומידע נוסף מ-%1$s לאחר שתאשר להם גישה לחשבון הדואר האלקטרוני שציינת בטוויטר ‎\@%2$s</string>
+    <string name="tw__share_email_desc">הרשה ל־%1$s לגשת לכתובת הדואר האלקטרוני שמשוייכת לחשבונך בטוויטר ‎\@%2$s כך ש־%1$s יוכל להשתמש בה בהתאם למדיניות הפרטיות. לדוגמה, %1$s יכול לשלוח לך עדכונים ומידע אחר לכתובת הזו.</string>
     <string name="tw__share_email_title">שתף בכתובת הדואר האלקטרוני שלך</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-iw/values-iw.xml -->
+    <eat-comment/>
+    <string name="tw__share_subject_format">ציוץ של %1$s‏ (‎\@%2$s)</string>
+    <string name="tw__share_tweet">שתף ציוץ</string>
+    <string name="tw__tweet_content_description">%1$s‏. %2$s‏. %3$s</string>
 </resources>

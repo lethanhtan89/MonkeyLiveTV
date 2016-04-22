@@ -18,9 +18,6 @@ package atv.com.project.popkontv;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -30,20 +27,19 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.ShareActionProvider;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import atv.com.project.popkontv.Fragments.PopkonListFragment;
-import atv.com.project.popkontv.Fragments.VideoListFragment;
+import atv.com.project.popkontv.Fragments.LeaderBoardFragment;
+import atv.com.project.popkontv.Fragments.MainFragment;
+import atv.com.project.popkontv.Fragments.SettingsFragment;
 
 /**
  * TODO
@@ -62,30 +58,21 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final ActionBar ab = getSupportActionBar();
-        ab.setHomeAsUpIndicator(R.drawable.ic_menu);
-        ab.setDisplayHomeAsUpEnabled(true);
+        //final ActionBar ab = getSupportActionBar();
+        //ab.setHomeAsUpIndicator(R.drawable.ic_menu);
+        //ab.setDisplayHomeAsUpEnabled(true);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-
+/*
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         if (navigationView != null) {
             setupDrawerContent(navigationView);
         }
-
+*/
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         if (viewPager != null) {
             setupViewPager(viewPager);
         }
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "This is example", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
@@ -104,16 +91,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if(item.getItemId() == R.id.nav_home){
-            int numFrag = getSupportFragmentManager().getBackStackEntryCount();
-            Fragment fragment = getSupportFragmentManager().getFragments().get(numFrag - 1);
-            if(fragment instanceof VideoListFragment){
-                showNavigation();
-            }
-            else {
-                onBackPressed();
-            }
-        }
         switch (id) {
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
@@ -148,14 +125,17 @@ public class MainActivity extends AppCompatActivity {
     // Set up ViewPager
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
-        adapter.addFragment(new VideoListFragment(), "LIVE");
-        adapter.addFragment(new VideoListFragment(), "VIDEO");
-        adapter.addFragment(new VideoListFragment(), "FAVORITE");
+        adapter.addFragment(new MainFragment(), "LIVE");
+        adapter.addFragment(new MainFragment(), "VIDEO");
+        adapter.addFragment(new LeaderBoardFragment(), "FAVORITE");
+        adapter.addFragment(new SettingsFragment(), "SETTINGS");
+        //adapter.addFragment(new VideoListFragment(), "VIDEO");
+        //adapter.addFragment(new VideoListFragment(), "FAVORITE");
         //adapter.addFragment(new UserSettingsFragment(), "BROADCAST");
 
         viewPager.setAdapter(adapter);
     }
-
+/*
     private void showNavigation(){
         mDrawerLayout.openDrawer(GravityCompat.START);
     }
@@ -176,10 +156,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 mDrawerLayout.closeDrawers();
                 switch (id){
-                    case R.id.nav_home:
-                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_LONG).show();
-                        fg = new VideoListFragment();
-                        break;
                     case R.id.nav_video:
 
                         Toast.makeText(getApplicationContext(), "Video", Toast.LENGTH_LONG).show();
@@ -190,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+*/
     // Save on Adapter
     static class Adapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragments = new ArrayList<>();

@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-hr/values-hr.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-hr/values-hr.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Idi na početnu"</string>
-    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
-    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Idi gore"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Dodatne opcije"</string>
     <string msgid="4076576682505996667" name="abc_action_mode_done">"Gotovo"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Prikaži sve"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Odabir aplikacije"</string>
-    <string msgid="121134116657445385" name="abc_capital_off">"ISKLJUČENO"</string>
-    <string msgid="3405795526292276155" name="abc_capital_on">"UKLJUČENO"</string>
-    <string msgid="7723749260725869598" name="abc_search_hint">"Pretražite…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Izbriši upit"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Upit za pretraživanje"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"Pretraživanje"</string>
@@ -20,7 +15,6 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Glasovno pretraživanje"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Dijeljenje sa"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Dijeljenje sa: %s"</string>
-    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Sažmi"</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-hr/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> zahtijeva ažuriranje aplikacije Android Wear."</string>
@@ -55,7 +49,17 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"Otvaranje na telefonu"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"Prijava"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"Prijava uslugom Google"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-hr/values-hr.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-hr/values-hr.xml -->
     <eat-comment/>
-    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="dgts__confirmation_edit_hint">Unesite šesteroznamenkasti kod koji smo vam poslali</string>
+    <string name="dgts__resend_confirmation_button_code">Ponovno pošalji kod</string>
+    <string name="dgts__resend_confirmation_text">Ponovno pošalji potvrdni kod</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-hr/values-hr.xml -->
+    <eat-comment/>
+    <string name="tw__pause">pauziraj</string>
+    <string name="tw__play">reproduciraj</string>
+    <string name="tw__replay">ponovno reproduciraj</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-hr/values-hr.xml -->
+    <eat-comment/>
+    <string name="tw__share_email_desc">Korisniku/ci %1$s dopustite pristup adresi e-pošte povezanoj s vašim računom za Twitter \@%2$s da bi je %1$s mogao/la koristiti u skladu s pravilima o zaštiti privatnosti. %1$s bi vam na tu adresu, primjerice, mogao/la slati novosti i ostale obavijesti.</string>
 </resources>

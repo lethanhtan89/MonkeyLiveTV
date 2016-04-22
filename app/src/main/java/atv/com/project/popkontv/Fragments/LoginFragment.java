@@ -38,8 +38,8 @@ import atv.com.project.popkontv.twitter.MyTwitterApiClient;
  */
 public class LoginFragment extends Fragment {
     private View rootView;
-    private static final String TWITTER_KEY = "" + R.string.DEVELOPER_KEY;
-    private static final String TWITTER_SECRET = "" + R.string.TWITTER_SECRET;
+    private static final String TWITTER_KEY = "OQczffwVTLCJIsuTZ4U7rXcJP";
+    private static final String TWITTER_SECRET = "GnwwAFn6tIEjmhQnhmEiksEdaIPcY1Zy38B021FAAiEgzvTAPC";
     private TwitterLoginButton loginButton;
     private ProgressBar progressBar;
     private LinearLayout introLayout;

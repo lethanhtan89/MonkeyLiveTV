@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-vi/values-vi.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-vi/values-vi.xml -->
+    <eat-comment/>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1giờ</item>
+        <item quantity="other">%dgiờ</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1phút</item>
+        <item quantity="other">%dphút</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1giây</item>
+        <item quantity="other">%dgiây</item>
+    </plurals>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-vi/values-vi.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Điều hướng về trang chủ"</string>
-    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
-    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Điều hướng lên trên"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Thêm tùy chọn"</string>
     <string msgid="4076576682505996667" name="abc_action_mode_done">"Xong"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Xem tất cả"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Chọn một ứng dụng"</string>
-    <string msgid="121134116657445385" name="abc_capital_off">"TẮT"</string>
-    <string msgid="3405795526292276155" name="abc_capital_on">"BẬT"</string>
-    <string msgid="7723749260725869598" name="abc_search_hint">"Tìm kiếm…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Xóa truy vấn"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Tìm kiếm truy vấn"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"Tìm kiếm"</string>
@@ -20,7 +29,6 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Tìm kiếm bằng giọng nói"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Chia sẻ với"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Chia sẻ với %s"</string>
-    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Thu gọn"</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-vi/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> yêu cầu phải cập nhật lên ứng dụng Android Wear."</string>
@@ -55,13 +63,71 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"Mở trên điện thoại"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"Đăng nhập"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"Đăng nhập bằng Google"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-vi/values-vi.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-vi/values-vi.xml -->
     <eat-comment/>
-    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-vi/values.xml -->
+    <string name="dgts__call_me">Gọi cho tôi</string>
+    <string name="dgts__calling">Đang gọi…</string>
+    <string name="dgts__confirmation_code">Mã xác nhận</string>
+    <string name="dgts__confirmation_edit_hint">Nhập mã 6 chữ số chúng tôi đã gửi bạn</string>
+    <string name="dgts__confirmation_error">Không thể xác nhận số điện thoại của bạn</string>
+    <string name="dgts__confirmation_error_alternative">Rất tiếc, chúng tôi đang gặp vấn đề khi gửi cho bạn mã xác nhận.</string>
+    <string name="dgts__confirmation_expired">Mã này đã hết hạn. Vui lòng gửi lại mã xác nhận.</string>
+    <string name="dgts__continue">Tiếp tục</string>
+    <string name="dgts__digits_logo_desc">biểu tượng logo của digits</string>
+    <string name="dgts__digits_logo_name_desc">tên logo của digits</string>
+    <string name="dgts__dismiss">Bỏ qua</string>
+    <string name="dgts__done">Hoàn tất</string>
+    <string name="dgts__email_request_edit_hint">Địa chỉ email</string>
+    <string name="dgts__email_request_title">Nhập địa chỉ email</string>
+    <string name="dgts__find_your_friends">Tìm bạn bè của bạn</string>
+    <string name="dgts__image_header_description">Tiêu đề ảnh để đăng nhập</string>
+    <string name="dgts__invalid_email">Email Không hợp lệ. Thử Lại</string>
+    <string name="dgts__login_digits_text">Sử dụng số điện thoại của tôi</string>
+    <string name="dgts__network_error">Vui lòng kiểm tra mạng của bạn và thử lại.</string>
+    <string name="dgts__not_now">Không phải bây giờ</string>
+    <string name="dgts__okay">Okay</string>
+    <string name="dgts__phone_number_edit_hint">Số của Bạn</string>
+    <string name="dgts__phone_number_text">Nhập số điện thoại của bạn</string>
+    <string name="dgts__pin_code_verification_title">Nhập mã xác nhận 2 bước</string>
+    <string name="dgts__resend_confirmation_button_code">Gửi lại mã</string>
+    <string name="dgts__resend_confirmation_text">Gửi lại mã xác nhận</string>
+    <string name="dgts__sending">Đang gửi…</string>
+    <string name="dgts__success_desc">Biểu tượng Thành công</string>
+    <string name="dgts__try_again">Thử Lại</string>
+    <string name="dgts__try_again_confirmation">Vui lòng kiểm tra mã của bạn và thử lại.</string>
+    <string name="dgts__try_again_email">Vui lòng kiểm tra email của bạn và thử lại</string>
+    <string name="dgts__try_again_phone_number">Vui lòng kiểm tra số của bạn và thử lại.</string>
+    <string name="dgts__try_another_phone">Thử một số điện thoại khác</string>
+    <string name="dgts__unsupported_operator_error">Không thể gửi một tin nhắn SMS đến số này.</string>
+    <string name="dgts__upload_contacts">Chúng tôi sử dụng Digits by Twitter để tìm thêm bạn bè của bạn sử dụng ứng dụng này. Khi bạn nhấn Okay, chúng tôi sẽ tải sổ địa chỉ của bạn lên Digits by Twitter để có thể giúp bạn tìm thấy những người dùng %1$s mà bạn biết hoặc giúp những người dùng %1$s khác tìm thấy bạn.</string>
+    <string name="dgts__verification_code">Mã xác nhận</string>
+    <string name="dgts_pin_code_terms">Trước đây bạn đã đặt một mã xác nhận 2 bước trên digits.com</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-vi/values-vi.xml -->
     <eat-comment/>
     <string name="tw__allow_btn_txt">Cho phép</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-vi/values-vi.xml -->
+    <eat-comment/>
+    <string name="tw__like_tweet">Thích Tweet</string>
+    <string name="tw__liked_tweet">Hoàn tác Thích</string>
+    <string name="tw__loading_tweet">Đang tải Tweet</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-vi/values-vi.xml -->
+    <eat-comment/>
+    <string name="tw__login_btn_txt">Đăng nhập bằng Twitter</string>
     <string name="tw__not_now_btn_txt">Không phải bây giờ</string>
-    <string name="tw__share_email_desc">Nhận cập nhật và các thông tin khác từ %1$s khi bạn cho phép họ truy cập email của bạn trên tài khoản Twitter của bạn \@%2$s</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-vi/values-vi.xml -->
+    <eat-comment/>
+    <string name="tw__pause">dừng lại</string>
+    <string name="tw__play">phát</string>
+    <string name="tw__replay">phát lại</string>
+    <string name="tw__retweeted_by_format">Đã Tweet lại bởi %1$s</string>
+    <string name="tw__share_content_format">Hãy xem Tweet của \@%1$s: https://twitter.com/%1$s/status/%2$s</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-vi/values-vi.xml -->
+    <eat-comment/>
+    <string name="tw__share_email_desc">Cho phép %1$s truy cập địa chỉ email gắn liền với tài khoản Twitter của bạn \@%2$s để %1$s có thể sử dụng địa chỉ đó theo chính sách riêng tư của mình. Ví dụ, %1$s có thể gửi cho bạn những cập nhật và thông tin khác theo địa chỉ đó.</string>
     <string name="tw__share_email_title">Chia sẻ địa chỉ email của bạn</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-vi/values-vi.xml -->
+    <eat-comment/>
+    <string name="tw__share_subject_format">Tweet từ %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Chia sẻ Tweet</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
 </resources>

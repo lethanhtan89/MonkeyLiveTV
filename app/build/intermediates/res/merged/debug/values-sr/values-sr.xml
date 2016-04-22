@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-sr/values-sr.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-sr/values-sr.xml -->
+    <eat-comment/>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1с</item>
+        <item quantity="other">%dс</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1м</item>
+        <item quantity="other">%dм</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1с</item>
+        <item quantity="other">%dс</item>
+    </plurals>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-sr/values-sr.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Одлазак на Почетну"</string>
-    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
-    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Кретање нагоре"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Још опција"</string>
     <string msgid="4076576682505996667" name="abc_action_mode_done">"Готово"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Прикажи све"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Избор апликације"</string>
-    <string msgid="121134116657445385" name="abc_capital_off">"ИСКЉУЧИ"</string>
-    <string msgid="3405795526292276155" name="abc_capital_on">"УКЉУЧИ"</string>
-    <string msgid="7723749260725869598" name="abc_search_hint">"Претражите..."</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Брисање упита"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Упит за претрагу"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"Претрага"</string>
@@ -20,7 +29,6 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Гласовна претрага"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Дели са"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Дели са апликацијом %s"</string>
-    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Скупи"</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-sr/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> захтева ажурирање апликације Android Wear."</string>
@@ -55,7 +63,71 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"Отвори на телефону"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"Пријави ме"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"Пријави ме преко Google-а"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-sr/values-sr.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-sr/values-sr.xml -->
     <eat-comment/>
-    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
+    <string name="dgts__call_me">Позови ме</string>
+    <string name="dgts__calling">Позивање…</string>
+    <string name="dgts__confirmation_code">Код за потврду</string>
+    <string name="dgts__confirmation_edit_hint">Унеси шестоцифрени код који смо ти послали</string>
+    <string name="dgts__confirmation_error">Није могуће да се потврди твој број телефона</string>
+    <string name="dgts__confirmation_error_alternative">Жао нам је, дошло је до проблема приликом слања кода за потврду.</string>
+    <string name="dgts__confirmation_expired">Овај код је истекао. Поново пошаљи код за потврду.</string>
+    <string name="dgts__continue">Настави</string>
+    <string name="dgts__digits_logo_desc">иконица digits логотипа</string>
+    <string name="dgts__digits_logo_name_desc">назив digits логотипа</string>
+    <string name="dgts__dismiss">Одбаци</string>
+    <string name="dgts__done">Готово</string>
+    <string name="dgts__email_request_edit_hint">Адреса е-поште</string>
+    <string name="dgts__email_request_title">Унеси адресу е-поште</string>
+    <string name="dgts__find_your_friends">Пронађи своје пријатеље</string>
+    <string name="dgts__image_header_description">Слика заглавља за пријаву</string>
+    <string name="dgts__invalid_email">Неисправна е-пошта. Покушај поново</string>
+    <string name="dgts__login_digits_text">Користи број телефона</string>
+    <string name="dgts__network_error">Провери своју мрежу и покушај поново.</string>
+    <string name="dgts__not_now">Не сада</string>
+    <string name="dgts__okay">Добро</string>
+    <string name="dgts__phone_number_edit_hint">Твој број</string>
+    <string name="dgts__phone_number_text">Унеси свој број телефона</string>
+    <string name="dgts__pin_code_verification_title">Унеси код за верификацију у 2 корака</string>
+    <string name="dgts__resend_confirmation_button_code">Поново пошаљи код</string>
+    <string name="dgts__resend_confirmation_text">Поново пошаљи код за птврду</string>
+    <string name="dgts__sending">Слање…</string>
+    <string name="dgts__success_desc">Иконица успешно</string>
+    <string name="dgts__try_again">Покушај поново</string>
+    <string name="dgts__try_again_confirmation">Провери свој код и покушај поново.</string>
+    <string name="dgts__try_again_email">Провери своју е-пошту и покушај поново</string>
+    <string name="dgts__try_again_phone_number">Провери свој број и покушај поново.</string>
+    <string name="dgts__try_another_phone">Пробај други број телефона</string>
+    <string name="dgts__unsupported_operator_error">Овом броју није могуће послати СМС поруку.</string>
+    <string name="dgts__upload_contacts">Користимо Digits од стране Твитера да пронађемо више твојих пријатеља који користе ову апликацију. Када додирнеш Ок, додађемо твој адресар на Digits од стране Твитера и омогућити другим корисницима %1$s да те знају или помогнемо другим корисницима %1$s да те пронађу.</string>
+    <string name="dgts__verification_code">Код за верификацију</string>
+    <string name="dgts_pin_code_terms">Раније је постављена верификација кода у 2 корака на digits.com</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-sr/values-sr.xml -->
+    <eat-comment/>
+    <string name="tw__allow_btn_txt">Дозволи</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-sr/values-sr.xml -->
+    <eat-comment/>
+    <string name="tw__like_tweet">Свиђа ти се твит</string>
+    <string name="tw__liked_tweet">Опозови свиђање</string>
+    <string name="tw__loading_tweet">Учитавање твита</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-sr/values-sr.xml -->
+    <eat-comment/>
+    <string name="tw__login_btn_txt">Пријави се преко Твитера</string>
+    <string name="tw__not_now_btn_txt">Не сада</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-sr/values-sr.xml -->
+    <eat-comment/>
+    <string name="tw__pause">пауза</string>
+    <string name="tw__play">пусти</string>
+    <string name="tw__replay">понови</string>
+    <string name="tw__retweeted_by_format">Ретвитовано од стране %1$s</string>
+    <string name="tw__share_content_format">Провери твит \@%1$s: https://twitter.com/%1$s/status/%2$s</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-sr/values-sr.xml -->
+    <eat-comment/>
+    <string name="tw__share_email_desc">Дозволи %1$s да приступи твојој е-пошти која је повезана са Твитер налогом \@%2$s тако да %1$s то може користити у складу са својом политиком приватности. На пример, %1$s може ти послати ажурирања и друге информације на ту адресу.</string>
+    <string name="tw__share_email_title">Подели своју адресу е-поште</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-sr/values-sr.xml -->
+    <eat-comment/>
+    <string name="tw__share_subject_format">Твит од %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Подели твит</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
 </resources>

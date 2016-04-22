@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-nl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-nl/values-nl.xml -->
     <eat-comment/>
     <plurals name="tw__time_hours">
         <item quantity="one">1u</item>
@@ -14,19 +14,14 @@
         <item quantity="one">1s</item>
         <item quantity="other">%ds</item>
     </plurals>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-nl/values-nl.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-nl/values-nl.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navigeren naar startpositie"</string>
-    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
-    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Omhoog navigeren"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Meer opties"</string>
     <string msgid="4076576682505996667" name="abc_action_mode_done">"Gereed"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Alles weergeven"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Een app selecteren"</string>
-    <string msgid="121134116657445385" name="abc_capital_off">"UIT"</string>
-    <string msgid="3405795526292276155" name="abc_capital_on">"AAN"</string>
-    <string msgid="7723749260725869598" name="abc_search_hint">"Zoeken…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Zoekopdracht wissen"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Zoekopdracht"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"Zoeken"</string>
@@ -34,7 +29,6 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Gesproken zoekopdracht"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Delen met"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Delen met %s"</string>
-    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Samenvouwen"</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-nl/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> vereist een update naar de Android Wear-app."</string>
@@ -69,26 +63,25 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"Openen op telefoon"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"Inloggen"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"Inloggen met Google"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values-nl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/values-nl/values-nl.xml -->
     <eat-comment/>
-    <string name="dgts__cancel">Annuleren</string>
-    <string name="dgts__communication_error">Communicatiefout </string>
+    <string name="dgts__call_me">Bel me</string>
+    <string name="dgts__calling">Bellen…</string>
     <string name="dgts__confirmation_code">Bevestigingscode</string>
-    <string name="dgts__confirmation_edit_hint">Bevestigingscode invoeren</string>
+    <string name="dgts__confirmation_edit_hint">Voer de 6-cijferige code in die we je hebben gestuurd</string>
     <string name="dgts__confirmation_error">We konden je telefoonnummer niet bevestigen.</string>
     <string name="dgts__confirmation_error_alternative">Sorry, we kunnen je geen bevestigingscode sturen.</string>
-    <string name="dgts__confirmation_expired">De code is verlopen. Verstuur de bevestigingscode opnieuw.</string>
-    <string name="dgts__confirmation_send_text">Bevestigingscode verzenden</string>
-    <string name="dgts__confirmation_sending_text">Bevestigingscode verzenden</string>
-    <string name="dgts__confirmation_sent_text">Bevestigingscode verzonden</string>
-    <string name="dgts__confirmation_sms">Bevestigingscode: %1$s. Voer deze code in in %2$s</string>
-    <string name="dgts__create_account_text">Account maken</string>
-    <string name="dgts__creating_account_text">Account maken</string>
+    <string name="dgts__confirmation_expired">Deze code is verlopen. Verstuur de bevestigingscode opnieuw.</string>
+    <string name="dgts__continue">Verder</string>
     <string name="dgts__digits_logo_desc">pictogram van Digits-logo</string>
     <string name="dgts__digits_logo_name_desc">naam van Digits-logo</string>
     <string name="dgts__dismiss">Verbergen</string>
+    <string name="dgts__done">Klaar</string>
+    <string name="dgts__email_request_edit_hint">E-mailadres</string>
+    <string name="dgts__email_request_title">E-mailadres invoeren</string>
     <string name="dgts__find_your_friends">Je vrienden zoeken</string>
     <string name="dgts__image_header_description">Afbeeldingskoptekst voor inloggen</string>
+    <string name="dgts__invalid_email">Ongeldig e-mailadres. Probeer het opnieuw.</string>
     <string name="dgts__login_digits_text">Mijn telefoonnummer gebruiken</string>
     <string name="dgts__network_error">Controleer je internetverbinding en probeer het opnieuw.</string>
     <string name="dgts__not_now">Nu niet</string>
@@ -96,51 +89,45 @@
     <string name="dgts__phone_number_edit_hint">Je telefoonnummer</string>
     <string name="dgts__phone_number_text">Vul je telefoonnummer in</string>
     <string name="dgts__pin_code_verification_title">Voer de code voor 2-staps verificatie in</string>
-    <string name="dgts__resend">Opnieuw verzenden</string>
+    <string name="dgts__resend_confirmation_button_code">Code opnieuw verzenden</string>
     <string name="dgts__resend_confirmation_text">Bevestigingscode opnieuw verzenden</string>
-    <string name="dgts__sign_in">Inloggen</string>
-    <string name="dgts__sign_in_error">We kunnen je op dit moment niet inloggen op Twitter. Probeer het later opnieuw.</string>
-    <string name="dgts__sign_in_twitter">Inloggen met Twitter</string>
-    <string name="dgts__signing_in">Inloggen</string>
+    <string name="dgts__sending">Verzenden…</string>
     <string name="dgts__success_desc">Gelukt-pictogram</string>
-    <string name="dgts__terms_text">Als je hierboven op %1$sBevestigingscode verzenden%1$s tikt, stuurt Digits by Twitter je een sms om je telefoonnummer te bevestigen.</string>
-    <string name="dgts__terms_text_create">Als je hierboven op %1$sAccount maken%1$s tikt, ga je akkoord met de algemene voorwaarden, het privacybeleid en het cookiebeleid van Digits by Twitter. Andere mensen die deze app gebruiken, kunnen je vinden via je e-mailadres en/of telefoonnummer.</string>
-    <string name="dgts__terms_text_sign_in">Als je hierboven op %1$sInloggen%1$s tikt, ga je akkoord met de algemene voorwaarden, het \
-privacybeleid en het cookiebeleid van Digits by Twitter. Andere mensen \
-die %1$s gebruiken, kunnen je vinden via je telefoonnummer en/of e-mailadres .</string>
     <string name="dgts__try_again">Probeer het opnieuw</string>
     <string name="dgts__try_again_confirmation">Controleer je code en probeer het opnieuw.</string>
+    <string name="dgts__try_again_email">Controleer je e-mail en probeer het opnieuw</string>
     <string name="dgts__try_again_phone_number">Controleer je telefoonnummer en probeer het opnieuw.</string>
     <string name="dgts__try_another_phone">Probeer een ander telefoonnummer</string>
+    <string name="dgts__unsupported_operator_error">Het is niet mogelijk om dit nummer een sms-bericht te sturen.</string>
     <string name="dgts__upload_contacts">We gebruiken Digits by Twitter om vrienden te zoeken die deze app gebruiken. Als je op OK tikt, wordt je adresboek naar Digits by Twitter geüpload om bekenden die %1$s gebruiken te vinden en andere mensen die %1$s gebruiken, te helpen jou te vinden.</string>
     <string name="dgts__verification_code">Verificatiecode</string>
     <string name="dgts_pin_code_terms">Je hebt eerder een code voor 2-staps verificatie ingesteld op digits.com</string>
-    <string name="dgts_verify">Verifiëren</string>
-    <string name="dgts_verifying">Verifiëren</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-nl/values-nl.xml -->
-    <eat-comment/>
-    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-nl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-nl/values-nl.xml -->
     <eat-comment/>
     <string name="tw__allow_btn_txt">Toestaan</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-nl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-nl/values-nl.xml -->
     <eat-comment/>
-    <string name="tw__loading_tweet">Tweet laden…</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-nl/values.xml -->
+    <string name="tw__like_tweet">Tweet leuk vinden</string>
+    <string name="tw__liked_tweet">Niet meer leuk</string>
+    <string name="tw__loading_tweet">Tweet laden</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-nl/values-nl.xml -->
     <eat-comment/>
     <string name="tw__login_btn_txt">Inloggen met Twitter</string>
     <string name="tw__not_now_btn_txt">Niet nu</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-nl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-nl/values-nl.xml -->
     <eat-comment/>
+    <string name="tw__pause">pauzeren</string>
+    <string name="tw__play">afspelen</string>
     <string name="tw__relative_date_format_long">d-M-y</string>
     <string name="tw__relative_date_format_short">d MMM</string>
+    <string name="tw__replay">opnieuw afspelen</string>
     <string name="tw__retweeted_by_format">Geretweet door %1$s</string>
-    <string name="tw__share_content_format">Bekijk de tweet van \@%1$s: https://twitter.com/%1$s/status/%2$s</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-nl/values.xml -->
+    <string name="tw__share_content_format">Bekijk de Tweet van \@%1$s: https://twitter.com/%1$s/status/%2$s</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-nl/values-nl.xml -->
     <eat-comment/>
-    <string name="tw__share_email_desc">Ontvang updates en andere informatie van %1$s als je hem/haar toegang geeft tot je e-mailadres op je Twitter-account \@%2$s</string>
+    <string name="tw__share_email_desc">Geef %1$s toegang tot het e-mailadres van je Twitter-account \@%2$s zodat %1$s er gebruik van kan maken volgens het privacy beleid. %1$s kan je bijvoorbeeld updates en andere informatie te sturen op dat adres.</string>
     <string name="tw__share_email_title">E-mailadres delen</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values-nl/values.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-nl/values-nl.xml -->
     <eat-comment/>
     <string name="tw__share_subject_format">Tweet van %1$s (\@%2$s)</string>
     <string name="tw__share_tweet">Tweet delen</string>
