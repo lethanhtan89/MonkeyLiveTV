@@ -20,7 +20,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Pojo.StreamCategoryResponse;
 import atv.com.project.popkontv.R;
 import atv.com.project.popkontv.lib.InstantAutoComplete;
@@ -89,7 +89,7 @@ public class StartNewStreamDialogFragment extends DialogFragment {
 //                streamIntent.putExtra("tweetMsg", tweetText.getText().toString());
 //                streamIntent.putExtra("doRecord", recordStreamCb.isChecked());
 //                startActivity(streamIntent);
-                Kickflip.sContext = Viewora.context;
+                Kickflip.sContext = Popkon.context;
                 String selectedCategory = categoryAtv.getText().toString();
                 int selectedIndex = categoryNameList.indexOf(selectedCategory);
                 if(selectedIndex != -1) {
@@ -138,19 +138,19 @@ public class StartNewStreamDialogFragment extends DialogFragment {
         categoryAtv = (InstantAutoComplete) rootView.findViewById(R.id.stream_category);
         categoriesAdapter = new ArrayAdapter<>(getActivity(), R.layout.single_list_item, categoryNameList);
         categoryAtv.setAdapter(categoriesAdapter);
-        categoryAtv.setTypeface(Viewora.racho);
+        categoryAtv.setTypeface(Popkon.racho);
 
         tweetButton = (Button) rootView.findViewById(R.id.streamBtn);
         scheduleButton = (Button) rootView.findViewById(R.id.scheduleBtn);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         tweetText.setPadding(5, 5, 5, 5);
 
-        tweetText.setTypeface(Viewora.racho);
-        streamPhTv.setTypeface(Viewora.racho);
-        tweetButton.setTypeface(Viewora.racho);
-        scheduleButton.setTypeface(Viewora.racho);
+        tweetText.setTypeface(Popkon.racho);
+        streamPhTv.setTypeface(Popkon.racho);
+        tweetButton.setTypeface(Popkon.racho);
+        scheduleButton.setTypeface(Popkon.racho);
         recordStreamCb = (CheckBox) rootView.findViewById(R.id.recordStreamCb);
-        recordStreamCb.setTypeface(Viewora.racho);
+        recordStreamCb.setTypeface(Popkon.racho);
     }
 
     public void populateCategories(ArrayList<StreamCategoryResponse.Message> categoriesDetailsList){

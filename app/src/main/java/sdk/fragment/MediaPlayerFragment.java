@@ -33,9 +33,21 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import net.chilicat.m3u8.Element;
+import net.chilicat.m3u8.Playlist;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
+
 import atv.com.project.popkontv.Adapters.CommentsAdapter;
 import atv.com.project.popkontv.Application.EndPoints;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Fragments.UserProfileDialogFragment;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
@@ -52,19 +64,6 @@ import atv.com.project.popkontv.R;
 import atv.com.project.popkontv.lib.Faye;
 import atv.com.project.popkontv.lib.OnSwipeTouchListener;
 import atv.com.project.popkontv.lib.StreamDrawable;
-
-import net.chilicat.m3u8.Element;
-import net.chilicat.m3u8.Playlist;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import sdk.av.Broadcaster;
 import sdk.av.M3u8Parser;
 import sdk.view.GLCameraEncoderView;
@@ -408,7 +407,7 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
 
         postCommentBox = (EditText) root.findViewById(R.id.commentBox);
         commentBoxHandle = (TextView) root.findViewById(R.id.commentBoxHandle);
-        commentBoxHandle.setText("@" + Viewora.getStringPreference(Viewora.TWITTER_HANDLE, ""));
+        commentBoxHandle.setText("@" + Popkon.getStringPreference(Popkon.TWITTER_HANDLE, ""));
         postCommentButton = (TextView) root.findViewById(R.id.postCommentButton);
         twitterReflectToggle = (Switch) root.findViewById(R.id.reflectInTwitter);
         twitterReflectToggle.setChecked(true);
@@ -419,10 +418,10 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
 //        zoomOutCamera = (ImageButton) root.findViewById(R.id.zoom_out_camera);
 //        zoomInCamera = (ImageButton) root.findViewById(R.id.zoom_in_camera);
 
-        userNameTv.setTypeface(Viewora.racho);
-        streamViewStatusTv.setTypeface(Viewora.racho);
-        commentBoxHandle.setTypeface(Viewora.racho);
-        postCommentButton.setTypeface(Viewora.racho);
+        userNameTv.setTypeface(Popkon.racho);
+        streamViewStatusTv.setTypeface(Popkon.racho);
+        commentBoxHandle.setTypeface(Popkon.racho);
+        postCommentButton.setTypeface(Popkon.racho);
     }
     private void bindEvents() {
         bindEventToUserActionsControllButton();
@@ -868,7 +867,7 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
 
                     @Override
                     public void failure(String msg) {
-                        Toast.makeText(Viewora.context, "Cannot Start The Stream", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Popkon.context, "Cannot Start The Stream", Toast.LENGTH_LONG).show();
                     }
 
                     @Override

@@ -3,7 +3,7 @@ package atv.com.project.popkontv.Network;
 import android.util.Log;
 
 import atv.com.project.popkontv.Application.EndPoints;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Pojo.SessionCreationResponse;
 import atv.com.project.popkontv.Pojo.TokenRefresh;
@@ -22,13 +22,13 @@ public class Auth {
             authRefreshCount++;
 
             if(authRefreshCount > 3){
-                Viewora.clearSharedPreferences();
-                Viewora.restart();
+                Popkon.clearSharedPreferences();
+                Popkon.restart();
             }
             TokenRefresh tokenRefresh = new TokenRefresh();
-            tokenRefresh.uid = String.valueOf(Viewora.getLongPreference(Viewora.TWITTER_ID, 0l));
-            tokenRefresh.accessToken = Viewora.getStringPreference(Viewora.API_TOKEN, "");
-            new MyHttp(Viewora.context, EndPoints.refreshToken, MyHttp.POST, SessionCreationResponse.class)
+            tokenRefresh.uid = String.valueOf(Popkon.getLongPreference(Popkon.TWITTER_ID, 0l));
+            tokenRefresh.accessToken = Popkon.getStringPreference(Popkon.API_TOKEN, "");
+            new MyHttp(Popkon.context, EndPoints.refreshToken, MyHttp.POST, SessionCreationResponse.class)
                     .defaultHeaders()
                     .addJson(tokenRefresh)
                     .send(new MyCallback<SessionCreationResponse>() {
@@ -36,10 +36,10 @@ public class Auth {
                         public void success(SessionCreationResponse data) {
                             Log.i(TAG, "Auth success" + data.toString());
                             authRefreshCount = 0;
-                            Viewora.setStringPreferenceData(Viewora.API_TOKEN, data.message.accessToken);
-                            Viewora.setIntPreferenceData(Viewora.USER_ID, data.message.id);
-                            Viewora.updateGlobalData();
-                            Viewora.executeAllRequests();
+                            Popkon.setStringPreferenceData(Popkon.API_TOKEN, data.message.accessToken);
+                            Popkon.setIntPreferenceData(Popkon.USER_ID, data.message.id);
+                            Popkon.updateGlobalData();
+                            Popkon.executeAllRequests();
                         }
 
                         @Override

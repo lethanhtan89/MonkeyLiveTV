@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Fragments.LoginFragment;
 import atv.com.project.popkontv.Fragments.MainFragment;
 import atv.com.project.popkontv.R;
@@ -36,14 +36,14 @@ public class LauncherActivity extends AppCompatActivity {
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
         Fabric.with(LauncherActivity.this, new Twitter(authConfig));
         setUpActionBar();
-        loggedInUserId = Viewora.getIntPreference(Viewora.USER_ID, 0);
-        loggedInUserToken = Viewora.getStringPreference(Viewora.API_TOKEN, "");
+        loggedInUserId = Popkon.getIntPreference(Popkon.USER_ID, 0);
+        loggedInUserToken = Popkon.getStringPreference(Popkon.API_TOKEN, "");
         if(getIntent() != null){
-            Viewora.setBooleanPreferenceData(Viewora.IS_SCHEDULED_STREAM,
-                    getIntent().getBooleanExtra(Viewora.IS_SCHEDULED_STREAM, false));
+            Popkon.setBooleanPreferenceData(Popkon.IS_SCHEDULED_STREAM,
+                    getIntent().getBooleanExtra(Popkon.IS_SCHEDULED_STREAM, false));
         }
         Log.i("AppInfo", loggedInUserId + " " + loggedInUserToken);
-        if(!(Viewora.loggedInUserId == 0)){
+        if(!(Popkon.loggedInUserId == 0)){
             fragmentInView = new MainFragment();
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.launcherContainer, fragmentInView)
@@ -76,7 +76,7 @@ public class LauncherActivity extends AppCompatActivity {
 //                });
                 TextView appName = (TextView) findViewById(R.id.appNameAb);
 //                ImageView backButton = (ImageView) findViewById(R.id.actionbarBack);
-                appName.setTypeface(Viewora.racho);
+                appName.setTypeface(Popkon.racho);
 //                backButton.setVisibility(View.GONE);
             }
         }catch (Exception e){

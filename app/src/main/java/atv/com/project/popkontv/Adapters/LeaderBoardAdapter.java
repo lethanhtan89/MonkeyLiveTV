@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
 import atv.com.project.popkontv.Pojo.MyResponse;
@@ -57,9 +57,9 @@ public class LeaderBoardAdapter extends ArrayAdapter<UserDetails.Message>{
             viewHolder.leaderImage = (ImageView)convertView.findViewById(R.id.leaderImage);
             viewHolder.followButton = (ImageView)convertView.findViewById(R.id.leaderFollowBt);
             viewHolder.followProgressBar = (ProgressBar)convertView.findViewById(R.id.follow_progress_bar);
-            viewHolder.leaderName.setTypeface(Viewora.racho);
-            viewHolder.leaderHandle.setTypeface(Viewora.racho);
-            viewHolder.leaderScore.setTypeface(Viewora.racho);
+            viewHolder.leaderName.setTypeface(Popkon.racho);
+            viewHolder.leaderHandle.setTypeface(Popkon.racho);
+            viewHolder.leaderScore.setTypeface(Popkon.racho);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -67,7 +67,7 @@ public class LeaderBoardAdapter extends ArrayAdapter<UserDetails.Message>{
         viewHolder.leaderName.setText(currentUser.name);
         viewHolder.leaderHandle.setText(currentUser.handle);
         viewHolder.leaderScore.setText(String.valueOf(currentUser.score));
-        if(currentUser.id == Viewora.loggedInUserId){
+        if(currentUser.id == Popkon.loggedInUserId){
             viewHolder.followButton.setVisibility(View.GONE);
 //            if(Build.VERSION.SDK_INT > 15){
 //                convertView.setBackground(context.getResources().getDrawable(R.drawable.primaryround));

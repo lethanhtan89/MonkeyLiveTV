@@ -12,7 +12,7 @@ import com.koushikdutta.ion.Ion;
 import com.koushikdutta.ion.builder.Builders;
 import com.koushikdutta.ion.future.ResponseFuture;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Pojo.MyResponse;
 
@@ -55,7 +55,7 @@ public class MyHttp<T> {
 
     public MyHttp defaultHeaders(){
         ionLoad.addHeader("Content-Type","application/json");
-        ionLoad.addHeader("access-token", Viewora.loggedInUserToken);
+        ionLoad.addHeader("access-token", Popkon.loggedInUserToken);
         return this;
     }
 
@@ -117,7 +117,7 @@ public class MyHttp<T> {
 
                                 if(result1.code == MyHttp.AUTH_FAIL_CODE){
                                     //auth
-                                    Viewora.addRequestToQueue(MyHttp.this);
+                                    Popkon.addRequestToQueue(MyHttp.this);
                                     Auth.refreshApiToken();
                                     return; //return on auth fail
                                 }

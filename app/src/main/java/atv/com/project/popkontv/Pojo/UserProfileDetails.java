@@ -10,7 +10,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import atv.com.project.popkontv.Application.EndPoints;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
 
@@ -75,8 +75,8 @@ public class UserProfileDetails extends MyResponse{
                         Intent broadCastFollowIntent = new Intent(USER_FOLLOW_STATUS_CHANGE);
                         broadCastFollowIntent.putExtra("followStatusChangedPosition", userIdPosition);
                         LocalBroadcastManager.getInstance(context).sendBroadcast(broadCastFollowIntent);
-                        int count = Viewora.getIntPreference(Viewora.USER_FOLLOWING_COUNT, 0);
-                        Viewora.setIntPreferenceData(Viewora.USER_FOLLOWING_COUNT, count + 1);
+                        int count = Popkon.getIntPreference(Popkon.USER_FOLLOWING_COUNT, 0);
+                        Popkon.setIntPreferenceData(Popkon.USER_FOLLOWING_COUNT, count + 1);
                         callback.success(data);
                     }
 
@@ -109,8 +109,8 @@ public class UserProfileDetails extends MyResponse{
                         Intent broadCastFollowIntent = new Intent(USER_FOLLOW_STATUS_CHANGE);
                         broadCastFollowIntent.putExtra("followStatusChangedPosition", userIdPosition);
                         LocalBroadcastManager.getInstance(context).sendBroadcast(broadCastFollowIntent);
-                        int count = Viewora.getIntPreference(Viewora.USER_FOLLOWING_COUNT, 0);
-                        Viewora.setIntPreferenceData(Viewora.USER_FOLLOWING_COUNT, count - 1);
+                        int count = Popkon.getIntPreference(Popkon.USER_FOLLOWING_COUNT, 0);
+                        Popkon.setIntPreferenceData(Popkon.USER_FOLLOWING_COUNT, count - 1);
                         callback.success(data);
                     }
 

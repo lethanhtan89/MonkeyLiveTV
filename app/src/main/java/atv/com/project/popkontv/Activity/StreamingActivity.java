@@ -54,7 +54,7 @@ import java.util.TimerTask;
 
 import atv.com.project.popkontv.Adapters.CommentsAdapter;
 import atv.com.project.popkontv.Application.EndPoints;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Fragments.UserProfileDialogFragment;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
@@ -217,12 +217,12 @@ public class StreamingActivity extends ImmersiveActivity{
         initializeWaitLayout = (LinearLayout) findViewById(R.id.initialise_wait_layout);
 
         initialiseViews();
-        onBoarding = Viewora.getBooleanPreference(Viewora.USER_ONBOARDING, true);
+        onBoarding = Popkon.getBooleanPreference(Popkon.USER_ONBOARDING, true);
 //        showUserOnBoarding();
         bindEvents();
 //        initLayout();
-        if(Viewora.getBooleanPreference(Viewora.IS_SCHEDULED_STREAM, false)){
-            Viewora.setBooleanPreferenceData(Viewora.IS_SCHEDULED_STREAM, false);
+        if(Popkon.getBooleanPreference(Popkon.IS_SCHEDULED_STREAM, false)){
+            Popkon.setBooleanPreferenceData(Popkon.IS_SCHEDULED_STREAM, false);
             startScheduledStream();
         }else {
             startRequests();
@@ -241,7 +241,7 @@ public class StreamingActivity extends ImmersiveActivity{
 
     private void showUserOnBoarding() {
         if(onBoarding){
-            Viewora.setBooleanPreferenceData(Viewora.USER_ONBOARDING, false);
+            Popkon.setBooleanPreferenceData(Popkon.USER_ONBOARDING, false);
             LayoutInflater onBoardingInflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             final View view = onBoardingInflater.inflate(R.layout.user_onboarding_stream_activity, null);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -320,7 +320,7 @@ public class StreamingActivity extends ImmersiveActivity{
                 if (VERBOSE)
                     Log.i(TAG, "Setting up Broadcaster for output " + Kickflip.getSessionConfig().getOutputPath() + " client key: " + Kickflip.getApiKey() + " secret: " + Kickflip.getApiSecret());
                 // TODO: Don't start recording until stream start response, so we can determine stream type...
-                Context context = Viewora.context;
+                Context context = Popkon.context;
                 try {
                     mBroadcaster = new Broadcaster(context, Kickflip.getSessionConfig(), Kickflip.getApiKey(), Kickflip.getApiSecret());
                     mBroadcaster.getEventBus().register(this);
@@ -342,15 +342,15 @@ public class StreamingActivity extends ImmersiveActivity{
         startStreamDetails.stream.categoryStreamAttributes.categoryId = getIntent().getIntExtra("categoryId", -1);
 
         MyHttp<StreamFullDetails> request = new MyHttp<>(StreamingActivity.this,
-                EndPoints.startScheduledStream(Viewora.getStringPreference(Viewora.STREAM_SLUG, "")),
+                EndPoints.startScheduledStream(Popkon.getStringPreference(Popkon.STREAM_SLUG, "")),
                 MyHttp.PUT, StreamFullDetails.class)
                 .defaultHeaders()
                 .addJson(startStreamDetails)
                 .send(new MyCallback<StreamFullDetails>() {
                     @Override
                     public void success(StreamFullDetails data) {
-                        int count = Viewora.getIntPreference(Viewora.USER_STRAEMS_COUNT, 0);
-                        Viewora.setIntPreferenceData(Viewora.USER_STRAEMS_COUNT, count + 1);
+                        int count = Popkon.getIntPreference(Popkon.USER_STRAEMS_COUNT, 0);
+                        Popkon.setIntPreferenceData(Popkon.USER_STRAEMS_COUNT, count + 1);
                         setDataToViewStartRecording(data);
                     }
 
@@ -717,7 +717,7 @@ public class StreamingActivity extends ImmersiveActivity{
 //        reTweetButton.setVisibility(View.GONE);
 
         userImage = (ImageView) findViewById(R.id.userImage);
-        MyHttp.fetchBitmap(StreamingActivity.this, Viewora.getStringPreference(Viewora.TWITTER_USER_PICTURE, ""), new MyCallback<Bitmap>() {
+        MyHttp.fetchBitmap(StreamingActivity.this, Popkon.getStringPreference(Popkon.TWITTER_USER_PICTURE, ""), new MyCallback<Bitmap>() {
             @Override
             public void success(Bitmap data) {
                 StreamDrawable drawable = new StreamDrawable(data);
@@ -741,7 +741,7 @@ public class StreamingActivity extends ImmersiveActivity{
         });
 
         userNameTv = (TextView) findViewById(R.id.userName);
-        userNameTv.setText(Viewora.getStringPreference(Viewora.TWITTER_USER_NAME, ""));
+        userNameTv.setText(Popkon.getStringPreference(Popkon.TWITTER_USER_NAME, ""));
 //        userHandleTv = (TextView) findViewById(R.id.userHandle);
 //        userHandleTv.setText(Viewora.getStringPreference(Viewora.TWITTER_HANDLE, ""));
         streamViewStatusTv = (TextView) findViewById(R.id.stream_view_status);
@@ -757,7 +757,7 @@ public class StreamingActivity extends ImmersiveActivity{
 
         postCommentBox = (EditText) findViewById(R.id.commentBox);
         commentBoxHandle = (TextView) findViewById(R.id.commentBoxHandle);
-        commentBoxHandle.setText("@" + Viewora.getStringPreference(Viewora.TWITTER_HANDLE, ""));
+        commentBoxHandle.setText("@" + Popkon.getStringPreference(Popkon.TWITTER_HANDLE, ""));
         postCommentButton = (TextView) findViewById(R.id.postCommentButton);
         twitterReflectToggle = (Switch) findViewById(R.id.reflectInTwitter);
         twitterReflectToggle.setChecked(true);
@@ -768,13 +768,13 @@ public class StreamingActivity extends ImmersiveActivity{
 //        zoomInCamera = (ImageButton) findViewById(R.id.zoom_in_camera);
 //        zoomOutCamera = (ImageButton) findViewById(R.id.zoom_out_camera);
 
-        userNameTv.setTypeface(Viewora.racho);
+        userNameTv.setTypeface(Popkon.racho);
 //        userHandleTv.setTypeface(Viewora.racho);
-        streamViewStatusTv.setTypeface(Viewora.racho);
+        streamViewStatusTv.setTypeface(Popkon.racho);
 //        userLocationTv.setTypeface(Viewora.racho);
 //        streamTweetTv.setTypeface(Viewora.racho);
-        commentBoxHandle.setTypeface(Viewora.racho);
-        postCommentButton.setTypeface(Viewora.racho);
+        commentBoxHandle.setTypeface(Popkon.racho);
+        postCommentButton.setTypeface(Popkon.racho);
     }
 
 
@@ -793,8 +793,8 @@ public class StreamingActivity extends ImmersiveActivity{
                 .send(new MyCallback<StreamFullDetails>() {
                     @Override
                     public void success(StreamFullDetails data) {
-                        int count = Viewora.getIntPreference(Viewora.USER_STRAEMS_COUNT, 0);
-                        Viewora.setIntPreferenceData(Viewora.USER_STRAEMS_COUNT, count + 1);
+                        int count = Popkon.getIntPreference(Popkon.USER_STRAEMS_COUNT, 0);
+                        Popkon.setIntPreferenceData(Popkon.USER_STRAEMS_COUNT, count + 1);
                         setDataToViewStartRecording(data);
                     }
 
@@ -1378,7 +1378,7 @@ public class StreamingActivity extends ImmersiveActivity{
     public void sendStopEventToServer(final boolean interrupted){
         final Handler handler = new Handler();
         try {
-            new MyHttp<UserScore>(Viewora.context, EndPoints.stopStream(currentStreamDetails.message.slug), MyHttp.POST, UserScore.class)
+            new MyHttp<UserScore>(Popkon.context, EndPoints.stopStream(currentStreamDetails.message.slug), MyHttp.POST, UserScore.class)
                     .defaultHeaders()
                     .send(new MyCallback<UserScore>() {
                         @Override
@@ -1386,7 +1386,7 @@ public class StreamingActivity extends ImmersiveActivity{
                             Log.i("Stream status", "Stopped");
                             Log.i("Score ", String.valueOf(data.message.score));
 //                        Toast.makeText(StreamingActivity.this, "Score " + data.message.score, Toast.LENGTH_SHORT).show();
-                            Viewora.setIntPreferenceData(Viewora.USER_SCORE, data.message.score);
+                            Popkon.setIntPreferenceData(Popkon.USER_SCORE, data.message.score);
 //                            LocalBroadcastManager.getInstance(StreamingActivity.this).sendBroadcast(new Intent(Viewora.SCORE_UPDATED));
                             if (!interrupted) {
                                 fetchScoreProgressBar.setVisibility(View.GONE);
@@ -1416,7 +1416,7 @@ public class StreamingActivity extends ImmersiveActivity{
     }
 
     public static void sendStartEventToServer() {
-        new MyHttp<MyResponse>(Viewora.context, EndPoints.startStream(currentStreamDetails.message.slug), MyHttp.POST, MyResponse.class)
+        new MyHttp<MyResponse>(Popkon.context, EndPoints.startStream(currentStreamDetails.message.slug), MyHttp.POST, MyResponse.class)
                 .defaultHeaders()
                 .send(new MyCallback<MyResponse>() {
                     @Override

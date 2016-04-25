@@ -26,7 +26,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import atv.com.project.popkontv.Activity.UserDetailsListActivity;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
 import atv.com.project.popkontv.R;
@@ -72,8 +72,8 @@ public class UserProfileFragment extends Fragment {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Viewora.clearSharedPreferences();
-                Viewora.restart();
+                Popkon.clearSharedPreferences();
+                Popkon.restart();
             }
         });
 //        leaderBoard.setOnClickListener(new View.OnClickListener() {
@@ -200,43 +200,43 @@ public class UserProfileFragment extends Fragment {
     private void initialiseViews() {
 //        cardView = (CardViewNative) rootView.findViewById(R.id.card_largeimage);
 //        cardView.setCardElevation(R.dimen.card_elevation);
-        String imageUrl = (Viewora.getStringPreference(Viewora.TWITTER_USER_PICTURE, "")).replace("_normal", "");
+        String imageUrl = (Popkon.getStringPreference(Popkon.TWITTER_USER_PICTURE, "")).replace("_normal", "");
         logoutButton = (Button) rootView.findViewById(R.id.logOut);
-        logoutButton.setTypeface(Viewora.racho);
+        logoutButton.setTypeface(Popkon.racho);
 
         userName = (TextView) rootView.findViewById(R.id.profileUserNameTv);
-        userName.setTypeface(Viewora.racho);
-        userName.setText(Viewora.getStringPreference(Viewora.TWITTER_USER_NAME, ""));
+        userName.setTypeface(Popkon.racho);
+        userName.setText(Popkon.getStringPreference(Popkon.TWITTER_USER_NAME, ""));
 
         userHandle = (TextView) rootView.findViewById(R.id.profileUserHandleTv);
-        userHandle.setTypeface(Viewora.racho);
-        userHandle.setText(Viewora.getStringPreference(Viewora.TWITTER_HANDLE, ""));
+        userHandle.setTypeface(Popkon.racho);
+        userHandle.setText(Popkon.getStringPreference(Popkon.TWITTER_HANDLE, ""));
 
         userImageView = (ImageView) rootView.findViewById(R.id.profileUserIv);
 
         userCoverImageView = (ImageView) rootView.findViewById(R.id.profileUserCoverImage);
 
         score = (TextView) rootView.findViewById(R.id.profileUserScoreTv);
-        score.setTypeface(Viewora.racho);
-        score.setText("Streams(" + Viewora.getIntPreference(Viewora.USER_STRAEMS_COUNT, 0) + ") " +
-                "Score(" + Viewora.getIntPreference(Viewora.USER_SCORE, 0) + ")");
+        score.setTypeface(Popkon.racho);
+        score.setText("Streams(" + Popkon.getIntPreference(Popkon.USER_STRAEMS_COUNT, 0) + ") " +
+                "Score(" + Popkon.getIntPreference(Popkon.USER_SCORE, 0) + ")");
 
         followers = (TextView) rootView.findViewById(R.id.profileUserFollowers);
-        followers.setTypeface(Viewora.racho);
-        followers.setText("Followers " + Viewora.getIntPreference(Viewora.USER_FOLLOWERS_COUNT, 0));
+        followers.setTypeface(Popkon.racho);
+        followers.setText("Followers " + Popkon.getIntPreference(Popkon.USER_FOLLOWERS_COUNT, 0));
 
         following = (TextView) rootView.findViewById(R.id.profileUserFollowing);
-        following.setTypeface(Viewora.racho);
-        following.setText("Following " + Viewora.getIntPreference(Viewora.USER_FOLLOWING_COUNT, 0));
+        following.setTypeface(Popkon.racho);
+        following.setText("Following " + Popkon.getIntPreference(Popkon.USER_FOLLOWING_COUNT, 0));
 
 //        streamsCountTv = (TextView) rootView.findViewById(R.id.profileUserStreamsCount);
 //        streamsCountTv.setTypeface(Castasy.racho);
 //        streamsCountTv.setText("Streams " + Viewora.getIntPreference(Viewora.USER_STRAEMS_COUNT, 0));
 
         leaderBoard = (TextView) rootView.findViewById(R.id.profileUserLeaderBoard);
-        leaderBoard.setTypeface(Viewora.racho);
+        leaderBoard.setTypeface(Popkon.racho);
         settingsTv = (TextView) rootView.findViewById(R.id.settings);
-        settingsTv.setTypeface(Viewora.racho);
+        settingsTv.setTypeface(Popkon.racho);
 
         MyHttp.fetchBitmap(getActivity(), imageUrl, new MyCallback<Bitmap>() {
             @Override
@@ -286,7 +286,7 @@ public class UserProfileFragment extends Fragment {
         ImageView profileLayout = (ImageView) view.findViewById(R.id.profileLayout);
         profileLayout.setVisibility(View.GONE);
         TextView appName = (TextView) view.findViewById(R.id.appNameAb);
-        appName.setTypeface(Viewora.racho);
+        appName.setTypeface(Popkon.racho);
         ImageView backButton = (ImageView) view.findViewById(R.id.actionbarBack);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

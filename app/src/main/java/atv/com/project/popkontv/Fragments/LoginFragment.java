@@ -22,7 +22,7 @@ import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 
 import atv.com.project.popkontv.Application.EndPoints;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
 import atv.com.project.popkontv.Pojo.AwsDetails;
@@ -64,13 +64,13 @@ public class LoginFragment extends Fragment {
                 TwitterAuthToken authToken = session.getAuthToken();
                 saveDetails(session, authToken);
                 MyTwitterApiClient userClient = new MyTwitterApiClient(session);
-                userClient.getUsersService().show(Viewora.getLongPreference(Viewora.TWITTER_ID, 0l), null, true, new Callback<com.twitter.sdk.android.core.models.User>() {
+                userClient.getUsersService().show(Popkon.getLongPreference(Popkon.TWITTER_ID, 0l), null, true, new Callback<com.twitter.sdk.android.core.models.User>() {
                     @Override
                     public void success(Result<com.twitter.sdk.android.core.models.User> userResult) {
                         Log.i("user", userResult.toString());
-                        Viewora.setStringPreferenceData(Viewora.TWITTER_USER_NAME, userResult.data.name);
-                        Viewora.setStringPreferenceData(Viewora.TWITTER_USER_LOCATION, userResult.data.location.equals("") ? "Getting location.." : userResult.data.location);
-                        Viewora.setStringPreferenceData(Viewora.TWITTER_USER_PICTURE, userResult.data.profileImageUrl);
+                        Popkon.setStringPreferenceData(Popkon.TWITTER_USER_NAME, userResult.data.name);
+                        Popkon.setStringPreferenceData(Popkon.TWITTER_USER_LOCATION, userResult.data.location.equals("") ? "Getting location.." : userResult.data.location);
+                        Popkon.setStringPreferenceData(Popkon.TWITTER_USER_PICTURE, userResult.data.profileImageUrl);
                         sendDetailsToServer(session, userResult);
                     }
 
@@ -105,13 +105,13 @@ public class LoginFragment extends Fragment {
                 TwitterAuthToken authToken = session.getAuthToken();
                 saveDetails(session, authToken);
                 MyTwitterApiClient userClient = new MyTwitterApiClient(session);
-                userClient.getUsersService().show(Viewora.getLongPreference(Viewora.TWITTER_ID, 0l), null, true, new Callback<com.twitter.sdk.android.core.models.User>() {
+                userClient.getUsersService().show(Popkon.getLongPreference(Popkon.TWITTER_ID, 0l), null, true, new Callback<com.twitter.sdk.android.core.models.User>() {
                     @Override
                     public void success(Result<com.twitter.sdk.android.core.models.User> userResult) {
                         Log.i("user", userResult.toString());
-                        Viewora.setStringPreferenceData(Viewora.TWITTER_USER_NAME, userResult.data.name);
-                        Viewora.setStringPreferenceData(Viewora.TWITTER_USER_LOCATION, userResult.data.location.equals("") ? "Getting location.." : userResult.data.location);
-                        Viewora.setStringPreferenceData(Viewora.TWITTER_USER_PICTURE, userResult.data.profileImageUrl);
+                        Popkon.setStringPreferenceData(Popkon.TWITTER_USER_NAME, userResult.data.name);
+                        Popkon.setStringPreferenceData(Popkon.TWITTER_USER_LOCATION, userResult.data.location.equals("") ? "Getting location.." : userResult.data.location);
+                        Popkon.setStringPreferenceData(Popkon.TWITTER_USER_PICTURE, userResult.data.profileImageUrl);
                         sendDetailsToServer(session, userResult);
                     }
 
@@ -144,31 +144,31 @@ public class LoginFragment extends Fragment {
         loginDetails.user.name = userResult.data.name;
         loginDetails.user.username = userResult.data.screenName;
         loginDetails.user.image = userResult.data.profileImageUrl;
-        if(Viewora.currentLocation != null) {
-            loginDetails.user.latitude = Viewora.currentLocation.getLatitude();
-            loginDetails.user.longitude = Viewora.currentLocation.getLongitude();
+        if(Popkon.currentLocation != null) {
+            loginDetails.user.latitude = Popkon.currentLocation.getLatitude();
+            loginDetails.user.longitude = Popkon.currentLocation.getLongitude();
         }else {
             loginDetails.user.latitude = 0.0;
             loginDetails.user.longitude = 0.0;
         }
 
         loginDetails.twitterCredential = new TwitterCredential();
-        loginDetails.twitterCredential.access_token = Viewora.getStringPreference(Viewora.TWITTER_TOKEN, "");
-        loginDetails.twitterCredential.reference = String.valueOf(Viewora.getLongPreference(Viewora.TWITTER_ID, 0l));
-        loginDetails.twitterCredential.secret = Viewora.getStringPreference(Viewora.TWITTER_SECRET, "");
+        loginDetails.twitterCredential.access_token = Popkon.getStringPreference(Popkon.TWITTER_TOKEN, "");
+        loginDetails.twitterCredential.reference = String.valueOf(Popkon.getLongPreference(Popkon.TWITTER_ID, 0l));
+        loginDetails.twitterCredential.secret = Popkon.getStringPreference(Popkon.TWITTER_SECRET, "");
         MyHttp<SessionCreationResponse> requestHttp = new MyHttp(getActivity(), EndPoints.baseSessionUrl, MyHttp.POST, SessionCreationResponse.class)
                 .defaultHeaders()
                 .addJson(loginDetails)
                 .send(new MyCallback<SessionCreationResponse>() {
                     @Override
                     public void success(SessionCreationResponse data) {
-                        Viewora.setIntPreferenceData(Viewora.USER_ID, data.message.id);
-                        Viewora.setStringPreferenceData(Viewora.API_TOKEN, data.message.accessToken);
-                        Viewora.setIntPreferenceData(Viewora.USER_SCORE, data.message.score);
-                        Viewora.setIntPreferenceData(Viewora.USER_FOLLOWERS_COUNT, data.message.numberOfFollowers);
-                        Viewora.setIntPreferenceData(Viewora.USER_FOLLOWING_COUNT, data.message.numberOfFollowing);
-                        Viewora.setIntPreferenceData(Viewora.USER_STRAEMS_COUNT, data.message.numberOfStreams);
-                        Viewora.updateGlobalData();
+                        Popkon.setIntPreferenceData(Popkon.USER_ID, data.message.id);
+                        Popkon.setStringPreferenceData(Popkon.API_TOKEN, data.message.accessToken);
+                        Popkon.setIntPreferenceData(Popkon.USER_SCORE, data.message.score);
+                        Popkon.setIntPreferenceData(Popkon.USER_FOLLOWERS_COUNT, data.message.numberOfFollowers);
+                        Popkon.setIntPreferenceData(Popkon.USER_FOLLOWING_COUNT, data.message.numberOfFollowing);
+                        Popkon.setIntPreferenceData(Popkon.USER_STRAEMS_COUNT, data.message.numberOfStreams);
+                        Popkon.updateGlobalData();
                         getAwsDetails();
                     }
 
@@ -196,11 +196,11 @@ public class LoginFragment extends Fragment {
         AwsDetails.getAwsDetails(getActivity(), new MyCallback<AwsDetails>() {
             @Override
             public void success(AwsDetails data) {
-                Viewora.setStringPreferenceData(Viewora.AWS_ACCESS_KEY, data.message.awsAccessKey);
-                Viewora.setStringPreferenceData(Viewora.AWS_SECRET_KEY, data.message.awsSecretKey);
-                Viewora.setStringPreferenceData(Viewora.AWS_BUCKET_NAME, data.message.awsBucketName);
-                Viewora.setStringPreferenceData(Viewora.AWS_FOLDER, data.message.awsRecordingFolder);
-                Viewora.setStringPreferenceData(Viewora.AWS_REGION, data.message.awsRegion);
+                Popkon.setStringPreferenceData(Popkon.AWS_ACCESS_KEY, data.message.awsAccessKey);
+                Popkon.setStringPreferenceData(Popkon.AWS_SECRET_KEY, data.message.awsSecretKey);
+                Popkon.setStringPreferenceData(Popkon.AWS_BUCKET_NAME, data.message.awsBucketName);
+                Popkon.setStringPreferenceData(Popkon.AWS_FOLDER, data.message.awsRecordingFolder);
+                Popkon.setStringPreferenceData(Popkon.AWS_REGION, data.message.awsRegion);
                 getFragmentManager().beginTransaction()
                         .replace(R.id.launcherContainer, new MainFragment())
                         .commit();
@@ -210,7 +210,7 @@ public class LoginFragment extends Fragment {
             public void failure(String msg) {
                 Log.i("failureapi", msg);
                 Toast.makeText(getActivity(), "Login Failed. Please Try Again", Toast.LENGTH_LONG).show();
-                Viewora.clearSharedPreferences();
+                Popkon.clearSharedPreferences();
                 progressBar.setVisibility(View.GONE);
                 introLayout.setVisibility(View.VISIBLE);
             }
@@ -231,10 +231,10 @@ public class LoginFragment extends Fragment {
         String token = authToken.token;
         String secret = authToken.secret;
 
-        Viewora.setStringPreferenceData(Viewora.TWITTER_TOKEN, token);
-        Viewora.setStringPreferenceData(Viewora.TWITTER_SECRET, secret);
-        Viewora.setStringPreferenceData(Viewora.TWITTER_HANDLE, session.getUserName());
-        Viewora.setLongPreferenceData(Viewora.TWITTER_ID, session.getUserId());
+        Popkon.setStringPreferenceData(Popkon.TWITTER_TOKEN, token);
+        Popkon.setStringPreferenceData(Popkon.TWITTER_SECRET, secret);
+        Popkon.setStringPreferenceData(Popkon.TWITTER_HANDLE, session.getUserName());
+        Popkon.setLongPreferenceData(Popkon.TWITTER_ID, session.getUserId());
 
     }
 
