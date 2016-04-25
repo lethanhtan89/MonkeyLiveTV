@@ -37,6 +37,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import atv.com.project.popkontv.Activity.UserProfileActivity;
 import atv.com.project.popkontv.Fragments.LeaderBoardFragment;
 import atv.com.project.popkontv.Fragments.MainFragment;
 import atv.com.project.popkontv.Fragments.SettingsFragment;
@@ -99,6 +100,11 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_LONG).show();
                 break;
+            case R.id.action_view_profile:
+                Intent intent = new Intent(MainActivity.this, UserProfileActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
