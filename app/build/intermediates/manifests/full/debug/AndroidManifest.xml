@@ -55,7 +55,7 @@
             android:screenOrientation="landscape"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="sdk.activity.BroadcastActivity"
+            android:name="io.kickflip.sdk.activity.BroadcastActivity"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait" />
 
@@ -79,18 +79,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="atv.com.project.popkontv.MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:mimeType="text/plain" />
-                <data android:mimeType="image/*" />
-            </intent-filter>
-        </activity>
+        <activity android:name="atv.com.project.popkontv.MainActivity" />
 
         <meta-data
             android:name="io.fabric.ApiKey"
@@ -112,7 +101,7 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 
-                <category android:name="com.castasy.viewora" />
+                <category android:name="atv.com.project.popkontv" />
             </intent-filter>
         </receiver>
 
@@ -132,7 +121,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="sdk.activity.MediaPlayerActivity"
+            android:name="io.kickflip.sdk.activity.MediaPlayerActivity"
             android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -143,7 +132,7 @@
                 <data
                     android:host="live"
                     android:path="/"
-                    android:scheme="viewora" />
+                    android:scheme="popkontv" />
             </intent-filter>
         </activity>
         <activity

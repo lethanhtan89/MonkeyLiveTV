@@ -76,11 +76,11 @@ import atv.com.project.popkontv.lib.Faye;
 import atv.com.project.popkontv.lib.OnSwipeTouchListener;
 import atv.com.project.popkontv.lib.StreamDrawable;
 import io.fabric.sdk.android.Fabric;
-import sdk.Kickflip;
-import sdk.activity.ImmersiveActivity;
-import sdk.av.Broadcaster;
-import sdk.av.FullFrameRect;
-import sdk.view.GLCameraEncoderView;
+import io.kickflip.sdk.Kickflip;
+import io.kickflip.sdk.activity.ImmersiveActivity;
+import io.kickflip.sdk.av.Broadcaster;
+import io.kickflip.sdk.av.FullFrameRect;
+import io.kickflip.sdk.view.GLCameraEncoderView;
 
 public class StreamingActivity extends ImmersiveActivity{
     private final static String LOG_TAG = "StreamingActivity";

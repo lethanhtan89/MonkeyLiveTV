@@ -28,7 +28,7 @@ import atv.com.project.popkontv.R;
 import atv.com.project.popkontv.lib.ImageDownloader;
 import atv.com.project.popkontv.lib.StreamDrawable;
 import it.gmariotti.cardslib.library.view.CardViewNative;
-import sdk.Kickflip;
+import io.kickflip.sdk.Kickflip;
 
 //import org.videolan.vlc.gui.video.VideoPlayerActivity;
 

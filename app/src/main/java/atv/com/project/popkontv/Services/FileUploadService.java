@@ -18,7 +18,7 @@ import java.io.FileNotFoundException;
 
 import atv.com.project.popkontv.Application.EndPoints;
 import atv.com.project.popkontv.Application.Popkon;
-import sdk.av.Broadcaster;
+import io.kickflip.sdk.av.Broadcaster;
 
 /**
  * Created by arjun on 6/9/15.

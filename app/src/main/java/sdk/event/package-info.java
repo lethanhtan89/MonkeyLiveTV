@@ -1,4 +1,0 @@
-/**
- @hide
- **/
-package sdk.event;

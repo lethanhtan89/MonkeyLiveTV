@@ -24,7 +24,7 @@ import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Pojo.StreamCategoryResponse;
 import atv.com.project.popkontv.R;
 import atv.com.project.popkontv.lib.InstantAutoComplete;
-import sdk.Kickflip;
+import io.kickflip.sdk.Kickflip;
 
 /**
  * Created by arjun on 6/18/15.
@@ -95,8 +95,7 @@ public class StartNewStreamDialogFragment extends DialogFragment {
                 if(selectedIndex != -1) {
                     selectedCategoryId = categoryIdList.get(selectedIndex);
                 }
-                Kickflip.startBroadcastActivity(getActivity(), tweetText.getText().toString(), recordStreamCb.isChecked(),
-                        selectedCategoryId);
+                Kickflip.startBroadcastActivity(getActivity(), tweetText.getText().toString(), recordStreamCb.isChecked(), selectedCategoryId);
                 tweetText.setText("");
                 getDialog().dismiss();
 //                Intent streamIntent = new Intent(getActivity(), BroadcastActivity.class);

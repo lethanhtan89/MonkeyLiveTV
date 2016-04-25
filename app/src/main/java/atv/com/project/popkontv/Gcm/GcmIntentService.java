@@ -15,7 +15,7 @@ import com.google.android.gms.gcm.GcmListenerService;
 import atv.com.project.popkontv.Activity.UserDetailsListActivity;
 import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.R;
-import sdk.Kickflip;
+import io.kickflip.sdk.Kickflip;
 
 //import org.videolan.vlc.gui.video.VideoPlayerActivity;
 
