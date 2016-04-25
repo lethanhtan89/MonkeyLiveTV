@@ -23,7 +23,7 @@ import com.twitter.sdk.android.core.models.User;
 import com.twitter.sdk.android.core.services.FavoriteService;
 import com.twitter.sdk.android.core.services.StatusesService;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.R;
 import atv.com.project.popkontv.twitter.MyTwitterApiClient;
 
@@ -99,8 +99,8 @@ public class TweetActivity extends Activity {
             }
         });
 
-        SharedPreferences pref = getApplicationContext().getSharedPreferences(Viewora.PREFERENCE_NAME, Context.MODE_PRIVATE);
-        Long userId = pref.getLong(Viewora.TWITTER_ID, 0L);
+        SharedPreferences pref = getApplicationContext().getSharedPreferences(Popkon.PREFERENCE_NAME, Context.MODE_PRIVATE);
+        Long userId = pref.getLong(Popkon.TWITTER_ID, 0L);
         MyTwitterApiClient userClient = new MyTwitterApiClient(session);
         userClient.getUsersService().show(userId,null,true,new Callback<User>() {
             @Override

@@ -9,7 +9,7 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 
 public class LocationServices {
     private static LocationManager locationManager;
@@ -26,7 +26,7 @@ public class LocationServices {
 
 
     public Location getCurrentLocation(){
-        locationManager = (LocationManager) Viewora.context.getSystemService(Context.LOCATION_SERVICE);
+        locationManager = (LocationManager) Popkon.context.getSystemService(Context.LOCATION_SERVICE);
 
         Criteria criteriaToGetLocation = new Criteria();
         provider = locationManager.getBestProvider(criteriaToGetLocation, false);

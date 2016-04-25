@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Application.EndPoints;
 import atv.com.project.popkontv.Pojo.MyResponse;
 import atv.com.project.popkontv.Pojo.UserProfileDetails;
@@ -124,7 +124,7 @@ public class UserProfileDialogFragment extends DialogFragment {
 
             }
         });
-        if(currentUser.message.userId == Viewora.loggedInUserId){
+        if(currentUser.message.userId == Popkon.loggedInUserId){
             mFollowButtonTv.setBackground(getResources().getDrawable(R.drawable.filled_primary_border));
             mFollowButtonTv.setText("ME");
             mFollowButtonTv.setTextColor(getResources().getColor(R.color.white));
@@ -239,21 +239,21 @@ public class UserProfileDialogFragment extends DialogFragment {
 
     private void initialiseView() {
         mUserNameTv = (TextView) rootView.findViewById(R.id.userNameTv);
-        mUserNameTv.setTypeface(Viewora.racho);
+        mUserNameTv.setTypeface(Popkon.racho);
 //        mHandleTv = (TextView) rootView.findViewById(R.id.userHandleTv);
 //        mHandleTv.setTypeface(Castasy.racho);
         mScoreTv = (TextView) rootView.findViewById(R.id.userScoreTv);
-        mScoreTv.setTypeface(Viewora.racho);
+        mScoreTv.setTypeface(Popkon.racho);
         mFollowersCountTv = (TextView) rootView.findViewById(R.id.followersCountTv);
-        mFollowersCountTv.setTypeface(Viewora.racho);
+        mFollowersCountTv.setTypeface(Popkon.racho);
         mFollowingCountTv = (TextView) rootView.findViewById(R.id.followingCountTv);
-        mFollowingCountTv.setTypeface(Viewora.racho);
+        mFollowingCountTv.setTypeface(Popkon.racho);
         mFollowButtonTv = (TextView) rootView.findViewById(R.id.followUserButtonTv);
-        mFollowButtonTv.setTypeface(Viewora.racho);
+        mFollowButtonTv.setTypeface(Popkon.racho);
         mFollowerTextTv = (TextView) rootView.findViewById(R.id.followersPhtv);
-        mFollowerTextTv.setTypeface(Viewora.racho);
+        mFollowerTextTv.setTypeface(Popkon.racho);
         mFollowingTextTv = (TextView) rootView.findViewById(R.id.followingPhtv);
-        mFollowingTextTv.setTypeface(Viewora.racho);
+        mFollowingTextTv.setTypeface(Popkon.racho);
 //        mErrorDataTv = (TextView) rootView.findViewById(R.id.errorDataTv);
         mUserImageIv = (ImageView) rootView.findViewById(R.id.userProfileIv);
         mUserProfilePb = (ProgressBar) rootView.findViewById(R.id.user_profile_dialog_progress_bar);

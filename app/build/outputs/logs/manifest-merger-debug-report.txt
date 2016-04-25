@@ -152,7 +152,7 @@ MERGED from [com.android.support:support-v4:22.2.0] D:\PROJECT\ANDROID\PopkonTV\
 	android:theme
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:40:9-40
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:35:9-44
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:35:9-43
 activity#atv.com.project.popkontv.Activity.StreamingActivity
 ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:43:9-47:54
 	android:screenOrientation

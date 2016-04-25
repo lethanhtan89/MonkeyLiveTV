@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.List;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Pojo.Feed;
 import atv.com.project.popkontv.R;
 
@@ -42,7 +42,7 @@ public class CommentsAdapter extends ArrayAdapter<Feed>{
             convertView = inflater.inflate(R.layout.comment_item, parent, false);
             viewHolder = new ViewHolder();
             viewHolder.comment = (TextView) convertView.findViewById(R.id.commentListItem);
-            viewHolder.comment.setTypeface(Viewora.racho);
+            viewHolder.comment.setTypeface(Popkon.racho);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder)convertView.getTag();

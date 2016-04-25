@@ -10,16 +10,16 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import atv.com.project.popkontv.Application.Viewora;
-import atv.com.project.popkontv.Pojo.UserDetails;
-import atv.com.project.popkontv.Pojo.MyResponse;
-import atv.com.project.popkontv.Pojo.UserProfileDetails;
-import atv.com.project.popkontv.R;
+import java.util.ArrayList;
+
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
+import atv.com.project.popkontv.Pojo.MyResponse;
+import atv.com.project.popkontv.Pojo.UserDetails;
+import atv.com.project.popkontv.Pojo.UserProfileDetails;
+import atv.com.project.popkontv.R;
 import atv.com.project.popkontv.lib.StreamDrawable;
-
-import java.util.ArrayList;
 /**
  * Created by arjun on 5/19/15.
  */
@@ -54,8 +54,8 @@ public class UserViewAdapter extends ArrayAdapter {
             viewHolder.userImage = (ImageView)convertView.findViewById(R.id.userImage);
             viewHolder.followButton = (ImageView)convertView.findViewById(R.id.userFollowBt);
             viewHolder.followProgressBar = (ProgressBar)convertView.findViewById(R.id.follow_progress_bar);
-            viewHolder.userName.setTypeface(Viewora.racho);
-            viewHolder.userHandle.setTypeface(Viewora.racho);
+            viewHolder.userName.setTypeface(Popkon.racho);
+            viewHolder.userHandle.setTypeface(Popkon.racho);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();

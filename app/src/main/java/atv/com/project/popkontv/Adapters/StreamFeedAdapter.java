@@ -19,7 +19,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Fragments.UserProfileDialogFragment;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
@@ -95,11 +95,11 @@ public class StreamFeedAdapter extends ArrayAdapter<StreamFeedDetails.Message> {
             viewHolder.streamUserImage = (ImageView)convertView.findViewById(R.id.streamUserImage);
             viewHolder.streamCoverImageIv = (ImageView) convertView.findViewById(R.id.streamCoverImage);
 //            viewHolder.streamBackground = (RelativeLayout) convertView.findViewById(R.id.streamImageLayout);
-            viewHolder.streamUserName.setTypeface(Viewora.racho);
+            viewHolder.streamUserName.setTypeface(Popkon.racho);
 //            viewHolder.streamStatus.setTypeface(Castasy.racho);
 //            viewHolder.streamCommentsCount.setTypeface(Castasy.racho);
-            viewHolder.streamWatchersCount.setTypeface(Viewora.racho);
-            viewHolder.streamMessage.setTypeface(Viewora.racho);
+            viewHolder.streamWatchersCount.setTypeface(Popkon.racho);
+            viewHolder.streamMessage.setTypeface(Popkon.racho);
 //            viewHolder.streamReTweetsCount.setTypeface(Castasy.racho);
             convertView.setTag(viewHolder);
         } else {
@@ -191,7 +191,7 @@ public class StreamFeedAdapter extends ArrayAdapter<StreamFeedDetails.Message> {
                 if (currentFeed.streamType.equalsIgnoreCase("scheduled")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(context);
                     builder.setTitle("Scheduled Stream")
-                            .setMessage("The stream is scheduled " + Viewora.timeElapsedAsRelativeTime(currentFeed.startTime))
+                            .setMessage("The stream is scheduled " + Popkon.timeElapsedAsRelativeTime(currentFeed.startTime))
                             .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {

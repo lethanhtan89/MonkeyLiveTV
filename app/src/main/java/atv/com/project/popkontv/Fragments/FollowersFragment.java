@@ -18,19 +18,19 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 import atv.com.project.popkontv.Adapters.UserViewAdapter;
 import atv.com.project.popkontv.Application.EndPoints;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
 import atv.com.project.popkontv.Pojo.UserDetails;
 import atv.com.project.popkontv.Pojo.UserProfileDetails;
 import atv.com.project.popkontv.R;
 
-import java.util.ArrayList;
-
 /**
- * Created by arjun on 5/19/15.
+ * Created by Administrator on 5/19/15.
  */
 public class FollowersFragment extends Fragment {
     private View rootView;
@@ -180,7 +180,7 @@ public class FollowersFragment extends Fragment {
         progressBar = (ProgressBar) rootView.findViewById(R.id.followerProgress);
         contentsLayout = (LinearLayout) rootView.findViewById(R.id.followerListContents);
         dataEmptyMessage = (TextView) rootView.findViewById(R.id.dataEmptyMessage);
-        dataEmptyMessage.setTypeface(Viewora.racho);
+        dataEmptyMessage.setTypeface(Popkon.racho);
 //        backButton = (ImageView) rootView.findViewById(R.id.actionBarBackButton);
     }
 }

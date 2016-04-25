@@ -43,7 +43,7 @@ import java.util.ArrayList;
 import atv.com.project.popkontv.Activity.UserProfileActivity;
 import atv.com.project.popkontv.Adapters.StreamFeedAdapter;
 import atv.com.project.popkontv.Application.EndPoints;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
 import atv.com.project.popkontv.Pojo.LoginDetails;
@@ -103,9 +103,9 @@ public class MainFragment extends Fragment {
 //        registerScoreUpdateReceiver();
 //        cards = new ArrayList<>();
         initialiseViews();
-        onBoarding = Viewora.getBooleanPreference(Viewora.USER_ONBOARDING, true);
+        onBoarding = Popkon.getBooleanPreference(Popkon.USER_ONBOARDING, true);
         if(onBoarding){
-            Viewora.setBooleanPreferenceData(Viewora.USER_ONBOARDING, false);
+            Popkon.setBooleanPreferenceData(Popkon.USER_ONBOARDING, false);
             LayoutInflater onBoardingInflater = (LayoutInflater) getActivity()
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             final View view = onBoardingInflater.inflate(R.layout.newstream_user_show, null);
@@ -253,7 +253,7 @@ public class MainFragment extends Fragment {
         loginDetails.user = new User();
         loginDetails.user.device_registration_id = regId;
 
-        new MyHttp<MyResponse>(getActivity(), EndPoints.updateUser(Viewora.loggedInUserId), MyHttp.PUT, MyResponse.class)
+        new MyHttp<MyResponse>(getActivity(), EndPoints.updateUser(Popkon.loggedInUserId), MyHttp.PUT, MyResponse.class)
                 .defaultHeaders()
                 .addJson(loginDetails)
                 .send(new MyCallback<MyResponse>() {
@@ -280,10 +280,10 @@ public class MainFragment extends Fragment {
     }
 
     private void storeRegistrationId(){
-        Viewora.setStringPreferenceData(Viewora.PROPERTY_REG_ID, regId);
+        Popkon.setStringPreferenceData(Popkon.PROPERTY_REG_ID, regId);
     }
     private String getRegistrationId() {
-        String registrationId = Viewora.getStringPreference(Viewora.PROPERTY_REG_ID, "");
+        String registrationId = Popkon.getStringPreference(Popkon.PROPERTY_REG_ID, "");
         if (registrationId.isEmpty()) {
             Log.i("GCM", "Registration not found.");
             return "";
@@ -336,7 +336,7 @@ public class MainFragment extends Fragment {
                     if (currentFeed.state.equalsIgnoreCase("scheduled")) {
                         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                         builder.setTitle("Scheduled Stream")
-                                .setMessage("The stream is scheduled " + Viewora.timeElapsedAsRelativeTime(currentFeed.startTime))
+                                .setMessage("The stream is scheduled " + Popkon.timeElapsedAsRelativeTime(currentFeed.startTime))
                                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
@@ -365,7 +365,7 @@ public class MainFragment extends Fragment {
                 fetchFeeds();
             }
         };
-        LocalBroadcastManager.getInstance(getActivity()).registerReceiver(scoreUpdateReceiver, new IntentFilter(Viewora.SCORE_UPDATED));
+        LocalBroadcastManager.getInstance(getActivity()).registerReceiver(scoreUpdateReceiver, new IntentFilter(Popkon.SCORE_UPDATED));
     }
 
     private void fetchFeeds() {
@@ -481,7 +481,7 @@ public class MainFragment extends Fragment {
             ImageView backButton = (ImageView) view.findViewById(R.id.actionbarBack);
 //            userNameView.setTypeface(Castasy.racho);
 //            userScoreView.setTypeface(Castasy.racho);
-            appName.setTypeface(Viewora.racho);
+            appName.setTypeface(Popkon.racho);
             backButton.setVisibility(View.GONE);
 //            userScoreView.setText("Score " + Viewora.getIntPreference(Viewora.USER_SCORE, 0));
 //            userNameView.setText("@" + Viewora.getStringPreference(Viewora.TWITTER_HANDLE, ""));
@@ -563,7 +563,7 @@ public class MainFragment extends Fragment {
         streamFeedSwipe = (SwipeRefreshLayout) rootView.findViewById(R.id.streamFeedSwipe);
         newStreamBt = (FloatingActionButton) rootView.findViewById(R.id.newStream);
         noStreamTv = (TextView) rootView.findViewById(R.id.noStreamText);
-        noStreamTv.setTypeface(Viewora.racho);
+        noStreamTv.setTypeface(Popkon.racho);
 
         TypedValue typed_value = new TypedValue();
         getActivity().getTheme().resolveAttribute(android.support.v7.appcompat.R.attr.actionBarSize, typed_value, true);

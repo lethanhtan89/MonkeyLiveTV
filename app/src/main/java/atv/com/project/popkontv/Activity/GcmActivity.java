@@ -3,7 +3,7 @@ package atv.com.project.popkontv.Activity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Fragments.FollowersFragment;
 import atv.com.project.popkontv.R;
 
@@ -28,6 +28,6 @@ public class GcmActivity extends ActionBarActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Viewora.restart();
+        Popkon.restart();
     }
 }

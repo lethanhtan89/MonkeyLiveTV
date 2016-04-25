@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
 import atv.com.project.popkontv.R;
@@ -73,15 +73,15 @@ public class FeedCard extends Card {
 //        streamReTweetsCountTv = (TextView)view.findViewById(R.id.streamReStreams);
 //        streamUserHandleTv = (TextView)view.findViewById(R.id.streamUserHandle);
 //        streamBackgroundLl = (LinearLayout) view.findViewById(R.id.streamImageLayout);
-        streamUserNameTv.setTypeface(Viewora.racho);
-        streamStatusTv.setTypeface(Viewora.racho);
+        streamUserNameTv.setTypeface(Popkon.racho);
+        streamStatusTv.setTypeface(Popkon.racho);
 //        streamUserHandleTv.setTypeface(Castasy.racho);
-        streamTypeTv.setTypeface(Viewora.racho);
-        streamMessageTv.setTypeface(Viewora.racho);
+        streamTypeTv.setTypeface(Popkon.racho);
+        streamMessageTv.setTypeface(Popkon.racho);
 //        streamLikesCountTv.setTypeface(Castasy.racho);
 //        streamCommentsCountTv.setTypeface(Castasy.racho);
 //        streamReTweetsCountTv.setTypeface(Castasy.racho);
-        streamLocationTv.setTypeface(Viewora.racho);
+        streamLocationTv.setTypeface(Popkon.racho);
 
         streamUserNameTv.setText(streamUserName);
 //        streamUserHandleTv.setText(streamUserHandle);

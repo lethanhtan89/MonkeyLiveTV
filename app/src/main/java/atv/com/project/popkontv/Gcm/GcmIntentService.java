@@ -13,7 +13,7 @@ import android.util.Log;
 import com.google.android.gms.gcm.GcmListenerService;
 
 import atv.com.project.popkontv.Activity.UserDetailsListActivity;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.R;
 import sdk.Kickflip;
 
@@ -36,17 +36,17 @@ public class GcmIntentService extends GcmListenerService {
         Log.i("GCM", data.getString("code"));
         String code = data.getString("code");
         alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        if(code.equalsIgnoreCase("2001") && Viewora.getBooleanPreference(Viewora.SHOW_NEW_STREAM_NOTIFICATION, true)){
+        if(code.equalsIgnoreCase("2001") && Popkon.getBooleanPreference(Popkon.SHOW_NEW_STREAM_NOTIFICATION, true)){
             showNewStreamNotification(data);
         } else if(code.equalsIgnoreCase("2002")) {
-            int count = Viewora.getIntPreference(Viewora.USER_FOLLOWERS_COUNT, 0);
-            Viewora.setIntPreferenceData(Viewora.USER_FOLLOWERS_COUNT, count + 1);
-            if(Viewora.getBooleanPreference(Viewora.SHOW_FOLLOW_NOTIFICATION, true)) {
+            int count = Popkon.getIntPreference(Popkon.USER_FOLLOWERS_COUNT, 0);
+            Popkon.setIntPreferenceData(Popkon.USER_FOLLOWERS_COUNT, count + 1);
+            if(Popkon.getBooleanPreference(Popkon.SHOW_FOLLOW_NOTIFICATION, true)) {
                 showNewFollowerNotification(data);
             }
         } else if(code.equalsIgnoreCase("2003")){
-            int count = Viewora.getIntPreference(Viewora.USER_FOLLOWERS_COUNT, 0);
-            Viewora.setIntPreferenceData(Viewora.USER_FOLLOWERS_COUNT, count - 1);
+            int count = Popkon.getIntPreference(Popkon.USER_FOLLOWERS_COUNT, 0);
+            Popkon.setIntPreferenceData(Popkon.USER_FOLLOWERS_COUNT, count - 1);
         }
     }
 

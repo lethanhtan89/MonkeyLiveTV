@@ -32,7 +32,7 @@ import java.util.ArrayList;
 
 import atv.com.project.popkontv.Adapters.UserViewAdapter;
 import atv.com.project.popkontv.Application.EndPoints;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
 import atv.com.project.popkontv.Pojo.MyResponse;
@@ -114,7 +114,7 @@ public class FollowingFragment extends Fragment {
 //                headerView.setText("Following (" + (++currentFollowingCount) + ")");
             }
         };
-        LocalBroadcastManager.getInstance(getActivity()).registerReceiver(followReceiver, new IntentFilter(Viewora.USER_FOLLOWED));
+        LocalBroadcastManager.getInstance(getActivity()).registerReceiver(followReceiver, new IntentFilter(Popkon.USER_FOLLOWED));
 
         unFollowReceiver = new BroadcastReceiver() {
             @Override
@@ -122,7 +122,7 @@ public class FollowingFragment extends Fragment {
 //                headerView.setText("Following (" + (--currentFollowingCount) + ")");
             }
         };
-        LocalBroadcastManager.getInstance(getActivity()).registerReceiver(unFollowReceiver, new IntentFilter(Viewora.USER_UNFOLLOWED));
+        LocalBroadcastManager.getInstance(getActivity()).registerReceiver(unFollowReceiver, new IntentFilter(Popkon.USER_UNFOLLOWED));
     }
 
     @Override
@@ -285,7 +285,7 @@ public class FollowingFragment extends Fragment {
     private void initialiseViews() {
         followingListView = (ListView) rootView.findViewById(R.id.followingList);
         emptyDataMessage = (TextView) rootView.findViewById(R.id.dataEmptyFollowing);
-        emptyDataMessage.setTypeface(Viewora.racho);
+        emptyDataMessage.setTypeface(Popkon.racho);
 //        headerView = (TextView) rootView.findViewById(R.id.followingCount);
 //        headerView.setTypeface(Castasy.racho);
         progressBar = (ProgressBar) rootView.findViewById(R.id.followingProgress);

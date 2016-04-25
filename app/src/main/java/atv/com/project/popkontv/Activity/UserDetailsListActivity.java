@@ -7,7 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Fragments.FollowersFragment;
 import atv.com.project.popkontv.Fragments.FollowingFragment;
 import atv.com.project.popkontv.Fragments.LeaderBoardFragment;
@@ -34,7 +34,7 @@ public class UserDetailsListActivity extends AppCompatActivity {
             setSupportActionBar(toolbar);
             toolbar.setTitle("Profile");
             name = (TextView) findViewById(R.id.appNameAb);
-            name.setTypeface(Viewora.racho);
+            name.setTypeface(Popkon.racho);
 //            getSupportActionBar().setDisplayShowTitleEnabled(false);
             getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_HOME | ActionBar.DISPLAY_HOME_AS_UP | ActionBar.DISPLAY_USE_LOGO);
 

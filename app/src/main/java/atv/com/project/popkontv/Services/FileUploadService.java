@@ -17,7 +17,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 import atv.com.project.popkontv.Application.EndPoints;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import sdk.av.Broadcaster;
 
 /**
@@ -73,7 +73,7 @@ public class FileUploadService extends IntentService{
         Ion.with(getApplicationContext())
                 .load("PUT", EndPoints.startScheduledStream(slugOfFileToUpload))
 //                        .setHeader("Content-Type", "image/jpeg")
-                        .setHeader("access-token", Viewora.loggedInUserToken)
+                        .setHeader("access-token", Popkon.loggedInUserToken)
                         .uploadProgress(new ProgressCallback() {
                             @Override
                             public void onProgress(long downloaded, long total) {
@@ -152,17 +152,17 @@ public class FileUploadService extends IntentService{
         }
         slugOfFileToUpload = slug;
         fileToUpload = tempPhoto;
-        Intent intent = new Intent(Viewora.context, FileUploadService.class);
+        Intent intent = new Intent(Popkon.context, FileUploadService.class);
         intent.setAction(String.valueOf(ACTION_UPLOAD_PICTURE));
-        Viewora.context.startService(intent);
+        Popkon.context.startService(intent);
     }
     public static void uploadVideoSegment(Broadcaster broadcaster){
         if(mBroadCaster == null) {
             mBroadCaster = broadcaster;
         };
-        Intent intent = new Intent(Viewora.context, FileUploadService.class);
+        Intent intent = new Intent(Popkon.context, FileUploadService.class);
         intent.setAction(String.valueOf(ACTION_UPLOAD_VIDEO));
         intent.setFlags(START_NOT_STICKY);
-        Viewora.context.startService(intent);
+        Popkon.context.startService(intent);
     }
 }

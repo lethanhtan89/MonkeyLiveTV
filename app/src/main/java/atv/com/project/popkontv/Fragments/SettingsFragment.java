@@ -10,7 +10,7 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.R;
 
 /**
@@ -37,7 +37,7 @@ public class SettingsFragment extends Fragment {
         followNotificationToggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                Viewora.setBooleanPreferenceData(Viewora.SHOW_FOLLOW_NOTIFICATION, isChecked);
+                Popkon.setBooleanPreferenceData(Popkon.SHOW_FOLLOW_NOTIFICATION, isChecked);
             }
         });
 
@@ -47,7 +47,7 @@ public class SettingsFragment extends Fragment {
         newStreamNotificationToggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                Viewora.setBooleanPreferenceData(Viewora.SHOW_NEW_STREAM_NOTIFICATION, isChecked);
+                Popkon.setBooleanPreferenceData(Popkon.SHOW_NEW_STREAM_NOTIFICATION, isChecked);
             }
         });
     }
@@ -59,11 +59,11 @@ public class SettingsFragment extends Fragment {
         followNotificationToggle = (Switch) rootView.findViewById(R.id.followNotificationToggle);
         newStreamNotificationToggle = (Switch) rootView.findViewById(R.id.newStreamNotificationToggle);
 
-        followNotificationToggle.setChecked(Viewora.getBooleanPreference(Viewora.SHOW_FOLLOW_NOTIFICATION, true));
-        newStreamNotificationToggle.setChecked(Viewora.getBooleanPreference(Viewora.SHOW_NEW_STREAM_NOTIFICATION, true));
+        followNotificationToggle.setChecked(Popkon.getBooleanPreference(Popkon.SHOW_FOLLOW_NOTIFICATION, true));
+        newStreamNotificationToggle.setChecked(Popkon.getBooleanPreference(Popkon.SHOW_NEW_STREAM_NOTIFICATION, true));
 
-        notifySettingPhTv.setTypeface(Viewora.racho);
-        notifyFollowedSettingPhTv.setTypeface(Viewora.racho);
-        notifyNewStreamSettingPhTv.setTypeface(Viewora.racho);
+        notifySettingPhTv.setTypeface(Popkon.racho);
+        notifyFollowedSettingPhTv.setTypeface(Popkon.racho);
+        notifyNewStreamSettingPhTv.setTypeface(Popkon.racho);
     }
 }

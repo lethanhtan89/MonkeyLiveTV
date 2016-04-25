@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayDeque;
 
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import sdk.FileUtils;
 import sdk.api.json.HlsStream;
 import sdk.api.s3.S3BroadcastManager;
@@ -191,8 +191,8 @@ public class Broadcaster extends AVRecorder {
 //        mStream.setIsPrivate(mConfig.isPrivate());
         if (VERBOSE) Log.i(TAG, "Got hls start stream " + stream);
         mS3Manager = new S3BroadcastManager(this,
-                new BasicSessionCredentials(Viewora.getStringPreference(Viewora.AWS_ACCESS_KEY, "hls"), Viewora.getStringPreference(Viewora.AWS_SECRET_KEY, "hls"), ""));
-        mS3Manager.setRegion(Viewora.getStringPreference(Viewora.AWS_REGION, "hls"));
+                new BasicSessionCredentials(Popkon.getStringPreference(Popkon.AWS_ACCESS_KEY, "hls"), Popkon.getStringPreference(Popkon.AWS_SECRET_KEY, "hls"), ""));
+        mS3Manager.setRegion(Popkon.getStringPreference(Popkon.AWS_REGION, "hls"));
         mS3Manager.addRequestInterceptor(mS3RequestInterceptor);
         mReadyToBroadcast = true;
         submitQueuedUploadsToS3();

@@ -24,7 +24,7 @@ import java.util.Calendar;
 
 import atv.com.project.popkontv.Activity.LauncherActivity;
 import atv.com.project.popkontv.Application.EndPoints;
-import atv.com.project.popkontv.Application.Viewora;
+import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Network.MyHttp;
 import atv.com.project.popkontv.Pojo.StartStreamContentStream;
@@ -62,7 +62,7 @@ public class ScheduleStreamFragment extends Fragment implements TimePickerFragme
             public void onReceive(Context context, Intent intent) {
                 NotificationManager mManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
                 Intent scheduleStreamIntent = new Intent(context, LauncherActivity.class);
-                scheduleStreamIntent.putExtra(Viewora.IS_SCHEDULED_STREAM, true);
+                scheduleStreamIntent.putExtra(Popkon.IS_SCHEDULED_STREAM, true);
                 scheduleStreamIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 NotificationCompat.Builder mBuilder =
                         new NotificationCompat.Builder(context)
@@ -116,7 +116,7 @@ public class ScheduleStreamFragment extends Fragment implements TimePickerFragme
                                     PendingIntent mPendingIntent = PendingIntent.getBroadcast(getActivity(), pendingIntentId, startIntent, PendingIntent.FLAG_CANCEL_CURRENT);
                                     scheduleManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + differenceInMilliSeconds, mPendingIntent);
 //                                    getFragmentManager().popBackStack();
-                                    Viewora.setStringPreferenceData(Viewora.STREAM_SLUG, data.message.slug);
+                                    Popkon.setStringPreferenceData(Popkon.STREAM_SLUG, data.message.slug);
                                     getActivity().onBackPressed();
                                 }
 
@@ -146,10 +146,10 @@ public class ScheduleStreamFragment extends Fragment implements TimePickerFragme
 
     private void initialiseViews() {
         timePicker = (TextView) rootView.findViewById(R.id.timePicker);
-        timePicker.setTypeface(Viewora.racho);
+        timePicker.setTypeface(Popkon.racho);
 //        addPhoto = (TextView) rootView.findViewById(R.id.addPhoto);
         scheduleStream = (TextView) rootView.findViewById(R.id.scheduleStream);
-        scheduleStream.setTypeface(Viewora.racho);
+        scheduleStream.setTypeface(Popkon.racho);
         scheduleStreamProgress = (ProgressBar) rootView.findViewById(R.id.scheduleProgress);
     }
 
