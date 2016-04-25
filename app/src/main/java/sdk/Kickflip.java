@@ -8,10 +8,9 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import atv.com.project.popkontv.Activity.StreamingActivity;
-
 import java.io.File;
 
+import atv.com.project.popkontv.Activity.StreamingActivity;
 import sdk.activity.MediaPlayerActivity;
 import sdk.av.SessionConfig;
 import sdk.fragment.MediaPlayerFragment;
@@ -29,16 +28,16 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * <b>Starting a single live broadcast</b>
  * <p/>
  * <ol>
- * <li>(Optional) {@link #setSessionConfig(io.kickflip.sdk.av.SessionConfig)}</li>
+ * <li>(Optional) {@link #setSessionConfig(sdk.av.SessionConfig)}</li>
  * </ol>
- * The {@link io.kickflip.sdk.activity.BroadcastActivity} will present a standard camera UI with controls
+ * The {@link sdk.activity.BroadcastActivity} will present a standard camera UI with controls
  * for starting and stopping the broadcast. When the broadcast is stopped, BroadcastActivity will finish
  * <p/>
  * <br/>
  * <b>Customizing broadcast parameters</b>
  * <p/>
- * As noted above, you can optionally call {@link #setSessionConfig(io.kickflip.sdk.av.SessionConfig)} before
- * Here's an example of how to build a {@link io.kickflip.sdk.av.SessionConfig} with {@link io.kickflip.sdk.av.SessionConfig.Builder}:
+ * As noted above, you can optionally call {@link #setSessionConfig(sdk.av.SessionConfig)} before
+ * Here's an example of how to build a {@link sdk.av.SessionConfig} with {@link sdk.av.SessionConfig.Builder}:
  * <p/>
  * <code>
  *   SessionConfig config = new SessionConfig.Builder(mRecordingOutputPath)
@@ -100,7 +99,7 @@ public class Kickflip {
     }
 
     /**
-     * Start {@link io.kickflip.sdk.activity.BroadcastActivity}. This Activity
+     * Start {@link sdk.activity.BroadcastActivity}. This Activity
      * facilitates control over a single live broadcast.
      * <p/>
      *  @param host     the host {@link Activity} initiating this action
@@ -140,7 +139,7 @@ public class Kickflip {
 //    }
 
     /**
-     * Start {@link io.kickflip.sdk.activity.MediaPlayerActivity}. This Activity
+     * Start {@link sdk.activity.MediaPlayerActivity}. This Activity
      * facilitates playing back a Kickflip broadcast.
      * <p/>
      *  @param host      the host {@link Activity} initiating this action
@@ -219,9 +218,9 @@ public class Kickflip {
     }
 
     /**
-     * Return the {@link io.kickflip.sdk.av.SessionConfig} responsible for configuring this broadcast.
+     * Return the {@link sdk.av.SessionConfig} responsible for configuring this broadcast.
      *
-     * @return the {@link io.kickflip.sdk.av.SessionConfig} responsible for configuring this broadcast.
+     * @return the {@link sdk.av.SessionConfig} responsible for configuring this broadcast.
      * @hide
      */
     public static SessionConfig getSessionConfig() {
@@ -242,9 +241,9 @@ public class Kickflip {
     }
 
     /**
-     * Set the {@link io.kickflip.sdk.av.SessionConfig} responsible for configuring this broadcast.
+     * Set the {@link sdk.av.SessionConfig} responsible for configuring this broadcast.
      *
-     * @param config the {@link io.kickflip.sdk.av.SessionConfig} responsible for configuring this broadcast.
+     * @param config the {@link sdk.av.SessionConfig} responsible for configuring this broadcast.
      */
     public static void setSessionConfig(SessionConfig config) {
         sSessionConfig = config;

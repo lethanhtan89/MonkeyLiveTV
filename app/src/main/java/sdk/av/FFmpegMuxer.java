@@ -10,6 +10,8 @@ import android.util.Log;
 
 import com.google.common.io.Files;
 
+import net.openwatch.ffmpegwrapper.FFmpegWrapper;
+
 import java.io.File;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
@@ -18,10 +20,8 @@ import java.nio.ByteBuffer;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 
-import ffmpegwrapper.FFmpegWrapper;
-
 /**
- * Created by davidbrodsky on 1/23/14.
+ * Created by Administrator on 1/23/14.
  *
  * @hide
  */

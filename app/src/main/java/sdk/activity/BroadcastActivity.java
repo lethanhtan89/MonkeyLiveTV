@@ -1,10 +1,10 @@
 package sdk.activity;
 
 import android.os.Bundle;
-//import io.kickflip.sdk.fragment.BroadcastFragment;
+//import sdk.fragment.BroadcastFragment;
 
 /**
-// * BroadcastActivity manages a single live broadcast. It's a thin wrapper around {@link io.kickflip.sdk.fragment
+// * BroadcastActivity manages a single live broadcast. It's a thin wrapper around {@link sdk.fragment
  */
 public class BroadcastActivity extends ImmersiveActivity {
     private static final String TAG = "BroadcastActivity";

@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:id="@+id/activityRootView"
     android:layout_height="match_parent" >
-    <io.kickflip.sdk.view.GLCameraEncoderView
+    <sdk.view.GLCameraEncoderView
         android:id="@+id/cameraPreview"
         android:visibility="gone"
         android:layout_width="match_parent"

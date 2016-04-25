@@ -15,7 +15,7 @@ import java.util.TimeZone;
 import sdk.av.SessionConfig;
 
 /**
- * Created by David Brodsky on 3/20/14.
+ * Created by Administrator on 3/20/14.
  */
 public class Util {
     //"04/03/2014 23:41:37",

@@ -95,8 +95,7 @@ public class StartNewStreamDialogFragment extends DialogFragment {
                 if(selectedIndex != -1) {
                     selectedCategoryId = categoryIdList.get(selectedIndex);
                 }
-                Kickflip.startBroadcastActivity(getActivity(), tweetText.getText().toString(), recordStreamCb.isChecked(),
-                        selectedCategoryId);
+                Kickflip.startBroadcastActivity(getActivity(), tweetText.getText().toString(), recordStreamCb.isChecked(), selectedCategoryId);
                 tweetText.setText("");
                 getDialog().dismiss();
 //                Intent streamIntent = new Intent(getActivity(), BroadcastActivity.class);
