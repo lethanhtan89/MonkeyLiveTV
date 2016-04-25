@@ -24,7 +24,7 @@ import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Pojo.StreamCategoryResponse;
 import atv.com.project.popkontv.R;
 import atv.com.project.popkontv.lib.InstantAutoComplete;
-import sdk.Kickflip;
+import io.kickflip.sdk.Kickflip;
 
 /**
  * Created by arjun on 6/18/15.

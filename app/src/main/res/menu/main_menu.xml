@@ -3,10 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="atv.com.project.popkontv.MainActivity">
-    <item
-        android:id="@+id/action_settings"
-        android:title="@string/menu_settings"
-        app:showAsAction="never" />
+
 
     <item
         android:id="@+id/action_search"
@@ -22,6 +19,11 @@
         android:icon="@drawable/ic_share"
         app:showAsAction="ifRoom"
         app:actionProviderClass="android.support.v7.widget.ShareActionProvider"></item>
+    <item
+        android:id="@+id/action_view_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/userprofilewhite"
+        android:orderInCategory="400" app:showAsAction="always" />
 
 </menu>
 

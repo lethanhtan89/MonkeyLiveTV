@@ -24,6 +24,7 @@ import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 import atv.com.project.popkontv.Application.EndPoints;
 import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Interfaces.MyCallback;
+import atv.com.project.popkontv.MainActivity;
 import atv.com.project.popkontv.Network.MyHttp;
 import atv.com.project.popkontv.Pojo.AwsDetails;
 import atv.com.project.popkontv.Pojo.LoginDetails;
@@ -204,6 +205,8 @@ public class LoginFragment extends Fragment {
                 getFragmentManager().beginTransaction()
                         .replace(R.id.launcherContainer, new MainFragment())
                         .commit();
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
             }
 
             @Override

@@ -47,7 +47,7 @@
             android:windowSoftInputMode="adjustPan"/>
 
         <activity
-            android:name="sdk.activity.BroadcastActivity"
+            android:name="io.kickflip.sdk.activity.BroadcastActivity"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait"/>
 
@@ -113,7 +113,7 @@
             android:screenOrientation="portrait"
             android:label="@string/title_activity_user_details_list" >
         </activity>
-        <activity android:name="sdk.activity.MediaPlayerActivity"
+        <activity android:name="io.kickflip.sdk.activity.MediaPlayerActivity"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
