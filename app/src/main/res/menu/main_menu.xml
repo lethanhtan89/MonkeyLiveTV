@@ -7,14 +7,14 @@
 
     <item
         android:id="@+id/action_search"
-        android:orderInCategory="200"
+        android:orderInCategory="100"
         android:title="Search"
         android:icon="@drawable/ic_search"
         app:showAsAction="ifRoom"
         ></item>
     <item
         android:id="@+id/action_share"
-        android:orderInCategory="300"
+        android:orderInCategory="200"
         android:title="Share"
         android:icon="@drawable/ic_share"
         app:showAsAction="ifRoom"
@@ -23,7 +23,7 @@
         android:id="@+id/action_view_profile"
         android:title="@string/profile"
         android:icon="@drawable/userprofilewhite"
-        android:orderInCategory="400" app:showAsAction="always" />
+        android:orderInCategory="300" app:showAsAction="always" />
 
 </menu>
 

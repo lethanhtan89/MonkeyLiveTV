@@ -29,6 +29,24 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Búsqueda por voz"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartir con"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-es/values-es.xml -->
+    <eat-comment/>
+    <string name="com_facebook_image_download_unknown_error">Se produjo un error inesperado al descargar una imagen.</string>
+    <string name="com_facebook_internet_permission_error_message">El inicio de sesión a la web requiere permiso de conexión a internet</string>
+    <string name="com_facebook_internet_permission_error_title">Error AndroidManifest</string>
+    <string name="com_facebook_like_button_liked">Te gusta</string>
+    <string name="com_facebook_like_button_not_liked">Me gusta</string>
+    <string name="com_facebook_loading">Cargando…</string>
+    <string name="com_facebook_loginview_cancel_action">Cancelar</string>
+    <string name="com_facebook_loginview_log_in_button">Inicio de sesión</string>
+    <string name="com_facebook_loginview_log_in_button_long">Iniciar sesión con Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Salir</string>
+    <string name="com_facebook_loginview_log_out_button">Salir</string>
+    <string name="com_facebook_loginview_logged_in_as">Sesión iniciada como: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Sesión iniciada con Facebook</string>
+    <string name="com_facebook_send_button_text">Enviar</string>
+    <string name="com_facebook_share_button_text">Compartir</string>
+    <string name="com_facebook_tooltip_default">¡Nuevo! Tú tienes el control: elige qué información quieres compartir con las aplicaciones.</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-es/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> necesita que la aplicación Android Wear se actualice."</string>
@@ -102,6 +120,9 @@
     <string name="dgts__upload_contacts">Usamos Digits by Twitter para encontrar a amigos tuyos que usen esta aplicación. Cuando pulses \"Aceptar\", subiremos tu libreta de direcciones a Digits by Twitter para ayudarte a encontrar usuarios de %1$s que conozcas o ayudar a otros usuarios de %1$s a encontrarte.</string>
     <string name="dgts__verification_code">Código de verificación</string>
     <string name="dgts_pin_code_terms">Ya has establecido un código de doble verificación en digits.com</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-es/values-es.xml -->
+    <eat-comment/>
+    <string name="messenger_send_button_text">Enviar</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-es/values-es.xml -->
     <eat-comment/>
     <string name="tw__allow_btn_txt">Permitir</string>

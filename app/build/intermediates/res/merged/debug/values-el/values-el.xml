@@ -29,6 +29,24 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Φωνητική αναζήτηση"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Κοινή χρήση με"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Κοινή χρήση με %s"</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-el/values-el.xml -->
+    <eat-comment/>
+    <string name="com_facebook_image_download_unknown_error">Προέκυψε μη αναμενόμενο σφάλμα κατά τη λήψη μιας εικόνας.</string>
+    <string name="com_facebook_internet_permission_error_message">Για τη σύνδεση στο WebView απαιτείται σύνδεση INTERNET</string>
+    <string name="com_facebook_internet_permission_error_title">Σφάλμα AndroidManifest</string>
+    <string name="com_facebook_like_button_liked">Σας αρέσει</string>
+    <string name="com_facebook_like_button_not_liked">Μου αρέσει!</string>
+    <string name="com_facebook_loading">Φόρτωση...</string>
+    <string name="com_facebook_loginview_cancel_action">Άκυρο</string>
+    <string name="com_facebook_loginview_log_in_button">Σύνδεση</string>
+    <string name="com_facebook_loginview_log_in_button_long">Σύνδεση μέσω Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Αποσύνδεση</string>
+    <string name="com_facebook_loginview_log_out_button">Αποσύνδεση</string>
+    <string name="com_facebook_loginview_logged_in_as">Έχει γίνει σύνδεση ως: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Έχει γίνει σύνδεση μέσω Facebook</string>
+    <string name="com_facebook_send_button_text">Αποστολή</string>
+    <string name="com_facebook_share_button_text">Κοινοποίηση</string>
+    <string name="com_facebook_tooltip_default">Νέο! Έχετε τον έλεγχο - επιλέξτε ποιες πληροφορίες θέλετε να κοινοποιούνται στις εφαρμογές.</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-el/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"Η εφαρμογή <ns1:g id="APP_NAME">%1$s</ns1:g> απαιτεί την ενημέρωση της εφαρμογής Android Wear."</string>
@@ -96,6 +114,9 @@
     <string name="dgts__unsupported_operator_error">Ήταν αδύνατον να σταλθεί ένα μήνυμα SMS σε αυτόν τον αριθμό.</string>
     <string name="dgts__upload_contacts">Χρησιμοποιούμε τα Digits by Twitter για να βρούμε περισσότερους από τους φίλους σας που χρησιμοποιούν αυτή την εφαρμογή. Όταν πατήσετε Εντάξει, θα δημοσιεύσουμε το βιβλίο διευθύνσεών σας στα Digits by Twitter έτσι ώστε να σας βοηθήσουμε να βρείτε χρήστες από %1$s τους οποίους γνωρίζετε, ή να βοηθήσουμε άλλους χρήστες από %1$s να σας βρουν.</string>
     <string name="dgts_pin_code_terms">Έχετε ορίσει προηγουμένως έναν κωδικό επιβεβαίωσης 2-βημάτων στο digits.com</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-el/values-el.xml -->
+    <eat-comment/>
+    <string name="messenger_send_button_text">Αποστολή</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-el/values-el.xml -->
     <eat-comment/>
     <string name="tw__loading_tweet">Φόρτωση Tweet</string>

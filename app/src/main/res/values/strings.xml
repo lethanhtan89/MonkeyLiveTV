@@ -42,4 +42,6 @@
   <string name="title_activity_user_details_list">UserDetailsListActivity</string>
   <string name="new_stream_dialog_heading">PopkonTV Streams</string>
   <string name="cheese_ipsum">cheese_ipsum</string>
+
+  <string name="facebook_app_id">fb158215127912173</string>
 </resources>

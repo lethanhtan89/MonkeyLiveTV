@@ -13,6 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.facebook.CallbackManager;
+import com.facebook.login.widget.LoginButton;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
@@ -42,6 +44,8 @@ public class LoginFragment extends Fragment {
     private static final String TWITTER_KEY = "OQczffwVTLCJIsuTZ4U7rXcJP";
     private static final String TWITTER_SECRET = "GnwwAFn6tIEjmhQnhmEiksEdaIPcY1Zy38B021FAAiEgzvTAPC";
     private TwitterLoginButton loginButton;
+    private LoginButton fbLoginButton;
+    private CallbackManager callbackManager;
     private ProgressBar progressBar;
     private LinearLayout introLayout;
 
@@ -50,6 +54,32 @@ public class LoginFragment extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_login, container, false);
         ((AppCompatActivity)getActivity()).getSupportActionBar().hide();
         initialiseViews();
+/*
+        //Login facebook
+        FacebookSdk.sdkInitialize(this.getActivity());
+        callbackManager = CallbackManager.Factory.create();
+        fbLoginButton = (LoginButton) rootView.findViewById(R.id.facebook_login_button);
+        fbLoginButton.setReadPermissions("email");
+        fbLoginButton.setFragment(this);
+        fbLoginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+
+            }
+
+            @Override
+            public void onCancel() {
+
+            }
+
+            @Override
+            public void onError(FacebookException e) {
+
+            }
+        });
+
+*/
+        //Login Twiiter
         loginButton = (TwitterLoginButton) rootView.findViewById(R.id.twitter_login_button);
 //        bindEvents();
 

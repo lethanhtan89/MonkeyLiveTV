@@ -102,6 +102,9 @@
     <string name="dgts__upload_contacts">Kami menggunakan Digits by Twitter untuk menemukan lebih banyak teman Anda yang menggunakan aplikasi ini. Bila Anda menyentuh Oke, kami akan mengunggah buku alamat Anda ke Digits by Twitter sehingga kami dapat membantu Anda menemukan pengguna %1$s yang Anda kenal atau membantu pengguna %1$s lainnya untuk menemukan Anda.</string>
     <string name="dgts__verification_code">Kode verifikasi</string>
     <string name="dgts_pin_code_terms">Anda sebelumnya telah menetapkan kode verifikasi 2 langkah di digits.com</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-in/values-in.xml -->
+    <eat-comment/>
+    <string name="messenger_send_button_text">Kirim</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-in/values-in.xml -->
     <eat-comment/>
     <string name="tw__allow_btn_txt">Izinkan</string>

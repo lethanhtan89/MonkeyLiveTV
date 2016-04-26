@@ -15,6 +15,24 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Pesquisa por voz"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Partilhar com"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Partilhar com %s"</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-pt-rPT/values-pt-rPT.xml -->
+    <eat-comment/>
+    <string name="com_facebook_image_download_unknown_error">Ocorreu um erro inesperado ao descarregar uma imagem.</string>
+    <string name="com_facebook_internet_permission_error_message">O início de sessão WebView necessita de permissão para aceder à INTERNET</string>
+    <string name="com_facebook_internet_permission_error_title">Erro AndroidManifest</string>
+    <string name="com_facebook_like_button_liked">Gostei</string>
+    <string name="com_facebook_like_button_not_liked">Gosto</string>
+    <string name="com_facebook_loading">A carregar...</string>
+    <string name="com_facebook_loginview_cancel_action">Cancelar</string>
+    <string name="com_facebook_loginview_log_in_button">Iniciar sessão</string>
+    <string name="com_facebook_loginview_log_in_button_long">Iniciar sessão com o Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Terminar sessão</string>
+    <string name="com_facebook_loginview_log_out_button">Terminar sessão</string>
+    <string name="com_facebook_loginview_logged_in_as">Com sessão iniciada como: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Com sessão iniciada através do Facebook</string>
+    <string name="com_facebook_send_button_text">Enviar</string>
+    <string name="com_facebook_share_button_text">Partilhar</string>
+    <string name="com_facebook_tooltip_default">Novidade! Tens o controlo: escolhe a informação que pretendes partilhar com as aplicações.</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-pt-rPT/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"O <ns1:g id="APP_NAME">%1$s</ns1:g> requer uma atualização da aplicação Android Wear."</string>
@@ -49,4 +67,7 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"Abrir no telemóvel"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"Inic. ses."</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"Inic. sessão com o Google"</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-pt-rPT/values-pt-rPT.xml -->
+    <eat-comment/>
+    <string name="messenger_send_button_text">Enviar</string>
 </resources>
