@@ -1,8 +1,11 @@
 package io.kickflip.sdk.fragment;
 
 
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.SurfaceTexture;
 import android.media.MediaPlayer;
@@ -50,6 +53,7 @@ import atv.com.project.popkontv.Application.EndPoints;
 import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Fragments.UserProfileDialogFragment;
 import atv.com.project.popkontv.Interfaces.MyCallback;
+import atv.com.project.popkontv.MainActivity;
 import atv.com.project.popkontv.Network.MyHttp;
 import atv.com.project.popkontv.Network.SocketMessageParser;
 import atv.com.project.popkontv.Pojo.Feed;
@@ -64,9 +68,9 @@ import atv.com.project.popkontv.R;
 import atv.com.project.popkontv.lib.Faye;
 import atv.com.project.popkontv.lib.OnSwipeTouchListener;
 import atv.com.project.popkontv.lib.StreamDrawable;
-import io.kickflip.sdk.view.GLCameraEncoderView;
 import io.kickflip.sdk.av.Broadcaster;
 import io.kickflip.sdk.av.M3u8Parser;
+import io.kickflip.sdk.view.GLCameraEncoderView;
 
 /**
  * MediaPlayerFragment demonstrates playing an HLS Stream, and fetching
@@ -75,6 +79,7 @@ import io.kickflip.sdk.av.M3u8Parser;
 public class MediaPlayerFragment extends Fragment implements TextureView.SurfaceTextureListener, MediaController.MediaPlayerControl {
     private static final String TAG = "MediaPlayerFragment";
     private static final String ARG_URL = "url";
+    private final static String LOG_TAG = "StreamingActivity";
     public static final String STREAM_SLUG = "slug";
 //    private KickflipApiClient mKickflip;
 
@@ -480,22 +485,22 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
         });
     }
 
-
     private void bindEventsToStreamEndBackButton() {
         streamEndBackBt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
                 getActivity().finish();
             }
         });
     }
 
-
     private void bindEventToRecordControl() {
         recordControl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().finish();
+                showRecordEndDialog();
             }
         });
     }
@@ -935,5 +940,35 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
             e.printStackTrace();
         }
         startPingingForLiveData();
+    }
+
+    private void showRecordEndDialog() {
+        AlertDialog.Builder streamEndDialogBuilder =  new AlertDialog.Builder(getActivity(), AlertDialog.THEME_HOLO_LIGHT);
+        streamEndDialogBuilder.setMessage("Are you sure you want to end this record?")
+                .setCancelable(false)
+                .setTitle("End Record")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        fetchScoreProgressBar.setVisibility(View.VISIBLE);
+                        dialog.dismiss();
+//                        if (stopThread == null) stopThread = new StopStreamingThread();
+                        //sendStopEventToServer(false);
+                        //stopBroadcasting();
+                        Log.w(LOG_TAG, "Stop Button Pushed");
+//                        if(uid != -1) {
+//                           ev initialBytesCount = trafficStats.getUidTxBytes(uid) / 1024;
+//                            speed.setText("0");
+//                        }
+
+                    }
+                })
+                .setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+        streamEndDialogBuilder.show();
     }
 }

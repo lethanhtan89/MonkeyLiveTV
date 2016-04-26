@@ -478,6 +478,8 @@ public class StreamingActivity extends ImmersiveActivity{
         streamEndBackBt.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
                 finish();
             }
         });
@@ -1356,8 +1358,6 @@ public class StreamingActivity extends ImmersiveActivity{
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         fetchScoreProgressBar.setVisibility(View.VISIBLE);
-                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(intent);
                         dialog.dismiss();
 //                        if (stopThread == null) stopThread = new StopStreamingThread();
                         sendStopEventToServer(false);

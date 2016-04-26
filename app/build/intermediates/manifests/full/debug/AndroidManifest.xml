@@ -94,7 +94,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="atv.com.project.popkontv.MainActivity" />
+        <activity
+            android:name="atv.com.project.popkontv.MainActivity"
+            android:parentActivityName="atv.com.project.popkontv.Activity.LauncherActivity" />
 
         <meta-data
             android:name="io.fabric.ApiKey"
