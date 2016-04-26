@@ -1019,6 +1019,7 @@
     <string name="gcmsenderid">249222288878</string>
     <string name="hardware_acceleration_error_message">Hardware acceleration cannot be done</string>
     <string name="hardware_acceleration_error_title">Hardware Acceleration Error</string>
+    <string name="hint_search">Search</string>
     <string name="invalid_location">Invalid Location</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values/values.xml -->
     <eat-comment/>

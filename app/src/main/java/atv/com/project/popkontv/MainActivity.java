@@ -123,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
         return shareIntent;
     }
 
+
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -202,6 +204,8 @@ public class MainActivity extends AppCompatActivity {
             return mFragmentTitles.get(position);
         }
     }
+
+
 
 
 }

@@ -86,7 +86,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".Activity.LauncherActivity"></activity>
 
         <meta-data
             android:name="io.fabric.ApiKey"
