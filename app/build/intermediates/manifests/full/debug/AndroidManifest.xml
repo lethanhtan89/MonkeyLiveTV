@@ -49,6 +49,21 @@
         android:largeHeap="true"
         android:theme="@style/PopkonTV"
         android:windowSoftInputMode="adjustResize" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider158215127912173"
+            android:exported="true" />
+
         <activity
             android:name="atv.com.project.popkontv.Activity.StreamingActivity"
             android:label="@string/title_activity_main"

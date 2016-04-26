@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.hardware.Camera;
@@ -57,6 +58,7 @@ import atv.com.project.popkontv.Application.EndPoints;
 import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Fragments.UserProfileDialogFragment;
 import atv.com.project.popkontv.Interfaces.MyCallback;
+import atv.com.project.popkontv.MainActivity;
 import atv.com.project.popkontv.Network.MyHttp;
 import atv.com.project.popkontv.Network.SocketMessageParser;
 import atv.com.project.popkontv.Pojo.Feed;
@@ -1354,6 +1356,8 @@ public class StreamingActivity extends ImmersiveActivity{
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         fetchScoreProgressBar.setVisibility(View.VISIBLE);
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(intent);
                         dialog.dismiss();
 //                        if (stopThread == null) stopThread = new StopStreamingThread();
                         sendStopEventToServer(false);

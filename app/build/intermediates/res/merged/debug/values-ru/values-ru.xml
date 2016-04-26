@@ -29,6 +29,24 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Голосовой поиск"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Открыть доступ"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Открыть доступ пользователю %s"</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-ru/values-ru.xml -->
+    <eat-comment/>
+    <string name="com_facebook_image_download_unknown_error">При загрузке изображения возникла неожиданная ошибка.</string>
+    <string name="com_facebook_internet_permission_error_message">Для входа в WebView необходимо разрешение INTERNET</string>
+    <string name="com_facebook_internet_permission_error_title">Ошибка AndroidManifest</string>
+    <string name="com_facebook_like_button_liked">Понравилось</string>
+    <string name="com_facebook_like_button_not_liked">Нравится</string>
+    <string name="com_facebook_loading">Загрузка...</string>
+    <string name="com_facebook_loginview_cancel_action">Отменить</string>
+    <string name="com_facebook_loginview_log_in_button">Вход</string>
+    <string name="com_facebook_loginview_log_in_button_long">Вход через Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Выход</string>
+    <string name="com_facebook_loginview_log_out_button">Выход</string>
+    <string name="com_facebook_loginview_logged_in_as">Вы вошли как: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Выполнен вход с помощью Facebook</string>
+    <string name="com_facebook_send_button_text">Отправить</string>
+    <string name="com_facebook_share_button_text">Поделиться</string>
+    <string name="com_facebook_tooltip_default">Новинка! У вас все под контролем — выбирайте, какой информацией вы хотите поделиться с приложениями.</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values-ru/common_strings.xml -->
     <eat-comment/>
     <string msgid="6428604800157361567" name="common_android_wear_notification_needs_update_text">"Чтобы продолжить работу с приложением \"<ns1:g id="APP_NAME">%1$s</ns1:g>\", обновите Android Wear"</string>
@@ -102,6 +120,9 @@
     <string name="dgts__upload_contacts">Мы используем Digits by Twitter, чтобы помочь вам найти друзей, которые используют это приложение. После подтверждения мы загрузим вашу адресную книгу в Digits by Twitter. Так мы сможем помочь вам найти пользователей %1$s, которых вы знаете, или поможем другим пользователям %1$s найти вас.</string>
     <string name="dgts__verification_code">Проверочный код</string>
     <string name="dgts_pin_code_terms">Вы уже ввели код двухэтапной проверки на сайте digits.com</string>
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-ru/values-ru.xml -->
+    <eat-comment/>
+    <string name="messenger_send_button_text">Отпр</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-ru/values-ru.xml -->
     <eat-comment/>
     <string name="tw__allow_btn_txt">Разрешить</string>
