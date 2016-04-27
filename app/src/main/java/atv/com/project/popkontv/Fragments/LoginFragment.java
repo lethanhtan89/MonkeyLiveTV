@@ -232,9 +232,9 @@ public class LoginFragment extends Fragment {
                 Popkon.setStringPreferenceData(Popkon.AWS_BUCKET_NAME, data.message.awsBucketName);
                 Popkon.setStringPreferenceData(Popkon.AWS_FOLDER, data.message.awsRecordingFolder);
                 Popkon.setStringPreferenceData(Popkon.AWS_REGION, data.message.awsRegion);
-                getFragmentManager().beginTransaction()
-                        .replace(R.id.launcherContainer, new MainFragment())
-                        .commit();
+                //getFragmentManager().beginTransaction()
+                  //      .replace(R.id.launcherContainer, new MainFragment())
+                //.commit();
                 Intent intent = new Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
             }

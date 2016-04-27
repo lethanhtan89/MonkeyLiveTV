@@ -1,10 +1,12 @@
 package io.kickflip.sdk.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import atv.com.project.popkontv.R;
+import atv.com.project.popkontv.*;
 
+import atv.com.project.popkontv.MainActivity;
 import io.kickflip.sdk.fragment.MediaPlayerFragment;
 
 import static com.google.common.base.Preconditions.checkNotNull;
@@ -14,12 +16,14 @@ import static com.google.common.base.Preconditions.checkNotNull;
  */
 public class MediaPlayerActivity extends ImmersiveActivity {
     private static final String TAG = "MediaPlayerActivity";
+    MediaPlayerFragment mediaPlayerFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setUseImmersiveMode(false);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_media_playback);
+        mediaPlayerFragment = new MediaPlayerFragment();
         // This must be setup before
         //Uri intentData = getIntent().getData();
         //String mediaUrl = isKickflipUrl(intentData) ? intentData.toString() : getIntent().getStringExtra("mediaUrl");
@@ -66,4 +70,10 @@ public class MediaPlayerActivity extends ImmersiveActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
+        super.onBackPressed();
+    }
 }

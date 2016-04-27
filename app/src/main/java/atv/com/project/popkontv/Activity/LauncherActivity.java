@@ -17,6 +17,7 @@ import com.twitter.sdk.android.core.TwitterAuthConfig;
 import atv.com.project.popkontv.Application.Popkon;
 import atv.com.project.popkontv.Fragments.LoginFragment;
 import atv.com.project.popkontv.Fragments.MainFragment;
+import atv.com.project.popkontv.MainActivity;
 import atv.com.project.popkontv.R;
 import io.fabric.sdk.android.Fabric;
 
@@ -48,6 +49,8 @@ public class LauncherActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.launcherContainer, fragmentInView)
                     .commit();
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
         }else {
             fragmentInView = new LoginFragment();
             getSupportFragmentManager().beginTransaction()

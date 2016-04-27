@@ -290,6 +290,8 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
             mTextureView.setKeepScreenOn(true);
             mProgress = (ProgressBar) root.findViewById(R.id.progress);
         }
+
+
         streamSlug = getArguments().getString(STREAM_SLUG);
         initialiseViews();
         bindEvents();
@@ -500,11 +502,12 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
         recordControl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showRecordEndDialog();
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+                getActivity().finish();
             }
         });
     }
-
 
     private void bindEventToCommentButton() {
         commentButton.setOnClickListener(new View.OnClickListener() {

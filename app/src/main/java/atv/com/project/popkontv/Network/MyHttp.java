@@ -17,7 +17,7 @@ import atv.com.project.popkontv.Interfaces.MyCallback;
 import atv.com.project.popkontv.Pojo.MyResponse;
 
 /**
- * Created by arjun on 5/7/15.
+ * Created by Administrator on 5/7/15.
  */
 public class MyHttp<T> {
 
