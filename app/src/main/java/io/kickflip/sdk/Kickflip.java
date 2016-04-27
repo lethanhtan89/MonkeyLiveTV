@@ -10,7 +10,7 @@ import android.util.Log;
 
 import java.io.File;
 
-import atv.com.project.popkontv.Activity.StreamingActivity;
+import atv.com.project.monkeylivetv.Activity.StreamingActivity;
 import io.kickflip.sdk.activity.BroadcastActivity;
 import io.kickflip.sdk.activity.MediaPlayerActivity;
 import io.kickflip.sdk.av.SessionConfig;

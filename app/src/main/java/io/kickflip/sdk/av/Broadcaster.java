@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayDeque;
 
-import atv.com.project.popkontv.Application.Popkon;
+import atv.com.project.monkeylivetv.Application.MonkeyLive;
 import io.kickflip.sdk.Kickflip;
 import io.kickflip.sdk.api.s3.S3BroadcastManager;
 import io.kickflip.sdk.event.HlsManifestWrittenEvent;
@@ -190,8 +190,8 @@ public class Broadcaster extends AVRecorder {
 //        mStream.setIsPrivate(mConfig.isPrivate());
         if (VERBOSE) Log.i(TAG, "Got hls start stream " + stream);
         mS3Manager = new S3BroadcastManager(this,
-                new BasicSessionCredentials(Popkon.getStringPreference(Popkon.AWS_ACCESS_KEY, "hls"), Popkon.getStringPreference(Popkon.AWS_SECRET_KEY, "hls"), ""));
-        mS3Manager.setRegion(Popkon.getStringPreference(Popkon.AWS_REGION, "hls"));
+                new BasicSessionCredentials(MonkeyLive.getStringPreference(MonkeyLive.AWS_ACCESS_KEY, "hls"), MonkeyLive.getStringPreference(MonkeyLive.AWS_SECRET_KEY, "hls"), ""));
+        mS3Manager.setRegion(MonkeyLive.getStringPreference(MonkeyLive.AWS_REGION, "hls"));
         mS3Manager.addRequestInterceptor(mS3RequestInterceptor);
         mReadyToBroadcast = true;
         submitQueuedUploadsToS3();

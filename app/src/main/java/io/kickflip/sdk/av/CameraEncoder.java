@@ -12,7 +12,7 @@ import android.os.Trace;
 import android.util.Log;
 import android.view.MotionEvent;
 
-import atv.com.project.popkontv.Interfaces.CameraPictureCallBack;
+import atv.com.project.monkeylivetv.Interfaces.CameraPictureCallBack;
 import com.google.common.eventbus.EventBus;
 
 import java.io.File;
