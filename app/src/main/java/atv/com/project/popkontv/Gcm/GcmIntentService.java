@@ -20,7 +20,7 @@ import io.kickflip.sdk.Kickflip;
 //import org.videolan.vlc.gui.video.VideoPlayerActivity;
 
 /**
- * Created by arjun on 8/4/15.
+ * Created by Administrator on 8/4/15.
  */
 public class GcmIntentService extends GcmListenerService {
 
