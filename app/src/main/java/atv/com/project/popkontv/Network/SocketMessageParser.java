@@ -12,7 +12,7 @@ import atv.com.project.popkontv.Pojo.StreamStatus;
 import atv.com.project.popkontv.Pojo.Watcher;
 
 /**
- * Created by arjun on 5/13/15.
+ * Created by Administrator on 5/13/15.
  */
 public class SocketMessageParser {
     public static final int NEW_FEED_ITEM = 1;
