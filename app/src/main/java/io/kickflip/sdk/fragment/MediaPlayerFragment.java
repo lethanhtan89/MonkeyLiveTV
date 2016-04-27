@@ -48,26 +48,26 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import atv.com.project.popkontv.Adapters.CommentsAdapter;
-import atv.com.project.popkontv.Application.EndPoints;
-import atv.com.project.popkontv.Application.Popkon;
-import atv.com.project.popkontv.Fragments.UserProfileDialogFragment;
-import atv.com.project.popkontv.Interfaces.MyCallback;
-import atv.com.project.popkontv.MainActivity;
-import atv.com.project.popkontv.Network.MyHttp;
-import atv.com.project.popkontv.Network.SocketMessageParser;
-import atv.com.project.popkontv.Pojo.Feed;
-import atv.com.project.popkontv.Pojo.NewComment;
-import atv.com.project.popkontv.Pojo.NewCommentDetails;
-import atv.com.project.popkontv.Pojo.PingForWatchersResponse;
-import atv.com.project.popkontv.Pojo.StreamFullDetails;
-import atv.com.project.popkontv.Pojo.StreamStatus;
-import atv.com.project.popkontv.Pojo.UserTwitterActionsResponse;
-import atv.com.project.popkontv.Pojo.Watcher;
-import atv.com.project.popkontv.R;
-import atv.com.project.popkontv.lib.Faye;
-import atv.com.project.popkontv.lib.OnSwipeTouchListener;
-import atv.com.project.popkontv.lib.StreamDrawable;
+import atv.com.project.monkeylivetv.Adapters.CommentsAdapter;
+import atv.com.project.monkeylivetv.Application.EndPoints;
+import atv.com.project.monkeylivetv.Application.MonkeyLive;
+import atv.com.project.monkeylivetv.Fragments.UserProfileDialogFragment;
+import atv.com.project.monkeylivetv.Interfaces.MyCallback;
+import atv.com.project.monkeylivetv.MainActivity;
+import atv.com.project.monkeylivetv.Network.MyHttp;
+import atv.com.project.monkeylivetv.Network.SocketMessageParser;
+import atv.com.project.monkeylivetv.Pojo.Feed;
+import atv.com.project.monkeylivetv.Pojo.NewComment;
+import atv.com.project.monkeylivetv.Pojo.NewCommentDetails;
+import atv.com.project.monkeylivetv.Pojo.PingForWatchersResponse;
+import atv.com.project.monkeylivetv.Pojo.StreamFullDetails;
+import atv.com.project.monkeylivetv.Pojo.StreamStatus;
+import atv.com.project.monkeylivetv.Pojo.UserTwitterActionsResponse;
+import atv.com.project.monkeylivetv.Pojo.Watcher;
+import atv.com.project.monkeylivetv.R;
+import atv.com.project.monkeylivetv.lib.Faye;
+import atv.com.project.monkeylivetv.lib.OnSwipeTouchListener;
+import atv.com.project.monkeylivetv.lib.StreamDrawable;
 import io.kickflip.sdk.av.Broadcaster;
 import io.kickflip.sdk.av.M3u8Parser;
 import io.kickflip.sdk.view.GLCameraEncoderView;
@@ -414,7 +414,7 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
 
         postCommentBox = (EditText) root.findViewById(R.id.commentBox);
         commentBoxHandle = (TextView) root.findViewById(R.id.commentBoxHandle);
-        commentBoxHandle.setText("@" + Popkon.getStringPreference(Popkon.TWITTER_HANDLE, ""));
+        commentBoxHandle.setText("@" + MonkeyLive.getStringPreference(MonkeyLive.TWITTER_HANDLE, ""));
         postCommentButton = (TextView) root.findViewById(R.id.postCommentButton);
         twitterReflectToggle = (Switch) root.findViewById(R.id.reflectInTwitter);
         twitterReflectToggle.setChecked(true);
@@ -425,10 +425,10 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
 //        zoomOutCamera = (ImageButton) root.findViewById(R.id.zoom_out_camera);
 //        zoomInCamera = (ImageButton) root.findViewById(R.id.zoom_in_camera);
 
-        userNameTv.setTypeface(Popkon.racho);
-        streamViewStatusTv.setTypeface(Popkon.racho);
-        commentBoxHandle.setTypeface(Popkon.racho);
-        postCommentButton.setTypeface(Popkon.racho);
+        userNameTv.setTypeface(MonkeyLive.racho);
+        streamViewStatusTv.setTypeface(MonkeyLive.racho);
+        commentBoxHandle.setTypeface(MonkeyLive.racho);
+        postCommentButton.setTypeface(MonkeyLive.racho);
     }
     private void bindEvents() {
         bindEventToUserActionsControllButton();
@@ -654,7 +654,7 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
                                 Log.i("Succescomment", response.toString());
                                 if (duplicatedCheckList.contains(response.message.feedId)) return;
                                 newCommentsCount++;
-                                if(userActionsContainerLayout.getVisibility() == View.GONE){
+                                if (userActionsContainerLayout.getVisibility() == View.GONE) {
                                     newCommentNotification.setVisibility(View.VISIBLE);
                                     newCommentNotification.setText(newCommentsCount + "");
                                 }
@@ -667,7 +667,7 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
                             @Override
                             public void failure(String msg) {
                                 Log.i("failcomment", msg);
-                                if(getActivity() != null)
+                                if (getActivity() != null)
                                     Toast.makeText(getActivity(), "Failed to comment. Try again", Toast.LENGTH_LONG).show();
 //                                commentsListAdapter.remove(feed);
                             }
@@ -875,7 +875,7 @@ public class MediaPlayerFragment extends Fragment implements TextureView.Surface
 
                     @Override
                     public void failure(String msg) {
-                        Toast.makeText(Popkon.context, "Cannot Start The Stream", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MonkeyLive.context, "Cannot Start The Stream", Toast.LENGTH_LONG).show();
                     }
 
                     @Override

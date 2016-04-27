@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="atv.com.project.popkontv.test">
+    package="atv.com.project.monkeylivetv.test">
 
     <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="21" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="atv.com.project.popkontv"
+                     android:targetPackage="atv.com.project.monkeylivetv"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for atv.com.project.popkontv"/>
+                     android:label="Tests for atv.com.project.monkeylivetv"/>
 </manifest>

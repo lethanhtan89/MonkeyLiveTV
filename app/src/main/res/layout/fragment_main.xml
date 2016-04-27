@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context="atv.com.project.popkontv.Activity.LauncherActivity">
+    tools:context="atv.com.project.monkeylivetv.Activity.LauncherActivity">
     <RelativeLayout
         android:id="@+id/contentsLayout"
         android:layout_width="match_parent"

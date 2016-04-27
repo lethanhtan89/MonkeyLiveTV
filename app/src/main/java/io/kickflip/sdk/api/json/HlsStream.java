@@ -1,6 +1,6 @@
 package io.kickflip.sdk.api.json;
 
-import atv.com.project.popkontv.Application.Popkon;
+import atv.com.project.monkeylivetv.Application.MonkeyLive;
 
 /**
  * Created by davidbrodsky on 2/17/14.
@@ -25,7 +25,7 @@ public class HlsStream {
     public String getAwsS3Bucket() {
 
 //        return "castasy-vcr";
-        return Popkon.getStringPreference(Popkon.AWS_BUCKET_NAME, "hls");
+        return MonkeyLive.getStringPreference(MonkeyLive.AWS_BUCKET_NAME, "hls");
 //        return mBucket;
     }
 
@@ -38,7 +38,7 @@ public class HlsStream {
     public String getAwsS3Prefix() {
 
 //                return "hls/";
-        return Popkon.getStringPreference(Popkon.AWS_FOLDER, "hls") + "/" + slug + "/";
+        return MonkeyLive.getStringPreference(MonkeyLive.AWS_FOLDER, "hls") + "/" + slug + "/";
 //        return mPrefix;
     }
 

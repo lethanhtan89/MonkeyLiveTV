@@ -21,7 +21,7 @@ import java.util.Set;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
-import atv.com.project.popkontv.Activity.StreamingActivity;
+import atv.com.project.monkeylivetv.Activity.StreamingActivity;
 import io.kickflip.sdk.av.Broadcaster;
 import io.kickflip.sdk.event.S3UploadEvent;
 

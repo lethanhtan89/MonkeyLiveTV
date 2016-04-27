@@ -4,9 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import atv.com.project.popkontv.*;
+import atv.com.project.monkeylivetv.*;
 
-import atv.com.project.popkontv.MainActivity;
+import atv.com.project.monkeylivetv.MainActivity;
 import io.kickflip.sdk.fragment.MediaPlayerFragment;
 
 import static com.google.common.base.Preconditions.checkNotNull;

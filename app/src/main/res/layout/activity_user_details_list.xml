@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="atv.com.project.popkontv.Activity.UserDetailsListActivity">
+    tools:context="atv.com.project.monkeylivetv.Activity.UserDetailsListActivity">
     <include layout="@layout/toolbar"/>
     <FrameLayout
         android:id="@+id/userDetailsListsContainer"
