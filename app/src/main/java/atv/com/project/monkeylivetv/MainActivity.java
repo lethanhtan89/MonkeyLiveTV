@@ -16,6 +16,9 @@
 
 package atv.com.project.monkeylivetv;
 
+import android.app.SearchManager;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -28,6 +31,7 @@ import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.ShareActionProvider;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -37,6 +41,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import atv.com.project.monkeylivetv.Activity.SearchableActivity;
 import atv.com.project.monkeylivetv.Activity.UserProfileActivity;
 import atv.com.project.monkeylivetv.Fragments.LeaderBoardFragment;
 import atv.com.project.monkeylivetv.Fragments.MainFragment;
@@ -45,8 +50,7 @@ import atv.com.project.monkeylivetv.Fragments.SettingsFragment;
 /**
  * TODO
  */
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
     private DrawerLayout mDrawerLayout;
     private FragmentTransaction ft;
     private ShareActionProvider shareActionProvider;
@@ -83,10 +87,35 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
        // menu.clear();
         getMenuInflater().inflate(R.menu.main_menu, menu);
+
+        //Share
         MenuItem menuItem = menu.findItem(R.id.action_share);
         shareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
         setShareIntent(createShareIntent());
+
+        //Search
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        searchView.setOnQueryTextListener(this);
+
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(new ComponentName(this, SearchableActivity.class)));
+        searchView.setIconifiedByDefault(false);
+
         return true;
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        if(Intent.ACTION_SEARCH.equals(intent.getAction())){
+            String query = intent.getStringExtra(SearchManager.QUERY);
+            Toast.makeText(this, "Searching by: " + query, Toast.LENGTH_LONG).show();
+        }
+        else if(Intent.ACTION_VIEW.equals(intent.getAction())){
+            String uri = intent.getDataString();
+            Toast.makeText(this, "Suggestion" + uri, Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
@@ -119,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("text/plain");
         shareIntent.putExtra(Intent.EXTRA_TEXT,
-                "http://stackandroid.com");
+                "http://monkeylivetv.com");
         return shareIntent;
     }
 
@@ -143,38 +172,49 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager.setAdapter(adapter);
     }
-/*
-    private void showNavigation(){
-        mDrawerLayout.openDrawer(GravityCompat.START);
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
     }
 
-    // Set up DrawerContent
-    private void setupDrawerContent(NavigationView navigationView) {
-        navigationView.setNavigationItemSelectedListener(
-                new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
-                int id = menuItem.getItemId();
-                Fragment fg = null;
-                if(menuItem.isChecked()){
-                    menuItem.setChecked(false);
-                }
-                else {
-                    menuItem.setChecked(true);
-                }
-                mDrawerLayout.closeDrawers();
-                switch (id){
-                    case R.id.nav_video:
-
-                        Toast.makeText(getApplicationContext(), "Video", Toast.LENGTH_LONG).show();
-                        fg = new PopkonListFragment();
-                        break;
-                }
-                return true;
-            }
-        });
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        return false;
     }
-*/
+
+    /*
+        private void showNavigation(){
+            mDrawerLayout.openDrawer(GravityCompat.START);
+        }
+
+        // Set up DrawerContent
+        private void setupDrawerContent(NavigationView navigationView) {
+            navigationView.setNavigationItemSelectedListener(
+                    new NavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(MenuItem menuItem) {
+                    int id = menuItem.getItemId();
+                    Fragment fg = null;
+                    if(menuItem.isChecked()){
+                        menuItem.setChecked(false);
+                    }
+                    else {
+                        menuItem.setChecked(true);
+                    }
+                    mDrawerLayout.closeDrawers();
+                    switch (id){
+                        case R.id.nav_video:
+
+                            Toast.makeText(getApplicationContext(), "Video", Toast.LENGTH_LONG).show();
+                            fg = new PopkonListFragment();
+                            break;
+                    }
+                    return true;
+                }
+            });
+        }
+    */
     // Save on Adapter
     static class Adapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragments = new ArrayList<>();

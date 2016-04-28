@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="PopkonTV" parent="Base.Theme.DesignDemo">
+    <style name="MonkeyLiveTV" parent="Base.Theme.DesignDemo">
     </style>
 
     <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">
