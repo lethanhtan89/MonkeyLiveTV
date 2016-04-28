@@ -239,7 +239,7 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:88:17-77
 	android:name
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:88:27-74
-activity#atv.com.project.monkeylivetv.MainActivity
+activity#atv.com.project.monkeylivetv.Activity.MainActivity
 ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:92:9-96:55
 	android:screenOrientation
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:95:13-49
@@ -248,7 +248,7 @@ ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:92:9-96:
 	android:launchMode
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:96:13-43
 	android:name
-		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:93:13-69
+		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:93:13-50
 meta-data#io.fabric.ApiKey
 ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:98:9-100:72
 	android:value

@@ -96,7 +96,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="atv.com.project.monkeylivetv.MainActivity"
+            android:name="atv.com.project.monkeylivetv.Activity.MainActivity"
             android:launchMode="singleTop"
             android:parentActivityName="atv.com.project.monkeylivetv.Activity.LauncherActivity"
             android:screenOrientation="portrait" />

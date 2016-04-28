@@ -17,7 +17,6 @@ import com.twitter.sdk.android.core.TwitterAuthConfig;
 import atv.com.project.monkeylivetv.Application.MonkeyLive;
 import atv.com.project.monkeylivetv.Fragments.LoginFragment;
 import atv.com.project.monkeylivetv.Fragments.MainFragment;
-import atv.com.project.monkeylivetv.MainActivity;
 import atv.com.project.monkeylivetv.R;
 import io.fabric.sdk.android.Fabric;
 

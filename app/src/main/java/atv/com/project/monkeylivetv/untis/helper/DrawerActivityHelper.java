@@ -4,7 +4,7 @@ import android.content.Context;
 import android.support.v7.app.ActionBar;
 
 import atv.com.project.monkeylivetv.Application.MonkeyLive;
-import atv.com.project.monkeylivetv.MainActivity;
+import atv.com.project.monkeylivetv.Activity.MainActivity;
 import atv.com.project.monkeylivetv.untis.interfaces.DrawerActivity;
 
 /**

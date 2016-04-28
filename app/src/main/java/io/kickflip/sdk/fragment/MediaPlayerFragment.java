@@ -53,7 +53,7 @@ import atv.com.project.monkeylivetv.Application.EndPoints;
 import atv.com.project.monkeylivetv.Application.MonkeyLive;
 import atv.com.project.monkeylivetv.Fragments.UserProfileDialogFragment;
 import atv.com.project.monkeylivetv.Interfaces.MyCallback;
-import atv.com.project.monkeylivetv.MainActivity;
+import atv.com.project.monkeylivetv.Activity.MainActivity;
 import atv.com.project.monkeylivetv.Network.MyHttp;
 import atv.com.project.monkeylivetv.Network.SocketMessageParser;
 import atv.com.project.monkeylivetv.Pojo.Feed;
