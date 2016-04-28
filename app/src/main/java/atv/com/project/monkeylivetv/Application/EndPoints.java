@@ -1,7 +1,7 @@
 package atv.com.project.monkeylivetv.Application;
 
 /**
- * Created by arjun on 5/7/15.
+ * Created by Administrator on 5/7/15.
  */
 public class EndPoints {
 
