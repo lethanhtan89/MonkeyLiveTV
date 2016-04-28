@@ -22,9 +22,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.MenuItemCompat;
@@ -36,16 +33,14 @@ import android.support.v7.widget.ShareActionProvider;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import atv.com.project.monkeylivetv.Activity.SearchableActivity;
 import atv.com.project.monkeylivetv.Activity.UserProfileActivity;
 import atv.com.project.monkeylivetv.Fragments.LeaderBoardFragment;
 import atv.com.project.monkeylivetv.Fragments.MainFragment;
 import atv.com.project.monkeylivetv.Fragments.SettingsFragment;
+import atv.com.project.monkeylivetv.Adapters.MainAdapter;
 
 /**
  * TODO
@@ -106,19 +101,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     }
 
     @Override
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
-        if(Intent.ACTION_SEARCH.equals(intent.getAction())){
-            String query = intent.getStringExtra(SearchManager.QUERY);
-            Toast.makeText(this, "Searching by: " + query, Toast.LENGTH_LONG).show();
-        }
-        else if(Intent.ACTION_VIEW.equals(intent.getAction())){
-            String uri = intent.getDataString();
-            Toast.makeText(this, "Suggestion" + uri, Toast.LENGTH_LONG).show();
-        }
-    }
-
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (id) {
@@ -126,8 +108,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
             case R.id.action_search:
-
-                Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_LONG).show();
                 break;
             case R.id.action_view_profile:
                 Intent intent = new Intent(MainActivity.this, UserProfileActivity.class);
@@ -152,8 +132,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         return shareIntent;
     }
 
-
-
     @Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -161,14 +139,11 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     // Set up ViewPager
     private void setupViewPager(ViewPager viewPager) {
-        Adapter adapter = new Adapter(getSupportFragmentManager());
+        MainAdapter adapter = new MainAdapter(getSupportFragmentManager());
         adapter.addFragment(new MainFragment(), "LIVE");
         adapter.addFragment(new MainFragment(), "VIDEO");
         adapter.addFragment(new LeaderBoardFragment(), "FAVORITE");
         adapter.addFragment(new SettingsFragment(), "SETTINGS");
-        //adapter.addFragment(new VideoListFragment(), "VIDEO");
-        //adapter.addFragment(new VideoListFragment(), "FAVORITE");
-        //adapter.addFragment(new UserSettingsFragment(), "BROADCAST");
 
         viewPager.setAdapter(adapter);
     }
@@ -215,37 +190,5 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
             });
         }
     */
-    // Save on Adapter
-    static class Adapter extends FragmentPagerAdapter {
-        private final List<Fragment> mFragments = new ArrayList<>();
-        private final List<String> mFragmentTitles = new ArrayList<>();
-
-        public Adapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        public void addFragment(Fragment fragment, String title) {
-            mFragments.add(fragment);
-            mFragmentTitles.add(title);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return mFragments.get(position);
-        }
-
-        @Override
-        public int getCount() {
-            return mFragments.size();
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return mFragmentTitles.get(position);
-        }
-    }
-
-
-
 
 }
