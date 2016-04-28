@@ -26,7 +26,7 @@ import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 import atv.com.project.monkeylivetv.Application.EndPoints;
 import atv.com.project.monkeylivetv.Application.MonkeyLive;
 import atv.com.project.monkeylivetv.Interfaces.MyCallback;
-import atv.com.project.monkeylivetv.MainActivity;
+import atv.com.project.monkeylivetv.Activity.MainActivity;
 import atv.com.project.monkeylivetv.Network.MyHttp;
 import atv.com.project.monkeylivetv.Pojo.AwsDetails;
 import atv.com.project.monkeylivetv.Pojo.LoginDetails;

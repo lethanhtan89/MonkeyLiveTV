@@ -90,7 +90,7 @@
         </activity>
 
         <activity
-            android:name="atv.com.project.monkeylivetv.MainActivity"
+            android:name=".Activity.MainActivity"
             android:parentActivityName="atv.com.project.monkeylivetv.Activity.LauncherActivity"
             android:screenOrientation="portrait"
             android:launchMode="singleTop"></activity>

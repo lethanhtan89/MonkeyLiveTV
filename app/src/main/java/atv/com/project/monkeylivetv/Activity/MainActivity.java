@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package atv.com.project.monkeylivetv;
+package atv.com.project.monkeylivetv.Activity;
 
 import android.app.SearchManager;
 import android.content.ComponentName;
@@ -35,12 +35,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-import atv.com.project.monkeylivetv.Activity.SearchableActivity;
-import atv.com.project.monkeylivetv.Activity.UserProfileActivity;
 import atv.com.project.monkeylivetv.Fragments.LeaderBoardFragment;
 import atv.com.project.monkeylivetv.Fragments.MainFragment;
 import atv.com.project.monkeylivetv.Fragments.SettingsFragment;
 import atv.com.project.monkeylivetv.Adapters.MainAdapter;
+import atv.com.project.monkeylivetv.R;
 
 /**
  * TODO

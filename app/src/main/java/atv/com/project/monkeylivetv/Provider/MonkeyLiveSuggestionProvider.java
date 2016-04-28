@@ -1,4 +1,4 @@
-package atv.com.project.monkeylivetv;
+package atv.com.project.monkeylivetv.Provider;
 
 /**
  * Created by Administrator on 4/28/2016.
@@ -21,7 +21,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class CitySuggestionProvider extends ContentProvider {
+public class MonkeyLiveSuggestionProvider extends ContentProvider {
 
     List<String> cities;
 

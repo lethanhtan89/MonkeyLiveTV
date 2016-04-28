@@ -6,7 +6,7 @@ import android.view.MenuItem;
 
 import atv.com.project.monkeylivetv.*;
 
-import atv.com.project.monkeylivetv.MainActivity;
+import atv.com.project.monkeylivetv.Activity.MainActivity;
 import io.kickflip.sdk.fragment.MediaPlayerFragment;
 
 import static com.google.common.base.Preconditions.checkNotNull;
