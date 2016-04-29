@@ -67,7 +67,7 @@
             android:authorities="com.facebook.app.FacebookContentProvider158215127912173"
             android:exported="true" />
         <provider
-            android:name="atv.com.project.monkeylivetv.CitySuggestionProvider"
+            android:name="atv.com.project.monkeylivetv.Provider.MonkeyLiveSuggestionProvider"
             android:authorities="atv.com.project.monkeylivetv"
             android:enabled="true"
             android:exported="true" />
