@@ -57,10 +57,9 @@ public class LoginFragment extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_login, container, false);
         ((AppCompatActivity)getActivity()).getSupportActionBar().hide();
         initialiseViews();
-  /*
-        // Login using Faacebook API
-        //FacebookSdk.sdkInitialize(getActivity());
-        //CallbackManager.Factory.create();
+     /*   // Login using Faacebook API
+        FacebookSdk.sdkInitialize(getActivity());
+        CallbackManager.Factory.create();
         fbLoginButton = (LoginButton) rootView.findViewById(R.id.facebook_login_button);
         fbLoginButton.setReadPermissions("email");
         fbLoginButton.setFragment(this);
@@ -281,8 +280,7 @@ public class LoginFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         twloginButton.onActivityResult(requestCode, resultCode, data);
-        callbackManager.onActivityResult(requestCode, requestCode, data);
-        return;
+        //callbackManager.onActivityResult(requestCode, requestCode, data);
     }
 }
 

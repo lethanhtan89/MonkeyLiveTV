@@ -14,13 +14,13 @@
         android:layout_centerInParent="true"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:layout_height="wrap_content">
 
         <ImageView
             android:src="@drawable/taglineimage"
             android:layout_width="match_parent"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="15dp"
             android:layout_height="50dp" />
 
         <com.twitter.sdk.android.core.identity.TwitterLoginButton
@@ -34,8 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp" />
+            android:layout_marginTop="10dp" />
 
     </LinearLayout>
     <ProgressBar
