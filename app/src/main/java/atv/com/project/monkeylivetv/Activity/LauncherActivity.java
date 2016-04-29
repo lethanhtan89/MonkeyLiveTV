@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.facebook.FacebookSdk;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
 
@@ -36,6 +37,9 @@ public class LauncherActivity extends AppCompatActivity {
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
         Fabric.with(LauncherActivity.this, new Twitter(authConfig));
         setUpActionBar();
+
+        FacebookSdk.sdkInitialize(getApplicationContext());
+
         loggedInUserId = MonkeyLive.getIntPreference(MonkeyLive.USER_ID, 0);
         loggedInUserToken = MonkeyLive.getStringPreference(MonkeyLive.API_TOKEN, "");
         if(getIntent() != null){
@@ -56,6 +60,7 @@ public class LauncherActivity extends AppCompatActivity {
                     .add(R.id.launcherContainer, fragmentInView)
                     .commit();
         }
+        //printHashKey();
     }
     private void setUpActionBar() {
         try {
@@ -112,4 +117,21 @@ public class LauncherActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+/*
+    public void printHashKey(){
+        // Add code to print out the key hash
+        try {
+            PackageInfo info = getPackageManager().getPackageInfo("atv.com.project.monkeylivetv",
+                    PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+
+        } catch (NoSuchAlgorithmException e) {
+
+        }
+    }*/
 }

@@ -29,7 +29,7 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"语音搜索"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享方式"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"通过%s分享"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-zh-rCN/values-zh-rCN.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values-zh-rCN/values-zh-rCN.xml -->
     <eat-comment/>
     <string name="com_facebook_image_download_unknown_error">下载图片时出现意外错误。</string>
     <string name="com_facebook_internet_permission_error_message">Web 登录需要互联网许可</string>
@@ -120,7 +120,7 @@
     <string name="dgts__upload_contacts">我们使用Twitter Digits来查找你身边使用这个应用程序的朋友。当你点击“确认”时，我们将上传你的通讯录至Twitter Digits，帮你找到你认识的%1$s用户，同时帮其他%1$s用户找到你。</string>
     <string name="dgts__verification_code">验证码</string>
     <string name="dgts_pin_code_terms">你之前已在 digits.com 设置了两步验证</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-zh-rCN/values-zh-rCN.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values-zh-rCN/values-zh-rCN.xml -->
     <eat-comment/>
     <string name="messenger_send_button_text">发送</string>
     <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-zh-rCN/values-zh-rCN.xml -->

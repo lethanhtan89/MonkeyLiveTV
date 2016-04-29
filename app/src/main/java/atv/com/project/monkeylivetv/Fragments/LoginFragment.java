@@ -23,18 +23,18 @@ import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 
+import atv.com.project.monkeylivetv.Activity.MainActivity;
 import atv.com.project.monkeylivetv.Application.EndPoints;
 import atv.com.project.monkeylivetv.Application.MonkeyLive;
 import atv.com.project.monkeylivetv.Interfaces.MyCallback;
-import atv.com.project.monkeylivetv.Activity.MainActivity;
 import atv.com.project.monkeylivetv.Network.MyHttp;
 import atv.com.project.monkeylivetv.Pojo.AwsDetails;
 import atv.com.project.monkeylivetv.Pojo.LoginDetails;
 import atv.com.project.monkeylivetv.Pojo.SessionCreationResponse;
 import atv.com.project.monkeylivetv.Pojo.TwitterCredential;
 import atv.com.project.monkeylivetv.Pojo.User;
-import atv.com.project.monkeylivetv.twitter.MyTwitterApiClient;
 import atv.com.project.monkeylivetv.R;
+import atv.com.project.monkeylivetv.twitter.MyTwitterApiClient;
 
 /**
  * Created by arjun on 5/16/15.
@@ -43,7 +43,10 @@ public class LoginFragment extends Fragment {
     private View rootView;
     private static final String TWITTER_KEY = "OQczffwVTLCJIsuTZ4U7rXcJP";
     private static final String TWITTER_SECRET = "GnwwAFn6tIEjmhQnhmEiksEdaIPcY1Zy38B021FAAiEgzvTAPC";
-    private TwitterLoginButton loginButton;
+
+    private static final String FACEBOOK_KEY = "";
+    private static final String FACEBOOK_SERECT = "";
+    private TwitterLoginButton twloginButton;
     private LoginButton fbLoginButton;
     private CallbackManager callbackManager;
     private ProgressBar progressBar;
@@ -54,17 +57,20 @@ public class LoginFragment extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_login, container, false);
         ((AppCompatActivity)getActivity()).getSupportActionBar().hide();
         initialiseViews();
-/*
-        //Login facebook
-        FacebookSdk.sdkInitialize(this.getActivity());
-        callbackManager = CallbackManager.Factory.create();
+  /*
+        // Login using Faacebook API
+        //FacebookSdk.sdkInitialize(getActivity());
+        //CallbackManager.Factory.create();
         fbLoginButton = (LoginButton) rootView.findViewById(R.id.facebook_login_button);
         fbLoginButton.setReadPermissions("email");
         fbLoginButton.setFragment(this);
         fbLoginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-
+                progressBar.setVisibility(View.VISIBLE);
+                introLayout.setVisibility(View.GONE);
+                Log.i("succes", loginResult.toString());
+                Toast.makeText(getActivity(), "Success", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -79,11 +85,11 @@ public class LoginFragment extends Fragment {
         });
 
 */
-        //Login Twiiter
-        loginButton = (TwitterLoginButton) rootView.findViewById(R.id.twitter_login_button);
+        //Login using Twiiter API
+        twloginButton = (TwitterLoginButton) rootView.findViewById(R.id.twitter_login_button);
 //        bindEvents();
 
-        loginButton.setCallback(new Callback<TwitterSession>() {
+        twloginButton.setCallback(new Callback<TwitterSession>() {
             @Override
             public void success(Result<TwitterSession> result) {
                 // Do something with result, which provides a TwitterSession for making API calls
@@ -124,7 +130,7 @@ public class LoginFragment extends Fragment {
     }
 
     private void bindEvents() {
-        loginButton.setCallback(new Callback<TwitterSession>() {
+        twloginButton.setCallback(new Callback<TwitterSession>() {
             @Override
             public void success(Result<TwitterSession> result) {
                 // Do something with result, which provides a TwitterSession for making API calls
@@ -274,7 +280,9 @@ public class LoginFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        loginButton.onActivityResult(requestCode, resultCode, data);
+        twloginButton.onActivityResult(requestCode, resultCode, data);
+        callbackManager.onActivityResult(requestCode, requestCode, data);
+        return;
     }
 }
 

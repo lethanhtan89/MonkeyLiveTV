@@ -139,7 +139,7 @@ MERGED from [com.android.support:design:22.2.0] D:\PROJECT\ANDROID\PopkonTV\app\
 MERGED from [com.android.support:appcompat-v7:22.2.0] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.6.0\AndroidManifest.xml:28:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.7.0] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.7.0\AndroidManifest.xml:28:5-20
 MERGED from [com.android.support:support-v4:22.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml:38:9-41
@@ -387,7 +387,7 @@ MERGED from [com.android.support:design:22.2.0] D:\PROJECT\ANDROID\PopkonTV\app\
 MERGED from [com.android.support:appcompat-v7:22.2.0] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:22.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:22.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.facebook.android:facebook-android-sdk:4.6.0] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.6.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.7.0] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.7.0\AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:support-v4:22.2.1] D:\PROJECT\ANDROID\PopkonTV\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from D:\PROJECT\ANDROID\PopkonTV\app\src\main\AndroidManifest.xml
