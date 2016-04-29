@@ -58,7 +58,7 @@
             android:exported="true" />
 
         <provider
-            android:name=".CitySuggestionProvider"
+            android:name="atv.com.project.monkeylivetv.Provider.MonkeyLiveSuggestionProvider"
             android:authorities="atv.com.project.monkeylivetv"
             android:enabled="true"
             android:exported="true"/>
