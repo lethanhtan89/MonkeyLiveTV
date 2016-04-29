@@ -38,6 +38,9 @@ public class MonkeyLive extends Application {
     public static final String TWITTER_USER_NAME = "twitter_user_name";
     public static final String TWITTER_USER_LOCATION = "twitter_user_location";
     public static final String TWITTER_USER_PICTURE = "twitter_user_picture";
+    public static final String FACEBOOK_USER_NAME = "facebook_user_name";
+    public static final String FACEBOOK_USER_LOCATION = "facebook_user_location";
+    public static final String FACEBOOK_USER_PICTURE = "facebook_user_picture";
     public static final String USER_SCORE = "user_score";
     public static final String USER_FOLLOWERS_COUNT = "number_of_followers";
     public static final String USER_FOLLOWING_COUNT = "number_of_following";

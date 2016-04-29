@@ -1,6 +1,7 @@
 buildscript {
     repositories {
         maven { url 'https://maven.fabric.io/public' }
+        mavenCentral()
     }
 
     dependencies {
@@ -12,7 +13,6 @@ apply plugin: 'com.android.application'
 
 repositories {
     maven { url 'https://maven.fabric.io/public' }
-    mavenCentral()
 }
 
 apply plugin: 'io.fabric'
@@ -67,6 +67,6 @@ dependencies {
     compile 'com.google.guava:guava:18.0'
     compile 'com.amazonaws:aws-android-sdk-core:2.2.1'
     compile 'com.amazonaws:aws-android-sdk-s3:2.2.1'
-    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
     compile 'com.squareup.okhttp3:okhttp:3.0.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
 }

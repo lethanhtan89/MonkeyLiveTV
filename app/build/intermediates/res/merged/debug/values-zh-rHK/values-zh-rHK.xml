@@ -15,7 +15,7 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"語音搜尋"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享對象"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"與「%s」分享"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-zh-rHK/values-zh-rHK.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values-zh-rHK/values-zh-rHK.xml -->
     <eat-comment/>
     <string name="com_facebook_image_download_unknown_error">下載圖像時發生預期外的錯誤。</string>
     <string name="com_facebook_internet_permission_error_message">WebView 登入需有 INTERNET 權限</string>
@@ -67,7 +67,7 @@
     <string msgid="411506735369601515" name="common_open_on_phone">"在手機中開啟"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"登入"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"登入 Google"</string>
-    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/res/values-zh-rHK/values-zh-rHK.xml -->
+    <!-- From: file:/D:/PROJECT/ANDROID/PopkonTV/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values-zh-rHK/values-zh-rHK.xml -->
     <eat-comment/>
     <string name="messenger_send_button_text">傳送</string>
 </resources>
