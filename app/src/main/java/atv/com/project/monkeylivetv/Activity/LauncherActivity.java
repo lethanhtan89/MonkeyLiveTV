@@ -97,6 +97,7 @@ public class LauncherActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(fragmentInView != null){
             fragmentInView.onActivityResult(requestCode, resultCode, data);
+            //callbackManager.onActivityResult(requestCode, requestCode, data);
         }
     }
 
